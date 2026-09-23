@@ -7,7 +7,7 @@ A women's health, learning and shopping app for Kazakhstan, for users from their
 | # | Step | State |
 |---|------|-------|
 | 1 | Project setup, pink/green theme, router, kk/ru/en localization, bottom-nav shell | ✅ |
-| 2 | Onboarding, auth, personalization quiz | ⏳ |
+| 2 | Onboarding, auth, personalization quiz | ✅ |
 | 3 | Tracker (cycle), PredictionService, reminders | ⏳ |
 | 4 | Home feed with mock content | ⏳ |
 | 5 | Learn: lessons, courses, video, Q&A | ⏳ |
@@ -27,6 +27,16 @@ flutter run                                   # mocks on, Firebase off
 
 Generated `*.g.dart` files and `lib/core/l10n/generated/` are committed, so a fresh clone compiles before codegen runs. Re-run `build_runner` after you change any annotated provider or model.
 
+### Mock sign-in (default, `USE_MOCKS=true`)
+
+| Method | How to sign in |
+|--------|----------------|
+| Phone | Any KZ mobile number (`7XX XXX XX XX`). The SMS code is always **123456**. |
+| Email | Any address. Sign-up needs 8+ characters. The password `wrong-password` fails, so you can see the error state. |
+| Google | Signs in a demo account. |
+
+The session survives restarts. To see onboarding again, clear the app's data.
+
 ### Build-time configuration (`--dart-define`)
 
 | Key | Default | Purpose |
@@ -38,7 +48,8 @@ Generated `*.g.dart` files and `lib/core/l10n/generated/` are committed, so a fr
 ### Connecting Firebase
 
 1. Add `android/app/google-services.json` for the `kz.hercircle.app` application ID. The Gradle Google Services plugin turns on automatically when this file exists.
-2. Run with `--dart-define=FIREBASE_ENABLED=true`.
+2. In the Firebase console, turn on the Phone, Email/Password and Google sign-in providers. Add the app's SHA-1 and SHA-256 fingerprints so phone auth and Google sign-in work.
+3. Run with `--dart-define=FIREBASE_ENABLED=true --dart-define=USE_MOCKS=false`.
 
 ## Architecture
 
@@ -52,12 +63,17 @@ lib/
     theme/                       # app_colors, app_text_styles, app_theme, app_dimens, theme_mode_controller
     router/                      # app_routes, app_router (go_router + StatefulShellRoute), app_shell, not_found_screen
     l10n/                        # arb/ (ru template, kk, en), generated/, app_locales, locale_controller
-    services/                    # bootstrap, storage/preferences_service
-    widgets/                     # AppCard, IconBubble, PillBadge, SectionHeader, FeaturePlaceholder, DisclaimerCard, AppTone
+    services/                    # bootstrap, storage/ (preferences, encrypted LocalStore)
+    widgets/                     # AppCard, OptionCard, LoadingButton, TitledPageLayout, StepProgress,
+                                 # PageDots, BrandMark, IconBubble, PillBadge, SectionHeader, DisclaimerCard
     utils/                       # app_env, context_extensions, greeting_period
   features/
-    home/ learn/ tracker/ shop/ profile/ ai_assistant/
-    (onboarding/ auth/ qa/ partner/ family/ premium/ are added in their steps)
+    onboarding/                  # splash, intro, language, quiz (4 steps), Moms & Daughters offer,
+                                 # OnboardingStatus → router redirect
+    auth/                        # AuthRepository (mock + Firebase: phone OTP, email, Google), screens
+    profile/                     # UserProfile (freezed), personalization enums, local repository
+    home/ learn/ tracker/ shop/ ai_assistant/
+    (qa/ partner/ family/ premium/ are added in their steps)
 assets/
   google_fonts/                  # bundled Nunito (OFL), covers Kazakh Cyrillic and ₸
   mock/                          # mock JSON until Firebase is connected
@@ -70,7 +86,8 @@ assets/
 - **Spacing and radii:** use `AppSpacing`, `AppRadius` and `AppSizes`. Cards use radius 16, bottom sheets 24, and buttons are pill-shaped.
 - **State:** use Riverpod with `riverpod_generator` (`@riverpod`). Anything loaded asynchronously before the first frame is injected in `bootstrap()` through provider overrides.
 - **Navigation:** navigate only with the `AppRoutes` constants. Tabs are `StatefulShellRoute` branches, so each tab keeps its own stack. Full-screen flows go on the root navigator.
-- **Privacy:** Android backup and device transfer are turned off (`data_extraction_rules.xml`) because health data is local-first.
+- **Navigation guard:** `onboardingRedirect` (in `core/router/`) sends each user to the onboarding step they haven't finished: intro, language, auth, quiz, then the Moms & Daughters offer for users under 16. It also keeps users who have finished onboarding out of those screens.
+- **Privacy:** personal and health data (the profile, and tracker data from step 3) lives in an AES-encrypted Hive box. Its key is stored in the Android Keystore through flutter_secure_storage. Android backup and device transfer are turned off (`data_extraction_rules.xml`).
 
 ## Quality checks
 

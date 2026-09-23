@@ -1,77 +1,636 @@
 {
   "@@locale": "ru",
-
   "appTitle": "Her Circle",
-  "@appTitle": { "description": "Brand name. Not translated." },
-
+  "@appTitle": {
+    "description": "Brand name. Not translated."
+  },
   "navHome": "Главная",
-  "@navHome": { "description": "Bottom navigation: home feed tab" },
+  "@navHome": {
+    "description": "Bottom navigation: home feed tab"
+  },
   "navLearn": "Обучение",
-  "@navLearn": { "description": "Bottom navigation: learning tab" },
+  "@navLearn": {
+    "description": "Bottom navigation: learning tab"
+  },
   "navTracker": "Трекер",
-  "@navTracker": { "description": "Bottom navigation: cycle/pregnancy tracker tab" },
+  "@navTracker": {
+    "description": "Bottom navigation: cycle/pregnancy tracker tab"
+  },
   "navShop": "Магазин",
-  "@navShop": { "description": "Bottom navigation: marketplace tab" },
+  "@navShop": {
+    "description": "Bottom navigation: marketplace tab"
+  },
   "navProfile": "Профиль",
-  "@navProfile": { "description": "Bottom navigation: profile tab" },
-
+  "@navProfile": {
+    "description": "Bottom navigation: profile tab"
+  },
   "aiAssistantName": "Circle AI",
-  "@aiAssistantName": { "description": "Name of the AI assistant. Not translated." },
+  "@aiAssistantName": {
+    "description": "Name of the AI assistant. Not translated."
+  },
   "aiAssistantOpen": "Спросить Circle AI",
-  "@aiAssistantOpen": { "description": "Tooltip / semantics label of the floating AI button" },
+  "@aiAssistantOpen": {
+    "description": "Tooltip / semantics label of the floating AI button"
+  },
   "aiAssistantPlaceholder": "Задайте вопрос о здоровье — Circle AI ответит на основе материалов приложения.",
-  "@aiAssistantPlaceholder": { "description": "Placeholder body on the AI assistant screen" },
-
+  "@aiAssistantPlaceholder": {
+    "description": "Placeholder body on the AI assistant screen"
+  },
   "greetingMorning": "Доброе утро",
-  "@greetingMorning": { "description": "Home greeting, 05:00–11:59" },
+  "@greetingMorning": {
+    "description": "Home greeting, 05:00–11:59"
+  },
   "greetingAfternoon": "Добрый день",
-  "@greetingAfternoon": { "description": "Home greeting, 12:00–17:59" },
+  "@greetingAfternoon": {
+    "description": "Home greeting, 12:00–17:59"
+  },
   "greetingEvening": "Добрый вечер",
-  "@greetingEvening": { "description": "Home greeting, 18:00–04:59" },
+  "@greetingEvening": {
+    "description": "Home greeting, 18:00–04:59"
+  },
   "homeSubtitle": "Как вы себя чувствуете сегодня?",
-  "@homeSubtitle": { "description": "Subtitle under the greeting on the home feed" },
-
+  "@homeSubtitle": {
+    "description": "Subtitle under the greeting on the home feed"
+  },
   "comingSoon": "Скоро",
-  "@comingSoon": { "description": "Badge shown on sections that are not built yet" },
+  "@comingSoon": {
+    "description": "Badge shown on sections that are not built yet"
+  },
   "homePlaceholder": "Здесь появится ваша персональная лента: статус цикла, совет дня и подборки для вас.",
-  "@homePlaceholder": { "description": "Placeholder body for the home feed" },
+  "@homePlaceholder": {
+    "description": "Placeholder body for the home feed"
+  },
   "learnPlaceholder": "Видеоуроки, курсы, статьи и ответы врачей — всё в одном месте.",
-  "@learnPlaceholder": { "description": "Placeholder body for the learn tab" },
+  "@learnPlaceholder": {
+    "description": "Placeholder body for the learn tab"
+  },
   "trackerPlaceholder": "Календарь цикла, прогнозы и ежедневные записи о самочувствии.",
-  "@trackerPlaceholder": { "description": "Placeholder body for the tracker tab" },
+  "@trackerPlaceholder": {
+    "description": "Placeholder body for the tracker tab"
+  },
   "shopPlaceholder": "Товары для здоровья, боксы по подписке и готовые наборы.",
-  "@shopPlaceholder": { "description": "Placeholder body for the shop tab" },
-
+  "@shopPlaceholder": {
+    "description": "Placeholder body for the shop tab"
+  },
   "medicalDisclaimer": "Информация в приложении не заменяет консультацию врача. Circle AI не ставит диагнозы.",
-  "@medicalDisclaimer": { "description": "Medical disclaimer shown in onboarding, AI chat and Q&A" },
-
+  "@medicalDisclaimer": {
+    "description": "Medical disclaimer shown in onboarding, AI chat and Q&A"
+  },
   "profileGuest": "Гостья",
-  "@profileGuest": { "description": "Profile name shown before the user signs in" },
+  "@profileGuest": {
+    "description": "Profile name shown before the user signs in"
+  },
   "profileGuestSubtitle": "Войдите, чтобы сохранить свои данные",
-  "@profileGuestSubtitle": { "description": "Profile subtitle shown before the user signs in" },
-
+  "@profileGuestSubtitle": {
+    "description": "Profile subtitle shown before the user signs in"
+  },
   "settingsTitle": "Настройки",
-  "@settingsTitle": { "description": "Settings screen title and profile menu item" },
+  "@settingsTitle": {
+    "description": "Settings screen title and profile menu item"
+  },
   "settingsLanguage": "Язык",
-  "@settingsLanguage": { "description": "Settings section: app language" },
+  "@settingsLanguage": {
+    "description": "Settings section: app language"
+  },
   "settingsAppearance": "Оформление",
-  "@settingsAppearance": { "description": "Settings section: light/dark theme" },
+  "@settingsAppearance": {
+    "description": "Settings section: light/dark theme"
+  },
   "themeSystem": "Как в системе",
-  "@themeSystem": { "description": "Theme option: follow the system setting" },
+  "@themeSystem": {
+    "description": "Theme option: follow the system setting"
+  },
   "themeLight": "Светлая",
-  "@themeLight": { "description": "Theme option: light" },
+  "@themeLight": {
+    "description": "Theme option: light"
+  },
   "themeDark": "Тёмная",
-  "@themeDark": { "description": "Theme option: dark" },
-
+  "@themeDark": {
+    "description": "Theme option: dark"
+  },
   "languageKazakh": "Қазақша",
-  "@languageKazakh": { "description": "Kazakh language name, always written in Kazakh" },
+  "@languageKazakh": {
+    "description": "Kazakh language name, always written in Kazakh"
+  },
   "languageRussian": "Русский",
-  "@languageRussian": { "description": "Russian language name, always written in Russian" },
+  "@languageRussian": {
+    "description": "Russian language name, always written in Russian"
+  },
   "languageEnglish": "English",
-  "@languageEnglish": { "description": "English language name, always written in English" },
-
+  "@languageEnglish": {
+    "description": "English language name, always written in English"
+  },
   "notFoundTitle": "Страница не найдена",
-  "@notFoundTitle": { "description": "Title of the 404 route" },
+  "@notFoundTitle": {
+    "description": "Title of the 404 route"
+  },
   "goHome": "На главную",
-  "@goHome": { "description": "Button that returns to the home tab" }
+  "@goHome": {
+    "description": "Button that returns to the home tab"
+  },
+  "actionContinue": "Продолжить",
+  "@actionContinue": {
+    "description": "Generic continue button"
+  },
+  "actionNext": "Далее",
+  "@actionNext": {
+    "description": "Generic next button"
+  },
+  "actionSkip": "Пропустить",
+  "@actionSkip": {
+    "description": "Generic skip button"
+  },
+  "actionDone": "Готово",
+  "@actionDone": {
+    "description": "Generic done button"
+  },
+  "actionCancel": "Отмена",
+  "@actionCancel": {
+    "description": "Generic cancel button"
+  },
+  "splashTagline": "Учиться. Следить. Заботиться о себе.",
+  "@splashTagline": {
+    "description": "Tagline on the splash screen"
+  },
+  "introStart": "Начать",
+  "@introStart": {
+    "description": "Last intro slide button"
+  },
+  "intro1Title": "Знания от врачей",
+  "@intro1Title": {
+    "description": "Intro slide 1 title"
+  },
+  "intro1Body": "Видеоуроки, курсы и ответы экспертов о здоровье на каждом этапе жизни.",
+  "@intro1Body": {
+    "description": "Intro slide 1 body"
+  },
+  "intro2Title": "Ваш цикл под контролем",
+  "@intro2Title": {
+    "description": "Intro slide 2 title"
+  },
+  "intro2Body": "Календарь, прогнозы и напоминания — для цикла, беременности и менопаузы. Данные хранятся на вашем устройстве.",
+  "@intro2Body": {
+    "description": "Intro slide 2 body"
+  },
+  "intro3Title": "Всё нужное — рядом",
+  "@intro3Title": {
+    "description": "Intro slide 3 title"
+  },
+  "intro3Body": "Товары для здоровья, Circle AI и ваш близкий круг: партнёр и семья.",
+  "@intro3Body": {
+    "description": "Intro slide 3 body"
+  },
+  "introPageLabel": "Слайд {current} из {total}",
+  "@introPageLabel": {
+    "description": "Screen reader label for intro page dots",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "languageTitle": "Выберите язык",
+  "@languageTitle": {
+    "description": "Language picker title"
+  },
+  "languageSubtitle": "Его можно изменить в настройках.",
+  "@languageSubtitle": {
+    "description": "Language picker subtitle"
+  },
+  "authWelcomeTitle": "Добро пожаловать в Her Circle",
+  "@authWelcomeTitle": {
+    "description": "Auth welcome title"
+  },
+  "authWelcomeSubtitle": "Войдите или создайте аккаунт, чтобы сохранить свой прогресс.",
+  "@authWelcomeSubtitle": {
+    "description": "Auth welcome subtitle"
+  },
+  "authContinuePhone": "Продолжить с номером телефона",
+  "@authContinuePhone": {
+    "description": "Phone sign-in button"
+  },
+  "authContinueEmail": "Продолжить с email",
+  "@authContinueEmail": {
+    "description": "Email sign-in button"
+  },
+  "authContinueGoogle": "Продолжить с Google",
+  "@authContinueGoogle": {
+    "description": "Google sign-in button"
+  },
+  "authTerms": "Продолжая, вы принимаете Условия использования и Политику конфиденциальности.",
+  "@authTerms": {
+    "description": "Legal line under sign-in buttons"
+  },
+  "authPhoneTitle": "Ваш номер телефона",
+  "@authPhoneTitle": {
+    "description": "Phone screen title"
+  },
+  "authPhoneSubtitle": "Мы отправим SMS с кодом подтверждения.",
+  "@authPhoneSubtitle": {
+    "description": "Phone screen subtitle"
+  },
+  "authPhoneLabel": "Номер телефона",
+  "@authPhoneLabel": {
+    "description": "Phone input label"
+  },
+  "authSendCode": "Получить код",
+  "@authSendCode": {
+    "description": "Send SMS code button"
+  },
+  "authOtpTitle": "Введите код",
+  "@authOtpTitle": {
+    "description": "OTP screen title"
+  },
+  "authOtpSubtitle": "Код отправлен на {phone}",
+  "@authOtpSubtitle": {
+    "description": "OTP screen subtitle",
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "authOtpLabel": "Код из SMS",
+  "@authOtpLabel": {
+    "description": "OTP input label"
+  },
+  "authOtpResendIn": "Отправить снова через {seconds} с",
+  "@authOtpResendIn": {
+    "description": "Resend countdown",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "authOtpResend": "Отправить код снова",
+  "@authOtpResend": {
+    "description": "Resend code button"
+  },
+  "authVerify": "Подтвердить",
+  "@authVerify": {
+    "description": "Verify OTP button"
+  },
+  "authDemoCode": "Демо-режим: код {code}",
+  "@authDemoCode": {
+    "description": "Hint shown when running with mock auth",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "authEmailTitle": "Вход по email",
+  "@authEmailTitle": {
+    "description": "Email screen title"
+  },
+  "authSignIn": "Вход",
+  "@authSignIn": {
+    "description": "Sign-in tab and button"
+  },
+  "authSignUp": "Регистрация",
+  "@authSignUp": {
+    "description": "Sign-up tab"
+  },
+  "authCreateAccount": "Создать аккаунт",
+  "@authCreateAccount": {
+    "description": "Sign-up submit button"
+  },
+  "authEmailLabel": "Email",
+  "@authEmailLabel": {
+    "description": "Email input label"
+  },
+  "authPasswordLabel": "Пароль",
+  "@authPasswordLabel": {
+    "description": "Password input label"
+  },
+  "authConfirmPasswordLabel": "Повторите пароль",
+  "@authConfirmPasswordLabel": {
+    "description": "Confirm password label"
+  },
+  "authShowPassword": "Показать пароль",
+  "@authShowPassword": {
+    "description": "Password visibility toggle"
+  },
+  "authHidePassword": "Скрыть пароль",
+  "@authHidePassword": {
+    "description": "Password visibility toggle"
+  },
+  "authForgotPassword": "Забыли пароль?",
+  "@authForgotPassword": {
+    "description": "Forgot password link"
+  },
+  "authResetSent": "Ссылка для сброса пароля отправлена на {email}",
+  "@authResetSent": {
+    "description": "Snackbar after reset email",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "validationPhone": "Введите номер в формате 7XX XXX XX XX",
+  "@validationPhone": {
+    "description": "Phone validation error"
+  },
+  "validationEmail": "Введите корректный email",
+  "@validationEmail": {
+    "description": "Email validation error"
+  },
+  "validationPassword": "Минимум 8 символов",
+  "@validationPassword": {
+    "description": "Password validation error"
+  },
+  "validationPasswordMatch": "Пароли не совпадают",
+  "@validationPasswordMatch": {
+    "description": "Confirm password validation error"
+  },
+  "validationCode": "Введите 6 цифр",
+  "@validationCode": {
+    "description": "OTP validation error"
+  },
+  "authErrorInvalidPhone": "Неверный номер телефона.",
+  "@authErrorInvalidPhone": {
+    "description": "Auth error"
+  },
+  "authErrorInvalidCode": "Неверный код. Проверьте SMS и попробуйте снова.",
+  "@authErrorInvalidCode": {
+    "description": "Auth error"
+  },
+  "authErrorCodeExpired": "Срок действия кода истёк. Запросите новый.",
+  "@authErrorCodeExpired": {
+    "description": "Auth error"
+  },
+  "authErrorInvalidEmail": "Некорректный email.",
+  "@authErrorInvalidEmail": {
+    "description": "Auth error"
+  },
+  "authErrorWrongCredentials": "Неверный email или пароль.",
+  "@authErrorWrongCredentials": {
+    "description": "Auth error"
+  },
+  "authErrorEmailInUse": "Этот email уже зарегистрирован. Попробуйте войти.",
+  "@authErrorEmailInUse": {
+    "description": "Auth error"
+  },
+  "authErrorWeakPassword": "Слишком простой пароль.",
+  "@authErrorWeakPassword": {
+    "description": "Auth error"
+  },
+  "authErrorTooManyRequests": "Слишком много попыток. Попробуйте позже.",
+  "@authErrorTooManyRequests": {
+    "description": "Auth error"
+  },
+  "authErrorNetwork": "Нет соединения с интернетом.",
+  "@authErrorNetwork": {
+    "description": "Auth error"
+  },
+  "authErrorUnknown": "Что-то пошло не так. Попробуйте ещё раз.",
+  "@authErrorUnknown": {
+    "description": "Auth error"
+  },
+  "quizStepOf": "Шаг {step} из {total}",
+  "@quizStepOf": {
+    "description": "Quiz progress",
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "quizAgeTitle": "Сколько вам лет?",
+  "@quizAgeTitle": {
+    "description": "Quiz step 1 title"
+  },
+  "quizAgeSubtitle": "Так мы подберём подходящие материалы.",
+  "@quizAgeSubtitle": {
+    "description": "Quiz step 1 subtitle"
+  },
+  "ageGroup10to15": "10–15 лет",
+  "@ageGroup10to15": {
+    "description": "Age band"
+  },
+  "ageGroup16to24": "16–24 года",
+  "@ageGroup16to24": {
+    "description": "Age band"
+  },
+  "ageGroup25to34": "25–34 года",
+  "@ageGroup25to34": {
+    "description": "Age band"
+  },
+  "ageGroup35to44": "35–44 года",
+  "@ageGroup35to44": {
+    "description": "Age band"
+  },
+  "ageGroup45plus": "45 лет и старше",
+  "@ageGroup45plus": {
+    "description": "Age band"
+  },
+  "quizStageTitle": "Что сейчас актуально для вас?",
+  "@quizStageTitle": {
+    "description": "Quiz step 2 title"
+  },
+  "quizStageSubtitle": "Трекер и советы подстроятся под вас. Это можно изменить в профиле.",
+  "@quizStageSubtitle": {
+    "description": "Quiz step 2 subtitle"
+  },
+  "stageFirstPeriod": "Первые месячные",
+  "@stageFirstPeriod": {
+    "description": "Life stage"
+  },
+  "stageFirstPeriodDesc": "Узнать, чего ожидать, и подготовиться",
+  "@stageFirstPeriodDesc": {
+    "description": "Life stage description"
+  },
+  "stageTrackingCycle": "Слежу за циклом",
+  "@stageTrackingCycle": {
+    "description": "Life stage"
+  },
+  "stageTrackingCycleDesc": "Прогнозы месячных и самочувствие",
+  "@stageTrackingCycleDesc": {
+    "description": "Life stage description"
+  },
+  "stageTryingToConceive": "Планирую беременность",
+  "@stageTryingToConceive": {
+    "description": "Life stage"
+  },
+  "stageTryingToConceiveDesc": "Фертильное окно и овуляция",
+  "@stageTryingToConceiveDesc": {
+    "description": "Life stage description"
+  },
+  "stagePregnant": "Беременна",
+  "@stagePregnant": {
+    "description": "Life stage"
+  },
+  "stagePregnantDesc": "Неделя за неделей до встречи с малышом",
+  "@stagePregnantDesc": {
+    "description": "Life stage description"
+  },
+  "stagePostpartum": "После родов",
+  "@stagePostpartum": {
+    "description": "Life stage"
+  },
+  "stagePostpartumDesc": "Восстановление, кормление и сон",
+  "@stagePostpartumDesc": {
+    "description": "Life stage description"
+  },
+  "stagePerimenopause": "Перименопауза",
+  "@stagePerimenopause": {
+    "description": "Life stage"
+  },
+  "stagePerimenopauseDesc": "Изменения цикла и симптомы",
+  "@stagePerimenopauseDesc": {
+    "description": "Life stage description"
+  },
+  "stageMenopause": "Менопауза",
+  "@stageMenopause": {
+    "description": "Life stage"
+  },
+  "stageMenopauseDesc": "Самочувствие, сон и здоровье костей",
+  "@stageMenopauseDesc": {
+    "description": "Life stage description"
+  },
+  "quizCycleTitle": "Расскажите о своём цикле",
+  "@quizCycleTitle": {
+    "description": "Quiz step 3 title"
+  },
+  "quizCycleSubtitle": "Это поможет точнее строить прогнозы. Шаг можно пропустить.",
+  "@quizCycleSubtitle": {
+    "description": "Quiz step 3 subtitle"
+  },
+  "quizPregnancySubtitle": "По первому дню последних месячных мы рассчитаем срок беременности. Шаг можно пропустить.",
+  "@quizPregnancySubtitle": {
+    "description": "Quiz step 3 subtitle for pregnancy"
+  },
+  "quizLastPeriodLabel": "Первый день последних месячных",
+  "@quizLastPeriodLabel": {
+    "description": "Last period date field"
+  },
+  "quizSelectDate": "Выбрать дату",
+  "@quizSelectDate": {
+    "description": "Date field placeholder"
+  },
+  "quizCycleLengthLabel": "Средняя длина цикла",
+  "@quizCycleLengthLabel": {
+    "description": "Cycle length field"
+  },
+  "quizCycleLengthValue": "{days, plural, one{{days} день} few{{days} дня} many{{days} дней} other{{days} дня}}",
+  "@quizCycleLengthValue": {
+    "description": "Cycle length value",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "quizCycleLengthHint": "Обычно от 21 до 35 дней. Если не уверены, оставьте 28.",
+  "@quizCycleLengthHint": {
+    "description": "Cycle length helper"
+  },
+  "quizDecreaseDays": "Меньше на день",
+  "@quizDecreaseDays": {
+    "description": "Stepper minus semantics"
+  },
+  "quizIncreaseDays": "Больше на день",
+  "@quizIncreaseDays": {
+    "description": "Stepper plus semantics"
+  },
+  "quizInterestsTitle": "Что вам интересно?",
+  "@quizInterestsTitle": {
+    "description": "Quiz step 4 title"
+  },
+  "quizInterestsSubtitle": "Выберите одну или несколько тем.",
+  "@quizInterestsSubtitle": {
+    "description": "Quiz step 4 subtitle"
+  },
+  "interestMyBody": "Моё тело",
+  "@interestMyBody": {
+    "description": "Interest"
+  },
+  "interestCycleHealth": "Цикл и здоровье",
+  "@interestCycleHealth": {
+    "description": "Interest"
+  },
+  "interestFertility": "Фертильность",
+  "@interestFertility": {
+    "description": "Interest"
+  },
+  "interestPregnancy": "Беременность",
+  "@interestPregnancy": {
+    "description": "Interest"
+  },
+  "interestBabyAndMotherhood": "Малыш и материнство",
+  "@interestBabyAndMotherhood": {
+    "description": "Interest"
+  },
+  "interestMenopause": "Менопауза",
+  "@interestMenopause": {
+    "description": "Interest"
+  },
+  "interestMentalHealth": "Ментальное здоровье",
+  "@interestMentalHealth": {
+    "description": "Interest"
+  },
+  "interestNutrition": "Питание",
+  "@interestNutrition": {
+    "description": "Interest"
+  },
+  "interestFitness": "Спорт и движение",
+  "@interestFitness": {
+    "description": "Interest"
+  },
+  "interestBeauty": "Красота и уход",
+  "@interestBeauty": {
+    "description": "Interest"
+  },
+  "interestIntimacy": "Близость и отношения",
+  "@interestIntimacy": {
+    "description": "Interest (18+)"
+  },
+  "familyOfferTitle": "Вместе с мамой",
+  "@familyOfferTitle": {
+    "description": "Moms & Daughters offer title"
+  },
+  "familyOfferBody": "Подключите режим «Мамы и дочки» — вы будете проходить уроки вместе. Ваш трекер останется приватным, пока вы сами не решите им поделиться.",
+  "@familyOfferBody": {
+    "description": "Moms & Daughters offer body"
+  },
+  "familyOfferAccept": "Пригласить маму",
+  "@familyOfferAccept": {
+    "description": "Moms & Daughters accept"
+  },
+  "familyOfferLater": "Может быть, позже",
+  "@familyOfferLater": {
+    "description": "Moms & Daughters decline"
+  },
+  "familyOfferAccepted": "Отлично! Код приглашения появится в профиле, в разделе «Связанные аккаунты».",
+  "@familyOfferAccepted": {
+    "description": "Snackbar after accepting"
+  },
+  "profileLifeStage": "Этап жизни",
+  "@profileLifeStage": {
+    "description": "Profile row label"
+  },
+  "profileAgeGroup": "Возраст",
+  "@profileAgeGroup": {
+    "description": "Profile row label"
+  },
+  "profileSignOut": "Выйти",
+  "@profileSignOut": {
+    "description": "Sign out button"
+  },
+  "profileSignOutConfirm": "Выйти из аккаунта? Данные трекера останутся на этом устройстве.",
+  "@profileSignOutConfirm": {
+    "description": "Sign out confirmation"
+  },
+  "authPhoneHint": "7XX XXX XX XX",
+  "@authPhoneHint": {
+    "description": "Phone input mask hint (national part of a KZ number)"
+  }
 }
