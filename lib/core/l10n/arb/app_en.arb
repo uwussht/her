@@ -1,0 +1,45 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Her Circle",
+
+  "navHome": "Home",
+  "navLearn": "Learn",
+  "navTracker": "Tracker",
+  "navShop": "Shop",
+  "navProfile": "Profile",
+
+  "aiAssistantName": "Circle AI",
+  "aiAssistantOpen": "Ask Circle AI",
+  "aiAssistantPlaceholder": "Ask a health question — Circle AI answers using the app's own content.",
+
+  "greetingMorning": "Good morning",
+  "greetingAfternoon": "Good afternoon",
+  "greetingEvening": "Good evening",
+  "homeSubtitle": "How are you feeling today?",
+
+  "comingSoon": "Coming soon",
+  "homePlaceholder": "Your personal feed will live here: cycle status, the tip of the day and picks for you.",
+  "learnPlaceholder": "Video lessons, courses, articles and answers from doctors — all in one place.",
+  "trackerPlaceholder": "Cycle calendar, predictions and daily wellbeing logs.",
+  "shopPlaceholder": "Health products, subscription boxes and ready-made bundles.",
+
+  "medicalDisclaimer": "Information in this app does not replace a doctor's advice. Circle AI never diagnoses.",
+
+  "profileGuest": "Guest",
+  "profileGuestSubtitle": "Sign in to keep your data",
+
+  "settingsTitle": "Settings",
+  "settingsLanguage": "Language",
+  "settingsAppearance": "Appearance",
+  "themeSystem": "System default",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+
+  "languageKazakh": "Қазақша",
+  "languageRussian": "Русский",
+  "languageEnglish": "English",
+
+  "notFoundTitle": "Page not found",
+  "goHome": "Go to home"
+}

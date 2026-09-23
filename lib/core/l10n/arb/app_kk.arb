@@ -1,0 +1,45 @@
+{
+  "@@locale": "kk",
+
+  "appTitle": "Her Circle",
+
+  "navHome": "Басты",
+  "navLearn": "Оқу",
+  "navTracker": "Трекер",
+  "navShop": "Дүкен",
+  "navProfile": "Профиль",
+
+  "aiAssistantName": "Circle AI",
+  "aiAssistantOpen": "Circle AI-ден сұрау",
+  "aiAssistantPlaceholder": "Денсаулық туралы сұрақ қойыңыз — Circle AI қосымшадағы материалдар негізінде жауап береді.",
+
+  "greetingMorning": "Қайырлы таң",
+  "greetingAfternoon": "Қайырлы күн",
+  "greetingEvening": "Қайырлы кеш",
+  "homeSubtitle": "Бүгін өзіңізді қалай сезінесіз?",
+
+  "comingSoon": "Жақында",
+  "homePlaceholder": "Мұнда жеке таспаңыз пайда болады: цикл күйі, күн кеңесі және сізге арналған таңдаулар.",
+  "learnPlaceholder": "Бейнесабақтар, курстар, мақалалар және дәрігерлердің жауаптары — бәрі бір жерде.",
+  "trackerPlaceholder": "Цикл күнтізбесі, болжамдар және көңіл-күй туралы күнделікті жазбалар.",
+  "shopPlaceholder": "Денсаулыққа арналған тауарлар, жазылым қораптары және дайын жинақтар.",
+
+  "medicalDisclaimer": "Қосымшадағы ақпарат дәрігердің кеңесін алмастырмайды. Circle AI диагноз қоймайды.",
+
+  "profileGuest": "Қонақ",
+  "profileGuestSubtitle": "Деректеріңізді сақтау үшін кіріңіз",
+
+  "settingsTitle": "Баптаулар",
+  "settingsLanguage": "Тіл",
+  "settingsAppearance": "Безендіру",
+  "themeSystem": "Жүйедегідей",
+  "themeLight": "Ашық",
+  "themeDark": "Қараңғы",
+
+  "languageKazakh": "Қазақша",
+  "languageRussian": "Русский",
+  "languageEnglish": "English",
+
+  "notFoundTitle": "Бет табылмады",
+  "goHome": "Басты бетке"
+}
