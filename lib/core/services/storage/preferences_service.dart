@@ -31,6 +31,10 @@ class PreferencesService {
 
   static const _kLocale = 'settings.locale';
   static const _kThemeMode = 'settings.themeMode';
+  static const _kIntroSeen = 'onboarding.introSeen';
+  static const _kLanguageChosen = 'onboarding.languageChosen';
+  static const _kFamilyOfferSeen = 'onboarding.familyOfferSeen';
+  static const _kFamilyLinkRequested = 'onboarding.familyLinkRequested';
 
   String? get localeCode => _prefs.getString(_kLocale);
 
@@ -46,4 +50,31 @@ class PreferencesService {
 
   Future<void> setThemeMode(ThemeMode mode) =>
       _prefs.setString(_kThemeMode, mode.name);
+
+  bool get introSeen => _prefs.getBool(_kIntroSeen) ?? false;
+
+  Future<void> setIntroSeen() => _prefs.setBool(_kIntroSeen, true);
+
+  bool get languageChosen => _prefs.getBool(_kLanguageChosen) ?? false;
+
+  Future<void> setLanguageChosen() => _prefs.setBool(_kLanguageChosen, true);
+
+  /// Whether a user under 16 has already seen the Moms & Daughters offer.
+  bool get familyOfferSeen => _prefs.getBool(_kFamilyOfferSeen) ?? false;
+
+  Future<void> setFamilyOfferSeen() => _prefs.setBool(_kFamilyOfferSeen, true);
+
+  /// She accepted the offer. Step 8 opens the linking flow from Profile.
+  bool get familyLinkRequested =>
+      _prefs.getBool(_kFamilyLinkRequested) ?? false;
+
+  Future<void> setFamilyLinkRequested() =>
+      _prefs.setBool(_kFamilyLinkRequested, true);
+
+  String? getString(String key) => _prefs.getString(key);
+
+  Future<void> setString(String key, String value) =>
+      _prefs.setString(key, value);
+
+  Future<void> remove(String key) => _prefs.remove(key);
 }

@@ -6,6 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../utils/app_env.dart';
+import 'storage/encrypted_box_opener.dart';
+import 'storage/local_store.dart';
 import 'storage/preferences_service.dart';
 
 /// Runs one-time async setup before the first frame and returns the
@@ -34,10 +36,14 @@ Future<List<Override>> bootstrap() async {
   }
 
   final prefs = await SharedPreferences.getInstance();
+  final localStore = await EncryptedBoxOpener.open();
 
   if (kDebugMode) {
     debugPrint('Her Circle bootstrap: mocks=${AppEnv.useMocks}');
   }
 
-  return [sharedPreferencesProvider.overrideWithValue(prefs)];
+  return [
+    sharedPreferencesProvider.overrideWithValue(prefs),
+    localStoreProvider.overrideWithValue(localStore),
+  ];
 }
