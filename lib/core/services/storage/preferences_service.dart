@@ -35,6 +35,8 @@ class PreferencesService {
   static const _kLanguageChosen = 'onboarding.languageChosen';
   static const _kFamilyOfferSeen = 'onboarding.familyOfferSeen';
   static const _kFamilyLinkRequested = 'onboarding.familyLinkRequested';
+  static const _kHideNotificationContent = 'privacy.hideNotificationContent';
+  static const _kNotificationsRequested = 'notifications.requested';
 
   String? get localeCode => _prefs.getString(_kLocale);
 
@@ -77,4 +79,20 @@ class PreferencesService {
       _prefs.setString(key, value);
 
   Future<void> remove(String key) => _prefs.remove(key);
+
+  /// "Hide app content" mode: reminders arrive without any details on the
+  /// lock screen.
+  bool get hideNotificationContent =>
+      _prefs.getBool(_kHideNotificationContent) ?? false;
+
+  Future<void> setHideNotificationContent(bool value) =>
+      _prefs.setBool(_kHideNotificationContent, value);
+
+  /// Whether the Android notification permission has already been asked for,
+  /// so she is not prompted again after declining.
+  bool get notificationsRequested =>
+      _prefs.getBool(_kNotificationsRequested) ?? false;
+
+  Future<void> setNotificationsRequested() =>
+      _prefs.setBool(_kNotificationsRequested, true);
 }

@@ -491,4 +491,600 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get authPhoneHint => '7XX XXX XX XX';
+
+  @override
+  String get actionSave => 'Save';
+
+  @override
+  String get actionDelete => 'Delete';
+
+  @override
+  String get actionAdd => 'Add';
+
+  @override
+  String get actionClose => 'Close';
+
+  @override
+  String get actionToday => 'Today';
+
+  @override
+  String get actionNotNow => 'Not now';
+
+  @override
+  String get actionAllow => 'Allow';
+
+  @override
+  String trackerCycleDay(int day) {
+    return 'Day $day';
+  }
+
+  @override
+  String trackerPeriodDay(int day) {
+    return 'Period, day $day';
+  }
+
+  @override
+  String trackerPeriodInDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Period in $days days',
+      one: 'Period in $days day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trackerPeriodToday => 'Your period is expected today';
+
+  @override
+  String trackerPeriodLate(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days late',
+      one: '$days day late',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trackerFertileToday => 'Fertile window';
+
+  @override
+  String get trackerOvulationToday => 'Ovulation today';
+
+  @override
+  String trackerNextPeriodOn(String date) {
+    return 'Next period: $date';
+  }
+
+  @override
+  String trackerAverageCycle(int days) {
+    return '$days-day cycle';
+  }
+
+  @override
+  String get trackerEmptyTitle => 'Start tracking your cycle';
+
+  @override
+  String get trackerEmptyBody =>
+      'Mark the first day of your last period and we\'ll build your calendar with predictions.';
+
+  @override
+  String get trackerMarkPeriodStart => 'Mark period start';
+
+  @override
+  String get trackerPeriodStarted => 'Period started';
+
+  @override
+  String get trackerPeriodEnded => 'Period ended';
+
+  @override
+  String get trackerRemoveDay => 'Remove mark';
+
+  @override
+  String get confidenceEstimated => 'Estimate';
+
+  @override
+  String get confidenceLow => 'Low accuracy';
+
+  @override
+  String get confidenceMedium => 'Medium accuracy';
+
+  @override
+  String get confidenceHigh => 'High accuracy';
+
+  @override
+  String get confidenceEstimatedHint =>
+      'This forecast uses the cycle length you entered. Log your periods and it will get more accurate.';
+
+  @override
+  String confidenceBasis(int cycles, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      cycles,
+      locale: localeName,
+      other: 'Based on $cycles cycles',
+      one: 'Based on $cycles cycle',
+    );
+    return '$_temp0 · varies by ±$days days';
+  }
+
+  @override
+  String get predictionDisclaimer =>
+      'Predictions are estimates and are not a form of contraception.';
+
+  @override
+  String get legendPeriod => 'Period';
+
+  @override
+  String get legendPredictedPeriod => 'Predicted period';
+
+  @override
+  String get legendFertile => 'Fertile days';
+
+  @override
+  String get legendOvulation => 'Ovulation';
+
+  @override
+  String get legendLogged => 'Has a log';
+
+  @override
+  String get phaseFollicular => 'Follicular phase';
+
+  @override
+  String get phaseLuteal => 'Luteal phase';
+
+  @override
+  String logTitle(String date) {
+    return 'Log for $date';
+  }
+
+  @override
+  String get logToday => 'Log today';
+
+  @override
+  String get logFlow => 'Flow';
+
+  @override
+  String get flowSpotting => 'Spotting';
+
+  @override
+  String get flowLight => 'Light';
+
+  @override
+  String get flowMedium => 'Medium';
+
+  @override
+  String get flowHeavy => 'Heavy';
+
+  @override
+  String get logMood => 'Mood';
+
+  @override
+  String get moodGreat => 'Great';
+
+  @override
+  String get moodGood => 'Good';
+
+  @override
+  String get moodOkay => 'Okay';
+
+  @override
+  String get moodLow => 'Low';
+
+  @override
+  String get moodAwful => 'Awful';
+
+  @override
+  String get logEnergy => 'Energy';
+
+  @override
+  String get energyLow => 'Low';
+
+  @override
+  String get energyMedium => 'Medium';
+
+  @override
+  String get energyHigh => 'High';
+
+  @override
+  String get logSleep => 'Sleep';
+
+  @override
+  String logSleepHours(String hours) {
+    return '$hours h';
+  }
+
+  @override
+  String get logSymptoms => 'Symptoms';
+
+  @override
+  String get logNotes => 'Notes';
+
+  @override
+  String get logNotesHint => 'Anything else worth remembering?';
+
+  @override
+  String get logSaved => 'Log saved';
+
+  @override
+  String get logDeleted => 'Log deleted';
+
+  @override
+  String get logEmptyHint => 'Log how you feel to start seeing patterns.';
+
+  @override
+  String get symptomCramps => 'Cramps';
+
+  @override
+  String get symptomHeadache => 'Headache';
+
+  @override
+  String get symptomBackPain => 'Back pain';
+
+  @override
+  String get symptomBloating => 'Bloating';
+
+  @override
+  String get symptomBreastTenderness => 'Breast tenderness';
+
+  @override
+  String get symptomNausea => 'Nausea';
+
+  @override
+  String get symptomAcne => 'Acne';
+
+  @override
+  String get symptomFatigue => 'Fatigue';
+
+  @override
+  String get symptomCravings => 'Food cravings';
+
+  @override
+  String get symptomInsomnia => 'Insomnia';
+
+  @override
+  String get symptomHotFlashes => 'Hot flashes';
+
+  @override
+  String get symptomNightSweats => 'Night sweats';
+
+  @override
+  String get symptomIrritability => 'Irritability';
+
+  @override
+  String get symptomAnxiety => 'Anxiety';
+
+  @override
+  String get symptomLowMood => 'Low mood';
+
+  @override
+  String get symptomGroupPhysical => 'Physical';
+
+  @override
+  String get symptomGroupEmotional => 'Emotional';
+
+  @override
+  String get symptomGroupMenopause => 'Menopause';
+
+  @override
+  String get moodChartTitle => 'Mood';
+
+  @override
+  String get moodChartWeek => 'Week';
+
+  @override
+  String get moodChartMonth => 'Month';
+
+  @override
+  String get moodChartEmpty => 'Log your mood and a chart will appear here.';
+
+  @override
+  String moodChartAverage(String value) {
+    return 'Average $value';
+  }
+
+  @override
+  String get remindersTitle => 'Reminders';
+
+  @override
+  String get remindersSubtitle => 'They stay on this device only.';
+
+  @override
+  String reminderNext(String when) {
+    return 'Next: $when';
+  }
+
+  @override
+  String get reminderNone => 'Reminders are off';
+
+  @override
+  String get reminderPeriodComingTitle => 'Your period is coming';
+
+  @override
+  String reminderPeriodComingBody(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Expected in $days days. Time to get ready.',
+      one: 'Expected in $days day. Time to get ready.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reminderFertileTitle => 'Your fertile window is opening';
+
+  @override
+  String get reminderFertileBody =>
+      'The next few days are the most likely for conceiving.';
+
+  @override
+  String get reminderPillTitle => 'Time for your pill';
+
+  @override
+  String get reminderPillBody => 'Don\'t forget to take it.';
+
+  @override
+  String get reminderWaterTitle => 'Time for water';
+
+  @override
+  String get reminderWaterBody => 'Have a few sips.';
+
+  @override
+  String get reminderDoctorTitle => 'Doctor\'s appointment';
+
+  @override
+  String get reminderDoctorBody => 'You have a visit planned today.';
+
+  @override
+  String get reminderVaccinationTitle => 'Vaccination due';
+
+  @override
+  String reminderVaccinationBody(String vaccine) {
+    return 'Scheduled: $vaccine. Check with your doctor.';
+  }
+
+  @override
+  String get reminderTypePeriodComing => 'Period coming';
+
+  @override
+  String get reminderTypeFertileWindow => 'Fertile window';
+
+  @override
+  String get reminderTypePill => 'Pill';
+
+  @override
+  String get reminderTypeWater => 'Water';
+
+  @override
+  String get reminderTypeDoctorVisit => 'Doctor visit';
+
+  @override
+  String get reminderTypeVaccination => 'Vaccination';
+
+  @override
+  String reminderDaysBefore(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days before',
+      one: '$days day before',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String reminderTimesPerDay(int count) {
+    return '$count times a day';
+  }
+
+  @override
+  String get reminderTimeLabel => 'Time';
+
+  @override
+  String get reminderAddDoctorVisit => 'Add a doctor visit';
+
+  @override
+  String get reminderDateLabel => 'Date';
+
+  @override
+  String get reminderDeleted => 'Reminder deleted';
+
+  @override
+  String get notificationsPermissionTitle => 'Allow reminders?';
+
+  @override
+  String get notificationsPermissionBody =>
+      'We\'ll notify you about your period, your pill or a doctor\'s visit.';
+
+  @override
+  String get notificationsDenied =>
+      'Notifications are turned off in your phone settings.';
+
+  @override
+  String get vaccinationsTitle => 'Vaccinations';
+
+  @override
+  String get vaccinationsSubtitle =>
+      'This list is based on your age and life stage. You can edit it.';
+
+  @override
+  String get vaccinationsDisclaimer =>
+      'This is a reference list, not a medical prescription. Confirm the timing with your doctor.';
+
+  @override
+  String get vaccineHpv => 'HPV';
+
+  @override
+  String get vaccineFlu => 'Flu';
+
+  @override
+  String get vaccineTdap => 'Whooping cough, diphtheria, tetanus (Tdap)';
+
+  @override
+  String get vaccineHepatitisB => 'Hepatitis B';
+
+  @override
+  String get vaccineMeaslesRubella => 'Measles and rubella';
+
+  @override
+  String get vaccineCovid19 => 'COVID-19';
+
+  @override
+  String get vaccineTetanus => 'Tetanus';
+
+  @override
+  String get vaccinePneumococcal => 'Pneumococcal';
+
+  @override
+  String get vaccineShingles => 'Shingles';
+
+  @override
+  String vaccinationDue(String date) {
+    return 'Due $date';
+  }
+
+  @override
+  String get vaccinationOverdue => 'Overdue';
+
+  @override
+  String get vaccinationStatusPlanned => 'Planned';
+
+  @override
+  String get vaccinationStatusDone => 'Done';
+
+  @override
+  String get vaccinationStatusSkipped => 'Skipped';
+
+  @override
+  String get vaccinationMarkDone => 'Mark as done';
+
+  @override
+  String get vaccinationSkip => 'Skip';
+
+  @override
+  String get vaccinationRestore => 'Back to plan';
+
+  @override
+  String get vaccinationRemind => 'Remind me';
+
+  @override
+  String get vaccinationReminderAdded => 'Reminder added';
+
+  @override
+  String get vaccinationChangeDate => 'Change date';
+
+  @override
+  String get reportCardTitle => 'Report for your doctor';
+
+  @override
+  String get reportCardBody =>
+      'A PDF of your cycles, symptoms and mood over recent months.';
+
+  @override
+  String get reportShare => 'Save PDF';
+
+  @override
+  String get reportEmpty => 'Nothing to export yet — add your first entries.';
+
+  @override
+  String get reportFailed => 'Couldn\'t create the PDF';
+
+  @override
+  String get reportHeading => 'Cycle report';
+
+  @override
+  String reportGeneratedOn(String date) {
+    return 'Generated $date';
+  }
+
+  @override
+  String get reportSummary => 'Summary';
+
+  @override
+  String get reportAverageCycleLength => 'Average cycle length';
+
+  @override
+  String get reportAveragePeriodLength => 'Average period length';
+
+  @override
+  String get reportLastPeriodStart => 'Last period started';
+
+  @override
+  String get reportNextPredicted => 'Next period predicted';
+
+  @override
+  String reportDays(int days) {
+    return '$days d';
+  }
+
+  @override
+  String get reportCyclesSection => 'Cycles';
+
+  @override
+  String get reportColumnStart => 'Start';
+
+  @override
+  String get reportColumnCycleLength => 'Cycle length';
+
+  @override
+  String get reportColumnPeriodLength => 'Period length';
+
+  @override
+  String get reportLogsSection => 'Daily logs';
+
+  @override
+  String get reportColumnDate => 'Date';
+
+  @override
+  String get reportColumnFlow => 'Flow';
+
+  @override
+  String get reportColumnMood => 'Mood';
+
+  @override
+  String get reportColumnEnergy => 'Energy';
+
+  @override
+  String get reportColumnSleep => 'Sleep';
+
+  @override
+  String get reportColumnSymptoms => 'Symptoms';
+
+  @override
+  String get reportColumnNotes => 'Notes';
+
+  @override
+  String get reportProfileSection => 'About the patient';
+
+  @override
+  String get reportDash => '—';
+
+  @override
+  String get trackerPregnancySoon =>
+      'Pregnancy mode is coming soon: week by week, kick counter and weight.';
+
+  @override
+  String get trackerMenopauseSoon =>
+      'Menopause mode is coming soon: hot flashes, sleep and mood.';
+
+  @override
+  String get trackerSwitchToCycle => 'Open the cycle calendar';
+
+  @override
+  String get actionEdit => 'Edit';
+
+  @override
+  String get privacyHideContent => 'Hide content';
+
+  @override
+  String get privacyHideContentBody =>
+      'Notifications will show only the app name, with no details.';
+
+  @override
+  String reminderTimeAt(String time) {
+    return 'Time: $time';
+  }
 }

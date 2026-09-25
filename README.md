@@ -8,7 +8,7 @@ A women's health, learning and shopping app for Kazakhstan, for users from their
 |---|------|-------|
 | 1 | Project setup, pink/green theme, router, kk/ru/en localization, bottom-nav shell | ✅ |
 | 2 | Onboarding, auth, personalization quiz | ✅ |
-| 3 | Tracker (cycle), PredictionService, reminders | ⏳ |
+| 3 | Tracker (cycle), PredictionService, reminders | ✅ |
 | 4 | Home feed with mock content | ⏳ |
 | 5 | Learn: lessons, courses, video, Q&A | ⏳ |
 | 6 | Shop: catalog, cart, checkout (mock payment) | ⏳ |
@@ -72,7 +72,12 @@ lib/
                                  # OnboardingStatus → router redirect
     auth/                        # AuthRepository (mock + Firebase: phone OTP, email, Google), screens
     profile/                     # UserProfile (freezed), personalization enums, local repository
-    home/ learn/ tracker/ shop/ ai_assistant/
+    tracker/                     # domain: Cycle, DailyLog, PredictionService, CycleTimeline,
+                                 #   Reminder + ReminderScheduler, Vaccination + schedule
+                                 # data: encrypted local repositories, doctor-report PDF
+                                 # presentation: calendar, daily log sheet, mood chart,
+                                 #   reminders and vaccinations screens
+    home/ learn/ shop/ ai_assistant/
     (qa/ partner/ family/ premium/ are added in their steps)
 assets/
   google_fonts/                  # bundled Nunito (OFL), covers Kazakh Cyrillic and ₸
@@ -87,7 +92,21 @@ assets/
 - **State:** use Riverpod with `riverpod_generator` (`@riverpod`). Anything loaded asynchronously before the first frame is injected in `bootstrap()` through provider overrides.
 - **Navigation:** navigate only with the `AppRoutes` constants. Tabs are `StatefulShellRoute` branches, so each tab keeps its own stack. Full-screen flows go on the root navigator.
 - **Navigation guard:** `onboardingRedirect` (in `core/router/`) sends each user to the onboarding step they haven't finished: intro, language, auth, quiz, then the Moms & Daughters offer for users under 16. It also keeps users who have finished onboarding out of those screens.
+- **Predictions:** all cycle maths lives in `PredictionService` (pure, no Flutter or storage imports) so the algorithm can be improved or moved server-side on its own. `CycleTimeline` is the read model the UI works from. Date arithmetic goes through `core/utils/date_utils.dart`, which counts whole calendar days and so is immune to daylight-saving shifts.
+- **Reminders:** `ReminderScheduler` turns reminders plus the forecast into a list of notification times and is pure, so the timing rules are unit-tested. `ReminderSync` wraps the app and reschedules whenever the reminders, forecast, vaccinations or language change. Cycle, pill, doctor and vaccination reminders use a separate "sensitive" channel and respect "hide content".
 - **Privacy:** personal and health data (the profile, and tracker data from step 3) lives in an AES-encrypted Hive box. Its key is stored in the Android Keystore through flutter_secure_storage. Android backup and device transfer are turned off (`data_extraction_rules.xml`).
+
+## The tracker (step 3)
+
+Cycle mode is built. Pregnancy, postpartum and menopause modes show a placeholder and offer cycle mode until step 10.
+
+- **Calendar** with logged periods, and predicted period, fertile and ovulation days for the next six cycles. Predictions are outlined rather than filled, so a forecast never looks like a fact.
+- **Daily log** per day: flow, mood (5-point emoji scale), energy, sleep, symptoms (physical, emotional, menopause) and a note. Clearing every field deletes the entry.
+- **Predictions** from the last 3–6 cycles, with a confidence indicator (estimate / low / medium / high) based on how many cycles there are and how much they vary. Gaps outside 15–60 days are treated as missed logging and left out of the averages. Ovulation is placed a 14-day luteal phase before the next period, so the fertile window moves with cycle length.
+- **Mood charts** over a week or a month.
+- **Reminders** via local notifications: period coming (1–7 days ahead), fertile window, pill, water, doctor visits and vaccinations. Cycle reminders are scheduled three cycles ahead so they keep firing if the app is not opened.
+- **Vaccinations** suggested by age and life stage (HPV for teens, Tdap in pregnancy, measles/rubella when trying to conceive, shingles and pneumococcal at 45+), every entry editable. Live vaccines are withheld during pregnancy. The list is explicitly a reference, not a prescription.
+- **Doctor report** exported as a PDF (cycles, summary and recent logs) built on device and shared through the Android share sheet.
 
 ## Quality checks
 

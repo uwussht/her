@@ -487,4 +487,574 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get authPhoneHint => '7XX XXX XX XX';
+
+  @override
+  String get actionSave => 'Сақтау';
+
+  @override
+  String get actionDelete => 'Жою';
+
+  @override
+  String get actionAdd => 'Қосу';
+
+  @override
+  String get actionClose => 'Жабу';
+
+  @override
+  String get actionToday => 'Бүгін';
+
+  @override
+  String get actionNotNow => 'Қазір емес';
+
+  @override
+  String get actionAllow => 'Рұқсат беру';
+
+  @override
+  String trackerCycleDay(int day) {
+    return '$day-күн';
+  }
+
+  @override
+  String trackerPeriodDay(int day) {
+    return 'Етеккір, $day-күн';
+  }
+
+  @override
+  String trackerPeriodInDays(int days) {
+    return 'Етеккірге $days күн қалды';
+  }
+
+  @override
+  String get trackerPeriodToday => 'Етеккір бүгін күтіледі';
+
+  @override
+  String trackerPeriodLate(int days) {
+    return 'Кешігу $days күн';
+  }
+
+  @override
+  String get trackerFertileToday => 'Құнарлы кезең';
+
+  @override
+  String get trackerOvulationToday => 'Бүгін овуляция';
+
+  @override
+  String trackerNextPeriodOn(String date) {
+    return 'Келесі етеккір: $date';
+  }
+
+  @override
+  String trackerAverageCycle(int days) {
+    return 'Цикл $days күн';
+  }
+
+  @override
+  String get trackerEmptyTitle => 'Циклды бақылауды бастаңыз';
+
+  @override
+  String get trackerEmptyBody =>
+      'Соңғы етеккірдің бірінші күнін белгілеңіз — біз болжамдары бар күнтізбе жасаймыз.';
+
+  @override
+  String get trackerMarkPeriodStart => 'Етеккірдің басталуын белгілеу';
+
+  @override
+  String get trackerPeriodStarted => 'Етеккір басталды';
+
+  @override
+  String get trackerPeriodEnded => 'Етеккір бітті';
+
+  @override
+  String get trackerRemoveDay => 'Белгіні алып тастау';
+
+  @override
+  String get confidenceEstimated => 'Шамалау';
+
+  @override
+  String get confidenceLow => 'Дәлдігі төмен';
+
+  @override
+  String get confidenceMedium => 'Орташа дәлдік';
+
+  @override
+  String get confidenceHigh => 'Жоғары дәлдік';
+
+  @override
+  String get confidenceEstimatedHint =>
+      'Болжам сіз көрсеткен цикл ұзақтығы бойынша жасалды. Етеккірді белгілеп жүрсеңіз, дәлдігі артады.';
+
+  @override
+  String confidenceBasis(int cycles, int days) {
+    return '$cycles цикл бойынша · айырмасы ±$days күн';
+  }
+
+  @override
+  String get predictionDisclaimer =>
+      'Болжамдар шамамен берілген және контрацепция құралы емес.';
+
+  @override
+  String get legendPeriod => 'Етеккір';
+
+  @override
+  String get legendPredictedPeriod => 'Етеккір болжамы';
+
+  @override
+  String get legendFertile => 'Құнарлы күндер';
+
+  @override
+  String get legendOvulation => 'Овуляция';
+
+  @override
+  String get legendLogged => 'Жазба бар';
+
+  @override
+  String get phaseFollicular => 'Фолликулалық фаза';
+
+  @override
+  String get phaseLuteal => 'Лютеин фазасы';
+
+  @override
+  String logTitle(String date) {
+    return '$date жазбасы';
+  }
+
+  @override
+  String get logToday => 'Бүгінгі жазба';
+
+  @override
+  String get logFlow => 'Бөліністер';
+
+  @override
+  String get flowSpotting => 'Аздаған';
+
+  @override
+  String get flowLight => 'Әлсіз';
+
+  @override
+  String get flowMedium => 'Орташа';
+
+  @override
+  String get flowHeavy => 'Көп';
+
+  @override
+  String get logMood => 'Көңіл-күй';
+
+  @override
+  String get moodGreat => 'Тамаша';
+
+  @override
+  String get moodGood => 'Жақсы';
+
+  @override
+  String get moodOkay => 'Қалыпты';
+
+  @override
+  String get moodLow => 'Жаман';
+
+  @override
+  String get moodAwful => 'Өте жаман';
+
+  @override
+  String get logEnergy => 'Қуат';
+
+  @override
+  String get energyLow => 'Аз';
+
+  @override
+  String get energyMedium => 'Орташа';
+
+  @override
+  String get energyHigh => 'Көп';
+
+  @override
+  String get logSleep => 'Ұйқы';
+
+  @override
+  String logSleepHours(String hours) {
+    return '$hours сағ';
+  }
+
+  @override
+  String get logSymptoms => 'Белгілер';
+
+  @override
+  String get logNotes => 'Жазбалар';
+
+  @override
+  String get logNotesHint => 'Есте қаларлық не бар?';
+
+  @override
+  String get logSaved => 'Жазба сақталды';
+
+  @override
+  String get logDeleted => 'Жазба жойылды';
+
+  @override
+  String get logEmptyHint =>
+      'Заңдылықтарды көру үшін көңіл-күйіңізді белгілеңіз.';
+
+  @override
+  String get symptomCramps => 'Құрысу';
+
+  @override
+  String get symptomHeadache => 'Бас ауруы';
+
+  @override
+  String get symptomBackPain => 'Арқа ауруы';
+
+  @override
+  String get symptomBloating => 'Кебу';
+
+  @override
+  String get symptomBreastTenderness => 'Кеуде сезімталдығы';
+
+  @override
+  String get symptomNausea => 'Жүрек айну';
+
+  @override
+  String get symptomAcne => 'Бөртпе';
+
+  @override
+  String get symptomFatigue => 'Шаршау';
+
+  @override
+  String get symptomCravings => 'Тәбет тартуы';
+
+  @override
+  String get symptomInsomnia => 'Ұйқысыздық';
+
+  @override
+  String get symptomHotFlashes => 'Қызу толқыны';
+
+  @override
+  String get symptomNightSweats => 'Түнгі тершеңдік';
+
+  @override
+  String get symptomIrritability => 'Ашушаңдық';
+
+  @override
+  String get symptomAnxiety => 'Мазасыздық';
+
+  @override
+  String get symptomLowMood => 'Көңілсіздік';
+
+  @override
+  String get symptomGroupPhysical => 'Физикалық';
+
+  @override
+  String get symptomGroupEmotional => 'Эмоционалдық';
+
+  @override
+  String get symptomGroupMenopause => 'Менопауза';
+
+  @override
+  String get moodChartTitle => 'Көңіл-күй';
+
+  @override
+  String get moodChartWeek => 'Апта';
+
+  @override
+  String get moodChartMonth => 'Ай';
+
+  @override
+  String get moodChartEmpty =>
+      'Көңіл-күйді белгілеп жүрсеңіз, мұнда график пайда болады.';
+
+  @override
+  String moodChartAverage(String value) {
+    return 'Орташа $value';
+  }
+
+  @override
+  String get remindersTitle => 'Еске салғыштар';
+
+  @override
+  String get remindersSubtitle => 'Тек осы құрылғыға келеді.';
+
+  @override
+  String reminderNext(String when) {
+    return 'Жақындағы: $when';
+  }
+
+  @override
+  String get reminderNone => 'Еске салғыштар өшірілген';
+
+  @override
+  String get reminderPeriodComingTitle => 'Етеккір жақындады';
+
+  @override
+  String reminderPeriodComingBody(int days) {
+    return 'Басталуы $days күннен кейін күтіледі. Дайындалу уақыты.';
+  }
+
+  @override
+  String get reminderFertileTitle => 'Құнарлы кезең басталады';
+
+  @override
+  String get reminderFertileBody =>
+      'Келесі күндер — ұрықтануға ең қолайлы кезең.';
+
+  @override
+  String get reminderPillTitle => 'Дәрі қабылдау';
+
+  @override
+  String get reminderPillBody => 'Қабылдауды ұмытпаңыз.';
+
+  @override
+  String get reminderWaterTitle => 'Су ішу уақыты';
+
+  @override
+  String get reminderWaterBody => 'Бірер жұтым су ішіңіз.';
+
+  @override
+  String get reminderDoctorTitle => 'Дәрігерге бару';
+
+  @override
+  String get reminderDoctorBody => 'Бүгін бару жоспарланған.';
+
+  @override
+  String get reminderVaccinationTitle => 'Вакцинация уақыты';
+
+  @override
+  String reminderVaccinationBody(String vaccine) {
+    return 'Жоспар бойынша: $vaccine. Дәрігерден сұраңыз.';
+  }
+
+  @override
+  String get reminderTypePeriodComing => 'Етеккір жақындады';
+
+  @override
+  String get reminderTypeFertileWindow => 'Құнарлы кезең';
+
+  @override
+  String get reminderTypePill => 'Дәрі';
+
+  @override
+  String get reminderTypeWater => 'Су';
+
+  @override
+  String get reminderTypeDoctorVisit => 'Дәрігерге бару';
+
+  @override
+  String get reminderTypeVaccination => 'Вакцинация';
+
+  @override
+  String reminderDaysBefore(int days) {
+    return '$days күн бұрын';
+  }
+
+  @override
+  String reminderTimesPerDay(int count) {
+    return 'Күніне $count рет';
+  }
+
+  @override
+  String get reminderTimeLabel => 'Уақыт';
+
+  @override
+  String get reminderAddDoctorVisit => 'Дәрігерге баруды қосу';
+
+  @override
+  String get reminderDateLabel => 'Күні';
+
+  @override
+  String get reminderDeleted => 'Еске салғыш жойылды';
+
+  @override
+  String get notificationsPermissionTitle =>
+      'Еске салғыштарға рұқсат берейік пе?';
+
+  @override
+  String get notificationsPermissionBody =>
+      'Етеккірдің басталуы, дәрі қабылдау немесе дәрігерге бару туралы хабарлама жібереміз.';
+
+  @override
+  String get notificationsDenied =>
+      'Хабарламалар телефон баптауларында өшірілген.';
+
+  @override
+  String get vaccinationsTitle => 'Вакцинация';
+
+  @override
+  String get vaccinationsSubtitle =>
+      'Тізім жас пен өмір кезеңі бойынша жасалды. Оны өңдеуге болады.';
+
+  @override
+  String get vaccinationsDisclaimer =>
+      'Бұл — анықтамалық тізім, медициналық тағайындау емес. Мерзімдерді дәрігерден сұраңыз.';
+
+  @override
+  String get vaccineHpv => 'АПВ (папиллома вирусы)';
+
+  @override
+  String get vaccineFlu => 'Тұмау';
+
+  @override
+  String get vaccineTdap => 'Көкжөтел, дифтерия, сіреспе (Tdap)';
+
+  @override
+  String get vaccineHepatitisB => 'В гепатиті';
+
+  @override
+  String get vaccineMeaslesRubella => 'Қызылша және қызамық';
+
+  @override
+  String get vaccineCovid19 => 'COVID-19';
+
+  @override
+  String get vaccineTetanus => 'Сіреспе';
+
+  @override
+  String get vaccinePneumococcal => 'Пневмококк';
+
+  @override
+  String get vaccineShingles => 'Герпес зостер';
+
+  @override
+  String vaccinationDue(String date) {
+    return '$date дейін';
+  }
+
+  @override
+  String get vaccinationOverdue => 'Мерзімі өтті';
+
+  @override
+  String get vaccinationStatusPlanned => 'Жоспарланған';
+
+  @override
+  String get vaccinationStatusDone => 'Жасалды';
+
+  @override
+  String get vaccinationStatusSkipped => 'Өткізілген';
+
+  @override
+  String get vaccinationMarkDone => 'Жасалды деп белгілеу';
+
+  @override
+  String get vaccinationSkip => 'Өткізу';
+
+  @override
+  String get vaccinationRestore => 'Жоспарға қайтару';
+
+  @override
+  String get vaccinationRemind => 'Еске салу';
+
+  @override
+  String get vaccinationReminderAdded => 'Еске салғыш қосылды';
+
+  @override
+  String get vaccinationChangeDate => 'Күнді өзгерту';
+
+  @override
+  String get reportCardTitle => 'Дәрігерге арналған есеп';
+
+  @override
+  String get reportCardBody =>
+      'Соңғы айлардағы циклдар, белгілер және көңіл-күй туралы PDF.';
+
+  @override
+  String get reportShare => 'PDF сақтау';
+
+  @override
+  String get reportEmpty =>
+      'Әзірге шығаратын дерек жоқ — алғашқы жазбаларды жасаңыз.';
+
+  @override
+  String get reportFailed => 'PDF жасау сәтсіз аяқталды';
+
+  @override
+  String get reportHeading => 'Цикл бойынша есеп';
+
+  @override
+  String reportGeneratedOn(String date) {
+    return '$date жасалды';
+  }
+
+  @override
+  String get reportSummary => 'Түйіндеме';
+
+  @override
+  String get reportAverageCycleLength => 'Циклдің орташа ұзақтығы';
+
+  @override
+  String get reportAveragePeriodLength => 'Етеккірдің орташа ұзақтығы';
+
+  @override
+  String get reportLastPeriodStart => 'Соңғы етеккірдің басы';
+
+  @override
+  String get reportNextPredicted => 'Келесі етеккір болжамы';
+
+  @override
+  String reportDays(int days) {
+    return '$days күн';
+  }
+
+  @override
+  String get reportCyclesSection => 'Циклдар';
+
+  @override
+  String get reportColumnStart => 'Басы';
+
+  @override
+  String get reportColumnCycleLength => 'Цикл ұзақтығы';
+
+  @override
+  String get reportColumnPeriodLength => 'Етеккір ұзақтығы';
+
+  @override
+  String get reportLogsSection => 'Жазбалар';
+
+  @override
+  String get reportColumnDate => 'Күні';
+
+  @override
+  String get reportColumnFlow => 'Бөліністер';
+
+  @override
+  String get reportColumnMood => 'Көңіл-күй';
+
+  @override
+  String get reportColumnEnergy => 'Қуат';
+
+  @override
+  String get reportColumnSleep => 'Ұйқы';
+
+  @override
+  String get reportColumnSymptoms => 'Белгілер';
+
+  @override
+  String get reportColumnNotes => 'Жазбалар';
+
+  @override
+  String get reportProfileSection => 'Пациент туралы';
+
+  @override
+  String get reportDash => '—';
+
+  @override
+  String get trackerPregnancySoon =>
+      'Жүктілік режимі жақында қосылады: апта сайын, қимыл санағышы және салмақ.';
+
+  @override
+  String get trackerMenopauseSoon =>
+      'Менопауза режимі жақында қосылады: қызу толқыны, ұйқы және көңіл-күй.';
+
+  @override
+  String get trackerSwitchToCycle => 'Цикл күнтізбесін ашу';
+
+  @override
+  String get actionEdit => 'Өзгерту';
+
+  @override
+  String get privacyHideContent => 'Мазмұнды жасыру';
+
+  @override
+  String get privacyHideContentBody =>
+      'Хабарламаларда детальдар болмайды — тек қосымша атауы.';
+
+  @override
+  String reminderTimeAt(String time) {
+    return 'Уақыты: $time';
+  }
 }

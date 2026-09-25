@@ -496,4 +496,611 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get authPhoneHint => '7XX XXX XX XX';
+
+  @override
+  String get actionSave => 'Сохранить';
+
+  @override
+  String get actionDelete => 'Удалить';
+
+  @override
+  String get actionAdd => 'Добавить';
+
+  @override
+  String get actionClose => 'Закрыть';
+
+  @override
+  String get actionToday => 'Сегодня';
+
+  @override
+  String get actionNotNow => 'Не сейчас';
+
+  @override
+  String get actionAllow => 'Разрешить';
+
+  @override
+  String trackerCycleDay(int day) {
+    return 'День $day';
+  }
+
+  @override
+  String trackerPeriodDay(int day) {
+    return 'Месячные, день $day';
+  }
+
+  @override
+  String trackerPeriodInDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Месячные через $days дня',
+      many: 'Месячные через $days дней',
+      few: 'Месячные через $days дня',
+      one: 'Месячные через $days день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trackerPeriodToday => 'Месячные ожидаются сегодня';
+
+  @override
+  String trackerPeriodLate(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Задержка $days дня',
+      many: 'Задержка $days дней',
+      few: 'Задержка $days дня',
+      one: 'Задержка $days день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trackerFertileToday => 'Фертильное окно';
+
+  @override
+  String get trackerOvulationToday => 'Овуляция сегодня';
+
+  @override
+  String trackerNextPeriodOn(String date) {
+    return 'Следующие месячные: $date';
+  }
+
+  @override
+  String trackerAverageCycle(int days) {
+    return 'Цикл $days дней';
+  }
+
+  @override
+  String get trackerEmptyTitle => 'Начните следить за циклом';
+
+  @override
+  String get trackerEmptyBody =>
+      'Отметьте первый день последних месячных — и мы построим календарь с прогнозами.';
+
+  @override
+  String get trackerMarkPeriodStart => 'Отметить начало месячных';
+
+  @override
+  String get trackerPeriodStarted => 'Месячные начались';
+
+  @override
+  String get trackerPeriodEnded => 'Месячные закончились';
+
+  @override
+  String get trackerRemoveDay => 'Убрать отметку';
+
+  @override
+  String get confidenceEstimated => 'Оценка';
+
+  @override
+  String get confidenceLow => 'Низкая точность';
+
+  @override
+  String get confidenceMedium => 'Средняя точность';
+
+  @override
+  String get confidenceHigh => 'Высокая точность';
+
+  @override
+  String get confidenceEstimatedHint =>
+      'Прогноз построен по указанной вами длине цикла. Отмечайте месячные — и он станет точнее.';
+
+  @override
+  String confidenceBasis(int cycles, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      cycles,
+      locale: localeName,
+      other: 'По $cycles циклам',
+      many: 'По $cycles циклам',
+      few: 'По $cycles циклам',
+      one: 'По $cycles циклу',
+    );
+    return '$_temp0 · разброс ±$days дн.';
+  }
+
+  @override
+  String get predictionDisclaimer =>
+      'Прогнозы приблизительны и не являются средством контрацепции.';
+
+  @override
+  String get legendPeriod => 'Месячные';
+
+  @override
+  String get legendPredictedPeriod => 'Прогноз месячных';
+
+  @override
+  String get legendFertile => 'Фертильные дни';
+
+  @override
+  String get legendOvulation => 'Овуляция';
+
+  @override
+  String get legendLogged => 'Есть запись';
+
+  @override
+  String get phaseFollicular => 'Фолликулярная фаза';
+
+  @override
+  String get phaseLuteal => 'Лютеиновая фаза';
+
+  @override
+  String logTitle(String date) {
+    return 'Запись за $date';
+  }
+
+  @override
+  String get logToday => 'Запись за сегодня';
+
+  @override
+  String get logFlow => 'Выделения';
+
+  @override
+  String get flowSpotting => 'Мажущие';
+
+  @override
+  String get flowLight => 'Скудные';
+
+  @override
+  String get flowMedium => 'Умеренные';
+
+  @override
+  String get flowHeavy => 'Обильные';
+
+  @override
+  String get logMood => 'Настроение';
+
+  @override
+  String get moodGreat => 'Отлично';
+
+  @override
+  String get moodGood => 'Хорошо';
+
+  @override
+  String get moodOkay => 'Нормально';
+
+  @override
+  String get moodLow => 'Плохо';
+
+  @override
+  String get moodAwful => 'Очень плохо';
+
+  @override
+  String get logEnergy => 'Энергия';
+
+  @override
+  String get energyLow => 'Мало';
+
+  @override
+  String get energyMedium => 'Средне';
+
+  @override
+  String get energyHigh => 'Много';
+
+  @override
+  String get logSleep => 'Сон';
+
+  @override
+  String logSleepHours(String hours) {
+    return '$hours ч';
+  }
+
+  @override
+  String get logSymptoms => 'Симптомы';
+
+  @override
+  String get logNotes => 'Заметки';
+
+  @override
+  String get logNotesHint => 'Что ещё важно запомнить?';
+
+  @override
+  String get logSaved => 'Запись сохранена';
+
+  @override
+  String get logDeleted => 'Запись удалена';
+
+  @override
+  String get logEmptyHint =>
+      'Отметьте самочувствие, чтобы видеть закономерности.';
+
+  @override
+  String get symptomCramps => 'Спазмы';
+
+  @override
+  String get symptomHeadache => 'Головная боль';
+
+  @override
+  String get symptomBackPain => 'Боль в спине';
+
+  @override
+  String get symptomBloating => 'Вздутие';
+
+  @override
+  String get symptomBreastTenderness => 'Чувствительность груди';
+
+  @override
+  String get symptomNausea => 'Тошнота';
+
+  @override
+  String get symptomAcne => 'Высыпания';
+
+  @override
+  String get symptomFatigue => 'Усталость';
+
+  @override
+  String get symptomCravings => 'Тяга к еде';
+
+  @override
+  String get symptomInsomnia => 'Бессонница';
+
+  @override
+  String get symptomHotFlashes => 'Приливы';
+
+  @override
+  String get symptomNightSweats => 'Ночная потливость';
+
+  @override
+  String get symptomIrritability => 'Раздражительность';
+
+  @override
+  String get symptomAnxiety => 'Тревожность';
+
+  @override
+  String get symptomLowMood => 'Подавленность';
+
+  @override
+  String get symptomGroupPhysical => 'Физические';
+
+  @override
+  String get symptomGroupEmotional => 'Эмоциональные';
+
+  @override
+  String get symptomGroupMenopause => 'Менопауза';
+
+  @override
+  String get moodChartTitle => 'Настроение';
+
+  @override
+  String get moodChartWeek => 'Неделя';
+
+  @override
+  String get moodChartMonth => 'Месяц';
+
+  @override
+  String get moodChartEmpty => 'Отмечайте настроение — здесь появится график.';
+
+  @override
+  String moodChartAverage(String value) {
+    return 'В среднем $value';
+  }
+
+  @override
+  String get remindersTitle => 'Напоминания';
+
+  @override
+  String get remindersSubtitle => 'Приходят только на это устройство.';
+
+  @override
+  String reminderNext(String when) {
+    return 'Ближайшее: $when';
+  }
+
+  @override
+  String get reminderNone => 'Напоминания выключены';
+
+  @override
+  String get reminderPeriodComingTitle => 'Скоро месячные';
+
+  @override
+  String reminderPeriodComingBody(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Начало ожидается через $days дня. Пора подготовиться.',
+      many: 'Начало ожидается через $days дней. Пора подготовиться.',
+      few: 'Начало ожидается через $days дня. Пора подготовиться.',
+      one: 'Начало ожидается через $days день. Пора подготовиться.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reminderFertileTitle => 'Фертильное окно открывается';
+
+  @override
+  String get reminderFertileBody =>
+      'Следующие дни — самые благоприятные для зачатия.';
+
+  @override
+  String get reminderPillTitle => 'Приём таблетки';
+
+  @override
+  String get reminderPillBody => 'Не забудьте про приём.';
+
+  @override
+  String get reminderWaterTitle => 'Время воды';
+
+  @override
+  String get reminderWaterBody => 'Сделайте пару глотков.';
+
+  @override
+  String get reminderDoctorTitle => 'Визит к врачу';
+
+  @override
+  String get reminderDoctorBody => 'Сегодня запланирован визит.';
+
+  @override
+  String get reminderVaccinationTitle => 'Пора вакцинации';
+
+  @override
+  String reminderVaccinationBody(String vaccine) {
+    return 'По плану: $vaccine. Уточните у врача.';
+  }
+
+  @override
+  String get reminderTypePeriodComing => 'Скоро месячные';
+
+  @override
+  String get reminderTypeFertileWindow => 'Фертильное окно';
+
+  @override
+  String get reminderTypePill => 'Таблетки';
+
+  @override
+  String get reminderTypeWater => 'Вода';
+
+  @override
+  String get reminderTypeDoctorVisit => 'Визит к врачу';
+
+  @override
+  String get reminderTypeVaccination => 'Вакцинация';
+
+  @override
+  String reminderDaysBefore(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'За $days дня',
+      many: 'За $days дней',
+      few: 'За $days дня',
+      one: 'За $days день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String reminderTimesPerDay(int count) {
+    return '$count раза в день';
+  }
+
+  @override
+  String get reminderTimeLabel => 'Время';
+
+  @override
+  String get reminderAddDoctorVisit => 'Добавить визит к врачу';
+
+  @override
+  String get reminderDateLabel => 'Дата';
+
+  @override
+  String get reminderDeleted => 'Напоминание удалено';
+
+  @override
+  String get notificationsPermissionTitle => 'Разрешить напоминания?';
+
+  @override
+  String get notificationsPermissionBody =>
+      'Мы пришлём уведомление о начале месячных, приёме таблетки или визите к врачу.';
+
+  @override
+  String get notificationsDenied =>
+      'Уведомления выключены в настройках телефона.';
+
+  @override
+  String get vaccinationsTitle => 'Вакцинация';
+
+  @override
+  String get vaccinationsSubtitle =>
+      'Список составлен по возрасту и этапу жизни. Его можно редактировать.';
+
+  @override
+  String get vaccinationsDisclaimer =>
+      'Это справочный список, а не медицинское назначение. Сроки уточните у врача.';
+
+  @override
+  String get vaccineHpv => 'ВПЧ (папилломавирус)';
+
+  @override
+  String get vaccineFlu => 'Грипп';
+
+  @override
+  String get vaccineTdap => 'Коклюш, дифтерия, тетанус (Tdap)';
+
+  @override
+  String get vaccineHepatitisB => 'Гепатит B';
+
+  @override
+  String get vaccineMeaslesRubella => 'Корь и рубелла';
+
+  @override
+  String get vaccineCovid19 => 'COVID-19';
+
+  @override
+  String get vaccineTetanus => 'Тетанус';
+
+  @override
+  String get vaccinePneumococcal => 'Пневмококк';
+
+  @override
+  String get vaccineShingles => 'Герпес зостер';
+
+  @override
+  String vaccinationDue(String date) {
+    return 'До $date';
+  }
+
+  @override
+  String get vaccinationOverdue => 'Просрочено';
+
+  @override
+  String get vaccinationStatusPlanned => 'Запланировано';
+
+  @override
+  String get vaccinationStatusDone => 'Сделано';
+
+  @override
+  String get vaccinationStatusSkipped => 'Пропущено';
+
+  @override
+  String get vaccinationMarkDone => 'Отметить как сделано';
+
+  @override
+  String get vaccinationSkip => 'Пропустить';
+
+  @override
+  String get vaccinationRestore => 'Вернуть в план';
+
+  @override
+  String get vaccinationRemind => 'Напомнить';
+
+  @override
+  String get vaccinationReminderAdded => 'Напоминание добавлено';
+
+  @override
+  String get vaccinationChangeDate => 'Изменить дату';
+
+  @override
+  String get reportCardTitle => 'Отчёт для врача';
+
+  @override
+  String get reportCardBody =>
+      'PDF с циклами, симптомами и настроением за последние месяцы.';
+
+  @override
+  String get reportShare => 'Сохранить PDF';
+
+  @override
+  String get reportEmpty => 'Пока нечего выгружать — сделайте первые записи.';
+
+  @override
+  String get reportFailed => 'Не удалось создать PDF';
+
+  @override
+  String get reportHeading => 'Отчёт по циклу';
+
+  @override
+  String reportGeneratedOn(String date) {
+    return 'Создан $date';
+  }
+
+  @override
+  String get reportSummary => 'Сводка';
+
+  @override
+  String get reportAverageCycleLength => 'Средняя длина цикла';
+
+  @override
+  String get reportAveragePeriodLength => 'Средняя длительность месячных';
+
+  @override
+  String get reportLastPeriodStart => 'Начало последних месячных';
+
+  @override
+  String get reportNextPredicted => 'Прогноз следующих месячных';
+
+  @override
+  String reportDays(int days) {
+    return '$days дн.';
+  }
+
+  @override
+  String get reportCyclesSection => 'Циклы';
+
+  @override
+  String get reportColumnStart => 'Начало';
+
+  @override
+  String get reportColumnCycleLength => 'Длина цикла';
+
+  @override
+  String get reportColumnPeriodLength => 'Длит. месячных';
+
+  @override
+  String get reportLogsSection => 'Записи';
+
+  @override
+  String get reportColumnDate => 'Дата';
+
+  @override
+  String get reportColumnFlow => 'Выделения';
+
+  @override
+  String get reportColumnMood => 'Настроение';
+
+  @override
+  String get reportColumnEnergy => 'Энергия';
+
+  @override
+  String get reportColumnSleep => 'Сон';
+
+  @override
+  String get reportColumnSymptoms => 'Симптомы';
+
+  @override
+  String get reportColumnNotes => 'Заметки';
+
+  @override
+  String get reportProfileSection => 'О пациентке';
+
+  @override
+  String get reportDash => '—';
+
+  @override
+  String get trackerPregnancySoon =>
+      'Режим беременности скоро появится: неделя за неделей, счётчик шевелений и вес.';
+
+  @override
+  String get trackerMenopauseSoon =>
+      'Режим менопаузы скоро появится: приливы, сон и настроение.';
+
+  @override
+  String get trackerSwitchToCycle => 'Открыть календарь цикла';
+
+  @override
+  String get actionEdit => 'Изменить';
+
+  @override
+  String get privacyHideContent => 'Скрывать содержание';
+
+  @override
+  String get privacyHideContentBody =>
+      'В уведомлениях не будет деталей — только название приложения.';
+
+  @override
+  String reminderTimeAt(String time) {
+    return 'Время: $time';
+  }
 }

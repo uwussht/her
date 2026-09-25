@@ -19,7 +19,9 @@ import '../../features/onboarding/presentation/splash_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
 import '../../features/profile/presentation/settings_screen.dart';
 import '../../features/shop/presentation/shop_screen.dart';
+import '../../features/tracker/presentation/reminders_screen.dart';
 import '../../features/tracker/presentation/tracker_screen.dart';
+import '../../features/tracker/presentation/vaccinations_screen.dart';
 import 'app_routes.dart';
 import 'app_shell.dart';
 import 'not_found_screen.dart';
@@ -98,6 +100,18 @@ GoRouter appRouter(Ref ref) {
           _tab(AppRoutes.tracker, const TrackerScreen()),
           _tab(AppRoutes.shop, const ShopScreen()),
           _tab(AppRoutes.profile, const ProfileScreen()),
+        ],
+      ),
+      GoRoute(
+        path: AppRoutes.reminders,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const RemindersScreen(),
+        routes: [
+          GoRoute(
+            path: 'vaccinations',
+            parentNavigatorKey: _rootNavigatorKey,
+            builder: (context, state) => const VaccinationsScreen(),
+          ),
         ],
       ),
       GoRoute(

@@ -19,6 +19,8 @@ abstract final class AppRoutes {
   static const String profile = '/profile';
 
   // Full-screen routes above the shell.
+  static const String reminders = '/reminders';
+  static const String vaccinations = '/reminders/vaccinations';
   static const String settings = '/settings';
   static const String aiAssistant = '/ai';
 
