@@ -632,5 +632,791 @@
   "authPhoneHint": "7XX XXX XX XX",
   "@authPhoneHint": {
     "description": "Phone input mask hint (national part of a KZ number)"
+  },
+  "actionSave": "Сохранить",
+  "@actionSave": {
+    "description": "Generic save button"
+  },
+  "actionDelete": "Удалить",
+  "@actionDelete": {
+    "description": "Generic delete button"
+  },
+  "actionAdd": "Добавить",
+  "@actionAdd": {
+    "description": "Generic add button"
+  },
+  "actionClose": "Закрыть",
+  "@actionClose": {
+    "description": "Generic close button"
+  },
+  "actionToday": "Сегодня",
+  "@actionToday": {
+    "description": "Jumps the calendar back to today"
+  },
+  "actionNotNow": "Не сейчас",
+  "@actionNotNow": {
+    "description": "Declines a permission prompt"
+  },
+  "actionAllow": "Разрешить",
+  "@actionAllow": {
+    "description": "Accepts a permission prompt"
+  },
+  "trackerCycleDay": "День {day}",
+  "@trackerCycleDay": {
+    "description": "Current cycle day",
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "trackerPeriodDay": "Месячные, день {day}",
+  "@trackerPeriodDay": {
+    "description": "Status when bleeding",
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "trackerPeriodInDays": "{days, plural, one{Месячные через {days} день} few{Месячные через {days} дня} many{Месячные через {days} дней} other{Месячные через {days} дня}}",
+  "@trackerPeriodInDays": {
+    "description": "Status: days until the next period",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "trackerPeriodToday": "Месячные ожидаются сегодня",
+  "@trackerPeriodToday": {
+    "description": "Status on the predicted start day"
+  },
+  "trackerPeriodLate": "{days, plural, one{Задержка {days} день} few{Задержка {days} дня} many{Задержка {days} дней} other{Задержка {days} дня}}",
+  "@trackerPeriodLate": {
+    "description": "Status when the period is overdue",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "trackerFertileToday": "Фертильное окно",
+  "@trackerFertileToday": {
+    "description": "Status during the fertile window"
+  },
+  "trackerOvulationToday": "Овуляция сегодня",
+  "@trackerOvulationToday": {
+    "description": "Status on the predicted ovulation day"
+  },
+  "trackerNextPeriodOn": "Следующие месячные: {date}",
+  "@trackerNextPeriodOn": {
+    "description": "Predicted next period date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "trackerAverageCycle": "Цикл {days} дней",
+  "@trackerAverageCycle": {
+    "description": "Average cycle length chip",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "trackerEmptyTitle": "Начните следить за циклом",
+  "@trackerEmptyTitle": {
+    "description": "Empty tracker title"
+  },
+  "trackerEmptyBody": "Отметьте первый день последних месячных — и мы построим календарь с прогнозами.",
+  "@trackerEmptyBody": {
+    "description": "Empty tracker body"
+  },
+  "trackerMarkPeriodStart": "Отметить начало месячных",
+  "@trackerMarkPeriodStart": {
+    "description": "Primary button in the empty state"
+  },
+  "trackerPeriodStarted": "Месячные начались",
+  "@trackerPeriodStarted": {
+    "description": "Action: log today as a period start"
+  },
+  "trackerPeriodEnded": "Месячные закончились",
+  "@trackerPeriodEnded": {
+    "description": "Action: close the current period"
+  },
+  "trackerRemoveDay": "Убрать отметку",
+  "@trackerRemoveDay": {
+    "description": "Action: delete a logged period day"
+  },
+  "confidenceEstimated": "Оценка",
+  "@confidenceEstimated": {
+    "description": "Confidence: only her typed cycle length"
+  },
+  "confidenceLow": "Низкая точность",
+  "@confidenceLow": {
+    "description": "Confidence level"
+  },
+  "confidenceMedium": "Средняя точность",
+  "@confidenceMedium": {
+    "description": "Confidence level"
+  },
+  "confidenceHigh": "Высокая точность",
+  "@confidenceHigh": {
+    "description": "Confidence level"
+  },
+  "confidenceEstimatedHint": "Прогноз построен по указанной вами длине цикла. Отмечайте месячные — и он станет точнее.",
+  "@confidenceEstimatedHint": {
+    "description": "Confidence explanation"
+  },
+  "confidenceBasis": "{cycles, plural, one{По {cycles} циклу} few{По {cycles} циклам} many{По {cycles} циклам} other{По {cycles} циклам}} · разброс ±{days} дн.",
+  "@confidenceBasis": {
+    "description": "Explains what the prediction is based on",
+    "placeholders": {
+      "cycles": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "predictionDisclaimer": "Прогнозы приблизительны и не являются средством контрацепции.",
+  "@predictionDisclaimer": {
+    "description": "Shown with cycle predictions"
+  },
+  "legendPeriod": "Месячные",
+  "@legendPeriod": {
+    "description": "Calendar legend"
+  },
+  "legendPredictedPeriod": "Прогноз месячных",
+  "@legendPredictedPeriod": {
+    "description": "Calendar legend"
+  },
+  "legendFertile": "Фертильные дни",
+  "@legendFertile": {
+    "description": "Calendar legend"
+  },
+  "legendOvulation": "Овуляция",
+  "@legendOvulation": {
+    "description": "Calendar legend"
+  },
+  "legendLogged": "Есть запись",
+  "@legendLogged": {
+    "description": "Calendar legend: a day with a daily log"
+  },
+  "phaseFollicular": "Фолликулярная фаза",
+  "@phaseFollicular": {
+    "description": "Cycle phase"
+  },
+  "phaseLuteal": "Лютеиновая фаза",
+  "@phaseLuteal": {
+    "description": "Cycle phase"
+  },
+  "logTitle": "Запись за {date}",
+  "@logTitle": {
+    "description": "Daily log sheet title",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "logToday": "Запись за сегодня",
+  "@logToday": {
+    "description": "Button that opens today's log"
+  },
+  "logFlow": "Выделения",
+  "@logFlow": {
+    "description": "Daily log section"
+  },
+  "flowSpotting": "Мажущие",
+  "@flowSpotting": {
+    "description": "Flow level"
+  },
+  "flowLight": "Скудные",
+  "@flowLight": {
+    "description": "Flow level"
+  },
+  "flowMedium": "Умеренные",
+  "@flowMedium": {
+    "description": "Flow level"
+  },
+  "flowHeavy": "Обильные",
+  "@flowHeavy": {
+    "description": "Flow level"
+  },
+  "logMood": "Настроение",
+  "@logMood": {
+    "description": "Daily log section"
+  },
+  "moodGreat": "Отлично",
+  "@moodGreat": {
+    "description": "Mood level"
+  },
+  "moodGood": "Хорошо",
+  "@moodGood": {
+    "description": "Mood level"
+  },
+  "moodOkay": "Нормально",
+  "@moodOkay": {
+    "description": "Mood level"
+  },
+  "moodLow": "Плохо",
+  "@moodLow": {
+    "description": "Mood level"
+  },
+  "moodAwful": "Очень плохо",
+  "@moodAwful": {
+    "description": "Mood level"
+  },
+  "logEnergy": "Энергия",
+  "@logEnergy": {
+    "description": "Daily log section"
+  },
+  "energyLow": "Мало",
+  "@energyLow": {
+    "description": "Energy level"
+  },
+  "energyMedium": "Средне",
+  "@energyMedium": {
+    "description": "Energy level"
+  },
+  "energyHigh": "Много",
+  "@energyHigh": {
+    "description": "Energy level"
+  },
+  "logSleep": "Сон",
+  "@logSleep": {
+    "description": "Daily log section"
+  },
+  "logSleepHours": "{hours} ч",
+  "@logSleepHours": {
+    "description": "Sleep duration",
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      }
+    }
+  },
+  "logSymptoms": "Симптомы",
+  "@logSymptoms": {
+    "description": "Daily log section"
+  },
+  "logNotes": "Заметки",
+  "@logNotes": {
+    "description": "Daily log section"
+  },
+  "logNotesHint": "Что ещё важно запомнить?",
+  "@logNotesHint": {
+    "description": "Notes field hint"
+  },
+  "logSaved": "Запись сохранена",
+  "@logSaved": {
+    "description": "Snackbar after saving a log"
+  },
+  "logDeleted": "Запись удалена",
+  "@logDeleted": {
+    "description": "Snackbar after deleting a log"
+  },
+  "logEmptyHint": "Отметьте самочувствие, чтобы видеть закономерности.",
+  "@logEmptyHint": {
+    "description": "Hint in an empty daily log"
+  },
+  "symptomCramps": "Спазмы",
+  "@symptomCramps": {
+    "description": "Symptom"
+  },
+  "symptomHeadache": "Головная боль",
+  "@symptomHeadache": {
+    "description": "Symptom"
+  },
+  "symptomBackPain": "Боль в спине",
+  "@symptomBackPain": {
+    "description": "Symptom"
+  },
+  "symptomBloating": "Вздутие",
+  "@symptomBloating": {
+    "description": "Symptom"
+  },
+  "symptomBreastTenderness": "Чувствительность груди",
+  "@symptomBreastTenderness": {
+    "description": "Symptom"
+  },
+  "symptomNausea": "Тошнота",
+  "@symptomNausea": {
+    "description": "Symptom"
+  },
+  "symptomAcne": "Высыпания",
+  "@symptomAcne": {
+    "description": "Symptom"
+  },
+  "symptomFatigue": "Усталость",
+  "@symptomFatigue": {
+    "description": "Symptom"
+  },
+  "symptomCravings": "Тяга к еде",
+  "@symptomCravings": {
+    "description": "Symptom"
+  },
+  "symptomInsomnia": "Бессонница",
+  "@symptomInsomnia": {
+    "description": "Symptom"
+  },
+  "symptomHotFlashes": "Приливы",
+  "@symptomHotFlashes": {
+    "description": "Symptom"
+  },
+  "symptomNightSweats": "Ночная потливость",
+  "@symptomNightSweats": {
+    "description": "Symptom"
+  },
+  "symptomIrritability": "Раздражительность",
+  "@symptomIrritability": {
+    "description": "Symptom"
+  },
+  "symptomAnxiety": "Тревожность",
+  "@symptomAnxiety": {
+    "description": "Symptom"
+  },
+  "symptomLowMood": "Подавленность",
+  "@symptomLowMood": {
+    "description": "Symptom"
+  },
+  "symptomGroupPhysical": "Физические",
+  "@symptomGroupPhysical": {
+    "description": "Symptom group"
+  },
+  "symptomGroupEmotional": "Эмоциональные",
+  "@symptomGroupEmotional": {
+    "description": "Symptom group"
+  },
+  "symptomGroupMenopause": "Менопауза",
+  "@symptomGroupMenopause": {
+    "description": "Symptom group"
+  },
+  "moodChartTitle": "Настроение",
+  "@moodChartTitle": {
+    "description": "Mood chart section title"
+  },
+  "moodChartWeek": "Неделя",
+  "@moodChartWeek": {
+    "description": "Mood chart range"
+  },
+  "moodChartMonth": "Месяц",
+  "@moodChartMonth": {
+    "description": "Mood chart range"
+  },
+  "moodChartEmpty": "Отмечайте настроение — здесь появится график.",
+  "@moodChartEmpty": {
+    "description": "Empty mood chart"
+  },
+  "moodChartAverage": "В среднем {value}",
+  "@moodChartAverage": {
+    "description": "Average mood value",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "remindersTitle": "Напоминания",
+  "@remindersTitle": {
+    "description": "Reminders screen title"
+  },
+  "remindersSubtitle": "Приходят только на это устройство.",
+  "@remindersSubtitle": {
+    "description": "Reminders screen subtitle"
+  },
+  "reminderNext": "Ближайшее: {when}",
+  "@reminderNext": {
+    "description": "Next reminder on the tracker screen",
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderNone": "Напоминания выключены",
+  "@reminderNone": {
+    "description": "Shown when nothing is scheduled"
+  },
+  "reminderPeriodComingTitle": "Скоро месячные",
+  "@reminderPeriodComingTitle": {
+    "description": "Notification title"
+  },
+  "reminderPeriodComingBody": "{days, plural, one{Начало ожидается через {days} день. Пора подготовиться.} few{Начало ожидается через {days} дня. Пора подготовиться.} many{Начало ожидается через {days} дней. Пора подготовиться.} other{Начало ожидается через {days} дня. Пора подготовиться.}}",
+  "@reminderPeriodComingBody": {
+    "description": "Notification body",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderFertileTitle": "Фертильное окно открывается",
+  "@reminderFertileTitle": {
+    "description": "Notification title"
+  },
+  "reminderFertileBody": "Следующие дни — самые благоприятные для зачатия.",
+  "@reminderFertileBody": {
+    "description": "Notification body"
+  },
+  "reminderPillTitle": "Приём таблетки",
+  "@reminderPillTitle": {
+    "description": "Notification title"
+  },
+  "reminderPillBody": "Не забудьте про приём.",
+  "@reminderPillBody": {
+    "description": "Notification body"
+  },
+  "reminderWaterTitle": "Время воды",
+  "@reminderWaterTitle": {
+    "description": "Notification title"
+  },
+  "reminderWaterBody": "Сделайте пару глотков.",
+  "@reminderWaterBody": {
+    "description": "Notification body"
+  },
+  "reminderDoctorTitle": "Визит к врачу",
+  "@reminderDoctorTitle": {
+    "description": "Notification title"
+  },
+  "reminderDoctorBody": "Сегодня запланирован визит.",
+  "@reminderDoctorBody": {
+    "description": "Notification body"
+  },
+  "reminderVaccinationTitle": "Пора вакцинации",
+  "@reminderVaccinationTitle": {
+    "description": "Notification title"
+  },
+  "reminderVaccinationBody": "По плану: {vaccine}. Уточните у врача.",
+  "@reminderVaccinationBody": {
+    "description": "Notification body",
+    "placeholders": {
+      "vaccine": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderTypePeriodComing": "Скоро месячные",
+  "@reminderTypePeriodComing": {
+    "description": "Reminder type in the list"
+  },
+  "reminderTypeFertileWindow": "Фертильное окно",
+  "@reminderTypeFertileWindow": {
+    "description": "Reminder type in the list"
+  },
+  "reminderTypePill": "Таблетки",
+  "@reminderTypePill": {
+    "description": "Reminder type in the list"
+  },
+  "reminderTypeWater": "Вода",
+  "@reminderTypeWater": {
+    "description": "Reminder type in the list"
+  },
+  "reminderTypeDoctorVisit": "Визит к врачу",
+  "@reminderTypeDoctorVisit": {
+    "description": "Reminder type in the list"
+  },
+  "reminderTypeVaccination": "Вакцинация",
+  "@reminderTypeVaccination": {
+    "description": "Reminder type in the list"
+  },
+  "reminderDaysBefore": "{days, plural, one{За {days} день} few{За {days} дня} many{За {days} дней} other{За {days} дня}}",
+  "@reminderDaysBefore": {
+    "description": "How early a period reminder fires",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderTimesPerDay": "{count} раза в день",
+  "@reminderTimesPerDay": {
+    "description": "Water reminder frequency",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderTimeLabel": "Время",
+  "@reminderTimeLabel": {
+    "description": "Reminder time row"
+  },
+  "reminderAddDoctorVisit": "Добавить визит к врачу",
+  "@reminderAddDoctorVisit": {
+    "description": "Adds a one-off reminder"
+  },
+  "reminderDateLabel": "Дата",
+  "@reminderDateLabel": {
+    "description": "Date row in a reminder"
+  },
+  "reminderDeleted": "Напоминание удалено",
+  "@reminderDeleted": {
+    "description": "Snackbar"
+  },
+  "notificationsPermissionTitle": "Разрешить напоминания?",
+  "@notificationsPermissionTitle": {
+    "description": "Permission card title"
+  },
+  "notificationsPermissionBody": "Мы пришлём уведомление о начале месячных, приёме таблетки или визите к врачу.",
+  "@notificationsPermissionBody": {
+    "description": "Permission card body"
+  },
+  "notificationsDenied": "Уведомления выключены в настройках телефона.",
+  "@notificationsDenied": {
+    "description": "Shown when permission was denied"
+  },
+  "vaccinationsTitle": "Вакцинация",
+  "@vaccinationsTitle": {
+    "description": "Vaccinations screen title"
+  },
+  "vaccinationsSubtitle": "Список составлен по возрасту и этапу жизни. Его можно редактировать.",
+  "@vaccinationsSubtitle": {
+    "description": "Vaccinations screen subtitle"
+  },
+  "vaccinationsDisclaimer": "Это справочный список, а не медицинское назначение. Сроки уточните у врача.",
+  "@vaccinationsDisclaimer": {
+    "description": "Vaccinations disclaimer"
+  },
+  "vaccineHpv": "ВПЧ (папилломавирус)",
+  "@vaccineHpv": {
+    "description": "Vaccine name"
+  },
+  "vaccineFlu": "Грипп",
+  "@vaccineFlu": {
+    "description": "Vaccine name"
+  },
+  "vaccineTdap": "Коклюш, дифтерия, тетанус (Tdap)",
+  "@vaccineTdap": {
+    "description": "Vaccine name"
+  },
+  "vaccineHepatitisB": "Гепатит B",
+  "@vaccineHepatitisB": {
+    "description": "Vaccine name"
+  },
+  "vaccineMeaslesRubella": "Корь и рубелла",
+  "@vaccineMeaslesRubella": {
+    "description": "Vaccine name"
+  },
+  "vaccineCovid19": "COVID-19",
+  "@vaccineCovid19": {
+    "description": "Vaccine name"
+  },
+  "vaccineTetanus": "Тетанус",
+  "@vaccineTetanus": {
+    "description": "Vaccine name"
+  },
+  "vaccinePneumococcal": "Пневмококк",
+  "@vaccinePneumococcal": {
+    "description": "Vaccine name"
+  },
+  "vaccineShingles": "Герпес зостер",
+  "@vaccineShingles": {
+    "description": "Vaccine name"
+  },
+  "vaccinationDue": "До {date}",
+  "@vaccinationDue": {
+    "description": "Vaccination due date",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "vaccinationOverdue": "Просрочено",
+  "@vaccinationOverdue": {
+    "description": "Badge on a past-due vaccination"
+  },
+  "vaccinationStatusPlanned": "Запланировано",
+  "@vaccinationStatusPlanned": {
+    "description": "Vaccination status"
+  },
+  "vaccinationStatusDone": "Сделано",
+  "@vaccinationStatusDone": {
+    "description": "Vaccination status"
+  },
+  "vaccinationStatusSkipped": "Пропущено",
+  "@vaccinationStatusSkipped": {
+    "description": "Vaccination status"
+  },
+  "vaccinationMarkDone": "Отметить как сделано",
+  "@vaccinationMarkDone": {
+    "description": "Vaccination action"
+  },
+  "vaccinationSkip": "Пропустить",
+  "@vaccinationSkip": {
+    "description": "Vaccination action"
+  },
+  "vaccinationRestore": "Вернуть в план",
+  "@vaccinationRestore": {
+    "description": "Vaccination action"
+  },
+  "vaccinationRemind": "Напомнить",
+  "@vaccinationRemind": {
+    "description": "Creates a reminder for a vaccination"
+  },
+  "vaccinationReminderAdded": "Напоминание добавлено",
+  "@vaccinationReminderAdded": {
+    "description": "Snackbar"
+  },
+  "vaccinationChangeDate": "Изменить дату",
+  "@vaccinationChangeDate": {
+    "description": "Vaccination action"
+  },
+  "reportCardTitle": "Отчёт для врача",
+  "@reportCardTitle": {
+    "description": "Tracker card title"
+  },
+  "reportCardBody": "PDF с циклами, симптомами и настроением за последние месяцы.",
+  "@reportCardBody": {
+    "description": "Tracker card body"
+  },
+  "reportShare": "Сохранить PDF",
+  "@reportShare": {
+    "description": "Button that exports the report"
+  },
+  "reportEmpty": "Пока нечего выгружать — сделайте первые записи.",
+  "@reportEmpty": {
+    "description": "Shown when there is no tracker data"
+  },
+  "reportFailed": "Не удалось создать PDF",
+  "@reportFailed": {
+    "description": "Snackbar on export failure"
+  },
+  "reportHeading": "Отчёт по циклу",
+  "@reportHeading": {
+    "description": "PDF heading"
+  },
+  "reportGeneratedOn": "Создан {date}",
+  "@reportGeneratedOn": {
+    "description": "PDF subheading",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "reportSummary": "Сводка",
+  "@reportSummary": {
+    "description": "PDF section"
+  },
+  "reportAverageCycleLength": "Средняя длина цикла",
+  "@reportAverageCycleLength": {
+    "description": "PDF summary row"
+  },
+  "reportAveragePeriodLength": "Средняя длительность месячных",
+  "@reportAveragePeriodLength": {
+    "description": "PDF summary row"
+  },
+  "reportLastPeriodStart": "Начало последних месячных",
+  "@reportLastPeriodStart": {
+    "description": "PDF summary row"
+  },
+  "reportNextPredicted": "Прогноз следующих месячных",
+  "@reportNextPredicted": {
+    "description": "PDF summary row"
+  },
+  "reportDays": "{days} дн.",
+  "@reportDays": {
+    "description": "Short day unit in the PDF",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "reportCyclesSection": "Циклы",
+  "@reportCyclesSection": {
+    "description": "PDF section"
+  },
+  "reportColumnStart": "Начало",
+  "@reportColumnStart": {
+    "description": "PDF table column"
+  },
+  "reportColumnCycleLength": "Длина цикла",
+  "@reportColumnCycleLength": {
+    "description": "PDF table column"
+  },
+  "reportColumnPeriodLength": "Длит. месячных",
+  "@reportColumnPeriodLength": {
+    "description": "PDF table column"
+  },
+  "reportLogsSection": "Записи",
+  "@reportLogsSection": {
+    "description": "PDF section"
+  },
+  "reportColumnDate": "Дата",
+  "@reportColumnDate": {
+    "description": "PDF table column"
+  },
+  "reportColumnFlow": "Выделения",
+  "@reportColumnFlow": {
+    "description": "PDF table column"
+  },
+  "reportColumnMood": "Настроение",
+  "@reportColumnMood": {
+    "description": "PDF table column"
+  },
+  "reportColumnEnergy": "Энергия",
+  "@reportColumnEnergy": {
+    "description": "PDF table column"
+  },
+  "reportColumnSleep": "Сон",
+  "@reportColumnSleep": {
+    "description": "PDF table column"
+  },
+  "reportColumnSymptoms": "Симптомы",
+  "@reportColumnSymptoms": {
+    "description": "PDF table column"
+  },
+  "reportColumnNotes": "Заметки",
+  "@reportColumnNotes": {
+    "description": "PDF table column"
+  },
+  "reportProfileSection": "О пациентке",
+  "@reportProfileSection": {
+    "description": "PDF section"
+  },
+  "reportDash": "—",
+  "@reportDash": {
+    "description": "Placeholder for an empty cell in the PDF"
+  },
+  "trackerPregnancySoon": "Режим беременности скоро появится: неделя за неделей, счётчик шевелений и вес.",
+  "@trackerPregnancySoon": {
+    "description": "Placeholder for the pregnancy tracker"
+  },
+  "trackerMenopauseSoon": "Режим менопаузы скоро появится: приливы, сон и настроение.",
+  "@trackerMenopauseSoon": {
+    "description": "Placeholder for the menopause tracker"
+  },
+  "trackerSwitchToCycle": "Открыть календарь цикла",
+  "@trackerSwitchToCycle": {
+    "description": "Lets other stages use cycle mode"
+  },
+  "actionEdit": "Изменить",
+  "@actionEdit": {
+    "description": "Generic edit button"
+  },
+  "privacyHideContent": "Скрывать содержание",
+  "@privacyHideContent": {
+    "description": "Switch: hide notification details"
+  },
+  "privacyHideContentBody": "В уведомлениях не будет деталей — только название приложения.",
+  "@privacyHideContentBody": {
+    "description": "Switch subtitle"
+  },
+  "reminderTimeAt": "Время: {time}",
+  "@reminderTimeAt": {
+    "description": "Reminder time row with the value",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
   }
 }

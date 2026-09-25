@@ -6,6 +6,7 @@ import 'core/l10n/l10n.dart';
 import 'core/router/app_router.dart';
 import 'core/theme/app_theme.dart';
 import 'core/theme/theme_mode_controller.dart';
+import 'features/tracker/presentation/reminder_sync.dart';
 
 class HerCircleApp extends ConsumerWidget {
   const HerCircleApp({super.key});
@@ -31,6 +32,9 @@ class HerCircleApp extends ConsumerWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       routerConfig: router,
+      // Inside Localizations, so reminder text follows the app language.
+      builder: (context, child) =>
+          ReminderSync(child: child ?? const SizedBox.shrink()),
     );
   }
 }

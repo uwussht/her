@@ -987,6 +987,1038 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'7XX XXX XX XX'**
   String get authPhoneHint;
+
+  /// Generic save button
+  ///
+  /// In ru, this message translates to:
+  /// **'Сохранить'**
+  String get actionSave;
+
+  /// Generic delete button
+  ///
+  /// In ru, this message translates to:
+  /// **'Удалить'**
+  String get actionDelete;
+
+  /// Generic add button
+  ///
+  /// In ru, this message translates to:
+  /// **'Добавить'**
+  String get actionAdd;
+
+  /// Generic close button
+  ///
+  /// In ru, this message translates to:
+  /// **'Закрыть'**
+  String get actionClose;
+
+  /// Jumps the calendar back to today
+  ///
+  /// In ru, this message translates to:
+  /// **'Сегодня'**
+  String get actionToday;
+
+  /// Declines a permission prompt
+  ///
+  /// In ru, this message translates to:
+  /// **'Не сейчас'**
+  String get actionNotNow;
+
+  /// Accepts a permission prompt
+  ///
+  /// In ru, this message translates to:
+  /// **'Разрешить'**
+  String get actionAllow;
+
+  /// Current cycle day
+  ///
+  /// In ru, this message translates to:
+  /// **'День {day}'**
+  String trackerCycleDay(int day);
+
+  /// Status when bleeding
+  ///
+  /// In ru, this message translates to:
+  /// **'Месячные, день {day}'**
+  String trackerPeriodDay(int day);
+
+  /// Status: days until the next period
+  ///
+  /// In ru, this message translates to:
+  /// **'{days, plural, one{Месячные через {days} день} few{Месячные через {days} дня} many{Месячные через {days} дней} other{Месячные через {days} дня}}'**
+  String trackerPeriodInDays(int days);
+
+  /// Status on the predicted start day
+  ///
+  /// In ru, this message translates to:
+  /// **'Месячные ожидаются сегодня'**
+  String get trackerPeriodToday;
+
+  /// Status when the period is overdue
+  ///
+  /// In ru, this message translates to:
+  /// **'{days, plural, one{Задержка {days} день} few{Задержка {days} дня} many{Задержка {days} дней} other{Задержка {days} дня}}'**
+  String trackerPeriodLate(int days);
+
+  /// Status during the fertile window
+  ///
+  /// In ru, this message translates to:
+  /// **'Фертильное окно'**
+  String get trackerFertileToday;
+
+  /// Status on the predicted ovulation day
+  ///
+  /// In ru, this message translates to:
+  /// **'Овуляция сегодня'**
+  String get trackerOvulationToday;
+
+  /// Predicted next period date
+  ///
+  /// In ru, this message translates to:
+  /// **'Следующие месячные: {date}'**
+  String trackerNextPeriodOn(String date);
+
+  /// Average cycle length chip
+  ///
+  /// In ru, this message translates to:
+  /// **'Цикл {days} дней'**
+  String trackerAverageCycle(int days);
+
+  /// Empty tracker title
+  ///
+  /// In ru, this message translates to:
+  /// **'Начните следить за циклом'**
+  String get trackerEmptyTitle;
+
+  /// Empty tracker body
+  ///
+  /// In ru, this message translates to:
+  /// **'Отметьте первый день последних месячных — и мы построим календарь с прогнозами.'**
+  String get trackerEmptyBody;
+
+  /// Primary button in the empty state
+  ///
+  /// In ru, this message translates to:
+  /// **'Отметить начало месячных'**
+  String get trackerMarkPeriodStart;
+
+  /// Action: log today as a period start
+  ///
+  /// In ru, this message translates to:
+  /// **'Месячные начались'**
+  String get trackerPeriodStarted;
+
+  /// Action: close the current period
+  ///
+  /// In ru, this message translates to:
+  /// **'Месячные закончились'**
+  String get trackerPeriodEnded;
+
+  /// Action: delete a logged period day
+  ///
+  /// In ru, this message translates to:
+  /// **'Убрать отметку'**
+  String get trackerRemoveDay;
+
+  /// Confidence: only her typed cycle length
+  ///
+  /// In ru, this message translates to:
+  /// **'Оценка'**
+  String get confidenceEstimated;
+
+  /// Confidence level
+  ///
+  /// In ru, this message translates to:
+  /// **'Низкая точность'**
+  String get confidenceLow;
+
+  /// Confidence level
+  ///
+  /// In ru, this message translates to:
+  /// **'Средняя точность'**
+  String get confidenceMedium;
+
+  /// Confidence level
+  ///
+  /// In ru, this message translates to:
+  /// **'Высокая точность'**
+  String get confidenceHigh;
+
+  /// Confidence explanation
+  ///
+  /// In ru, this message translates to:
+  /// **'Прогноз построен по указанной вами длине цикла. Отмечайте месячные — и он станет точнее.'**
+  String get confidenceEstimatedHint;
+
+  /// Explains what the prediction is based on
+  ///
+  /// In ru, this message translates to:
+  /// **'{cycles, plural, one{По {cycles} циклу} few{По {cycles} циклам} many{По {cycles} циклам} other{По {cycles} циклам}} · разброс ±{days} дн.'**
+  String confidenceBasis(int cycles, int days);
+
+  /// Shown with cycle predictions
+  ///
+  /// In ru, this message translates to:
+  /// **'Прогнозы приблизительны и не являются средством контрацепции.'**
+  String get predictionDisclaimer;
+
+  /// Calendar legend
+  ///
+  /// In ru, this message translates to:
+  /// **'Месячные'**
+  String get legendPeriod;
+
+  /// Calendar legend
+  ///
+  /// In ru, this message translates to:
+  /// **'Прогноз месячных'**
+  String get legendPredictedPeriod;
+
+  /// Calendar legend
+  ///
+  /// In ru, this message translates to:
+  /// **'Фертильные дни'**
+  String get legendFertile;
+
+  /// Calendar legend
+  ///
+  /// In ru, this message translates to:
+  /// **'Овуляция'**
+  String get legendOvulation;
+
+  /// Calendar legend: a day with a daily log
+  ///
+  /// In ru, this message translates to:
+  /// **'Есть запись'**
+  String get legendLogged;
+
+  /// Cycle phase
+  ///
+  /// In ru, this message translates to:
+  /// **'Фолликулярная фаза'**
+  String get phaseFollicular;
+
+  /// Cycle phase
+  ///
+  /// In ru, this message translates to:
+  /// **'Лютеиновая фаза'**
+  String get phaseLuteal;
+
+  /// Daily log sheet title
+  ///
+  /// In ru, this message translates to:
+  /// **'Запись за {date}'**
+  String logTitle(String date);
+
+  /// Button that opens today's log
+  ///
+  /// In ru, this message translates to:
+  /// **'Запись за сегодня'**
+  String get logToday;
+
+  /// Daily log section
+  ///
+  /// In ru, this message translates to:
+  /// **'Выделения'**
+  String get logFlow;
+
+  /// Flow level
+  ///
+  /// In ru, this message translates to:
+  /// **'Мажущие'**
+  String get flowSpotting;
+
+  /// Flow level
+  ///
+  /// In ru, this message translates to:
+  /// **'Скудные'**
+  String get flowLight;
+
+  /// Flow level
+  ///
+  /// In ru, this message translates to:
+  /// **'Умеренные'**
+  String get flowMedium;
+
+  /// Flow level
+  ///
+  /// In ru, this message translates to:
+  /// **'Обильные'**
+  String get flowHeavy;
+
+  /// Daily log section
+  ///
+  /// In ru, this message translates to:
+  /// **'Настроение'**
+  String get logMood;
+
+  /// Mood level
+  ///
+  /// In ru, this message translates to:
+  /// **'Отлично'**
+  String get moodGreat;
+
+  /// Mood level
+  ///
+  /// In ru, this message translates to:
+  /// **'Хорошо'**
+  String get moodGood;
+
+  /// Mood level
+  ///
+  /// In ru, this message translates to:
+  /// **'Нормально'**
+  String get moodOkay;
+
+  /// Mood level
+  ///
+  /// In ru, this message translates to:
+  /// **'Плохо'**
+  String get moodLow;
+
+  /// Mood level
+  ///
+  /// In ru, this message translates to:
+  /// **'Очень плохо'**
+  String get moodAwful;
+
+  /// Daily log section
+  ///
+  /// In ru, this message translates to:
+  /// **'Энергия'**
+  String get logEnergy;
+
+  /// Energy level
+  ///
+  /// In ru, this message translates to:
+  /// **'Мало'**
+  String get energyLow;
+
+  /// Energy level
+  ///
+  /// In ru, this message translates to:
+  /// **'Средне'**
+  String get energyMedium;
+
+  /// Energy level
+  ///
+  /// In ru, this message translates to:
+  /// **'Много'**
+  String get energyHigh;
+
+  /// Daily log section
+  ///
+  /// In ru, this message translates to:
+  /// **'Сон'**
+  String get logSleep;
+
+  /// Sleep duration
+  ///
+  /// In ru, this message translates to:
+  /// **'{hours} ч'**
+  String logSleepHours(String hours);
+
+  /// Daily log section
+  ///
+  /// In ru, this message translates to:
+  /// **'Симптомы'**
+  String get logSymptoms;
+
+  /// Daily log section
+  ///
+  /// In ru, this message translates to:
+  /// **'Заметки'**
+  String get logNotes;
+
+  /// Notes field hint
+  ///
+  /// In ru, this message translates to:
+  /// **'Что ещё важно запомнить?'**
+  String get logNotesHint;
+
+  /// Snackbar after saving a log
+  ///
+  /// In ru, this message translates to:
+  /// **'Запись сохранена'**
+  String get logSaved;
+
+  /// Snackbar after deleting a log
+  ///
+  /// In ru, this message translates to:
+  /// **'Запись удалена'**
+  String get logDeleted;
+
+  /// Hint in an empty daily log
+  ///
+  /// In ru, this message translates to:
+  /// **'Отметьте самочувствие, чтобы видеть закономерности.'**
+  String get logEmptyHint;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Спазмы'**
+  String get symptomCramps;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Головная боль'**
+  String get symptomHeadache;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Боль в спине'**
+  String get symptomBackPain;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Вздутие'**
+  String get symptomBloating;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Чувствительность груди'**
+  String get symptomBreastTenderness;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Тошнота'**
+  String get symptomNausea;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Высыпания'**
+  String get symptomAcne;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Усталость'**
+  String get symptomFatigue;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Тяга к еде'**
+  String get symptomCravings;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Бессонница'**
+  String get symptomInsomnia;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Приливы'**
+  String get symptomHotFlashes;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Ночная потливость'**
+  String get symptomNightSweats;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Раздражительность'**
+  String get symptomIrritability;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Тревожность'**
+  String get symptomAnxiety;
+
+  /// Symptom
+  ///
+  /// In ru, this message translates to:
+  /// **'Подавленность'**
+  String get symptomLowMood;
+
+  /// Symptom group
+  ///
+  /// In ru, this message translates to:
+  /// **'Физические'**
+  String get symptomGroupPhysical;
+
+  /// Symptom group
+  ///
+  /// In ru, this message translates to:
+  /// **'Эмоциональные'**
+  String get symptomGroupEmotional;
+
+  /// Symptom group
+  ///
+  /// In ru, this message translates to:
+  /// **'Менопауза'**
+  String get symptomGroupMenopause;
+
+  /// Mood chart section title
+  ///
+  /// In ru, this message translates to:
+  /// **'Настроение'**
+  String get moodChartTitle;
+
+  /// Mood chart range
+  ///
+  /// In ru, this message translates to:
+  /// **'Неделя'**
+  String get moodChartWeek;
+
+  /// Mood chart range
+  ///
+  /// In ru, this message translates to:
+  /// **'Месяц'**
+  String get moodChartMonth;
+
+  /// Empty mood chart
+  ///
+  /// In ru, this message translates to:
+  /// **'Отмечайте настроение — здесь появится график.'**
+  String get moodChartEmpty;
+
+  /// Average mood value
+  ///
+  /// In ru, this message translates to:
+  /// **'В среднем {value}'**
+  String moodChartAverage(String value);
+
+  /// Reminders screen title
+  ///
+  /// In ru, this message translates to:
+  /// **'Напоминания'**
+  String get remindersTitle;
+
+  /// Reminders screen subtitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Приходят только на это устройство.'**
+  String get remindersSubtitle;
+
+  /// Next reminder on the tracker screen
+  ///
+  /// In ru, this message translates to:
+  /// **'Ближайшее: {when}'**
+  String reminderNext(String when);
+
+  /// Shown when nothing is scheduled
+  ///
+  /// In ru, this message translates to:
+  /// **'Напоминания выключены'**
+  String get reminderNone;
+
+  /// Notification title
+  ///
+  /// In ru, this message translates to:
+  /// **'Скоро месячные'**
+  String get reminderPeriodComingTitle;
+
+  /// Notification body
+  ///
+  /// In ru, this message translates to:
+  /// **'{days, plural, one{Начало ожидается через {days} день. Пора подготовиться.} few{Начало ожидается через {days} дня. Пора подготовиться.} many{Начало ожидается через {days} дней. Пора подготовиться.} other{Начало ожидается через {days} дня. Пора подготовиться.}}'**
+  String reminderPeriodComingBody(int days);
+
+  /// Notification title
+  ///
+  /// In ru, this message translates to:
+  /// **'Фертильное окно открывается'**
+  String get reminderFertileTitle;
+
+  /// Notification body
+  ///
+  /// In ru, this message translates to:
+  /// **'Следующие дни — самые благоприятные для зачатия.'**
+  String get reminderFertileBody;
+
+  /// Notification title
+  ///
+  /// In ru, this message translates to:
+  /// **'Приём таблетки'**
+  String get reminderPillTitle;
+
+  /// Notification body
+  ///
+  /// In ru, this message translates to:
+  /// **'Не забудьте про приём.'**
+  String get reminderPillBody;
+
+  /// Notification title
+  ///
+  /// In ru, this message translates to:
+  /// **'Время воды'**
+  String get reminderWaterTitle;
+
+  /// Notification body
+  ///
+  /// In ru, this message translates to:
+  /// **'Сделайте пару глотков.'**
+  String get reminderWaterBody;
+
+  /// Notification title
+  ///
+  /// In ru, this message translates to:
+  /// **'Визит к врачу'**
+  String get reminderDoctorTitle;
+
+  /// Notification body
+  ///
+  /// In ru, this message translates to:
+  /// **'Сегодня запланирован визит.'**
+  String get reminderDoctorBody;
+
+  /// Notification title
+  ///
+  /// In ru, this message translates to:
+  /// **'Пора вакцинации'**
+  String get reminderVaccinationTitle;
+
+  /// Notification body
+  ///
+  /// In ru, this message translates to:
+  /// **'По плану: {vaccine}. Уточните у врача.'**
+  String reminderVaccinationBody(String vaccine);
+
+  /// Reminder type in the list
+  ///
+  /// In ru, this message translates to:
+  /// **'Скоро месячные'**
+  String get reminderTypePeriodComing;
+
+  /// Reminder type in the list
+  ///
+  /// In ru, this message translates to:
+  /// **'Фертильное окно'**
+  String get reminderTypeFertileWindow;
+
+  /// Reminder type in the list
+  ///
+  /// In ru, this message translates to:
+  /// **'Таблетки'**
+  String get reminderTypePill;
+
+  /// Reminder type in the list
+  ///
+  /// In ru, this message translates to:
+  /// **'Вода'**
+  String get reminderTypeWater;
+
+  /// Reminder type in the list
+  ///
+  /// In ru, this message translates to:
+  /// **'Визит к врачу'**
+  String get reminderTypeDoctorVisit;
+
+  /// Reminder type in the list
+  ///
+  /// In ru, this message translates to:
+  /// **'Вакцинация'**
+  String get reminderTypeVaccination;
+
+  /// How early a period reminder fires
+  ///
+  /// In ru, this message translates to:
+  /// **'{days, plural, one{За {days} день} few{За {days} дня} many{За {days} дней} other{За {days} дня}}'**
+  String reminderDaysBefore(int days);
+
+  /// Water reminder frequency
+  ///
+  /// In ru, this message translates to:
+  /// **'{count} раза в день'**
+  String reminderTimesPerDay(int count);
+
+  /// Reminder time row
+  ///
+  /// In ru, this message translates to:
+  /// **'Время'**
+  String get reminderTimeLabel;
+
+  /// Adds a one-off reminder
+  ///
+  /// In ru, this message translates to:
+  /// **'Добавить визит к врачу'**
+  String get reminderAddDoctorVisit;
+
+  /// Date row in a reminder
+  ///
+  /// In ru, this message translates to:
+  /// **'Дата'**
+  String get reminderDateLabel;
+
+  /// Snackbar
+  ///
+  /// In ru, this message translates to:
+  /// **'Напоминание удалено'**
+  String get reminderDeleted;
+
+  /// Permission card title
+  ///
+  /// In ru, this message translates to:
+  /// **'Разрешить напоминания?'**
+  String get notificationsPermissionTitle;
+
+  /// Permission card body
+  ///
+  /// In ru, this message translates to:
+  /// **'Мы пришлём уведомление о начале месячных, приёме таблетки или визите к врачу.'**
+  String get notificationsPermissionBody;
+
+  /// Shown when permission was denied
+  ///
+  /// In ru, this message translates to:
+  /// **'Уведомления выключены в настройках телефона.'**
+  String get notificationsDenied;
+
+  /// Vaccinations screen title
+  ///
+  /// In ru, this message translates to:
+  /// **'Вакцинация'**
+  String get vaccinationsTitle;
+
+  /// Vaccinations screen subtitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Список составлен по возрасту и этапу жизни. Его можно редактировать.'**
+  String get vaccinationsSubtitle;
+
+  /// Vaccinations disclaimer
+  ///
+  /// In ru, this message translates to:
+  /// **'Это справочный список, а не медицинское назначение. Сроки уточните у врача.'**
+  String get vaccinationsDisclaimer;
+
+  /// Vaccine name
+  ///
+  /// In ru, this message translates to:
+  /// **'ВПЧ (папилломавирус)'**
+  String get vaccineHpv;
+
+  /// Vaccine name
+  ///
+  /// In ru, this message translates to:
+  /// **'Грипп'**
+  String get vaccineFlu;
+
+  /// Vaccine name
+  ///
+  /// In ru, this message translates to:
+  /// **'Коклюш, дифтерия, тетанус (Tdap)'**
+  String get vaccineTdap;
+
+  /// Vaccine name
+  ///
+  /// In ru, this message translates to:
+  /// **'Гепатит B'**
+  String get vaccineHepatitisB;
+
+  /// Vaccine name
+  ///
+  /// In ru, this message translates to:
+  /// **'Корь и рубелла'**
+  String get vaccineMeaslesRubella;
+
+  /// Vaccine name
+  ///
+  /// In ru, this message translates to:
+  /// **'COVID-19'**
+  String get vaccineCovid19;
+
+  /// Vaccine name
+  ///
+  /// In ru, this message translates to:
+  /// **'Тетанус'**
+  String get vaccineTetanus;
+
+  /// Vaccine name
+  ///
+  /// In ru, this message translates to:
+  /// **'Пневмококк'**
+  String get vaccinePneumococcal;
+
+  /// Vaccine name
+  ///
+  /// In ru, this message translates to:
+  /// **'Герпес зостер'**
+  String get vaccineShingles;
+
+  /// Vaccination due date
+  ///
+  /// In ru, this message translates to:
+  /// **'До {date}'**
+  String vaccinationDue(String date);
+
+  /// Badge on a past-due vaccination
+  ///
+  /// In ru, this message translates to:
+  /// **'Просрочено'**
+  String get vaccinationOverdue;
+
+  /// Vaccination status
+  ///
+  /// In ru, this message translates to:
+  /// **'Запланировано'**
+  String get vaccinationStatusPlanned;
+
+  /// Vaccination status
+  ///
+  /// In ru, this message translates to:
+  /// **'Сделано'**
+  String get vaccinationStatusDone;
+
+  /// Vaccination status
+  ///
+  /// In ru, this message translates to:
+  /// **'Пропущено'**
+  String get vaccinationStatusSkipped;
+
+  /// Vaccination action
+  ///
+  /// In ru, this message translates to:
+  /// **'Отметить как сделано'**
+  String get vaccinationMarkDone;
+
+  /// Vaccination action
+  ///
+  /// In ru, this message translates to:
+  /// **'Пропустить'**
+  String get vaccinationSkip;
+
+  /// Vaccination action
+  ///
+  /// In ru, this message translates to:
+  /// **'Вернуть в план'**
+  String get vaccinationRestore;
+
+  /// Creates a reminder for a vaccination
+  ///
+  /// In ru, this message translates to:
+  /// **'Напомнить'**
+  String get vaccinationRemind;
+
+  /// Snackbar
+  ///
+  /// In ru, this message translates to:
+  /// **'Напоминание добавлено'**
+  String get vaccinationReminderAdded;
+
+  /// Vaccination action
+  ///
+  /// In ru, this message translates to:
+  /// **'Изменить дату'**
+  String get vaccinationChangeDate;
+
+  /// Tracker card title
+  ///
+  /// In ru, this message translates to:
+  /// **'Отчёт для врача'**
+  String get reportCardTitle;
+
+  /// Tracker card body
+  ///
+  /// In ru, this message translates to:
+  /// **'PDF с циклами, симптомами и настроением за последние месяцы.'**
+  String get reportCardBody;
+
+  /// Button that exports the report
+  ///
+  /// In ru, this message translates to:
+  /// **'Сохранить PDF'**
+  String get reportShare;
+
+  /// Shown when there is no tracker data
+  ///
+  /// In ru, this message translates to:
+  /// **'Пока нечего выгружать — сделайте первые записи.'**
+  String get reportEmpty;
+
+  /// Snackbar on export failure
+  ///
+  /// In ru, this message translates to:
+  /// **'Не удалось создать PDF'**
+  String get reportFailed;
+
+  /// PDF heading
+  ///
+  /// In ru, this message translates to:
+  /// **'Отчёт по циклу'**
+  String get reportHeading;
+
+  /// PDF subheading
+  ///
+  /// In ru, this message translates to:
+  /// **'Создан {date}'**
+  String reportGeneratedOn(String date);
+
+  /// PDF section
+  ///
+  /// In ru, this message translates to:
+  /// **'Сводка'**
+  String get reportSummary;
+
+  /// PDF summary row
+  ///
+  /// In ru, this message translates to:
+  /// **'Средняя длина цикла'**
+  String get reportAverageCycleLength;
+
+  /// PDF summary row
+  ///
+  /// In ru, this message translates to:
+  /// **'Средняя длительность месячных'**
+  String get reportAveragePeriodLength;
+
+  /// PDF summary row
+  ///
+  /// In ru, this message translates to:
+  /// **'Начало последних месячных'**
+  String get reportLastPeriodStart;
+
+  /// PDF summary row
+  ///
+  /// In ru, this message translates to:
+  /// **'Прогноз следующих месячных'**
+  String get reportNextPredicted;
+
+  /// Short day unit in the PDF
+  ///
+  /// In ru, this message translates to:
+  /// **'{days} дн.'**
+  String reportDays(int days);
+
+  /// PDF section
+  ///
+  /// In ru, this message translates to:
+  /// **'Циклы'**
+  String get reportCyclesSection;
+
+  /// PDF table column
+  ///
+  /// In ru, this message translates to:
+  /// **'Начало'**
+  String get reportColumnStart;
+
+  /// PDF table column
+  ///
+  /// In ru, this message translates to:
+  /// **'Длина цикла'**
+  String get reportColumnCycleLength;
+
+  /// PDF table column
+  ///
+  /// In ru, this message translates to:
+  /// **'Длит. месячных'**
+  String get reportColumnPeriodLength;
+
+  /// PDF section
+  ///
+  /// In ru, this message translates to:
+  /// **'Записи'**
+  String get reportLogsSection;
+
+  /// PDF table column
+  ///
+  /// In ru, this message translates to:
+  /// **'Дата'**
+  String get reportColumnDate;
+
+  /// PDF table column
+  ///
+  /// In ru, this message translates to:
+  /// **'Выделения'**
+  String get reportColumnFlow;
+
+  /// PDF table column
+  ///
+  /// In ru, this message translates to:
+  /// **'Настроение'**
+  String get reportColumnMood;
+
+  /// PDF table column
+  ///
+  /// In ru, this message translates to:
+  /// **'Энергия'**
+  String get reportColumnEnergy;
+
+  /// PDF table column
+  ///
+  /// In ru, this message translates to:
+  /// **'Сон'**
+  String get reportColumnSleep;
+
+  /// PDF table column
+  ///
+  /// In ru, this message translates to:
+  /// **'Симптомы'**
+  String get reportColumnSymptoms;
+
+  /// PDF table column
+  ///
+  /// In ru, this message translates to:
+  /// **'Заметки'**
+  String get reportColumnNotes;
+
+  /// PDF section
+  ///
+  /// In ru, this message translates to:
+  /// **'О пациентке'**
+  String get reportProfileSection;
+
+  /// Placeholder for an empty cell in the PDF
+  ///
+  /// In ru, this message translates to:
+  /// **'—'**
+  String get reportDash;
+
+  /// Placeholder for the pregnancy tracker
+  ///
+  /// In ru, this message translates to:
+  /// **'Режим беременности скоро появится: неделя за неделей, счётчик шевелений и вес.'**
+  String get trackerPregnancySoon;
+
+  /// Placeholder for the menopause tracker
+  ///
+  /// In ru, this message translates to:
+  /// **'Режим менопаузы скоро появится: приливы, сон и настроение.'**
+  String get trackerMenopauseSoon;
+
+  /// Lets other stages use cycle mode
+  ///
+  /// In ru, this message translates to:
+  /// **'Открыть календарь цикла'**
+  String get trackerSwitchToCycle;
+
+  /// Generic edit button
+  ///
+  /// In ru, this message translates to:
+  /// **'Изменить'**
+  String get actionEdit;
+
+  /// Switch: hide notification details
+  ///
+  /// In ru, this message translates to:
+  /// **'Скрывать содержание'**
+  String get privacyHideContent;
+
+  /// Switch subtitle
+  ///
+  /// In ru, this message translates to:
+  /// **'В уведомлениях не будет деталей — только название приложения.'**
+  String get privacyHideContentBody;
+
+  /// Reminder time row with the value
+  ///
+  /// In ru, this message translates to:
+  /// **'Время: {time}'**
+  String reminderTimeAt(String time);
 }
 
 class _AppLocalizationsDelegate
