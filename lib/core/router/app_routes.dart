@@ -18,6 +18,9 @@ abstract final class AppRoutes {
   static const String shop = '/shop';
   static const String profile = '/profile';
 
+  /// A single Learn item. The detail screen arrives in step 5.
+  static String learnItem(String id) => '$learn/$id';
+
   // Full-screen routes above the shell.
   static const String reminders = '/reminders';
   static const String vaccinations = '/reminders/vaccinations';

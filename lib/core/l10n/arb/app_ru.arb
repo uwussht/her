@@ -1418,5 +1418,319 @@
         "type": "String"
       }
     }
+  },
+  "homeForYou": "Для вас",
+  "@homeForYou": {
+    "description": "Home section: personalised content"
+  },
+  "homeSeeAll": "Всё",
+  "@homeSeeAll": {
+    "description": "Section action link"
+  },
+  "homeTipOfDay": "Совет дня",
+  "@homeTipOfDay": {
+    "description": "Home section"
+  },
+  "homeContinueCourse": "Продолжить курс",
+  "@homeContinueCourse": {
+    "description": "Home section for a started course"
+  },
+  "homeStartCourse": "Начать курс",
+  "@homeStartCourse": {
+    "description": "Home section for a course not yet started"
+  },
+  "homeTrendingQa": "Вопросы врачам",
+  "@homeTrendingQa": {
+    "description": "Home section: trending Q&A"
+  },
+  "homeNextReminder": "Ближайшее напоминание",
+  "@homeNextReminder": {
+    "description": "Home section"
+  },
+  "homeLoading": "Собираем вашу ленту…",
+  "@homeLoading": {
+    "description": "Home loading state"
+  },
+  "homeFeedEmpty": "Пока нечего показать. Загляните в раздел «Обучение».",
+  "@homeFeedEmpty": {
+    "description": "Home empty state"
+  },
+  "offerHeadingPeriodSoon": "Скоро месячные — пригодится",
+  "@offerHeadingPeriodSoon": {
+    "description": "Shop row heading, 3 days before the predicted period"
+  },
+  "offerHeadingPeriodNow": "На эти дни",
+  "@offerHeadingPeriodNow": {
+    "description": "offerHeadingPeriodNow"
+  },
+  "offerHeadingFertile": "Для планирования",
+  "@offerHeadingFertile": {
+    "description": "offerHeadingFertile"
+  },
+  "offerHeadingPregnancy": "Для беременности",
+  "@offerHeadingPregnancy": {
+    "description": "offerHeadingPregnancy"
+  },
+  "offerHeadingPostpartum": "После родов",
+  "@offerHeadingPostpartum": {
+    "description": "offerHeadingPostpartum"
+  },
+  "offerHeadingMenopause": "Для комфорта",
+  "@offerHeadingMenopause": {
+    "description": "offerHeadingMenopause"
+  },
+  "offerHeadingTeen": "Твой первый набор",
+  "@offerHeadingTeen": {
+    "description": "offerHeadingTeen"
+  },
+  "offerHeadingGeneral": "Вам может понравиться",
+  "@offerHeadingGeneral": {
+    "description": "Shop row heading fallback"
+  },
+  "pregnancyWeek": "{week} неделя",
+  "@pregnancyWeek": {
+    "description": "Pregnancy week label",
+    "placeholders": {
+      "week": {
+        "type": "int"
+      }
+    }
+  },
+  "pregnancyBabySize": "Малыш размером с {size}",
+  "@pregnancyBabySize": {
+    "description": "pregnancyBabySize",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "pregnancyDueIn": "{days, plural, one{До встречи {days} день} few{До встречи {days} дня} many{До встречи {days} дней} other{До встречи {days} дня}}",
+  "@pregnancyDueIn": {
+    "description": "pregnancyDueIn",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "pregnancyDueDate": "Дата родов: {date}",
+  "@pregnancyDueDate": {
+    "description": "pregnancyDueDate",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "pregnancyTrimester": "{trimester} триместр",
+  "@pregnancyTrimester": {
+    "description": "pregnancyTrimester",
+    "placeholders": {
+      "trimester": {
+        "type": "int"
+      }
+    }
+  },
+  "pregnancyOverdue": "Срок уже подошёл",
+  "@pregnancyOverdue": {
+    "description": "pregnancyOverdue"
+  },
+  "badgeFree": "Бесплатно",
+  "@badgeFree": {
+    "description": "Badge on free content"
+  },
+  "badgePremium": "Premium",
+  "@badgePremium": {
+    "description": "Badge on premium content. Not translated."
+  },
+  "badgeLocalBrand": "Местный бренд",
+  "@badgeLocalBrand": {
+    "description": "badgeLocalBrand"
+  },
+  "badgeVerifiedDoctor": "Проверенный врач",
+  "@badgeVerifiedDoctor": {
+    "description": "badgeVerifiedDoctor"
+  },
+  "badgeBundle": "Набор",
+  "@badgeBundle": {
+    "description": "badgeBundle"
+  },
+  "badgeSubscription": "Подписка",
+  "@badgeSubscription": {
+    "description": "badgeSubscription"
+  },
+  "badgeAdultOnly": "18+",
+  "@badgeAdultOnly": {
+    "description": "badgeAdultOnly"
+  },
+  "contentMinutes": "{minutes} мин",
+  "@contentMinutes": {
+    "description": "contentMinutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "contentTypeVideo": "Видео",
+  "@contentTypeVideo": {
+    "description": "contentTypeVideo"
+  },
+  "contentTypeArticle": "Статья",
+  "@contentTypeArticle": {
+    "description": "contentTypeArticle"
+  },
+  "contentTypeCourse": "Курс",
+  "@contentTypeCourse": {
+    "description": "contentTypeCourse"
+  },
+  "contentTypePodcast": "Подкаст",
+  "@contentTypePodcast": {
+    "description": "contentTypePodcast"
+  },
+  "categoryMyBody": "Моё тело",
+  "@categoryMyBody": {
+    "description": "categoryMyBody"
+  },
+  "categoryCycleHealth": "Цикл и здоровье",
+  "@categoryCycleHealth": {
+    "description": "categoryCycleHealth"
+  },
+  "categoryPregnancySchool": "Школа беременности",
+  "@categoryPregnancySchool": {
+    "description": "categoryPregnancySchool"
+  },
+  "categoryPostpartum": "После родов",
+  "@categoryPostpartum": {
+    "description": "categoryPostpartum"
+  },
+  "categoryMenopause": "Менопауза",
+  "@categoryMenopause": {
+    "description": "categoryMenopause"
+  },
+  "categoryMentalHealth": "Ментальное здоровье",
+  "@categoryMentalHealth": {
+    "description": "categoryMentalHealth"
+  },
+  "categoryNutrition": "Питание",
+  "@categoryNutrition": {
+    "description": "categoryNutrition"
+  },
+  "categoryIntimacy": "Близость и отношения",
+  "@categoryIntimacy": {
+    "description": "categoryIntimacy"
+  },
+  "courseLessonsCount": "{count} уроков",
+  "@courseLessonsCount": {
+    "description": "courseLessonsCount",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "courseProgressPercent": "Пройдено {percent}%",
+  "@courseProgressPercent": {
+    "description": "courseProgressPercent",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "courseNextLesson": "Далее: {title}",
+  "@courseNextLesson": {
+    "description": "courseNextLesson",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "qaAnsweredBy": "Отвечает {name}",
+  "@qaAnsweredBy": {
+    "description": "qaAnsweredBy",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "qaUpvotes": "{count}",
+  "@qaUpvotes": {
+    "description": "qaUpvotes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "qaAwaitingAnswer": "Ждёт ответа врача",
+  "@qaAwaitingAnswer": {
+    "description": "qaAwaitingAnswer"
+  },
+  "qaAnonymous": "Анонимно",
+  "@qaAnonymous": {
+    "description": "qaAnonymous"
+  },
+  "priceTenge": "{price} ₸",
+  "@priceTenge": {
+    "description": "Price with the Kazakhstan tenge sign",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "productRating": "{rating}",
+  "@productRating": {
+    "description": "productRating",
+    "placeholders": {
+      "rating": {
+        "type": "String"
+      }
+    }
+  },
+  "productReviews": "{count} отзывов",
+  "@productReviews": {
+    "description": "productReviews",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shopAddToCart": "В корзину",
+  "@shopAddToCart": {
+    "description": "shopAddToCart"
+  },
+  "shopCategoryPeriodCare": "Гигиена",
+  "@shopCategoryPeriodCare": {
+    "description": "Shop category name"
+  },
+  "shopCategoryPregnancy": "Беременность",
+  "@shopCategoryPregnancy": {
+    "description": "Shop category name"
+  },
+  "shopCategoryBaby": "Малыш",
+  "@shopCategoryBaby": {
+    "description": "Shop category name"
+  },
+  "shopCategoryBeauty": "Красота и уход",
+  "@shopCategoryBeauty": {
+    "description": "Shop category name"
+  },
+  "shopCategoryWellness": "Здоровье",
+  "@shopCategoryWellness": {
+    "description": "Shop category name"
+  },
+  "shopCategoryIntimateHealth": "Интимное здоровье",
+  "@shopCategoryIntimateHealth": {
+    "description": "Shop category name"
+  },
+  "shopCategorySubscriptionBox": "Боксы по подписке",
+  "@shopCategorySubscriptionBox": {
+    "description": "Shop category name"
   }
 }

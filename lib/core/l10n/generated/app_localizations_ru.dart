@@ -1103,4 +1103,224 @@ class AppLocalizationsRu extends AppLocalizations {
   String reminderTimeAt(String time) {
     return 'Время: $time';
   }
+
+  @override
+  String get homeForYou => 'Для вас';
+
+  @override
+  String get homeSeeAll => 'Всё';
+
+  @override
+  String get homeTipOfDay => 'Совет дня';
+
+  @override
+  String get homeContinueCourse => 'Продолжить курс';
+
+  @override
+  String get homeStartCourse => 'Начать курс';
+
+  @override
+  String get homeTrendingQa => 'Вопросы врачам';
+
+  @override
+  String get homeNextReminder => 'Ближайшее напоминание';
+
+  @override
+  String get homeLoading => 'Собираем вашу ленту…';
+
+  @override
+  String get homeFeedEmpty =>
+      'Пока нечего показать. Загляните в раздел «Обучение».';
+
+  @override
+  String get offerHeadingPeriodSoon => 'Скоро месячные — пригодится';
+
+  @override
+  String get offerHeadingPeriodNow => 'На эти дни';
+
+  @override
+  String get offerHeadingFertile => 'Для планирования';
+
+  @override
+  String get offerHeadingPregnancy => 'Для беременности';
+
+  @override
+  String get offerHeadingPostpartum => 'После родов';
+
+  @override
+  String get offerHeadingMenopause => 'Для комфорта';
+
+  @override
+  String get offerHeadingTeen => 'Твой первый набор';
+
+  @override
+  String get offerHeadingGeneral => 'Вам может понравиться';
+
+  @override
+  String pregnancyWeek(int week) {
+    return '$week неделя';
+  }
+
+  @override
+  String pregnancyBabySize(String size) {
+    return 'Малыш размером с $size';
+  }
+
+  @override
+  String pregnancyDueIn(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'До встречи $days дня',
+      many: 'До встречи $days дней',
+      few: 'До встречи $days дня',
+      one: 'До встречи $days день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pregnancyDueDate(String date) {
+    return 'Дата родов: $date';
+  }
+
+  @override
+  String pregnancyTrimester(int trimester) {
+    return '$trimester триместр';
+  }
+
+  @override
+  String get pregnancyOverdue => 'Срок уже подошёл';
+
+  @override
+  String get badgeFree => 'Бесплатно';
+
+  @override
+  String get badgePremium => 'Premium';
+
+  @override
+  String get badgeLocalBrand => 'Местный бренд';
+
+  @override
+  String get badgeVerifiedDoctor => 'Проверенный врач';
+
+  @override
+  String get badgeBundle => 'Набор';
+
+  @override
+  String get badgeSubscription => 'Подписка';
+
+  @override
+  String get badgeAdultOnly => '18+';
+
+  @override
+  String contentMinutes(int minutes) {
+    return '$minutes мин';
+  }
+
+  @override
+  String get contentTypeVideo => 'Видео';
+
+  @override
+  String get contentTypeArticle => 'Статья';
+
+  @override
+  String get contentTypeCourse => 'Курс';
+
+  @override
+  String get contentTypePodcast => 'Подкаст';
+
+  @override
+  String get categoryMyBody => 'Моё тело';
+
+  @override
+  String get categoryCycleHealth => 'Цикл и здоровье';
+
+  @override
+  String get categoryPregnancySchool => 'Школа беременности';
+
+  @override
+  String get categoryPostpartum => 'После родов';
+
+  @override
+  String get categoryMenopause => 'Менопауза';
+
+  @override
+  String get categoryMentalHealth => 'Ментальное здоровье';
+
+  @override
+  String get categoryNutrition => 'Питание';
+
+  @override
+  String get categoryIntimacy => 'Близость и отношения';
+
+  @override
+  String courseLessonsCount(int count) {
+    return '$count уроков';
+  }
+
+  @override
+  String courseProgressPercent(int percent) {
+    return 'Пройдено $percent%';
+  }
+
+  @override
+  String courseNextLesson(String title) {
+    return 'Далее: $title';
+  }
+
+  @override
+  String qaAnsweredBy(String name) {
+    return 'Отвечает $name';
+  }
+
+  @override
+  String qaUpvotes(int count) {
+    return '$count';
+  }
+
+  @override
+  String get qaAwaitingAnswer => 'Ждёт ответа врача';
+
+  @override
+  String get qaAnonymous => 'Анонимно';
+
+  @override
+  String priceTenge(String price) {
+    return '$price ₸';
+  }
+
+  @override
+  String productRating(String rating) {
+    return '$rating';
+  }
+
+  @override
+  String productReviews(int count) {
+    return '$count отзывов';
+  }
+
+  @override
+  String get shopAddToCart => 'В корзину';
+
+  @override
+  String get shopCategoryPeriodCare => 'Гигиена';
+
+  @override
+  String get shopCategoryPregnancy => 'Беременность';
+
+  @override
+  String get shopCategoryBaby => 'Малыш';
+
+  @override
+  String get shopCategoryBeauty => 'Красота и уход';
+
+  @override
+  String get shopCategoryWellness => 'Здоровье';
+
+  @override
+  String get shopCategoryIntimateHealth => 'Интимное здоровье';
+
+  @override
+  String get shopCategorySubscriptionBox => 'Боксы по подписке';
 }

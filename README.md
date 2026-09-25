@@ -9,7 +9,7 @@ A women's health, learning and shopping app for Kazakhstan, for users from their
 | 1 | Project setup, pink/green theme, router, kk/ru/en localization, bottom-nav shell | ✅ |
 | 2 | Onboarding, auth, personalization quiz | ✅ |
 | 3 | Tracker (cycle), PredictionService, reminders | ✅ |
-| 4 | Home feed with mock content | ⏳ |
+| 4 | Home feed with mock content | ✅ |
 | 5 | Learn: lessons, courses, video, Q&A | ⏳ |
 | 6 | Shop: catalog, cart, checkout (mock payment) | ⏳ |
 | 7 | Circle AI chat (mock, then FastAPI `POST /ai/chat`) | ⏳ |
@@ -77,11 +77,17 @@ lib/
                                  # data: encrypted local repositories, doctor-report PDF
                                  # presentation: calendar, daily log sheet, mood chart,
                                  #   reminders and vaccinations screens
-    home/ learn/ shop/ ai_assistant/
+    home/                        # FeedService (pure ranking), HomeFeed, home screen
+    learn/                       # ContentItem, Course, CourseProgress, DailyTip,
+                                 #   mock repository, content cards
+    qa/                          # Question, Answer, Expert, question card
+    shop/                        # Product, Seller, product card
+    ai_assistant/
     (qa/ partner/ family/ premium/ are added in their steps)
 assets/
   google_fonts/                  # bundled Nunito (OFL), covers Kazakh Cyrillic and ₸
-  mock/                          # mock JSON until Firebase is connected
+  mock/                          # content, courses, tips, baby_sizes, questions,
+                                 # experts, products, sellers — all kk/ru/en
 ```
 
 ### Conventions
@@ -107,6 +113,25 @@ Cycle mode is built. Pregnancy, postpartum and menopause modes show a placeholde
 - **Reminders** via local notifications: period coming (1–7 days ahead), fertile window, pill, water, doctor visits and vaccinations. Cycle reminders are scheduled three cycles ahead so they keep firing if the app is not opened.
 - **Vaccinations** suggested by age and life stage (HPV for teens, Tdap in pregnancy, measles/rubella when trying to conceive, shingles and pneumococcal at 45+), every entry editable. Live vaccines are withheld during pregnancy. The list is explicitly a reference, not a prescription.
 - **Doctor report** exported as a PDF (cycles, summary and recent logs) built on device and shared through the Android share sheet.
+
+## The home feed (step 4)
+
+The feed is assembled by `FeedService`, which is pure and unit-tested, so the ranking rules can move server-side later without touching the UI.
+
+- **Status card**: pregnancy week with the baby's size and a countdown, or the cycle card from step 3, or a prompt to start tracking.
+- **For you**: ranked by life stage (strongest), matching interests, and — for pregnancy — how close a week-by-week lesson is to her current week. Popularity breaks ties, and free material gets a small nudge so the feed is useful without premium.
+- **Tip of the day**: matched to today's cycle phase or life stage, and stable for the whole day.
+- **Continue course**: an unfinished course she has started wins over a better-matching new one, and a finished course is never offered again.
+- **Shop offers**: timed to the forecast. Period essentials appear three days before the predicted period, fertility products during the fertile window when she is trying to conceive, and pregnancy or menopause products when that is her stage.
+- **Trending Q&A**: answered questions first, then by upvotes, with the verified-doctor badge.
+
+Age gating runs through the whole feed: users under 16 never see 18+ content or intimate-health products.
+
+### Content data
+
+Content lives in `assets/mock/` in the shape Firestore will hold, with every string as `{"ru": …, "kk": …, "en": …}` and resolved through `LocalizedText`. `test/features/home/mock_data_test.dart` guards that data: every item must parse, carry all three languages, and reference a real course, expert, seller or product.
+
+Mock content ships without cover images, so cards render a tinted panel with the category icon. Real images load through `cached_network_image` and fall back to the same panel.
 
 ## Quality checks
 

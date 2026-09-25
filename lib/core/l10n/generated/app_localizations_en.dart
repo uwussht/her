@@ -1087,4 +1087,221 @@ class AppLocalizationsEn extends AppLocalizations {
   String reminderTimeAt(String time) {
     return 'Time: $time';
   }
+
+  @override
+  String get homeForYou => 'For you';
+
+  @override
+  String get homeSeeAll => 'See all';
+
+  @override
+  String get homeTipOfDay => 'Tip of the day';
+
+  @override
+  String get homeContinueCourse => 'Continue course';
+
+  @override
+  String get homeStartCourse => 'Start a course';
+
+  @override
+  String get homeTrendingQa => 'Ask the experts';
+
+  @override
+  String get homeNextReminder => 'Next reminder';
+
+  @override
+  String get homeLoading => 'Putting your feed together…';
+
+  @override
+  String get homeFeedEmpty => 'Nothing to show yet. Take a look at Learn.';
+
+  @override
+  String get offerHeadingPeriodSoon => 'Your period is close — these help';
+
+  @override
+  String get offerHeadingPeriodNow => 'For these days';
+
+  @override
+  String get offerHeadingFertile => 'For trying to conceive';
+
+  @override
+  String get offerHeadingPregnancy => 'For your pregnancy';
+
+  @override
+  String get offerHeadingPostpartum => 'After birth';
+
+  @override
+  String get offerHeadingMenopause => 'For your comfort';
+
+  @override
+  String get offerHeadingTeen => 'Your first kit';
+
+  @override
+  String get offerHeadingGeneral => 'You might like';
+
+  @override
+  String pregnancyWeek(int week) {
+    return 'Week $week';
+  }
+
+  @override
+  String pregnancyBabySize(String size) {
+    return 'Baby is the size of $size';
+  }
+
+  @override
+  String pregnancyDueIn(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days to go',
+      one: '$days day to go',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pregnancyDueDate(String date) {
+    return 'Due date: $date';
+  }
+
+  @override
+  String pregnancyTrimester(int trimester) {
+    return 'Trimester $trimester';
+  }
+
+  @override
+  String get pregnancyOverdue => 'Your due date has passed';
+
+  @override
+  String get badgeFree => 'Free';
+
+  @override
+  String get badgePremium => 'Premium';
+
+  @override
+  String get badgeLocalBrand => 'Local brand';
+
+  @override
+  String get badgeVerifiedDoctor => 'Verified doctor';
+
+  @override
+  String get badgeBundle => 'Bundle';
+
+  @override
+  String get badgeSubscription => 'Subscription';
+
+  @override
+  String get badgeAdultOnly => '18+';
+
+  @override
+  String contentMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String get contentTypeVideo => 'Video';
+
+  @override
+  String get contentTypeArticle => 'Article';
+
+  @override
+  String get contentTypeCourse => 'Course';
+
+  @override
+  String get contentTypePodcast => 'Podcast';
+
+  @override
+  String get categoryMyBody => 'My body';
+
+  @override
+  String get categoryCycleHealth => 'Cycle & health';
+
+  @override
+  String get categoryPregnancySchool => 'Pregnancy school';
+
+  @override
+  String get categoryPostpartum => 'Postpartum';
+
+  @override
+  String get categoryMenopause => 'Menopause';
+
+  @override
+  String get categoryMentalHealth => 'Mental health';
+
+  @override
+  String get categoryNutrition => 'Nutrition';
+
+  @override
+  String get categoryIntimacy => 'Intimacy & relationships';
+
+  @override
+  String courseLessonsCount(int count) {
+    return '$count lessons';
+  }
+
+  @override
+  String courseProgressPercent(int percent) {
+    return '$percent% done';
+  }
+
+  @override
+  String courseNextLesson(String title) {
+    return 'Next: $title';
+  }
+
+  @override
+  String qaAnsweredBy(String name) {
+    return 'Answered by $name';
+  }
+
+  @override
+  String qaUpvotes(int count) {
+    return '$count';
+  }
+
+  @override
+  String get qaAwaitingAnswer => 'Waiting for a doctor\'s answer';
+
+  @override
+  String get qaAnonymous => 'Anonymous';
+
+  @override
+  String priceTenge(String price) {
+    return '$price ₸';
+  }
+
+  @override
+  String productRating(String rating) {
+    return '$rating';
+  }
+
+  @override
+  String productReviews(int count) {
+    return '$count reviews';
+  }
+
+  @override
+  String get shopAddToCart => 'Add to cart';
+
+  @override
+  String get shopCategoryPeriodCare => 'Period care';
+
+  @override
+  String get shopCategoryPregnancy => 'Pregnancy';
+
+  @override
+  String get shopCategoryBaby => 'Baby';
+
+  @override
+  String get shopCategoryBeauty => 'Beauty & self-care';
+
+  @override
+  String get shopCategoryWellness => 'Wellness';
+
+  @override
+  String get shopCategoryIntimateHealth => 'Intimate health';
+
+  @override
+  String get shopCategorySubscriptionBox => 'Subscription boxes';
 }

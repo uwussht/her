@@ -1057,4 +1057,216 @@ class AppLocalizationsKk extends AppLocalizations {
   String reminderTimeAt(String time) {
     return 'Уақыты: $time';
   }
+
+  @override
+  String get homeForYou => 'Сізге';
+
+  @override
+  String get homeSeeAll => 'Барлығы';
+
+  @override
+  String get homeTipOfDay => 'Күн кеңесі';
+
+  @override
+  String get homeContinueCourse => 'Курсты жалғастыру';
+
+  @override
+  String get homeStartCourse => 'Курсты бастау';
+
+  @override
+  String get homeTrendingQa => 'Дәрігерлерге сұрақтар';
+
+  @override
+  String get homeNextReminder => 'Жақындағы еске салғыш';
+
+  @override
+  String get homeLoading => 'Таспаңызды жинап жатырмыз…';
+
+  @override
+  String get homeFeedEmpty =>
+      'Әзірге көрсететін ештеңе жоқ. «Оқу» бөліміне кіріп көріңіз.';
+
+  @override
+  String get offerHeadingPeriodSoon => 'Етеккір жақындады — қажет болады';
+
+  @override
+  String get offerHeadingPeriodNow => 'Осы күндерге';
+
+  @override
+  String get offerHeadingFertile => 'Жоспарлау үшін';
+
+  @override
+  String get offerHeadingPregnancy => 'Жүктілік кезінде';
+
+  @override
+  String get offerHeadingPostpartum => 'Босанғаннан кейін';
+
+  @override
+  String get offerHeadingMenopause => 'Жайлылық үшін';
+
+  @override
+  String get offerHeadingTeen => 'Сенің алғашқы жинағың';
+
+  @override
+  String get offerHeadingGeneral => 'Сізге ұнауы мүмкін';
+
+  @override
+  String pregnancyWeek(int week) {
+    return '$week-апта';
+  }
+
+  @override
+  String pregnancyBabySize(String size) {
+    return 'Сәбидің өлшемі $size сияқты';
+  }
+
+  @override
+  String pregnancyDueIn(int days) {
+    return 'Кездескенше $days күн';
+  }
+
+  @override
+  String pregnancyDueDate(String date) {
+    return 'Босану күні: $date';
+  }
+
+  @override
+  String pregnancyTrimester(int trimester) {
+    return '$trimester-триместр';
+  }
+
+  @override
+  String get pregnancyOverdue => 'Мерзім жетті';
+
+  @override
+  String get badgeFree => 'Тегін';
+
+  @override
+  String get badgePremium => 'Premium';
+
+  @override
+  String get badgeLocalBrand => 'Жергілікті бренд';
+
+  @override
+  String get badgeVerifiedDoctor => 'Тексерілген дәрігер';
+
+  @override
+  String get badgeBundle => 'Жинақ';
+
+  @override
+  String get badgeSubscription => 'Жазылым';
+
+  @override
+  String get badgeAdultOnly => '18+';
+
+  @override
+  String contentMinutes(int minutes) {
+    return '$minutes мин';
+  }
+
+  @override
+  String get contentTypeVideo => 'Бейне';
+
+  @override
+  String get contentTypeArticle => 'Мақала';
+
+  @override
+  String get contentTypeCourse => 'Курс';
+
+  @override
+  String get contentTypePodcast => 'Подкаст';
+
+  @override
+  String get categoryMyBody => 'Менің денем';
+
+  @override
+  String get categoryCycleHealth => 'Цикл және денсаулық';
+
+  @override
+  String get categoryPregnancySchool => 'Жүктілік мектебі';
+
+  @override
+  String get categoryPostpartum => 'Босанғаннан кейін';
+
+  @override
+  String get categoryMenopause => 'Менопауза';
+
+  @override
+  String get categoryMentalHealth => 'Психикалық денсаулық';
+
+  @override
+  String get categoryNutrition => 'Тамақтану';
+
+  @override
+  String get categoryIntimacy => 'Жақындық және қарым-қатынас';
+
+  @override
+  String courseLessonsCount(int count) {
+    return '$count сабақ';
+  }
+
+  @override
+  String courseProgressPercent(int percent) {
+    return '$percent% өтілді';
+  }
+
+  @override
+  String courseNextLesson(String title) {
+    return 'Келесі: $title';
+  }
+
+  @override
+  String qaAnsweredBy(String name) {
+    return 'Жауап беруші: $name';
+  }
+
+  @override
+  String qaUpvotes(int count) {
+    return '$count';
+  }
+
+  @override
+  String get qaAwaitingAnswer => 'Дәрігердің жауабын күтуде';
+
+  @override
+  String get qaAnonymous => 'Анонимді';
+
+  @override
+  String priceTenge(String price) {
+    return '$price ₸';
+  }
+
+  @override
+  String productRating(String rating) {
+    return '$rating';
+  }
+
+  @override
+  String productReviews(int count) {
+    return '$count пікір';
+  }
+
+  @override
+  String get shopAddToCart => 'Себетке';
+
+  @override
+  String get shopCategoryPeriodCare => 'Гигиена';
+
+  @override
+  String get shopCategoryPregnancy => 'Жүктілік';
+
+  @override
+  String get shopCategoryBaby => 'Сәби';
+
+  @override
+  String get shopCategoryBeauty => 'Сұлулық және күтім';
+
+  @override
+  String get shopCategoryWellness => 'Денсаулық';
+
+  @override
+  String get shopCategoryIntimateHealth => 'Интимдік денсаулық';
+
+  @override
+  String get shopCategorySubscriptionBox => 'Жазылым бокстары';
 }

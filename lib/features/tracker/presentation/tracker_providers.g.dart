@@ -228,7 +228,7 @@ final class TrackerControllerProvider
   }
 }
 
-String _$trackerControllerHash() => r'59fbf14f806d01a53c18180c04b47d9c2906eee5';
+String _$trackerControllerHash() => r'09a64268290ac074481190b7f2925a6eb5939f5b';
 
 /// Cycles and daily logs for the signed-in user.
 
