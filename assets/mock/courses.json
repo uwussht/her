@@ -1,0 +1,204 @@
+[
+  {
+    "id": "course_cycle",
+    "grantsCertificate": true,
+    "title": {
+      "ru": "Цикл под контролем",
+      "kk": "Цикл бақылауда",
+      "en": "Your cycle, understood"
+    },
+    "modules": [
+      {
+        "id": "m1",
+        "title": {
+          "ru": "Основы",
+          "kk": "Негіздер",
+          "en": "The basics"
+        },
+        "lessons": [
+          {
+            "id": "l1",
+            "title": {
+              "ru": "Что такое цикл",
+              "kk": "Цикл дегеніміз не",
+              "en": "What a cycle is"
+            },
+            "durationMinutes": 12,
+            "isQuiz": false
+          },
+          {
+            "id": "l2",
+            "title": {
+              "ru": "Гормоны простыми словами",
+              "kk": "Гормондар қарапайым тілмен",
+              "en": "Hormones in plain words"
+            },
+            "durationMinutes": 14,
+            "isQuiz": false
+          },
+          {
+            "id": "l3",
+            "title": {
+              "ru": "Проверьте себя",
+              "kk": "Өзіңізді тексеріңіз",
+              "en": "Check yourself"
+            },
+            "durationMinutes": 5,
+            "isQuiz": true
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": {
+          "ru": "Практика",
+          "kk": "Тәжірибе",
+          "en": "In practice"
+        },
+        "lessons": [
+          {
+            "id": "l4",
+            "title": {
+              "ru": "Как вести трекер",
+              "kk": "Трекерді қалай жүргізу керек",
+              "en": "How to track well"
+            },
+            "durationMinutes": 16,
+            "isQuiz": false
+          },
+          {
+            "id": "l5",
+            "title": {
+              "ru": "Питание по фазам",
+              "kk": "Фазалар бойынша тамақтану",
+              "en": "Eating with your phases"
+            },
+            "durationMinutes": 18,
+            "isQuiz": false
+          },
+          {
+            "id": "l6",
+            "title": {
+              "ru": "Итоговый тест",
+              "kk": "Қорытынды тест",
+              "en": "Final quiz"
+            },
+            "durationMinutes": 8,
+            "isQuiz": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "course_pregnancy",
+    "grantsCertificate": true,
+    "title": {
+      "ru": "Школа беременности",
+      "kk": "Жүктілік мектебі",
+      "en": "Pregnancy school"
+    },
+    "modules": [
+      {
+        "id": "m1",
+        "title": {
+          "ru": "Первый триместр",
+          "kk": "Бірінші триместр",
+          "en": "First trimester"
+        },
+        "lessons": [
+          {
+            "id": "l1",
+            "title": {
+              "ru": "Первые недели",
+              "kk": "Алғашқы апталар",
+              "en": "The first weeks"
+            },
+            "durationMinutes": 15,
+            "isQuiz": false
+          },
+          {
+            "id": "l2",
+            "title": {
+              "ru": "Анализы и скрининги",
+              "kk": "Талдаулар мен скринингтер",
+              "en": "Tests and screenings"
+            },
+            "durationMinutes": 18,
+            "isQuiz": false
+          }
+        ]
+      },
+      {
+        "id": "m2",
+        "title": {
+          "ru": "Второй триместр",
+          "kk": "Екінші триместр",
+          "en": "Second trimester"
+        },
+        "lessons": [
+          {
+            "id": "l3",
+            "title": {
+              "ru": "Питание и вес",
+              "kk": "Тамақтану және салмақ",
+              "en": "Food and weight"
+            },
+            "durationMinutes": 16,
+            "isQuiz": false
+          },
+          {
+            "id": "l4",
+            "title": {
+              "ru": "Движение и сон",
+              "kk": "Қозғалыс және ұйқы",
+              "en": "Movement and sleep"
+            },
+            "durationMinutes": 14,
+            "isQuiz": false
+          }
+        ]
+      },
+      {
+        "id": "m3",
+        "title": {
+          "ru": "Подготовка к родам",
+          "kk": "Босануға дайындық",
+          "en": "Getting ready"
+        },
+        "lessons": [
+          {
+            "id": "l5",
+            "title": {
+              "ru": "Сумка в роддом",
+              "kk": "Перзентханаға сөмке",
+              "en": "Your hospital bag"
+            },
+            "durationMinutes": 12,
+            "isQuiz": false
+          },
+          {
+            "id": "l6",
+            "title": {
+              "ru": "План родов",
+              "kk": "Босану жоспары",
+              "en": "Your birth plan"
+            },
+            "durationMinutes": 20,
+            "isQuiz": false
+          },
+          {
+            "id": "l7",
+            "title": {
+              "ru": "Итоговый тест",
+              "kk": "Қорытынды тест",
+              "en": "Final quiz"
+            },
+            "durationMinutes": 10,
+            "isQuiz": true
+          }
+        ]
+      }
+    ]
+  }
+]

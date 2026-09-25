@@ -1,0 +1,151 @@
+[
+  {
+    "id": "q1",
+    "category": "cycleHealth",
+    "askedAt": "2026-09-10T10:00:00.000Z",
+    "askedBy": null,
+    "upvotes": 214,
+    "priority": false,
+    "body": {
+      "ru": "Цикл 35 дней — это нормально или надо к врачу?",
+      "kk": "Цикл 35 күн — бұл қалыпты ма, әлде дәрігерге бару керек пе?",
+      "en": "My cycle is 35 days. Is that normal or should I see a doctor?"
+    },
+    "answers": [
+      {
+        "id": "a1",
+        "questionId": "q1",
+        "expertId": "exp_aigul",
+        "body": {
+          "ru": "Цикл от 21 до 35 дней считается нормальным, если он стабильный. Обратиться к врачу стоит, если длина резко изменилась или между месячными есть кровотечения.",
+          "kk": "21-ден 35 күнге дейінгі цикл тұрақты болса, қалыпты саналады. Ұзақтығы күрт өзгерсе немесе етеккір аралығында қан кетсе, дәрігерге жүгінген жөн.",
+          "en": "A cycle of 21 to 35 days is considered normal as long as it is steady. See a doctor if the length changes sharply or you bleed between periods."
+        },
+        "answeredAt": "2026-09-11T08:30:00.000Z",
+        "upvotes": 188
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "category": "cycleHealth",
+    "askedAt": "2026-09-12T14:20:00.000Z",
+    "askedBy": null,
+    "upvotes": 167,
+    "priority": true,
+    "body": {
+      "ru": "Можно ли заниматься спортом во время месячных?",
+      "kk": "Етеккір кезінде спортпен айналысуға бола ма?",
+      "en": "Can I exercise during my period?"
+    },
+    "answers": [
+      {
+        "id": "a2",
+        "questionId": "q2",
+        "expertId": "exp_aigul",
+        "body": {
+          "ru": "Да. Умеренная нагрузка часто уменьшает боль. Ориентируйтесь на самочувствие: в первые дни лучше ходьба и растяжка, чем рекорды.",
+          "kk": "Иә. Орташа жүктеме көбіне ауырсынуды азайтады. Көңіл-күйге қараңыз: алғашқы күндері рекордтан гөрі жаяу жүру мен созылу жақсы.",
+          "en": "Yes. Moderate movement often eases the pain. Follow how you feel: in the first days, walking and stretching beat personal records."
+        },
+        "answeredAt": "2026-09-12T18:00:00.000Z",
+        "upvotes": 143
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "category": "pregnancySchool",
+    "askedAt": "2026-09-08T09:15:00.000Z",
+    "askedBy": "Аружан",
+    "upvotes": 132,
+    "priority": false,
+    "body": {
+      "ru": "На каком сроке обычно чувствуют первые шевеления?",
+      "kk": "Алғашқы қимылдарды әдетте қай мерзімде сезінеді?",
+      "en": "When do you usually feel the first movements?"
+    },
+    "answers": [
+      {
+        "id": "a3",
+        "questionId": "q3",
+        "expertId": "exp_aigul",
+        "body": {
+          "ru": "Чаще всего между 18 и 22 неделями, при первой беременности — ближе к 20. Если к 24 неделе шевелений нет, сообщите врачу.",
+          "kk": "Көбінесе 18-22 апта аралығында, алғашқы жүктілікте — 20-ға жақын. 24-аптаға дейін қимыл болмаса, дәрігерге айтыңыз.",
+          "en": "Most often between weeks 18 and 22, and closer to 20 in a first pregnancy. If there is nothing by week 24, tell your doctor."
+        },
+        "answeredAt": "2026-09-08T16:40:00.000Z",
+        "upvotes": 121
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "category": "mentalHealth",
+    "askedAt": "2026-09-14T20:05:00.000Z",
+    "askedBy": null,
+    "upvotes": 98,
+    "priority": false,
+    "body": {
+      "ru": "Перед месячными становлюсь очень раздражительной. Это ПМС?",
+      "kk": "Етеккір алдында өте ашушаң боламын. Бұл ПМС па?",
+      "en": "I get very irritable before my period. Is that PMS?"
+    },
+    "answers": [
+      {
+        "id": "a4",
+        "questionId": "q4",
+        "expertId": "exp_madina",
+        "body": {
+          "ru": "Похоже на ПМС. Помогают сон, движение и уменьшение кофеина. Если настроение мешает работе и отношениям несколько циклов подряд — это повод обсудить с врачом.",
+          "kk": "ПМС-ке ұқсайды. Ұйқы, қозғалыс және кофеинді азайту көмектеседі. Егер көңіл-күй бірнеше цикл қатарынан жұмысқа кедергі болса — дәрігермен талқылаған жөн.",
+          "en": "It sounds like PMS. Sleep, movement and less caffeine help. If your mood disrupts work or relationships for several cycles in a row, bring it up with a doctor."
+        },
+        "answeredAt": "2026-09-15T07:10:00.000Z",
+        "upvotes": 87
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "category": "menopause",
+    "askedAt": "2026-09-05T11:00:00.000Z",
+    "askedBy": null,
+    "upvotes": 76,
+    "priority": false,
+    "body": {
+      "ru": "Приливы начались в 44 года — не рано ли?",
+      "kk": "44 жаста қызу толқыны басталды — ерте емес пе?",
+      "en": "Hot flashes started at 44. Isn't that early?"
+    },
+    "answers": [
+      {
+        "id": "a5",
+        "questionId": "q5",
+        "expertId": "exp_dana",
+        "body": {
+          "ru": "Перименопауза часто начинается после 40, и это в пределах нормы. Стоит проверить гормоны и ферритин, чтобы исключить другие причины.",
+          "kk": "Перименопауза көбіне 40-тан кейін басталады, бұл қалыпты шекте. Басқа себептерді жоққа шығару үшін гормондар мен ферритинді тексерген жөн.",
+          "en": "Perimenopause often begins after 40, which is within the normal range. It is worth checking hormones and ferritin to rule out other causes."
+        },
+        "answeredAt": "2026-09-06T09:20:00.000Z",
+        "upvotes": 64
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "category": "postpartum",
+    "askedAt": "2026-09-16T08:40:00.000Z",
+    "askedBy": null,
+    "upvotes": 54,
+    "priority": false,
+    "body": {
+      "ru": "Когда восстанавливается цикл после родов при грудном вскармливании?",
+      "kk": "Емізу кезінде босанғаннан кейін цикл қашан қалпына келеді?",
+      "en": "When does the cycle come back after birth if I'm breastfeeding?"
+    },
+    "answers": []
+  }
+]

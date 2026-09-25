@@ -8,6 +8,7 @@ import '../../features/auth/presentation/email_auth_screen.dart';
 import '../../features/auth/presentation/otp_screen.dart';
 import '../../features/auth/presentation/phone_auth_screen.dart';
 import '../../features/home/presentation/home_screen.dart';
+import '../../features/learn/presentation/content_detail_placeholder.dart';
 import '../../features/learn/presentation/learn_screen.dart';
 import '../../features/onboarding/domain/onboarding_status.dart';
 import '../../features/onboarding/presentation/family_offer_screen.dart';
@@ -96,7 +97,27 @@ GoRouter appRouter(Ref ref) {
             AppShell(navigationShell: navigationShell),
         branches: [
           _tab(AppRoutes.home, const HomeScreen()),
-          _tab(AppRoutes.learn, const LearnScreen()),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.learn,
+                pageBuilder: (context, state) => NoTransitionPage<void>(
+                  key: state.pageKey,
+                  child: const LearnScreen(),
+                ),
+                routes: [
+                  // Placeholder until step 5 builds the detail screen.
+                  GoRoute(
+                    path: ':id',
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => ContentDetailPlaceholder(
+                      id: state.pathParameters['id']!,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
           _tab(AppRoutes.tracker, const TrackerScreen()),
           _tab(AppRoutes.shop, const ShopScreen()),
           _tab(AppRoutes.profile, const ProfileScreen()),

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "exp_aigul",
+    "name": "Айгүл Сәрсенова",
+    "specialty": {
+      "ru": "Акушер-гинеколог",
+      "kk": "Акушер-гинеколог",
+      "en": "OB-GYN"
+    },
+    "verified": true,
+    "city": "Алматы",
+    "yearsOfPractice": 14
+  },
+  {
+    "id": "exp_dana",
+    "name": "Дана Ким",
+    "specialty": {
+      "ru": "Эндокринолог",
+      "kk": "Эндокринолог",
+      "en": "Endocrinologist"
+    },
+    "verified": true,
+    "city": "Астана",
+    "yearsOfPractice": 9
+  },
+  {
+    "id": "exp_madina",
+    "name": "Мадина Оспанова",
+    "specialty": {
+      "ru": "Психолог, перинатальный специалист",
+      "kk": "Психолог, перинаталдық маман",
+      "en": "Psychologist, perinatal specialist"
+    },
+    "verified": true,
+    "city": "Шымкент",
+    "yearsOfPractice": 11
+  }
+]

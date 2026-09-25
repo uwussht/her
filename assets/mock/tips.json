@@ -1,0 +1,132 @@
+[
+  {
+    "id": "t_period_warm",
+    "phases": [
+      "period"
+    ],
+    "stages": [],
+    "text": {
+      "ru": "Тепло на низ живота расслабляет мышцы — грелка работает не хуже таблетки.",
+      "kk": "Іштің төменгі бөлігіне жылу бұлшықетті босаңсытады — жылытқыш таблеткадан кем емес.",
+      "en": "Warmth on your lower belly relaxes the muscle — a heat pad works as well as a pill."
+    },
+    "contentId": "c_pms"
+  },
+  {
+    "id": "t_period_iron",
+    "phases": [
+      "period"
+    ],
+    "stages": [],
+    "text": {
+      "ru": "В дни месячных добавьте железо: гречка, печень, гранат, зелень.",
+      "kk": "Етеккір күндері темірді қосыңыз: қарақұмық, бауыр, анар, көкөніс.",
+      "en": "Add iron on period days: buckwheat, liver, pomegranate, greens."
+    },
+    "contentId": "c_iron"
+  },
+  {
+    "id": "t_fertile",
+    "phases": [
+      "fertile",
+      "ovulation"
+    ],
+    "stages": [],
+    "text": {
+      "ru": "В фертильные дни энергии больше — хороший момент для нагрузки и важных разговоров.",
+      "kk": "Құнарлы күндері қуат көбірек — жүктеме мен маңызды әңгімелерге жақсы сәт.",
+      "en": "Energy runs high in your fertile days — a good moment for a workout or a big conversation."
+    },
+    "contentId": "c_fertile_window"
+  },
+  {
+    "id": "t_luteal",
+    "phases": [
+      "luteal"
+    ],
+    "stages": [],
+    "text": {
+      "ru": "Перед месячными тянет на сладкое — это нормально. Добавьте белок к перекусу.",
+      "kk": "Етеккір алдында тәттіге тартады — бұл қалыпты. Тіскебасарға ақуыз қосыңыз.",
+      "en": "Craving sugar before your period is normal. Add protein to the snack."
+    },
+    "contentId": "c_pms"
+  },
+  {
+    "id": "t_follicular",
+    "phases": [
+      "follicular"
+    ],
+    "stages": [],
+    "text": {
+      "ru": "После месячных силы возвращаются — начните новое дело именно сейчас.",
+      "kk": "Етеккірден кейін күш қайта оралады — жаңа істі дәл қазір бастаңыз.",
+      "en": "Your strength returns after your period — this is the week to start something new."
+    },
+    "contentId": "c_cycle_phases"
+  },
+  {
+    "id": "t_preg_water",
+    "phases": [],
+    "stages": [
+      "pregnant"
+    ],
+    "text": {
+      "ru": "Во время беременности пейте воду чаще, но небольшими порциями.",
+      "kk": "Жүктілік кезінде суды жиі, бірақ аз мөлшерде ішіңіз.",
+      "en": "During pregnancy, drink water more often but in smaller amounts."
+    },
+    "contentId": "c_preg_w18"
+  },
+  {
+    "id": "t_postpartum",
+    "phases": [],
+    "stages": [
+      "postpartum"
+    ],
+    "text": {
+      "ru": "Сон урывками — это тоже сон. Отдыхайте, когда спит малыш.",
+      "kk": "Үзік-үзік ұйқы да — ұйқы. Сәби ұйықтағанда демалыңыз.",
+      "en": "Broken sleep is still sleep. Rest when the baby rests."
+    },
+    "contentId": "c_postpartum_body"
+  },
+  {
+    "id": "t_menopause",
+    "phases": [],
+    "stages": [
+      "menopause",
+      "perimenopause"
+    ],
+    "text": {
+      "ru": "Прохладная спальня и хлопковое бельё уменьшают ночные приливы.",
+      "kk": "Салқын жатын бөлме және мақта төсек түнгі қызу толқынын азайтады.",
+      "en": "A cool bedroom and cotton bedding ease night-time flashes."
+    },
+    "contentId": "c_hot_flashes"
+  },
+  {
+    "id": "t_teen",
+    "phases": [],
+    "stages": [
+      "firstPeriod"
+    ],
+    "text": {
+      "ru": "Держите запасную прокладку в пенале — так спокойнее в школе.",
+      "kk": "Қосымша прокладканы қаламсауытта ұстаңыз — мектепте сабыр сақтайсыз.",
+      "en": "Keep a spare pad in your pencil case — it takes the worry out of school."
+    },
+    "contentId": "c_first_period"
+  },
+  {
+    "id": "t_general_sleep",
+    "phases": [],
+    "stages": [],
+    "text": {
+      "ru": "Ложиться в одно и то же время — самый недооценённый способ выровнять цикл.",
+      "kk": "Бір уақытта жату — циклды реттеудің ең бағаланбаған тәсілі.",
+      "en": "Going to bed at the same time is the most underrated way to steady your cycle."
+    },
+    "contentId": "c_cycle_phases"
+  }
+]

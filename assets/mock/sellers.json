@@ -1,0 +1,29 @@
+[
+  {
+    "id": "s_aru",
+    "name": "Aru Care",
+    "isLocalBrand": true,
+    "rating": 4.8,
+    "city": "Алматы"
+  },
+  {
+    "id": "s_dala",
+    "name": "Dala Organics",
+    "isLocalBrand": true,
+    "rating": 4.7,
+    "city": "Астана"
+  },
+  {
+    "id": "s_global",
+    "name": "Nordic Health",
+    "isLocalBrand": false,
+    "rating": 4.5
+  },
+  {
+    "id": "s_mama",
+    "name": "Mama Store KZ",
+    "isLocalBrand": true,
+    "rating": 4.6,
+    "city": "Шымкент"
+  }
+]

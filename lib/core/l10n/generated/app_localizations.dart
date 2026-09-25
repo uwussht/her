@@ -2019,6 +2019,372 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Время: {time}'**
   String reminderTimeAt(String time);
+
+  /// Home section: personalised content
+  ///
+  /// In ru, this message translates to:
+  /// **'Для вас'**
+  String get homeForYou;
+
+  /// Section action link
+  ///
+  /// In ru, this message translates to:
+  /// **'Всё'**
+  String get homeSeeAll;
+
+  /// Home section
+  ///
+  /// In ru, this message translates to:
+  /// **'Совет дня'**
+  String get homeTipOfDay;
+
+  /// Home section for a started course
+  ///
+  /// In ru, this message translates to:
+  /// **'Продолжить курс'**
+  String get homeContinueCourse;
+
+  /// Home section for a course not yet started
+  ///
+  /// In ru, this message translates to:
+  /// **'Начать курс'**
+  String get homeStartCourse;
+
+  /// Home section: trending Q&A
+  ///
+  /// In ru, this message translates to:
+  /// **'Вопросы врачам'**
+  String get homeTrendingQa;
+
+  /// Home section
+  ///
+  /// In ru, this message translates to:
+  /// **'Ближайшее напоминание'**
+  String get homeNextReminder;
+
+  /// Home loading state
+  ///
+  /// In ru, this message translates to:
+  /// **'Собираем вашу ленту…'**
+  String get homeLoading;
+
+  /// Home empty state
+  ///
+  /// In ru, this message translates to:
+  /// **'Пока нечего показать. Загляните в раздел «Обучение».'**
+  String get homeFeedEmpty;
+
+  /// Shop row heading, 3 days before the predicted period
+  ///
+  /// In ru, this message translates to:
+  /// **'Скоро месячные — пригодится'**
+  String get offerHeadingPeriodSoon;
+
+  /// offerHeadingPeriodNow
+  ///
+  /// In ru, this message translates to:
+  /// **'На эти дни'**
+  String get offerHeadingPeriodNow;
+
+  /// offerHeadingFertile
+  ///
+  /// In ru, this message translates to:
+  /// **'Для планирования'**
+  String get offerHeadingFertile;
+
+  /// offerHeadingPregnancy
+  ///
+  /// In ru, this message translates to:
+  /// **'Для беременности'**
+  String get offerHeadingPregnancy;
+
+  /// offerHeadingPostpartum
+  ///
+  /// In ru, this message translates to:
+  /// **'После родов'**
+  String get offerHeadingPostpartum;
+
+  /// offerHeadingMenopause
+  ///
+  /// In ru, this message translates to:
+  /// **'Для комфорта'**
+  String get offerHeadingMenopause;
+
+  /// offerHeadingTeen
+  ///
+  /// In ru, this message translates to:
+  /// **'Твой первый набор'**
+  String get offerHeadingTeen;
+
+  /// Shop row heading fallback
+  ///
+  /// In ru, this message translates to:
+  /// **'Вам может понравиться'**
+  String get offerHeadingGeneral;
+
+  /// Pregnancy week label
+  ///
+  /// In ru, this message translates to:
+  /// **'{week} неделя'**
+  String pregnancyWeek(int week);
+
+  /// pregnancyBabySize
+  ///
+  /// In ru, this message translates to:
+  /// **'Малыш размером с {size}'**
+  String pregnancyBabySize(String size);
+
+  /// pregnancyDueIn
+  ///
+  /// In ru, this message translates to:
+  /// **'{days, plural, one{До встречи {days} день} few{До встречи {days} дня} many{До встречи {days} дней} other{До встречи {days} дня}}'**
+  String pregnancyDueIn(int days);
+
+  /// pregnancyDueDate
+  ///
+  /// In ru, this message translates to:
+  /// **'Дата родов: {date}'**
+  String pregnancyDueDate(String date);
+
+  /// pregnancyTrimester
+  ///
+  /// In ru, this message translates to:
+  /// **'{trimester} триместр'**
+  String pregnancyTrimester(int trimester);
+
+  /// pregnancyOverdue
+  ///
+  /// In ru, this message translates to:
+  /// **'Срок уже подошёл'**
+  String get pregnancyOverdue;
+
+  /// Badge on free content
+  ///
+  /// In ru, this message translates to:
+  /// **'Бесплатно'**
+  String get badgeFree;
+
+  /// Badge on premium content. Not translated.
+  ///
+  /// In ru, this message translates to:
+  /// **'Premium'**
+  String get badgePremium;
+
+  /// badgeLocalBrand
+  ///
+  /// In ru, this message translates to:
+  /// **'Местный бренд'**
+  String get badgeLocalBrand;
+
+  /// badgeVerifiedDoctor
+  ///
+  /// In ru, this message translates to:
+  /// **'Проверенный врач'**
+  String get badgeVerifiedDoctor;
+
+  /// badgeBundle
+  ///
+  /// In ru, this message translates to:
+  /// **'Набор'**
+  String get badgeBundle;
+
+  /// badgeSubscription
+  ///
+  /// In ru, this message translates to:
+  /// **'Подписка'**
+  String get badgeSubscription;
+
+  /// badgeAdultOnly
+  ///
+  /// In ru, this message translates to:
+  /// **'18+'**
+  String get badgeAdultOnly;
+
+  /// contentMinutes
+  ///
+  /// In ru, this message translates to:
+  /// **'{minutes} мин'**
+  String contentMinutes(int minutes);
+
+  /// contentTypeVideo
+  ///
+  /// In ru, this message translates to:
+  /// **'Видео'**
+  String get contentTypeVideo;
+
+  /// contentTypeArticle
+  ///
+  /// In ru, this message translates to:
+  /// **'Статья'**
+  String get contentTypeArticle;
+
+  /// contentTypeCourse
+  ///
+  /// In ru, this message translates to:
+  /// **'Курс'**
+  String get contentTypeCourse;
+
+  /// contentTypePodcast
+  ///
+  /// In ru, this message translates to:
+  /// **'Подкаст'**
+  String get contentTypePodcast;
+
+  /// categoryMyBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Моё тело'**
+  String get categoryMyBody;
+
+  /// categoryCycleHealth
+  ///
+  /// In ru, this message translates to:
+  /// **'Цикл и здоровье'**
+  String get categoryCycleHealth;
+
+  /// categoryPregnancySchool
+  ///
+  /// In ru, this message translates to:
+  /// **'Школа беременности'**
+  String get categoryPregnancySchool;
+
+  /// categoryPostpartum
+  ///
+  /// In ru, this message translates to:
+  /// **'После родов'**
+  String get categoryPostpartum;
+
+  /// categoryMenopause
+  ///
+  /// In ru, this message translates to:
+  /// **'Менопауза'**
+  String get categoryMenopause;
+
+  /// categoryMentalHealth
+  ///
+  /// In ru, this message translates to:
+  /// **'Ментальное здоровье'**
+  String get categoryMentalHealth;
+
+  /// categoryNutrition
+  ///
+  /// In ru, this message translates to:
+  /// **'Питание'**
+  String get categoryNutrition;
+
+  /// categoryIntimacy
+  ///
+  /// In ru, this message translates to:
+  /// **'Близость и отношения'**
+  String get categoryIntimacy;
+
+  /// courseLessonsCount
+  ///
+  /// In ru, this message translates to:
+  /// **'{count} уроков'**
+  String courseLessonsCount(int count);
+
+  /// courseProgressPercent
+  ///
+  /// In ru, this message translates to:
+  /// **'Пройдено {percent}%'**
+  String courseProgressPercent(int percent);
+
+  /// courseNextLesson
+  ///
+  /// In ru, this message translates to:
+  /// **'Далее: {title}'**
+  String courseNextLesson(String title);
+
+  /// qaAnsweredBy
+  ///
+  /// In ru, this message translates to:
+  /// **'Отвечает {name}'**
+  String qaAnsweredBy(String name);
+
+  /// qaUpvotes
+  ///
+  /// In ru, this message translates to:
+  /// **'{count}'**
+  String qaUpvotes(int count);
+
+  /// qaAwaitingAnswer
+  ///
+  /// In ru, this message translates to:
+  /// **'Ждёт ответа врача'**
+  String get qaAwaitingAnswer;
+
+  /// qaAnonymous
+  ///
+  /// In ru, this message translates to:
+  /// **'Анонимно'**
+  String get qaAnonymous;
+
+  /// Price with the Kazakhstan tenge sign
+  ///
+  /// In ru, this message translates to:
+  /// **'{price} ₸'**
+  String priceTenge(String price);
+
+  /// productRating
+  ///
+  /// In ru, this message translates to:
+  /// **'{rating}'**
+  String productRating(String rating);
+
+  /// productReviews
+  ///
+  /// In ru, this message translates to:
+  /// **'{count} отзывов'**
+  String productReviews(int count);
+
+  /// shopAddToCart
+  ///
+  /// In ru, this message translates to:
+  /// **'В корзину'**
+  String get shopAddToCart;
+
+  /// Shop category name
+  ///
+  /// In ru, this message translates to:
+  /// **'Гигиена'**
+  String get shopCategoryPeriodCare;
+
+  /// Shop category name
+  ///
+  /// In ru, this message translates to:
+  /// **'Беременность'**
+  String get shopCategoryPregnancy;
+
+  /// Shop category name
+  ///
+  /// In ru, this message translates to:
+  /// **'Малыш'**
+  String get shopCategoryBaby;
+
+  /// Shop category name
+  ///
+  /// In ru, this message translates to:
+  /// **'Красота и уход'**
+  String get shopCategoryBeauty;
+
+  /// Shop category name
+  ///
+  /// In ru, this message translates to:
+  /// **'Здоровье'**
+  String get shopCategoryWellness;
+
+  /// Shop category name
+  ///
+  /// In ru, this message translates to:
+  /// **'Интимное здоровье'**
+  String get shopCategoryIntimateHealth;
+
+  /// Shop category name
+  ///
+  /// In ru, this message translates to:
+  /// **'Боксы по подписке'**
+  String get shopCategorySubscriptionBox;
 }
 
 class _AppLocalizationsDelegate

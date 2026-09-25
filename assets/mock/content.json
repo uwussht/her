@@ -1,0 +1,486 @@
+[
+  {
+    "id": "c_first_period",
+    "type": "article",
+    "category": "myBody",
+    "durationMinutes": 6,
+    "tier": "free",
+    "title": {
+      "ru": "Первые месячные: чего ожидать",
+      "kk": "Алғашқы етеккір: не күтуге болады",
+      "en": "Your first period: what to expect"
+    },
+    "summary": {
+      "ru": "Что происходит с телом, сколько это длится и что взять с собой в школу.",
+      "kk": "Денеде не болады, қанша уақытқа созылады және мектепке не алу керек.",
+      "en": "What happens in your body, how long it lasts, and what to keep in your bag."
+    },
+    "stages": [
+      "firstPeriod"
+    ],
+    "interests": [
+      "myBody",
+      "cycleHealth"
+    ],
+    "expertId": "exp_aigul",
+    "viewCount": 15420,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_body_changes",
+    "type": "video",
+    "category": "myBody",
+    "durationMinutes": 8,
+    "tier": "free",
+    "title": {
+      "ru": "Как меняется тело в подростковом возрасте",
+      "kk": "Жасөспірім кезде дене қалай өзгереді",
+      "en": "How your body changes in your teens"
+    },
+    "summary": {
+      "ru": "Короткий урок о взрослении — спокойно и без стеснения.",
+      "kk": "Ержету туралы қысқа сабақ — сабырлы және ұялмай.",
+      "en": "A short lesson about growing up, calmly and without embarrassment."
+    },
+    "stages": [
+      "firstPeriod"
+    ],
+    "interests": [
+      "myBody"
+    ],
+    "expertId": "exp_aigul",
+    "viewCount": 9870,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_cycle_phases",
+    "type": "video",
+    "category": "cycleHealth",
+    "durationMinutes": 11,
+    "tier": "free",
+    "title": {
+      "ru": "4 фазы цикла и ваша энергия",
+      "kk": "Циклдің 4 фазасы және қуатыңыз",
+      "en": "The 4 cycle phases and your energy"
+    },
+    "summary": {
+      "ru": "Почему в разные дни хочется разного — и как под это подстроить нагрузку.",
+      "kk": "Неліктен әр күні әртүрлі сезінесіз — және жүктемені қалай бейімдеу керек.",
+      "en": "Why you feel different across the month, and how to plan around it."
+    },
+    "stages": [
+      "trackingCycle",
+      "tryingToConceive"
+    ],
+    "interests": [
+      "cycleHealth",
+      "fitness"
+    ],
+    "expertId": "exp_aigul",
+    "viewCount": 23100,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_pms",
+    "type": "article",
+    "category": "cycleHealth",
+    "durationMinutes": 7,
+    "tier": "free",
+    "title": {
+      "ru": "ПМС: что помогает, а что нет",
+      "kk": "ПМС: не көмектеседі, не көмектеспейді",
+      "en": "PMS: what helps and what doesn't"
+    },
+    "summary": {
+      "ru": "Разбираем популярные советы и оставляем только рабочие.",
+      "kk": "Танымал кеңестерді талдап, тек жұмыс істейтіндерін қалдырамыз.",
+      "en": "We go through the popular advice and keep only what works."
+    },
+    "stages": [
+      "trackingCycle",
+      "perimenopause"
+    ],
+    "interests": [
+      "cycleHealth",
+      "mentalHealth"
+    ],
+    "expertId": "exp_dana",
+    "viewCount": 18040,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_irregular",
+    "type": "article",
+    "category": "cycleHealth",
+    "durationMinutes": 9,
+    "tier": "premium",
+    "title": {
+      "ru": "Нерегулярный цикл: когда идти к врачу",
+      "kk": "Тұрақсыз цикл: дәрігерге қашан бару керек",
+      "en": "Irregular cycles: when to see a doctor"
+    },
+    "summary": {
+      "ru": "Какие отклонения нормальны, а какие требуют обследования.",
+      "kk": "Қандай ауытқулар қалыпты, қайсысы тексеруді қажет етеді.",
+      "en": "Which variations are normal and which need a check-up."
+    },
+    "stages": [
+      "trackingCycle",
+      "perimenopause"
+    ],
+    "interests": [
+      "cycleHealth"
+    ],
+    "expertId": "exp_aigul",
+    "viewCount": 7320,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_iron",
+    "type": "article",
+    "category": "nutrition",
+    "durationMinutes": 5,
+    "tier": "free",
+    "title": {
+      "ru": "Железо и месячные",
+      "kk": "Темір және етеккір",
+      "en": "Iron and your period"
+    },
+    "summary": {
+      "ru": "Почему после обильных дней бывает слабость и что есть.",
+      "kk": "Қанды күндерден кейін неге әлсіздік болады және не жеу керек.",
+      "en": "Why heavy days can leave you drained, and what to eat."
+    },
+    "stages": [
+      "trackingCycle"
+    ],
+    "interests": [
+      "nutrition",
+      "cycleHealth"
+    ],
+    "expertId": "exp_dana",
+    "viewCount": 11200,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_fertile_window",
+    "type": "video",
+    "category": "cycleHealth",
+    "durationMinutes": 10,
+    "tier": "free",
+    "title": {
+      "ru": "Фертильное окно: как его определить",
+      "kk": "Құнарлы кезең: оны қалай анықтауға болады",
+      "en": "Finding your fertile window"
+    },
+    "summary": {
+      "ru": "Признаки овуляции и что на самом деле показывают тесты.",
+      "kk": "Овуляция белгілері және тесттер шын мәнінде нені көрсетеді.",
+      "en": "Signs of ovulation and what the tests really tell you."
+    },
+    "stages": [
+      "tryingToConceive"
+    ],
+    "interests": [
+      "fertility"
+    ],
+    "expertId": "exp_aigul",
+    "viewCount": 14300,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_preg_w12",
+    "type": "article",
+    "category": "pregnancySchool",
+    "durationMinutes": 6,
+    "tier": "free",
+    "pregnancyWeek": 12,
+    "title": {
+      "ru": "12 неделя: первый скрининг",
+      "kk": "12-апта: бірінші скрининг",
+      "en": "Week 12: the first screening"
+    },
+    "summary": {
+      "ru": "Что смотрят на УЗИ и как подготовиться.",
+      "kk": "УДЗ-де нені қарайды және қалай дайындалу керек.",
+      "en": "What the scan looks at and how to prepare."
+    },
+    "stages": [
+      "pregnant"
+    ],
+    "interests": [
+      "pregnancy"
+    ],
+    "expertId": "exp_aigul",
+    "viewCount": 8600,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_preg_w18",
+    "type": "article",
+    "category": "pregnancySchool",
+    "durationMinutes": 5,
+    "tier": "free",
+    "pregnancyWeek": 18,
+    "title": {
+      "ru": "18 неделя: первые шевеления",
+      "kk": "18-апта: алғашқы қимылдар",
+      "en": "Week 18: first movements"
+    },
+    "summary": {
+      "ru": "Когда их ждать и почему их может пока не быть.",
+      "kk": "Оларды қашан күту керек және неге әзірге болмауы мүмкін.",
+      "en": "When to expect them, and why they may not be there yet."
+    },
+    "stages": [
+      "pregnant"
+    ],
+    "interests": [
+      "pregnancy"
+    ],
+    "expertId": "exp_aigul",
+    "viewCount": 10250,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_hospital_bag",
+    "type": "article",
+    "category": "pregnancySchool",
+    "durationMinutes": 8,
+    "tier": "free",
+    "pregnancyWeek": 34,
+    "title": {
+      "ru": "Сумка в роддом: полный список",
+      "kk": "Перзентханаға сөмке: толық тізім",
+      "en": "Your hospital bag: the full list"
+    },
+    "summary": {
+      "ru": "Что действительно нужно, а что останется лежать без дела.",
+      "kk": "Шын мәнінде не қажет, не қажет емес.",
+      "en": "What you'll actually use, and what will just sit there."
+    },
+    "stages": [
+      "pregnant"
+    ],
+    "interests": [
+      "pregnancy",
+      "babyAndMotherhood"
+    ],
+    "expertId": "exp_madina",
+    "viewCount": 19870,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_postpartum_body",
+    "type": "article",
+    "category": "postpartum",
+    "durationMinutes": 7,
+    "tier": "free",
+    "title": {
+      "ru": "Восстановление после родов: первые 6 недель",
+      "kk": "Босанғаннан кейінгі қалпына келу: алғашқы 6 апта",
+      "en": "Recovery after birth: the first 6 weeks"
+    },
+    "summary": {
+      "ru": "Что считается нормой и когда звонить врачу.",
+      "kk": "Не қалыпты саналады және дәрігерге қашан хабарласу керек.",
+      "en": "What's normal, and when to call your doctor."
+    },
+    "stages": [
+      "postpartum"
+    ],
+    "interests": [
+      "babyAndMotherhood"
+    ],
+    "expertId": "exp_aigul",
+    "viewCount": 13400,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_ppd",
+    "type": "video",
+    "category": "mentalHealth",
+    "durationMinutes": 12,
+    "tier": "premium",
+    "title": {
+      "ru": "Послеродовая депрессия: как отличить от усталости",
+      "kk": "Босанғаннан кейінгі депрессия: шаршаудан қалай ажыратуға болады",
+      "en": "Postpartum depression vs. exhaustion"
+    },
+    "summary": {
+      "ru": "Признаки, о которых важно знать вам и вашим близким.",
+      "kk": "Сізге және жақындарыңызға білу маңызды белгілер.",
+      "en": "The signs you and the people close to you should know."
+    },
+    "stages": [
+      "postpartum"
+    ],
+    "interests": [
+      "mentalHealth",
+      "babyAndMotherhood"
+    ],
+    "expertId": "exp_madina",
+    "viewCount": 9100,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_perimenopause",
+    "type": "article",
+    "category": "menopause",
+    "durationMinutes": 9,
+    "tier": "free",
+    "title": {
+      "ru": "Перименопауза: первые сигналы",
+      "kk": "Перименопауза: алғашқы белгілер",
+      "en": "Perimenopause: the first signals"
+    },
+    "summary": {
+      "ru": "Почему цикл начинает меняться и что с этим делать.",
+      "kk": "Цикл неге өзгере бастайды және онымен не істеу керек.",
+      "en": "Why your cycle starts shifting, and what to do about it."
+    },
+    "stages": [
+      "perimenopause",
+      "menopause"
+    ],
+    "interests": [
+      "menopause"
+    ],
+    "expertId": "exp_dana",
+    "viewCount": 8750,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_hot_flashes",
+    "type": "video",
+    "category": "menopause",
+    "durationMinutes": 9,
+    "tier": "premium",
+    "title": {
+      "ru": "Приливы: что помогает каждый день",
+      "kk": "Қызу толқыны: күн сайын не көмектеседі",
+      "en": "Hot flashes: what helps day to day"
+    },
+    "summary": {
+      "ru": "Практические приёмы, сон и питание.",
+      "kk": "Практикалық тәсілдер, ұйқы және тамақтану.",
+      "en": "Practical habits, sleep and food."
+    },
+    "stages": [
+      "menopause",
+      "perimenopause"
+    ],
+    "interests": [
+      "menopause",
+      "nutrition"
+    ],
+    "expertId": "exp_dana",
+    "viewCount": 6420,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_anxiety",
+    "type": "article",
+    "category": "mentalHealth",
+    "durationMinutes": 6,
+    "tier": "free",
+    "title": {
+      "ru": "Тревога перед месячными",
+      "kk": "Етеккір алдындағы мазасыздық",
+      "en": "Anxiety before your period"
+    },
+    "summary": {
+      "ru": "Почему настроение падает и три приёма, которые работают.",
+      "kk": "Көңіл-күй неге түседі және жұмыс істейтін үш тәсіл.",
+      "en": "Why your mood dips, and three things that actually help."
+    },
+    "stages": [],
+    "interests": [
+      "mentalHealth",
+      "cycleHealth"
+    ],
+    "expertId": "exp_madina",
+    "viewCount": 16800,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_intimacy_talk",
+    "type": "article",
+    "category": "intimacy",
+    "durationMinutes": 7,
+    "tier": "premium",
+    "title": {
+      "ru": "Как говорить с партнёром о близости",
+      "kk": "Серіктеспен жақындық туралы қалай сөйлесу керек",
+      "en": "Talking to your partner about intimacy"
+    },
+    "summary": {
+      "ru": "Разговор без неловкости: с чего начать.",
+      "kk": "Ыңғайсыздықсыз әңгіме: неден бастау керек.",
+      "en": "Starting the conversation without the awkwardness."
+    },
+    "stages": [],
+    "interests": [
+      "intimacy"
+    ],
+    "expertId": "exp_madina",
+    "viewCount": 5300,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_course_cycle",
+    "type": "course",
+    "category": "cycleHealth",
+    "durationMinutes": 95,
+    "tier": "premium",
+    "courseId": "course_cycle",
+    "title": {
+      "ru": "Курс: цикл под контролем",
+      "kk": "Курс: цикл бақылауда",
+      "en": "Course: your cycle, understood"
+    },
+    "summary": {
+      "ru": "6 уроков о цикле, гормонах и самочувствии. С сертификатом.",
+      "kk": "Цикл, гормондар және көңіл-күй туралы 6 сабақ. Сертификатпен.",
+      "en": "Six lessons on your cycle, hormones and wellbeing. With a certificate."
+    },
+    "stages": [
+      "trackingCycle",
+      "tryingToConceive",
+      "firstPeriod"
+    ],
+    "interests": [
+      "cycleHealth"
+    ],
+    "expertId": "exp_aigul",
+    "viewCount": 4200,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  },
+  {
+    "id": "c_course_pregnancy",
+    "type": "course",
+    "category": "pregnancySchool",
+    "durationMinutes": 140,
+    "tier": "premium",
+    "courseId": "course_pregnancy",
+    "title": {
+      "ru": "Школа беременности",
+      "kk": "Жүктілік мектебі",
+      "en": "Pregnancy school"
+    },
+    "summary": {
+      "ru": "От первого триместра до роддома — по неделям.",
+      "kk": "Бірінші триместрден перзентханаға дейін — апта бойынша.",
+      "en": "From the first trimester to the delivery room, week by week."
+    },
+    "stages": [
+      "pregnant"
+    ],
+    "interests": [
+      "pregnancy"
+    ],
+    "expertId": "exp_aigul",
+    "viewCount": 6100,
+    "publishedAt": "2026-08-01T09:00:00.000Z"
+  }
+]

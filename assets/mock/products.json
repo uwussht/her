@@ -1,0 +1,507 @@
+[
+  {
+    "id": "p_pads_night",
+    "category": "periodCare",
+    "price": 1890,
+    "oldPrice": 2290,
+    "sellerId": "s_aru",
+    "rating": 4.8,
+    "reviewCount": 312,
+    "title": {
+      "ru": "Ночные прокладки, 10 шт",
+      "kk": "Түнгі прокладкалар, 10 дана",
+      "en": "Night pads, 10 pack"
+    },
+    "description": {
+      "ru": "Мягкие хлопковые прокладки для обильных дней.",
+      "kk": "Қанды күндерге арналған жұмсақ мақта прокладкалар.",
+      "en": "Soft cotton pads for heavy days."
+    },
+    "phases": [
+      "period",
+      "predictedPeriod"
+    ],
+    "interests": [
+      "cycleHealth"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_cup",
+    "category": "periodCare",
+    "price": 6900,
+    "sellerId": "s_global",
+    "rating": 4.6,
+    "reviewCount": 204,
+    "title": {
+      "ru": "Менструальная чаша",
+      "kk": "Етеккір тостағаны",
+      "en": "Menstrual cup"
+    },
+    "description": {
+      "ru": "Медицинский силикон, два размера, до 12 часов.",
+      "kk": "Медициналық силикон, екі өлшем, 12 сағатқа дейін.",
+      "en": "Medical silicone, two sizes, up to 12 hours."
+    },
+    "phases": [
+      "period",
+      "predictedPeriod"
+    ],
+    "interests": [
+      "cycleHealth"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_heatpad",
+    "category": "periodCare",
+    "price": 4500,
+    "sellerId": "s_aru",
+    "rating": 4.9,
+    "reviewCount": 156,
+    "title": {
+      "ru": "Грелка для живота",
+      "kk": "Іш жылытқышы",
+      "en": "Belly heat pad"
+    },
+    "description": {
+      "ru": "Беспроводная грелка с тремя режимами — снимает спазмы.",
+      "kk": "Үш режимі бар сымсыз жылытқыш — құрысуды басады.",
+      "en": "Cordless heat pad with three settings for cramps."
+    },
+    "phases": [
+      "period",
+      "predictedPeriod",
+      "luteal"
+    ],
+    "interests": [
+      "cycleHealth"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_iron",
+    "category": "wellness",
+    "price": 5400,
+    "sellerId": "s_dala",
+    "rating": 4.5,
+    "reviewCount": 98,
+    "title": {
+      "ru": "Железо + витамин C",
+      "kk": "Темір + C дәрумені",
+      "en": "Iron + vitamin C"
+    },
+    "description": {
+      "ru": "Бережная форма железа для дней после месячных.",
+      "kk": "Етеккірден кейінгі күндерге арналған жұмсақ темір формасы.",
+      "en": "A gentle iron formula for the days after your period."
+    },
+    "phases": [
+      "period",
+      "follicular"
+    ],
+    "interests": [
+      "nutrition"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_ovutest",
+    "category": "wellness",
+    "price": 3200,
+    "sellerId": "s_global",
+    "rating": 4.4,
+    "reviewCount": 143,
+    "title": {
+      "ru": "Тесты на овуляцию, 7 шт",
+      "kk": "Овуляцияға тест, 7 дана",
+      "en": "Ovulation tests, 7 pack"
+    },
+    "description": {
+      "ru": "Определяют пик ЛГ за 24–36 часов до овуляции.",
+      "kk": "Овуляцияға 24–36 сағат қалғанда ЛГ шыңын анықтайды.",
+      "en": "Detect the LH surge 24–36 hours before ovulation."
+    },
+    "phases": [
+      "follicular",
+      "fertile"
+    ],
+    "stages": [
+      "tryingToConceive"
+    ],
+    "interests": [
+      "fertility"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_folic",
+    "category": "wellness",
+    "price": 2900,
+    "sellerId": "s_dala",
+    "rating": 4.7,
+    "reviewCount": 211,
+    "title": {
+      "ru": "Фолиевая кислота 400 мкг",
+      "kk": "Фолий қышқылы 400 мкг",
+      "en": "Folic acid 400 mcg"
+    },
+    "description": {
+      "ru": "Рекомендуется при планировании и в первом триместре.",
+      "kk": "Жоспарлау кезінде және бірінші триместрде ұсынылады.",
+      "en": "Recommended when planning and in the first trimester."
+    },
+    "stages": [
+      "tryingToConceive",
+      "pregnant"
+    ],
+    "interests": [
+      "fertility",
+      "pregnancy"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_belly_oil",
+    "category": "pregnancy",
+    "price": 4800,
+    "sellerId": "s_aru",
+    "rating": 4.8,
+    "reviewCount": 176,
+    "title": {
+      "ru": "Масло от растяжек",
+      "kk": "Созылу іздеріне қарсы май",
+      "en": "Stretch mark oil"
+    },
+    "description": {
+      "ru": "Без отдушек, подходит со второго триместра.",
+      "kk": "Иіссіз, екінші триместрден бастап қолайлы.",
+      "en": "Fragrance-free, suitable from the second trimester."
+    },
+    "stages": [
+      "pregnant"
+    ],
+    "interests": [
+      "pregnancy",
+      "beauty"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_preg_pillow",
+    "category": "pregnancy",
+    "price": 15900,
+    "oldPrice": 18900,
+    "sellerId": "s_mama",
+    "rating": 4.9,
+    "reviewCount": 289,
+    "title": {
+      "ru": "Подушка для беременных",
+      "kk": "Жүкті әйелдерге арналған жастық",
+      "en": "Pregnancy pillow"
+    },
+    "description": {
+      "ru": "U-образная подушка для сна на боку.",
+      "kk": "Бүйірде ұйықтауға арналған U-тәрізді жастық.",
+      "en": "U-shaped pillow for sleeping on your side."
+    },
+    "stages": [
+      "pregnant"
+    ],
+    "interests": [
+      "pregnancy"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_nursing_bra",
+    "category": "pregnancy",
+    "price": 7200,
+    "sellerId": "s_mama",
+    "rating": 4.6,
+    "reviewCount": 134,
+    "title": {
+      "ru": "Бюстгальтер для кормления",
+      "kk": "Емізуге арналған көкірекше",
+      "en": "Nursing bra"
+    },
+    "description": {
+      "ru": "Хлопок, без косточек, застёжка одной рукой.",
+      "kk": "Мақта, сүйексіз, бір қолмен ілінеді.",
+      "en": "Cotton, wire-free, one-hand clasp."
+    },
+    "stages": [
+      "pregnant",
+      "postpartum"
+    ],
+    "interests": [
+      "babyAndMotherhood"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_baby_kit",
+    "category": "baby",
+    "price": 9900,
+    "sellerId": "s_mama",
+    "rating": 4.7,
+    "reviewCount": 97,
+    "title": {
+      "ru": "Набор для новорождённого",
+      "kk": "Жаңа туған нәрестеге арналған жинақ",
+      "en": "Newborn starter set"
+    },
+    "description": {
+      "ru": "Пелёнки, шапочка, носочки и мягкое полотенце.",
+      "kk": "Жөргектер, тақия, шұлық және жұмсақ сүлгі.",
+      "en": "Swaddles, a hat, socks and a soft towel."
+    },
+    "stages": [
+      "pregnant",
+      "postpartum"
+    ],
+    "interests": [
+      "babyAndMotherhood"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_face_serum",
+    "category": "beauty",
+    "price": 8400,
+    "sellerId": "s_dala",
+    "rating": 4.5,
+    "reviewCount": 188,
+    "title": {
+      "ru": "Сыворотка для лица",
+      "kk": "Бетке арналған сарысу",
+      "en": "Face serum"
+    },
+    "description": {
+      "ru": "Ниацинамид для кожи, склонной к высыпаниям.",
+      "kk": "Бөртпеге бейім теріге арналған ниацинамид.",
+      "en": "Niacinamide for skin prone to breakouts."
+    },
+    "phases": [
+      "luteal",
+      "predictedPeriod"
+    ],
+    "interests": [
+      "beauty"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_tea",
+    "category": "wellness",
+    "price": 2600,
+    "sellerId": "s_dala",
+    "rating": 4.6,
+    "reviewCount": 142,
+    "title": {
+      "ru": "Травяной чай для спокойного вечера",
+      "kk": "Тыныш кешке арналған шөп шайы",
+      "en": "Herbal tea for a calm evening"
+    },
+    "description": {
+      "ru": "Ромашка, мелисса и мята. Без кофеина.",
+      "kk": "Түймедақ, маралоты және жалбыз. Кофеинсіз.",
+      "en": "Chamomile, lemon balm and mint. Caffeine-free."
+    },
+    "phases": [
+      "luteal",
+      "period"
+    ],
+    "interests": [
+      "mentalHealth"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_lube",
+    "category": "intimateHealth",
+    "price": 4100,
+    "sellerId": "s_global",
+    "rating": 4.4,
+    "reviewCount": 76,
+    "title": {
+      "ru": "Увлажняющий гель",
+      "kk": "Ылғалдандырғыш гель",
+      "en": "Intimate moisturiser"
+    },
+    "description": {
+      "ru": "На водной основе, подходит при сухости в менопаузе.",
+      "kk": "Су негізінде, менопауза кезіндегі құрғақтыққа қолайлы.",
+      "en": "Water-based, suitable for dryness in menopause."
+    },
+    "stages": [
+      "menopause",
+      "perimenopause"
+    ],
+    "interests": [
+      "intimacy",
+      "menopause"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_cooling_spray",
+    "category": "wellness",
+    "price": 3900,
+    "sellerId": "s_aru",
+    "rating": 4.5,
+    "reviewCount": 64,
+    "title": {
+      "ru": "Охлаждающий спрей",
+      "kk": "Салқындатқыш спрей",
+      "en": "Cooling mist"
+    },
+    "description": {
+      "ru": "Мгновенно освежает при приливах.",
+      "kk": "Қызу толқыны кезінде бірден сергітеді.",
+      "en": "Instant relief during a hot flash."
+    },
+    "stages": [
+      "menopause",
+      "perimenopause"
+    ],
+    "interests": [
+      "menopause"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_bundle_hospital",
+    "category": "pregnancy",
+    "price": 24900,
+    "oldPrice": 31000,
+    "sellerId": "s_mama",
+    "rating": 4.9,
+    "reviewCount": 58,
+    "title": {
+      "ru": "Набор «Сумка в роддом»",
+      "kk": "«Перзентханаға сөмке» жинағы",
+      "en": "Hospital Bag Bundle"
+    },
+    "description": {
+      "ru": "Всё из списка в одном наборе: для вас и для малыша.",
+      "kk": "Тізімдегінің бәрі бір жинақта: сізге және сәбиге.",
+      "en": "Everything from the checklist in one box, for you and the baby."
+    },
+    "stages": [
+      "pregnant"
+    ],
+    "interests": [
+      "pregnancy",
+      "babyAndMotherhood"
+    ],
+    "bundleProductIds": [
+      "p_nursing_bra",
+      "p_baby_kit",
+      "p_pads_night"
+    ],
+    "relatedContentId": "c_hospital_bag",
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_bundle_period",
+    "category": "periodCare",
+    "price": 11900,
+    "oldPrice": 13290,
+    "sellerId": "s_aru",
+    "rating": 4.8,
+    "reviewCount": 121,
+    "title": {
+      "ru": "Набор «Спокойные дни»",
+      "kk": "«Тыныш күндер» жинағы",
+      "en": "Calm Days Bundle"
+    },
+    "description": {
+      "ru": "Грелка, ночные прокладки и травяной чай.",
+      "kk": "Жылытқыш, түнгі прокладкалар және шөп шайы.",
+      "en": "A heat pad, night pads and herbal tea."
+    },
+    "phases": [
+      "period",
+      "predictedPeriod"
+    ],
+    "interests": [
+      "cycleHealth"
+    ],
+    "bundleProductIds": [
+      "p_heatpad",
+      "p_pads_night",
+      "p_tea"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_box_period",
+    "category": "subscriptionBox",
+    "price": 7900,
+    "sellerId": "s_aru",
+    "rating": 4.7,
+    "reviewCount": 203,
+    "title": {
+      "ru": "Бокс на каждый цикл",
+      "kk": "Әр циклға арналған бокс",
+      "en": "Monthly period box"
+    },
+    "description": {
+      "ru": "Приходит за 3 дня до месячных: средства гигиены и приятные мелочи.",
+      "kk": "Етеккірге 3 күн қалғанда келеді: гигиена құралдары және жағымды ұсақ-түйек.",
+      "en": "Arrives 3 days before your period: essentials and a few treats."
+    },
+    "phases": [
+      "predictedPeriod",
+      "luteal"
+    ],
+    "interests": [
+      "cycleHealth"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  },
+  {
+    "id": "p_box_trimester",
+    "category": "subscriptionBox",
+    "price": 18900,
+    "sellerId": "s_mama",
+    "rating": 4.8,
+    "reviewCount": 87,
+    "title": {
+      "ru": "Бокс по триместрам",
+      "kk": "Триместр бойынша бокс",
+      "en": "Trimester box"
+    },
+    "description": {
+      "ru": "Три посылки — по одной на каждый триместр.",
+      "kk": "Үш сәлемдеме — әр триместрге біреуден.",
+      "en": "Three deliveries, one for each trimester."
+    },
+    "stages": [
+      "pregnant"
+    ],
+    "interests": [
+      "pregnancy"
+    ],
+    "imageUrls": [],
+    "inStock": true
+  }
+]
