@@ -5,6 +5,22 @@ import '../../../core/l10n/localized_text.dart';
 part 'course.freezed.dart';
 part 'course.g.dart';
 
+/// One multiple-choice question in a lesson quiz.
+@freezed
+abstract class QuizQuestion with _$QuizQuestion {
+  const factory QuizQuestion({
+    @LocalizedTextConverter() required LocalizedText question,
+    @LocalizedTextListConverter() required List<LocalizedText> options,
+
+    /// Index into [options].
+    required int correctIndex,
+    @LocalizedTextConverter() LocalizedText? explanation,
+  }) = _QuizQuestion;
+
+  factory QuizQuestion.fromJson(Map<String, dynamic> json) =>
+      _$QuizQuestionFromJson(json);
+}
+
 /// A lesson inside a course module.
 @freezed
 abstract class Lesson with _$Lesson {
@@ -14,9 +30,25 @@ abstract class Lesson with _$Lesson {
     required int durationMinutes,
     @Default(false) bool isQuiz,
     String? videoUrl,
+
+    /// Lesson text, one entry per paragraph, used when there is no video.
+    @Default(<LocalizedText>[])
+    @LocalizedTextListConverter()
+    List<LocalizedText> body,
+
+    /// Questions for a quiz lesson.
+    @Default(<QuizQuestion>[]) List<QuizQuestion> questions,
   }) = _Lesson;
 
+  const Lesson._();
+
   factory Lesson.fromJson(Map<String, dynamic> json) => _$LessonFromJson(json);
+
+  /// A quiz needs at least one question to be worth opening.
+  bool get isPlayableQuiz => isQuiz && questions.isNotEmpty;
+
+  /// Share of correct answers needed to pass a quiz.
+  static const double passMark = 0.7;
 }
 
 /// A group of lessons, ending with an optional quiz.
@@ -54,6 +86,19 @@ abstract class Course with _$Course {
       lessons.fold(0, (sum, lesson) => sum + lesson.durationMinutes);
 
   /// The module a lesson belongs to, or null when the id is unknown.
+  Lesson? lessonById(String id) {
+    for (final lesson in lessons) {
+      if (lesson.id == id) return lesson;
+    }
+    return null;
+  }
+
+  /// 1-based position of [lessonId] in the whole course.
+  int? lessonNumber(String lessonId) {
+    final index = lessons.indexWhere((lesson) => lesson.id == lessonId);
+    return index < 0 ? null : index + 1;
+  }
+
   CourseModule? moduleOf(String lessonId) {
     for (final module in modules) {
       if (module.lessons.any((lesson) => lesson.id == lessonId)) return module;

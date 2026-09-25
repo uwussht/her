@@ -18,8 +18,28 @@ abstract final class AppRoutes {
   static const String shop = '/shop';
   static const String profile = '/profile';
 
-  /// A single Learn item. The detail screen arrives in step 5.
+  /// A single Learn item: an article, a video lesson or a course intro.
   static String learnItem(String id) => '$learn/$id';
+
+  /// Pregnancy School, week by week.
+  static const String pregnancySchool = '$learn/pregnancy-school';
+
+  /// Course contents.
+  static String course(String courseId) => '$learn/course/$courseId';
+
+  /// One lesson inside a course.
+  static String lesson(String courseId, String lessonId) =>
+      '$learn/course/$courseId/lesson/$lessonId';
+
+  /// Course completion certificate.
+  static String certificate(String courseId) =>
+      '$learn/course/$courseId/certificate';
+
+  // Expert Q&A.
+  static const String qa = '/qa';
+  static const String qaAsk = '$qa/ask';
+
+  static String qaQuestion(String id) => '$qa/$id';
 
   // Full-screen routes above the shell.
   static const String reminders = '/reminders';

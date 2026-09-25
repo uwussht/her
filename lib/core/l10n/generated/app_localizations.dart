@@ -2385,6 +2385,588 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Боксы по подписке'**
   String get shopCategorySubscriptionBox;
+
+  /// Learn search field hint
+  ///
+  /// In ru, this message translates to:
+  /// **'Поиск по материалам'**
+  String get learnSearchHint;
+
+  /// learnAll
+  ///
+  /// In ru, this message translates to:
+  /// **'Все'**
+  String get learnAll;
+
+  /// learnNothingFound
+  ///
+  /// In ru, this message translates to:
+  /// **'Ничего не нашлось. Попробуйте изменить фильтры.'**
+  String get learnNothingFound;
+
+  /// learnResultsCount
+  ///
+  /// In ru, this message translates to:
+  /// **'{count} материалов'**
+  String learnResultsCount(int count);
+
+  /// learnFreeOnly
+  ///
+  /// In ru, this message translates to:
+  /// **'Только бесплатные'**
+  String get learnFreeOnly;
+
+  /// learnBookmarked
+  ///
+  /// In ru, this message translates to:
+  /// **'Сохранённые'**
+  String get learnBookmarked;
+
+  /// learnClearFilters
+  ///
+  /// In ru, this message translates to:
+  /// **'Сбросить'**
+  String get learnClearFilters;
+
+  /// learnSortRecommended
+  ///
+  /// In ru, this message translates to:
+  /// **'Рекомендуем'**
+  String get learnSortRecommended;
+
+  /// learnSortNewest
+  ///
+  /// In ru, this message translates to:
+  /// **'Новые'**
+  String get learnSortNewest;
+
+  /// learnSortPopular
+  ///
+  /// In ru, this message translates to:
+  /// **'Популярные'**
+  String get learnSortPopular;
+
+  /// learnSortShortest
+  ///
+  /// In ru, this message translates to:
+  /// **'Короткие'**
+  String get learnSortShortest;
+
+  /// learnSortLabel
+  ///
+  /// In ru, this message translates to:
+  /// **'Сортировка'**
+  String get learnSortLabel;
+
+  /// learnCategories
+  ///
+  /// In ru, this message translates to:
+  /// **'Категории'**
+  String get learnCategories;
+
+  /// learnPregnancySchoolWeek
+  ///
+  /// In ru, this message translates to:
+  /// **'{week} неделя'**
+  String learnPregnancySchoolWeek(int week);
+
+  /// learnPregnancyThisWeek
+  ///
+  /// In ru, this message translates to:
+  /// **'Ваша неделя'**
+  String get learnPregnancyThisWeek;
+
+  /// learnContinueWatching
+  ///
+  /// In ru, this message translates to:
+  /// **'Продолжить'**
+  String get learnContinueWatching;
+
+  /// ageGateTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Раздел 18+'**
+  String get ageGateTitle;
+
+  /// ageGateBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Здесь материалы для взрослых: близость, отношения, интимное здоровье. Подтвердите, что вам 18 или больше.'**
+  String get ageGateBody;
+
+  /// ageGateConfirm
+  ///
+  /// In ru, this message translates to:
+  /// **'Мне 18 или больше'**
+  String get ageGateConfirm;
+
+  /// contentBookmark
+  ///
+  /// In ru, this message translates to:
+  /// **'Сохранить'**
+  String get contentBookmark;
+
+  /// contentBookmarked
+  ///
+  /// In ru, this message translates to:
+  /// **'Сохранено'**
+  String get contentBookmarked;
+
+  /// contentBookmarkRemoved
+  ///
+  /// In ru, this message translates to:
+  /// **'Убрано из сохранённых'**
+  String get contentBookmarkRemoved;
+
+  /// contentShare
+  ///
+  /// In ru, this message translates to:
+  /// **'Поделиться'**
+  String get contentShare;
+
+  /// contentMarkRead
+  ///
+  /// In ru, this message translates to:
+  /// **'Отметить как прочитанное'**
+  String get contentMarkRead;
+
+  /// contentRead
+  ///
+  /// In ru, this message translates to:
+  /// **'Прочитано'**
+  String get contentRead;
+
+  /// contentRelatedProducts
+  ///
+  /// In ru, this message translates to:
+  /// **'Может пригодиться'**
+  String get contentRelatedProducts;
+
+  /// contentExpertBy
+  ///
+  /// In ru, this message translates to:
+  /// **'Материал проверил {name}'**
+  String contentExpertBy(String name);
+
+  /// contentViews
+  ///
+  /// In ru, this message translates to:
+  /// **'{count} просмотров'**
+  String contentViews(int count);
+
+  /// videoUnavailableTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Видео недоступно'**
+  String get videoUnavailableTitle;
+
+  /// videoUnavailableBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Проверьте соединение и попробуйте снова.'**
+  String get videoUnavailableBody;
+
+  /// videoRetry
+  ///
+  /// In ru, this message translates to:
+  /// **'Повторить'**
+  String get videoRetry;
+
+  /// videoNoSource
+  ///
+  /// In ru, this message translates to:
+  /// **'Для этого урока видео пока не загружено.'**
+  String get videoNoSource;
+
+  /// premiumGateTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Это материал Premium'**
+  String get premiumGateTitle;
+
+  /// premiumGateBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Полные курсы, безлимитный Circle AI и приоритет в вопросах врачам. Первые 7 дней бесплатно.'**
+  String get premiumGateBody;
+
+  /// premiumGateOpen
+  ///
+  /// In ru, this message translates to:
+  /// **'Подробнее о Premium'**
+  String get premiumGateOpen;
+
+  /// premiumDemoOn
+  ///
+  /// In ru, this message translates to:
+  /// **'Включить Premium (демо)'**
+  String get premiumDemoOn;
+
+  /// premiumDemoOff
+  ///
+  /// In ru, this message translates to:
+  /// **'Выключить Premium (демо)'**
+  String get premiumDemoOff;
+
+  /// premiumDemoNote
+  ///
+  /// In ru, this message translates to:
+  /// **'Оплата появится на шаге 9. Пока это переключатель для проверки.'**
+  String get premiumDemoNote;
+
+  /// premiumActive
+  ///
+  /// In ru, this message translates to:
+  /// **'Premium активен'**
+  String get premiumActive;
+
+  /// courseModulesCount
+  ///
+  /// In ru, this message translates to:
+  /// **'{count} модулей'**
+  String courseModulesCount(int count);
+
+  /// courseTotalTime
+  ///
+  /// In ru, this message translates to:
+  /// **'{minutes} мин всего'**
+  String courseTotalTime(int minutes);
+
+  /// courseStart
+  ///
+  /// In ru, this message translates to:
+  /// **'Начать'**
+  String get courseStart;
+
+  /// courseContinue
+  ///
+  /// In ru, this message translates to:
+  /// **'Продолжить'**
+  String get courseContinue;
+
+  /// courseRestart
+  ///
+  /// In ru, this message translates to:
+  /// **'Пройти снова'**
+  String get courseRestart;
+
+  /// courseCompleted
+  ///
+  /// In ru, this message translates to:
+  /// **'Курс пройден'**
+  String get courseCompleted;
+
+  /// courseLessonDone
+  ///
+  /// In ru, this message translates to:
+  /// **'Урок пройден'**
+  String get courseLessonDone;
+
+  /// courseMarkDone
+  ///
+  /// In ru, this message translates to:
+  /// **'Урок пройден'**
+  String get courseMarkDone;
+
+  /// courseNext
+  ///
+  /// In ru, this message translates to:
+  /// **'Следующий урок'**
+  String get courseNext;
+
+  /// courseFinish
+  ///
+  /// In ru, this message translates to:
+  /// **'Завершить курс'**
+  String get courseFinish;
+
+  /// courseLessonOf
+  ///
+  /// In ru, this message translates to:
+  /// **'Урок {current} из {total}'**
+  String courseLessonOf(int current, int total);
+
+  /// courseQuizBadge
+  ///
+  /// In ru, this message translates to:
+  /// **'Тест'**
+  String get courseQuizBadge;
+
+  /// quizTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Проверьте себя'**
+  String get quizTitle;
+
+  /// quizQuestionOf
+  ///
+  /// In ru, this message translates to:
+  /// **'Вопрос {current} из {total}'**
+  String quizQuestionOf(int current, int total);
+
+  /// quizCheck
+  ///
+  /// In ru, this message translates to:
+  /// **'Проверить'**
+  String get quizCheck;
+
+  /// quizNext
+  ///
+  /// In ru, this message translates to:
+  /// **'Дальше'**
+  String get quizNext;
+
+  /// quizCorrect
+  ///
+  /// In ru, this message translates to:
+  /// **'Верно'**
+  String get quizCorrect;
+
+  /// quizWrong
+  ///
+  /// In ru, this message translates to:
+  /// **'Не совсем'**
+  String get quizWrong;
+
+  /// quizResultTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Результат'**
+  String get quizResultTitle;
+
+  /// quizScore
+  ///
+  /// In ru, this message translates to:
+  /// **'{correct} из {total}'**
+  String quizScore(int correct, int total);
+
+  /// quizPassed
+  ///
+  /// In ru, this message translates to:
+  /// **'Тест сдан'**
+  String get quizPassed;
+
+  /// quizFailed
+  ///
+  /// In ru, this message translates to:
+  /// **'Попробуйте ещё раз'**
+  String get quizFailed;
+
+  /// quizRetry
+  ///
+  /// In ru, this message translates to:
+  /// **'Пройти заново'**
+  String get quizRetry;
+
+  /// quizFinish
+  ///
+  /// In ru, this message translates to:
+  /// **'Готово'**
+  String get quizFinish;
+
+  /// certificateTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Сертификат о прохождении'**
+  String get certificateTitle;
+
+  /// certificateAwardedTo
+  ///
+  /// In ru, this message translates to:
+  /// **'Выдан'**
+  String get certificateAwardedTo;
+
+  /// certificateForCompleting
+  ///
+  /// In ru, this message translates to:
+  /// **'За прохождение курса'**
+  String get certificateForCompleting;
+
+  /// certificateLessons
+  ///
+  /// In ru, this message translates to:
+  /// **'{lessons} уроков · {minutes} мин'**
+  String certificateLessons(int lessons, int minutes);
+
+  /// certificateNote
+  ///
+  /// In ru, this message translates to:
+  /// **'Her Circle · Образовательный материал, не медицинская квалификация'**
+  String get certificateNote;
+
+  /// certificateSave
+  ///
+  /// In ru, this message translates to:
+  /// **'Сохранить сертификат'**
+  String get certificateSave;
+
+  /// certificateReady
+  ///
+  /// In ru, this message translates to:
+  /// **'Сертификат готов'**
+  String get certificateReady;
+
+  /// certificateName
+  ///
+  /// In ru, this message translates to:
+  /// **'Ваше имя для сертификата'**
+  String get certificateName;
+
+  /// certificateNameHint
+  ///
+  /// In ru, this message translates to:
+  /// **'Как вас зовут?'**
+  String get certificateNameHint;
+
+  /// certificateFailed
+  ///
+  /// In ru, this message translates to:
+  /// **'Не удалось создать сертификат'**
+  String get certificateFailed;
+
+  /// qaTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Вопросы врачам'**
+  String get qaTitle;
+
+  /// qaAsk
+  ///
+  /// In ru, this message translates to:
+  /// **'Задать вопрос'**
+  String get qaAsk;
+
+  /// qaAskTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Ваш вопрос'**
+  String get qaAskTitle;
+
+  /// qaAskHint
+  ///
+  /// In ru, this message translates to:
+  /// **'Опишите, что вас беспокоит. Без имён и личных данных.'**
+  String get qaAskHint;
+
+  /// qaAskCategory
+  ///
+  /// In ru, this message translates to:
+  /// **'Категория'**
+  String get qaAskCategory;
+
+  /// qaAskAnonymously
+  ///
+  /// In ru, this message translates to:
+  /// **'Спросить анонимно'**
+  String get qaAskAnonymously;
+
+  /// qaAskAnonymouslyNote
+  ///
+  /// In ru, this message translates to:
+  /// **'Ваше имя не увидят ни врачи, ни другие пользователи.'**
+  String get qaAskAnonymouslyNote;
+
+  /// qaSend
+  ///
+  /// In ru, this message translates to:
+  /// **'Отправить'**
+  String get qaSend;
+
+  /// qaSent
+  ///
+  /// In ru, this message translates to:
+  /// **'Вопрос отправлен. Врач ответит в течение 48 часов.'**
+  String get qaSent;
+
+  /// qaSentPriority
+  ///
+  /// In ru, this message translates to:
+  /// **'Вопрос отправлен с приоритетом Premium — ответ в течение 12 часов.'**
+  String get qaSentPriority;
+
+  /// qaValidationTooShort
+  ///
+  /// In ru, this message translates to:
+  /// **'Опишите вопрос подробнее — минимум 15 символов.'**
+  String get qaValidationTooShort;
+
+  /// qaPriorityBadge
+  ///
+  /// In ru, this message translates to:
+  /// **'Приоритет'**
+  String get qaPriorityBadge;
+
+  /// qaPriorityHint
+  ///
+  /// In ru, this message translates to:
+  /// **'У Premium вопросы попадают в начало очереди.'**
+  String get qaPriorityHint;
+
+  /// qaMyQuestions
+  ///
+  /// In ru, this message translates to:
+  /// **'Мои вопросы'**
+  String get qaMyQuestions;
+
+  /// qaSortTop
+  ///
+  /// In ru, this message translates to:
+  /// **'Популярные'**
+  String get qaSortTop;
+
+  /// qaSortNew
+  ///
+  /// In ru, this message translates to:
+  /// **'Новые'**
+  String get qaSortNew;
+
+  /// qaSortUnanswered
+  ///
+  /// In ru, this message translates to:
+  /// **'Без ответа'**
+  String get qaSortUnanswered;
+
+  /// qaEmpty
+  ///
+  /// In ru, this message translates to:
+  /// **'Пока нет вопросов в этой категории.'**
+  String get qaEmpty;
+
+  /// qaUpvote
+  ///
+  /// In ru, this message translates to:
+  /// **'Полезно'**
+  String get qaUpvote;
+
+  /// qaAskedOn
+  ///
+  /// In ru, this message translates to:
+  /// **'Задан {date}'**
+  String qaAskedOn(String date);
+
+  /// qaAnsweredOn
+  ///
+  /// In ru, this message translates to:
+  /// **'Ответ от {date}'**
+  String qaAnsweredOn(String date);
+
+  /// qaExpertOf
+  ///
+  /// In ru, this message translates to:
+  /// **'{specialty}, {city}'**
+  String qaExpertOf(String specialty, String city);
+
+  /// qaYearsOfPractice
+  ///
+  /// In ru, this message translates to:
+  /// **'{years} лет практики'**
+  String qaYearsOfPractice(int years);
+
+  /// qaDisclaimer
+  ///
+  /// In ru, this message translates to:
+  /// **'Ответы врачей — общая информация и не заменяют приём.'**
+  String get qaDisclaimer;
 }
 
 class _AppLocalizationsDelegate

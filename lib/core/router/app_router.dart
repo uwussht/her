@@ -8,8 +8,12 @@ import '../../features/auth/presentation/email_auth_screen.dart';
 import '../../features/auth/presentation/otp_screen.dart';
 import '../../features/auth/presentation/phone_auth_screen.dart';
 import '../../features/home/presentation/home_screen.dart';
-import '../../features/learn/presentation/content_detail_placeholder.dart';
+import '../../features/learn/presentation/certificate_screen.dart';
+import '../../features/learn/presentation/content_detail_screen.dart';
+import '../../features/learn/presentation/course_screen.dart';
 import '../../features/learn/presentation/learn_screen.dart';
+import '../../features/learn/presentation/lesson_screen.dart';
+import '../../features/learn/presentation/pregnancy_school_screen.dart';
 import '../../features/onboarding/domain/onboarding_status.dart';
 import '../../features/onboarding/presentation/family_offer_screen.dart';
 import '../../features/onboarding/presentation/intro_screen.dart';
@@ -18,6 +22,9 @@ import '../../features/onboarding/presentation/onboarding_controller.dart';
 import '../../features/onboarding/presentation/quiz/quiz_screen.dart';
 import '../../features/onboarding/presentation/splash_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
+import '../../features/qa/presentation/ask_question_screen.dart';
+import '../../features/qa/presentation/qa_screen.dart';
+import '../../features/qa/presentation/question_detail_screen.dart';
 import '../../features/profile/presentation/settings_screen.dart';
 import '../../features/shop/presentation/shop_screen.dart';
 import '../../features/tracker/presentation/reminders_screen.dart';
@@ -106,13 +113,40 @@ GoRouter appRouter(Ref ref) {
                   child: const LearnScreen(),
                 ),
                 routes: [
-                  // Placeholder until step 5 builds the detail screen.
+                  GoRoute(
+                    path: 'pregnancy-school',
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => const PregnancySchoolScreen(),
+                  ),
+                  GoRoute(
+                    path: 'course/:courseId',
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => CourseScreen(
+                      courseId: state.pathParameters['courseId']!,
+                    ),
+                    routes: [
+                      GoRoute(
+                        path: 'lesson/:lessonId',
+                        parentNavigatorKey: _rootNavigatorKey,
+                        builder: (context, state) => LessonScreen(
+                          courseId: state.pathParameters['courseId']!,
+                          lessonId: state.pathParameters['lessonId']!,
+                        ),
+                      ),
+                      GoRoute(
+                        path: 'certificate',
+                        parentNavigatorKey: _rootNavigatorKey,
+                        builder: (context, state) => CertificateScreen(
+                          courseId: state.pathParameters['courseId']!,
+                        ),
+                      ),
+                    ],
+                  ),
                   GoRoute(
                     path: ':id',
                     parentNavigatorKey: _rootNavigatorKey,
-                    builder: (context, state) => ContentDetailPlaceholder(
-                      id: state.pathParameters['id']!,
-                    ),
+                    builder: (context, state) =>
+                        ContentDetailScreen(id: state.pathParameters['id']!),
                   ),
                 ],
               ),
@@ -121,6 +155,24 @@ GoRouter appRouter(Ref ref) {
           _tab(AppRoutes.tracker, const TrackerScreen()),
           _tab(AppRoutes.shop, const ShopScreen()),
           _tab(AppRoutes.profile, const ProfileScreen()),
+        ],
+      ),
+      GoRoute(
+        path: AppRoutes.qa,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const QaScreen(),
+        routes: [
+          GoRoute(
+            path: 'ask',
+            parentNavigatorKey: _rootNavigatorKey,
+            builder: (context, state) => const AskQuestionScreen(),
+          ),
+          GoRoute(
+            path: ':id',
+            parentNavigatorKey: _rootNavigatorKey,
+            builder: (context, state) =>
+                QuestionDetailScreen(questionId: state.pathParameters['id']!),
+          ),
         ],
       ),
       GoRoute(

@@ -1732,5 +1732,478 @@
   "shopCategorySubscriptionBox": "Боксы по подписке",
   "@shopCategorySubscriptionBox": {
     "description": "Shop category name"
+  },
+  "learnSearchHint": "Поиск по материалам",
+  "@learnSearchHint": {
+    "description": "Learn search field hint"
+  },
+  "learnAll": "Все",
+  "@learnAll": {
+    "description": "learnAll"
+  },
+  "learnNothingFound": "Ничего не нашлось. Попробуйте изменить фильтры.",
+  "@learnNothingFound": {
+    "description": "learnNothingFound"
+  },
+  "learnResultsCount": "{count} материалов",
+  "@learnResultsCount": {
+    "description": "learnResultsCount",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "learnFreeOnly": "Только бесплатные",
+  "@learnFreeOnly": {
+    "description": "learnFreeOnly"
+  },
+  "learnBookmarked": "Сохранённые",
+  "@learnBookmarked": {
+    "description": "learnBookmarked"
+  },
+  "learnClearFilters": "Сбросить",
+  "@learnClearFilters": {
+    "description": "learnClearFilters"
+  },
+  "learnSortRecommended": "Рекомендуем",
+  "@learnSortRecommended": {
+    "description": "learnSortRecommended"
+  },
+  "learnSortNewest": "Новые",
+  "@learnSortNewest": {
+    "description": "learnSortNewest"
+  },
+  "learnSortPopular": "Популярные",
+  "@learnSortPopular": {
+    "description": "learnSortPopular"
+  },
+  "learnSortShortest": "Короткие",
+  "@learnSortShortest": {
+    "description": "learnSortShortest"
+  },
+  "learnSortLabel": "Сортировка",
+  "@learnSortLabel": {
+    "description": "learnSortLabel"
+  },
+  "learnCategories": "Категории",
+  "@learnCategories": {
+    "description": "learnCategories"
+  },
+  "learnPregnancySchoolWeek": "{week} неделя",
+  "@learnPregnancySchoolWeek": {
+    "description": "learnPregnancySchoolWeek",
+    "placeholders": {
+      "week": {
+        "type": "int"
+      }
+    }
+  },
+  "learnPregnancyThisWeek": "Ваша неделя",
+  "@learnPregnancyThisWeek": {
+    "description": "learnPregnancyThisWeek"
+  },
+  "learnContinueWatching": "Продолжить",
+  "@learnContinueWatching": {
+    "description": "learnContinueWatching"
+  },
+  "ageGateTitle": "Раздел 18+",
+  "@ageGateTitle": {
+    "description": "ageGateTitle"
+  },
+  "ageGateBody": "Здесь материалы для взрослых: близость, отношения, интимное здоровье. Подтвердите, что вам 18 или больше.",
+  "@ageGateBody": {
+    "description": "ageGateBody"
+  },
+  "ageGateConfirm": "Мне 18 или больше",
+  "@ageGateConfirm": {
+    "description": "ageGateConfirm"
+  },
+  "contentBookmark": "Сохранить",
+  "@contentBookmark": {
+    "description": "contentBookmark"
+  },
+  "contentBookmarked": "Сохранено",
+  "@contentBookmarked": {
+    "description": "contentBookmarked"
+  },
+  "contentBookmarkRemoved": "Убрано из сохранённых",
+  "@contentBookmarkRemoved": {
+    "description": "contentBookmarkRemoved"
+  },
+  "contentShare": "Поделиться",
+  "@contentShare": {
+    "description": "contentShare"
+  },
+  "contentMarkRead": "Отметить как прочитанное",
+  "@contentMarkRead": {
+    "description": "contentMarkRead"
+  },
+  "contentRead": "Прочитано",
+  "@contentRead": {
+    "description": "contentRead"
+  },
+  "contentRelatedProducts": "Может пригодиться",
+  "@contentRelatedProducts": {
+    "description": "contentRelatedProducts"
+  },
+  "contentExpertBy": "Материал проверил {name}",
+  "@contentExpertBy": {
+    "description": "contentExpertBy",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "contentViews": "{count} просмотров",
+  "@contentViews": {
+    "description": "contentViews",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "videoUnavailableTitle": "Видео недоступно",
+  "@videoUnavailableTitle": {
+    "description": "videoUnavailableTitle"
+  },
+  "videoUnavailableBody": "Проверьте соединение и попробуйте снова.",
+  "@videoUnavailableBody": {
+    "description": "videoUnavailableBody"
+  },
+  "videoRetry": "Повторить",
+  "@videoRetry": {
+    "description": "videoRetry"
+  },
+  "videoNoSource": "Для этого урока видео пока не загружено.",
+  "@videoNoSource": {
+    "description": "videoNoSource"
+  },
+  "premiumGateTitle": "Это материал Premium",
+  "@premiumGateTitle": {
+    "description": "premiumGateTitle"
+  },
+  "premiumGateBody": "Полные курсы, безлимитный Circle AI и приоритет в вопросах врачам. Первые 7 дней бесплатно.",
+  "@premiumGateBody": {
+    "description": "premiumGateBody"
+  },
+  "premiumGateOpen": "Подробнее о Premium",
+  "@premiumGateOpen": {
+    "description": "premiumGateOpen"
+  },
+  "premiumDemoOn": "Включить Premium (демо)",
+  "@premiumDemoOn": {
+    "description": "premiumDemoOn"
+  },
+  "premiumDemoOff": "Выключить Premium (демо)",
+  "@premiumDemoOff": {
+    "description": "premiumDemoOff"
+  },
+  "premiumDemoNote": "Оплата появится на шаге 9. Пока это переключатель для проверки.",
+  "@premiumDemoNote": {
+    "description": "premiumDemoNote"
+  },
+  "premiumActive": "Premium активен",
+  "@premiumActive": {
+    "description": "premiumActive"
+  },
+  "courseModulesCount": "{count} модулей",
+  "@courseModulesCount": {
+    "description": "courseModulesCount",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "courseTotalTime": "{minutes} мин всего",
+  "@courseTotalTime": {
+    "description": "courseTotalTime",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "courseStart": "Начать",
+  "@courseStart": {
+    "description": "courseStart"
+  },
+  "courseContinue": "Продолжить",
+  "@courseContinue": {
+    "description": "courseContinue"
+  },
+  "courseRestart": "Пройти снова",
+  "@courseRestart": {
+    "description": "courseRestart"
+  },
+  "courseCompleted": "Курс пройден",
+  "@courseCompleted": {
+    "description": "courseCompleted"
+  },
+  "courseLessonDone": "Урок пройден",
+  "@courseLessonDone": {
+    "description": "courseLessonDone"
+  },
+  "courseMarkDone": "Урок пройден",
+  "@courseMarkDone": {
+    "description": "courseMarkDone"
+  },
+  "courseNext": "Следующий урок",
+  "@courseNext": {
+    "description": "courseNext"
+  },
+  "courseFinish": "Завершить курс",
+  "@courseFinish": {
+    "description": "courseFinish"
+  },
+  "courseLessonOf": "Урок {current} из {total}",
+  "@courseLessonOf": {
+    "description": "courseLessonOf",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "courseQuizBadge": "Тест",
+  "@courseQuizBadge": {
+    "description": "courseQuizBadge"
+  },
+  "quizTitle": "Проверьте себя",
+  "@quizTitle": {
+    "description": "quizTitle"
+  },
+  "quizQuestionOf": "Вопрос {current} из {total}",
+  "@quizQuestionOf": {
+    "description": "quizQuestionOf",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "quizCheck": "Проверить",
+  "@quizCheck": {
+    "description": "quizCheck"
+  },
+  "quizNext": "Дальше",
+  "@quizNext": {
+    "description": "quizNext"
+  },
+  "quizCorrect": "Верно",
+  "@quizCorrect": {
+    "description": "quizCorrect"
+  },
+  "quizWrong": "Не совсем",
+  "@quizWrong": {
+    "description": "quizWrong"
+  },
+  "quizResultTitle": "Результат",
+  "@quizResultTitle": {
+    "description": "quizResultTitle"
+  },
+  "quizScore": "{correct} из {total}",
+  "@quizScore": {
+    "description": "quizScore",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "quizPassed": "Тест сдан",
+  "@quizPassed": {
+    "description": "quizPassed"
+  },
+  "quizFailed": "Попробуйте ещё раз",
+  "@quizFailed": {
+    "description": "quizFailed"
+  },
+  "quizRetry": "Пройти заново",
+  "@quizRetry": {
+    "description": "quizRetry"
+  },
+  "quizFinish": "Готово",
+  "@quizFinish": {
+    "description": "quizFinish"
+  },
+  "certificateTitle": "Сертификат о прохождении",
+  "@certificateTitle": {
+    "description": "certificateTitle"
+  },
+  "certificateAwardedTo": "Выдан",
+  "@certificateAwardedTo": {
+    "description": "certificateAwardedTo"
+  },
+  "certificateForCompleting": "За прохождение курса",
+  "@certificateForCompleting": {
+    "description": "certificateForCompleting"
+  },
+  "certificateLessons": "{lessons} уроков · {minutes} мин",
+  "@certificateLessons": {
+    "description": "certificateLessons",
+    "placeholders": {
+      "lessons": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "certificateNote": "Her Circle · Образовательный материал, не медицинская квалификация",
+  "@certificateNote": {
+    "description": "certificateNote"
+  },
+  "certificateSave": "Сохранить сертификат",
+  "@certificateSave": {
+    "description": "certificateSave"
+  },
+  "certificateReady": "Сертификат готов",
+  "@certificateReady": {
+    "description": "certificateReady"
+  },
+  "certificateName": "Ваше имя для сертификата",
+  "@certificateName": {
+    "description": "certificateName"
+  },
+  "certificateNameHint": "Как вас зовут?",
+  "@certificateNameHint": {
+    "description": "certificateNameHint"
+  },
+  "certificateFailed": "Не удалось создать сертификат",
+  "@certificateFailed": {
+    "description": "certificateFailed"
+  },
+  "qaTitle": "Вопросы врачам",
+  "@qaTitle": {
+    "description": "qaTitle"
+  },
+  "qaAsk": "Задать вопрос",
+  "@qaAsk": {
+    "description": "qaAsk"
+  },
+  "qaAskTitle": "Ваш вопрос",
+  "@qaAskTitle": {
+    "description": "qaAskTitle"
+  },
+  "qaAskHint": "Опишите, что вас беспокоит. Без имён и личных данных.",
+  "@qaAskHint": {
+    "description": "qaAskHint"
+  },
+  "qaAskCategory": "Категория",
+  "@qaAskCategory": {
+    "description": "qaAskCategory"
+  },
+  "qaAskAnonymously": "Спросить анонимно",
+  "@qaAskAnonymously": {
+    "description": "qaAskAnonymously"
+  },
+  "qaAskAnonymouslyNote": "Ваше имя не увидят ни врачи, ни другие пользователи.",
+  "@qaAskAnonymouslyNote": {
+    "description": "qaAskAnonymouslyNote"
+  },
+  "qaSend": "Отправить",
+  "@qaSend": {
+    "description": "qaSend"
+  },
+  "qaSent": "Вопрос отправлен. Врач ответит в течение 48 часов.",
+  "@qaSent": {
+    "description": "qaSent"
+  },
+  "qaSentPriority": "Вопрос отправлен с приоритетом Premium — ответ в течение 12 часов.",
+  "@qaSentPriority": {
+    "description": "qaSentPriority"
+  },
+  "qaValidationTooShort": "Опишите вопрос подробнее — минимум 15 символов.",
+  "@qaValidationTooShort": {
+    "description": "qaValidationTooShort"
+  },
+  "qaPriorityBadge": "Приоритет",
+  "@qaPriorityBadge": {
+    "description": "qaPriorityBadge"
+  },
+  "qaPriorityHint": "У Premium вопросы попадают в начало очереди.",
+  "@qaPriorityHint": {
+    "description": "qaPriorityHint"
+  },
+  "qaMyQuestions": "Мои вопросы",
+  "@qaMyQuestions": {
+    "description": "qaMyQuestions"
+  },
+  "qaSortTop": "Популярные",
+  "@qaSortTop": {
+    "description": "qaSortTop"
+  },
+  "qaSortNew": "Новые",
+  "@qaSortNew": {
+    "description": "qaSortNew"
+  },
+  "qaSortUnanswered": "Без ответа",
+  "@qaSortUnanswered": {
+    "description": "qaSortUnanswered"
+  },
+  "qaEmpty": "Пока нет вопросов в этой категории.",
+  "@qaEmpty": {
+    "description": "qaEmpty"
+  },
+  "qaUpvote": "Полезно",
+  "@qaUpvote": {
+    "description": "qaUpvote"
+  },
+  "qaAskedOn": "Задан {date}",
+  "@qaAskedOn": {
+    "description": "qaAskedOn",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "qaAnsweredOn": "Ответ от {date}",
+  "@qaAnsweredOn": {
+    "description": "qaAnsweredOn",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "qaExpertOf": "{specialty}, {city}",
+  "@qaExpertOf": {
+    "description": "qaExpertOf",
+    "placeholders": {
+      "specialty": {
+        "type": "String"
+      },
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "qaYearsOfPractice": "{years} лет практики",
+  "@qaYearsOfPractice": {
+    "description": "qaYearsOfPractice",
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "qaDisclaimer": "Ответы врачей — общая информация и не заменяют приём.",
+  "@qaDisclaimer": {
+    "description": "qaDisclaimer"
   }
 }

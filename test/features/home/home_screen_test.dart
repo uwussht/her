@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:her_circle/core/utils/date_utils.dart';
-import 'package:her_circle/features/learn/presentation/content_detail_placeholder.dart';
+import 'package:her_circle/features/learn/presentation/content_detail_screen.dart';
 import 'package:her_circle/features/learn/presentation/widgets/content_card.dart';
 import 'package:her_circle/features/profile/domain/personalization.dart';
 import 'package:her_circle/features/qa/presentation/widgets/question_card.dart';
@@ -128,7 +128,7 @@ void main() {
     await tester.tap(find.byType(ContentCard).first);
     await tester.pumpAndSettle();
 
-    expect(find.byType(ContentDetailPlaceholder), findsOneWidget);
+    expect(find.byType(ContentDetailScreen), findsOneWidget);
     expect(find.byType(BackButton), findsOneWidget);
   });
 

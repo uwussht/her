@@ -1269,4 +1269,333 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get shopCategorySubscriptionBox => 'Жазылым бокстары';
+
+  @override
+  String get learnSearchHint => 'Материалдар бойынша іздеу';
+
+  @override
+  String get learnAll => 'Барлығы';
+
+  @override
+  String get learnNothingFound =>
+      'Ештеңе табылмады. Сүзгілерді өзгертіп көріңіз.';
+
+  @override
+  String learnResultsCount(int count) {
+    return '$count материал';
+  }
+
+  @override
+  String get learnFreeOnly => 'Тек тегін';
+
+  @override
+  String get learnBookmarked => 'Сақталғандар';
+
+  @override
+  String get learnClearFilters => 'Тазарту';
+
+  @override
+  String get learnSortRecommended => 'Ұсынамыз';
+
+  @override
+  String get learnSortNewest => 'Жаңалары';
+
+  @override
+  String get learnSortPopular => 'Танымал';
+
+  @override
+  String get learnSortShortest => 'Қысқалары';
+
+  @override
+  String get learnSortLabel => 'Сұрыптау';
+
+  @override
+  String get learnCategories => 'Санаттар';
+
+  @override
+  String learnPregnancySchoolWeek(int week) {
+    return '$week-апта';
+  }
+
+  @override
+  String get learnPregnancyThisWeek => 'Сіздің аптаңыз';
+
+  @override
+  String get learnContinueWatching => 'Жалғастыру';
+
+  @override
+  String get ageGateTitle => '18+ бөлімі';
+
+  @override
+  String get ageGateBody =>
+      'Мұнда ересектерге арналған материалдар: жақындық, қарым-қатынас, интимдік денсаулық. 18 жастан асқаныңызды растаңыз.';
+
+  @override
+  String get ageGateConfirm => 'Мен 18-ден асқанмын';
+
+  @override
+  String get contentBookmark => 'Сақтау';
+
+  @override
+  String get contentBookmarked => 'Сақталды';
+
+  @override
+  String get contentBookmarkRemoved => 'Сақталғандардан алынды';
+
+  @override
+  String get contentShare => 'Бөлісу';
+
+  @override
+  String get contentMarkRead => 'Оқылды деп белгілеу';
+
+  @override
+  String get contentRead => 'Оқылды';
+
+  @override
+  String get contentRelatedProducts => 'Қажет болуы мүмкін';
+
+  @override
+  String contentExpertBy(String name) {
+    return 'Материалды $name тексерді';
+  }
+
+  @override
+  String contentViews(int count) {
+    return '$count қаралым';
+  }
+
+  @override
+  String get videoUnavailableTitle => 'Бейне қолжетімсіз';
+
+  @override
+  String get videoUnavailableBody => 'Байланысты тексеріп, қайталап көріңіз.';
+
+  @override
+  String get videoRetry => 'Қайталау';
+
+  @override
+  String get videoNoSource => 'Бұл сабақ үшін бейне әзірге жүктелмеген.';
+
+  @override
+  String get premiumGateTitle => 'Бұл Premium материал';
+
+  @override
+  String get premiumGateBody =>
+      'Толық курстар, шектеусіз Circle AI және дәрігерлерге сұрақтарда басымдық. Алғашқы 7 күн тегін.';
+
+  @override
+  String get premiumGateOpen => 'Premium туралы толығырақ';
+
+  @override
+  String get premiumDemoOn => 'Premium қосу (демо)';
+
+  @override
+  String get premiumDemoOff => 'Premium өшіру (демо)';
+
+  @override
+  String get premiumDemoNote =>
+      'Төлем 9-қадамда пайда болады. Әзірге бұл тексеруге арналған қосқыш.';
+
+  @override
+  String get premiumActive => 'Premium белсенді';
+
+  @override
+  String courseModulesCount(int count) {
+    return '$count модуль';
+  }
+
+  @override
+  String courseTotalTime(int minutes) {
+    return 'Барлығы $minutes мин';
+  }
+
+  @override
+  String get courseStart => 'Бастау';
+
+  @override
+  String get courseContinue => 'Жалғастыру';
+
+  @override
+  String get courseRestart => 'Қайта өту';
+
+  @override
+  String get courseCompleted => 'Курс өтілді';
+
+  @override
+  String get courseLessonDone => 'Сабақ өтілді';
+
+  @override
+  String get courseMarkDone => 'Сабақ өтілді';
+
+  @override
+  String get courseNext => 'Келесі сабақ';
+
+  @override
+  String get courseFinish => 'Курсты аяқтау';
+
+  @override
+  String courseLessonOf(int current, int total) {
+    return '$total сабақтың $current-сі';
+  }
+
+  @override
+  String get courseQuizBadge => 'Тест';
+
+  @override
+  String get quizTitle => 'Өзіңізді тексеріңіз';
+
+  @override
+  String quizQuestionOf(int current, int total) {
+    return '$total сұрақтың $current-сі';
+  }
+
+  @override
+  String get quizCheck => 'Тексеру';
+
+  @override
+  String get quizNext => 'Әрі қарай';
+
+  @override
+  String get quizCorrect => 'Дұрыс';
+
+  @override
+  String get quizWrong => 'Дәл емес';
+
+  @override
+  String get quizResultTitle => 'Нәтиже';
+
+  @override
+  String quizScore(int correct, int total) {
+    return '$total сұрақтың $correct-сі дұрыс';
+  }
+
+  @override
+  String get quizPassed => 'Тест тапсырылды';
+
+  @override
+  String get quizFailed => 'Қайталап көріңіз';
+
+  @override
+  String get quizRetry => 'Қайта өту';
+
+  @override
+  String get quizFinish => 'Дайын';
+
+  @override
+  String get certificateTitle => 'Курсты бітіргені туралы сертификат';
+
+  @override
+  String get certificateAwardedTo => 'Берілді';
+
+  @override
+  String get certificateForCompleting => 'Курсты бітіргені үшін';
+
+  @override
+  String certificateLessons(int lessons, int minutes) {
+    return '$lessons сабақ · $minutes мин';
+  }
+
+  @override
+  String get certificateNote =>
+      'Her Circle · Білім беру материалы, медициналық біліктілік емес';
+
+  @override
+  String get certificateSave => 'Сертификатты сақтау';
+
+  @override
+  String get certificateReady => 'Сертификат дайын';
+
+  @override
+  String get certificateName => 'Сертификаттағы атыңыз';
+
+  @override
+  String get certificateNameHint => 'Сізді кім деп атайды?';
+
+  @override
+  String get certificateFailed => 'Сертификат жасау сәтсіз аяқталды';
+
+  @override
+  String get qaTitle => 'Дәрігерлерге сұрақтар';
+
+  @override
+  String get qaAsk => 'Сұрақ қою';
+
+  @override
+  String get qaAskTitle => 'Сіздің сұрағыңыз';
+
+  @override
+  String get qaAskHint =>
+      'Сізді не алаңдататынын жазыңыз. Аттар мен жеке деректерсіз.';
+
+  @override
+  String get qaAskCategory => 'Санат';
+
+  @override
+  String get qaAskAnonymously => 'Анонимді сұрау';
+
+  @override
+  String get qaAskAnonymouslyNote =>
+      'Атыңызды дәрігерлер де, басқа пайдаланушылар да көрмейді.';
+
+  @override
+  String get qaSend => 'Жіберу';
+
+  @override
+  String get qaSent => 'Сұрақ жіберілді. Дәрігер 48 сағат ішінде жауап береді.';
+
+  @override
+  String get qaSentPriority =>
+      'Сұрақ Premium басымдығымен жіберілді — жауап 12 сағат ішінде.';
+
+  @override
+  String get qaValidationTooShort =>
+      'Сұрақты толығырақ жазыңыз — кемінде 15 таңба.';
+
+  @override
+  String get qaPriorityBadge => 'Басымдық';
+
+  @override
+  String get qaPriorityHint => 'Premium-да сұрақтар кезектің басына түседі.';
+
+  @override
+  String get qaMyQuestions => 'Менің сұрақтарым';
+
+  @override
+  String get qaSortTop => 'Танымал';
+
+  @override
+  String get qaSortNew => 'Жаңалары';
+
+  @override
+  String get qaSortUnanswered => 'Жауапсыз';
+
+  @override
+  String get qaEmpty => 'Бұл санатта әзірге сұрақ жоқ.';
+
+  @override
+  String get qaUpvote => 'Пайдалы';
+
+  @override
+  String qaAskedOn(String date) {
+    return '$date қойылды';
+  }
+
+  @override
+  String qaAnsweredOn(String date) {
+    return '$date жауап берілді';
+  }
+
+  @override
+  String qaExpertOf(String specialty, String city) {
+    return '$specialty, $city';
+  }
+
+  @override
+  String qaYearsOfPractice(int years) {
+    return '$years жыл тәжірибе';
+  }
+
+  @override
+  String get qaDisclaimer =>
+      'Дәрігерлердің жауаптары — жалпы ақпарат, қабылдауды алмастырмайды.';
 }

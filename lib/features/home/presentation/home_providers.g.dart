@@ -651,7 +651,7 @@ final class ExpertByIdProvider
   }
 }
 
-String _$expertByIdHash() => r'274b5ec7607ed66b767944f71792fc2a7f25692c';
+String _$expertByIdHash() => r'd3ae5f1ff140267c4aff14d162fb5ce418d3fb78';
 
 /// An expert by id, for badges and bylines.
 
@@ -788,4 +788,4 @@ final class HomeFeedProvider
   }
 }
 
-String _$homeFeedHash() => r'2596959e158029be9a0e03d89942cca25816c5c4';
+String _$homeFeedHash() => r'a61b6b397a9ea353716a7e99bc2de85cce2bbec5';
