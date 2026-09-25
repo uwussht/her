@@ -12,6 +12,7 @@ import 'package:her_circle/features/auth/data/mock_auth_repository.dart';
 import 'package:her_circle/features/auth/domain/app_user.dart';
 import 'package:her_circle/features/auth/presentation/auth_providers.dart';
 import 'package:her_circle/features/home/presentation/home_providers.dart';
+import 'package:her_circle/features/learn/domain/course_progress.dart';
 import 'package:her_circle/features/onboarding/presentation/splash_screen.dart';
 import 'package:her_circle/features/profile/domain/personalization.dart';
 import 'package:her_circle/features/profile/domain/user_profile.dart';
@@ -41,6 +42,8 @@ Future<ProviderContainer> pumpHerCircle(
   bool onboarded = true,
   UserProfile? profile,
   Map<String, Object> prefs = const {},
+  Set<String> bookmarks = const {},
+  Map<String, List<String>> progress = const {},
 }) async {
   GoogleFonts.config.allowRuntimeFetching = false;
   final assets = await loadMockAssets(tester);
@@ -59,6 +62,26 @@ Future<ProviderContainer> pumpHerCircle(
   if (onboarded) {
     final p = profile ?? testProfile;
     await store.writeJson('profile.${p.uid}', p.toJson());
+  }
+
+  if (bookmarks.isNotEmpty) {
+    await store.writeJson('learn.bookmarks.${testUser.uid}', {
+      'ids': bookmarks.toList(),
+    });
+  }
+  if (progress.isNotEmpty) {
+    await store.writeJson('learn.progress.${testUser.uid}', {
+      'items': [
+        for (final entry in progress.entries)
+          CourseProgress(
+            courseId: entry.key,
+            completedLessonIds: entry.value,
+            lastLessonId: entry.value.isEmpty ? null : entry.value.last,
+            updatedAt: DateTime(2026, 9, 20),
+            completedAt: DateTime(2026, 9, 20),
+          ).toJson(),
+      ],
+    });
   }
 
   final container = ProviderContainer(

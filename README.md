@@ -10,7 +10,7 @@ A women's health, learning and shopping app for Kazakhstan, for users from their
 | 2 | Onboarding, auth, personalization quiz | ✅ |
 | 3 | Tracker (cycle), PredictionService, reminders | ✅ |
 | 4 | Home feed with mock content | ✅ |
-| 5 | Learn: lessons, courses, video, Q&A | ⏳ |
+| 5 | Learn: lessons, courses, video, Q&A | ✅ |
 | 6 | Shop: catalog, cart, checkout (mock payment) | ⏳ |
 | 7 | Circle AI chat (mock, then FastAPI `POST /ai/chat`) | ⏳ |
 | 8 | Partner and family linking | ⏳ |
@@ -79,8 +79,12 @@ lib/
                                  #   reminders and vaccinations screens
     home/                        # FeedService (pure ranking), HomeFeed, home screen
     learn/                       # ContentItem, Course, CourseProgress, DailyTip,
-                                 #   mock repository, content cards
-    qa/                          # Question, Answer, Expert, question card
+                                 #   LearnCatalogue (pure filter/sort), bookmarks,
+                                 #   library, article, video, course, lesson, quiz,
+                                 #   certificate (PDF)
+    qa/                          # Question, Answer, Expert, QaCatalogue (pure),
+                                 #   list, thread, ask anonymously
+    premium/                     # PremiumStatus + gate sheet (real paywall in step 9)
     shop/                        # Product, Seller, product card
     ai_assistant/
     (qa/ partner/ family/ premium/ are added in their steps)
@@ -132,6 +136,16 @@ Age gating runs through the whole feed: users under 16 never see 18+ content or 
 Content lives in `assets/mock/` in the shape Firestore will hold, with every string as `{"ru": …, "kk": …, "en": …}` and resolved through `LocalizedText`. `test/features/home/mock_data_test.dart` guards that data: every item must parse, carry all three languages, and reference a real course, expert, seller or product.
 
 Mock content ships without cover images, so cards render a tinted panel with the category icon. Real images load through `cached_network_image` and fall back to the same panel.
+
+## Learn and Q&A (step 5)
+
+- **Library** with search across all three languages, category chips, type and price filters, and four sort orders. `LearnCatalogue` does the filtering and is unit-tested.
+- **Age gating**: the 18+ section is absent for users under 16, and everyone else confirms their age once per visit before it opens.
+- **Articles** render their body with the reviewing doctor credited, and a bookmark action.
+- **Video lessons** use `video_player` + `chewie`. The player times out and falls back to a retry panel, so a lesson stays readable when the video cannot load.
+- **Courses**: modules and lessons with progress, a lesson player, multiple-choice quizzes with explanations and a 70% pass mark, and a PDF certificate on completion.
+- **Premium gating** is real: premium items show a lock and open a sheet. Until step 9 builds payment, that sheet carries a clearly labelled demo switch.
+- **Expert Q&A**: browse by category, sort by top/new/unanswered, open a thread with the doctor's credentials, upvote, and ask a question — anonymous by default. Premium questions are marked priority.
 
 ## Quality checks
 

@@ -16,6 +16,9 @@ _ContentItem _$ContentItemFromJson(Map<String, dynamic> json) => _ContentItem(
   summary: const LocalizedTextConverter().fromJson(
     json['summary'] as Map<String, dynamic>,
   ),
+  body: json['body'] == null
+      ? const <LocalizedText>[]
+      : const LocalizedTextListConverter().fromJson(json['body'] as List),
   tier:
       $enumDecodeNullable(_$AccessTierEnumMap, json['tier']) ?? AccessTier.free,
   durationMinutes: (json['durationMinutes'] as num).toInt(),
@@ -48,6 +51,7 @@ Map<String, dynamic> _$ContentItemToJson(
   'category': _$ContentCategoryEnumMap[instance.category]!,
   'title': const LocalizedTextConverter().toJson(instance.title),
   'summary': const LocalizedTextConverter().toJson(instance.summary),
+  'body': const LocalizedTextListConverter().toJson(instance.body),
   'tier': _$AccessTierEnumMap[instance.tier]!,
   'durationMinutes': instance.durationMinutes,
   'stages': instance.stages.map((e) => _$LifeStageEnumMap[e]!).toList(),

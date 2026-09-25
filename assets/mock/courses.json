@@ -24,7 +24,19 @@
               "en": "What a cycle is"
             },
             "durationMinutes": 12,
-            "isQuiz": false
+            "isQuiz": false,
+            "body": [
+              {
+                "ru": "Менструальный цикл — это не только месячные, а весь период от первого дня одних месячных до первого дня следующих. Он делится на четыре фазы.",
+                "kk": "Етеккір циклі — тек етеккір емес, бір етеккірдің бірінші күнінен келесісінің бірінші күніне дейінгі бүкіл кезең. Ол төрт фазаға бөлінеді.",
+                "en": "A cycle is not just your period. It is the whole span from the first day of one period to the first day of the next, and it has four phases."
+              },
+              {
+                "ru": "Менструальная фаза — 3–7 дней. Фолликулярная — до овуляции, энергия растёт. Овуляция — 1–2 дня. Лютеиновая — около 14 дней, к концу появляется ПМС.",
+                "kk": "Етеккір фазасы — 3-7 күн. Фолликулалық — овуляцияға дейін, қуат артады. Овуляция — 1-2 күн. Лютеин фазасы — шамамен 14 күн, соңында ПМС пайда болады.",
+                "en": "The menstrual phase lasts three to seven days. The follicular phase runs to ovulation and energy rises. Ovulation takes a day or two. The luteal phase lasts about 14 days and ends with PMS."
+              }
+            ]
           },
           {
             "id": "l2",
@@ -34,7 +46,19 @@
               "en": "Hormones in plain words"
             },
             "durationMinutes": 14,
-            "isQuiz": false
+            "isQuiz": false,
+            "body": [
+              {
+                "ru": "Эстроген растёт в первой половине цикла: улучшаются настроение, кожа и выносливость. Прогестерон правит второй половиной: тянет в сон, замедляет пищеварение, повышает температуру тела.",
+                "kk": "Эстроген циклдің бірінші жартысында артады: көңіл-күй, тері және төзімділік жақсарады. Прогестерон екінші жартысын билейді: ұйқы басады, ас қорыту бәсеңдейді, дене температурасы көтеріледі.",
+                "en": "Oestrogen rises in the first half of the cycle: mood, skin and stamina improve. Progesterone rules the second half: it makes you sleepy, slows digestion and raises body temperature."
+              },
+              {
+                "ru": "ЛГ даёт короткий пик перед овуляцией — именно его ловят тесты на овуляцию. ФСГ отвечает за созревание фолликула.",
+                "kk": "ЛГ овуляция алдында қысқа шыңға шығады — овуляция тесттері дәл осыны ұстайды. ФСГ фолликуланың жетілуіне жауап береді.",
+                "en": "LH spikes briefly before ovulation — that is what ovulation tests detect. FSH is responsible for the follicle maturing."
+              }
+            ]
           },
           {
             "id": "l3",
@@ -44,7 +68,69 @@
               "en": "Check yourself"
             },
             "durationMinutes": 5,
-            "isQuiz": true
+            "isQuiz": true,
+            "questions": [
+              {
+                "question": {
+                  "ru": "Какая длина цикла считается нормальной?",
+                  "kk": "Циклдің қандай ұзақтығы қалыпты саналады?",
+                  "en": "Which cycle length is considered normal?"
+                },
+                "options": [
+                  {
+                    "ru": "14–18 дней",
+                    "kk": "14-18 күн",
+                    "en": "14–18 days"
+                  },
+                  {
+                    "ru": "21–35 дней",
+                    "kk": "21-35 күн",
+                    "en": "21–35 days"
+                  },
+                  {
+                    "ru": "40–60 дней",
+                    "kk": "40-60 күн",
+                    "en": "40–60 days"
+                  }
+                ],
+                "correctIndex": 1,
+                "explanation": {
+                  "ru": "Цикл от 21 до 35 дней — норма, если он относительно стабильный.",
+                  "kk": "21-ден 35 күнге дейінгі цикл — қалыпты, егер ол тұрақты болса.",
+                  "en": "A cycle of 21 to 35 days is normal if it is reasonably steady."
+                }
+              },
+              {
+                "question": {
+                  "ru": "Когда происходит овуляция?",
+                  "kk": "Овуляция қашан болады?",
+                  "en": "When does ovulation happen?"
+                },
+                "options": [
+                  {
+                    "ru": "В первый день месячных",
+                    "kk": "Етеккірдің бірінші күні",
+                    "en": "On the first day of your period"
+                  },
+                  {
+                    "ru": "Примерно за 14 дней до следующих месячных",
+                    "kk": "Келесі етеккірге шамамен 14 күн қалғанда",
+                    "en": "About 14 days before the next period"
+                  },
+                  {
+                    "ru": "Всегда на 14 день цикла",
+                    "kk": "Әрқашан циклдің 14-күні",
+                    "en": "Always on day 14 of the cycle"
+                  }
+                ],
+                "correctIndex": 1,
+                "explanation": {
+                  "ru": "Вторая фаза почти постоянна, поэтому овуляция считается от конца цикла.",
+                  "kk": "Екінші фаза тұрақты, сондықтан овуляция цикл соңынан есептеледі.",
+                  "en": "The second phase is nearly constant, so ovulation is counted back from the end of the cycle."
+                }
+              }
+            ]
           }
         ]
       },
@@ -84,7 +170,89 @@
               "en": "Final quiz"
             },
             "durationMinutes": 8,
-            "isQuiz": true
+            "isQuiz": true,
+            "questions": [
+              {
+                "question": {
+                  "ru": "Что помогает при ПМС по данным исследований?",
+                  "kk": "Зерттеулер бойынша ПМС кезінде не көмектеседі?",
+                  "en": "What helps with PMS according to research?"
+                },
+                "options": [
+                  {
+                    "ru": "Регулярный сон и движение",
+                    "kk": "Тұрақты ұйқы және қозғалыс",
+                    "en": "Regular sleep and movement"
+                  },
+                  {
+                    "ru": "Полный отказ от еды",
+                    "kk": "Тамақтан толық бас тарту",
+                    "en": "Fasting completely"
+                  },
+                  {
+                    "ru": "Ежедневный кофе",
+                    "kk": "Күнделікті кофе",
+                    "en": "Daily coffee"
+                  }
+                ],
+                "correctIndex": 0
+              },
+              {
+                "question": {
+                  "ru": "Зачем отмечать настроение в трекере?",
+                  "kk": "Көңіл-күйді трекерде неге белгілейді?",
+                  "en": "Why log your mood?"
+                },
+                "options": [
+                  {
+                    "ru": "Чтобы видеть закономерности по фазам цикла",
+                    "kk": "Цикл фазалары бойынша заңдылықты көру үшін",
+                    "en": "To see patterns across your cycle phases"
+                  },
+                  {
+                    "ru": "Чтобы приложение поставило диагноз",
+                    "kk": "Қосымша диагноз қою үшін",
+                    "en": "So the app can diagnose you"
+                  },
+                  {
+                    "ru": "Это ни на что не влияет",
+                    "kk": "Бұл ешнәрсеге әсер етпейді",
+                    "en": "It makes no difference"
+                  }
+                ],
+                "correctIndex": 0,
+                "explanation": {
+                  "ru": "Приложение не ставит диагнозы — оно показывает закономерности.",
+                  "kk": "Қосымша диагноз қоймайды — ол заңдылықтарды көрсетеді.",
+                  "en": "The app never diagnoses; it shows patterns."
+                }
+              },
+              {
+                "question": {
+                  "ru": "Какой объём месячных считается обильным?",
+                  "kk": "Етеккірдің қандай көлемі көп саналады?",
+                  "en": "Which flow counts as heavy?"
+                },
+                "options": [
+                  {
+                    "ru": "Прокладку меняют раз в 6 часов",
+                    "kk": "Прокладканы 6 сағатта бір ауыстырады",
+                    "en": "Changing a pad every six hours"
+                  },
+                  {
+                    "ru": "Прокладку приходится менять чаще, чем раз в 2 часа",
+                    "kk": "Прокладканы 2 сағатта бір реттен жиі ауыстыру керек",
+                    "en": "Needing a new pad more often than every two hours"
+                  },
+                  {
+                    "ru": "Месячные идут 4 дня",
+                    "kk": "Етеккір 4 күн",
+                    "en": "A period lasting four days"
+                  }
+                ],
+                "correctIndex": 1
+              }
+            ]
           }
         ]
       }
@@ -195,7 +363,59 @@
               "en": "Final quiz"
             },
             "durationMinutes": 10,
-            "isQuiz": true
+            "isQuiz": true,
+            "questions": [
+              {
+                "question": {
+                  "ru": "Когда собирают сумку в роддом?",
+                  "kk": "Перзентханаға сөмкені қашан жинайды?",
+                  "en": "When should you pack your hospital bag?"
+                },
+                "options": [
+                  {
+                    "ru": "К 34–36 неделе",
+                    "kk": "34-36 аптада",
+                    "en": "By weeks 34 to 36"
+                  },
+                  {
+                    "ru": "В день родов",
+                    "kk": "Босанатын күні",
+                    "en": "On the day of labour"
+                  },
+                  {
+                    "ru": "В первом триместре",
+                    "kk": "Бірінші триместрде",
+                    "en": "In the first trimester"
+                  }
+                ],
+                "correctIndex": 0
+              },
+              {
+                "question": {
+                  "ru": "Что показывает первый скрининг?",
+                  "kk": "Бірінші скрининг нені көрсетеді?",
+                  "en": "What does the first screening show?"
+                },
+                "options": [
+                  {
+                    "ru": "Точный диагноз",
+                    "kk": "Нақты диагноз",
+                    "en": "An exact diagnosis"
+                  },
+                  {
+                    "ru": "Вероятность, которую обсуждают с врачом",
+                    "kk": "Дәрігермен талқыланатын ықтималдық",
+                    "en": "A probability to discuss with your doctor"
+                  },
+                  {
+                    "ru": "Пол ребёнка и больше ничего",
+                    "kk": "Тек баланың жынысы",
+                    "en": "Only the baby's sex"
+                  }
+                ],
+                "correctIndex": 1
+              }
+            ]
           }
         ]
       }

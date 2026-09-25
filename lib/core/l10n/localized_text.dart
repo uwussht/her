@@ -56,3 +56,20 @@ class LocalizedTextConverter
   @override
   Map<String, dynamic> toJson(LocalizedText object) => object.toJson();
 }
+
+/// Lets freezed models hold a list of [LocalizedText], e.g. an article body.
+class LocalizedTextListConverter
+    implements JsonConverter<List<LocalizedText>, List<dynamic>> {
+  const LocalizedTextListConverter();
+
+  @override
+  List<LocalizedText> fromJson(List<dynamic> json) => [
+    for (final item in json)
+      LocalizedText.fromJson(item as Map<String, dynamic>),
+  ];
+
+  @override
+  List<dynamic> toJson(List<LocalizedText> object) => [
+    for (final item in object) item.toJson(),
+  ];
+}

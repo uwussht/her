@@ -1304,4 +1304,333 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get shopCategorySubscriptionBox => 'Subscription boxes';
+
+  @override
+  String get learnSearchHint => 'Search the library';
+
+  @override
+  String get learnAll => 'All';
+
+  @override
+  String get learnNothingFound => 'Nothing found. Try changing the filters.';
+
+  @override
+  String learnResultsCount(int count) {
+    return '$count items';
+  }
+
+  @override
+  String get learnFreeOnly => 'Free only';
+
+  @override
+  String get learnBookmarked => 'Saved';
+
+  @override
+  String get learnClearFilters => 'Clear';
+
+  @override
+  String get learnSortRecommended => 'Recommended';
+
+  @override
+  String get learnSortNewest => 'Newest';
+
+  @override
+  String get learnSortPopular => 'Popular';
+
+  @override
+  String get learnSortShortest => 'Shortest';
+
+  @override
+  String get learnSortLabel => 'Sort';
+
+  @override
+  String get learnCategories => 'Categories';
+
+  @override
+  String learnPregnancySchoolWeek(int week) {
+    return 'Week $week';
+  }
+
+  @override
+  String get learnPregnancyThisWeek => 'Your week';
+
+  @override
+  String get learnContinueWatching => 'Continue';
+
+  @override
+  String get ageGateTitle => '18+ section';
+
+  @override
+  String get ageGateBody =>
+      'This section covers adult topics: intimacy, relationships and intimate health. Confirm that you are 18 or older.';
+
+  @override
+  String get ageGateConfirm => 'I\'m 18 or older';
+
+  @override
+  String get contentBookmark => 'Save';
+
+  @override
+  String get contentBookmarked => 'Saved';
+
+  @override
+  String get contentBookmarkRemoved => 'Removed from saved';
+
+  @override
+  String get contentShare => 'Share';
+
+  @override
+  String get contentMarkRead => 'Mark as read';
+
+  @override
+  String get contentRead => 'Read';
+
+  @override
+  String get contentRelatedProducts => 'This may help';
+
+  @override
+  String contentExpertBy(String name) {
+    return 'Reviewed by $name';
+  }
+
+  @override
+  String contentViews(int count) {
+    return '$count views';
+  }
+
+  @override
+  String get videoUnavailableTitle => 'Video unavailable';
+
+  @override
+  String get videoUnavailableBody => 'Check your connection and try again.';
+
+  @override
+  String get videoRetry => 'Try again';
+
+  @override
+  String get videoNoSource => 'No video has been uploaded for this lesson yet.';
+
+  @override
+  String get premiumGateTitle => 'This is a Premium item';
+
+  @override
+  String get premiumGateBody =>
+      'Full courses, unlimited Circle AI and priority answers from doctors. The first 7 days are free.';
+
+  @override
+  String get premiumGateOpen => 'More about Premium';
+
+  @override
+  String get premiumDemoOn => 'Turn on Premium (demo)';
+
+  @override
+  String get premiumDemoOff => 'Turn off Premium (demo)';
+
+  @override
+  String get premiumDemoNote =>
+      'Payment arrives in step 9. For now this is a switch for testing.';
+
+  @override
+  String get premiumActive => 'Premium is active';
+
+  @override
+  String courseModulesCount(int count) {
+    return '$count modules';
+  }
+
+  @override
+  String courseTotalTime(int minutes) {
+    return '$minutes min total';
+  }
+
+  @override
+  String get courseStart => 'Start';
+
+  @override
+  String get courseContinue => 'Continue';
+
+  @override
+  String get courseRestart => 'Start again';
+
+  @override
+  String get courseCompleted => 'Course completed';
+
+  @override
+  String get courseLessonDone => 'Lesson completed';
+
+  @override
+  String get courseMarkDone => 'Mark lesson done';
+
+  @override
+  String get courseNext => 'Next lesson';
+
+  @override
+  String get courseFinish => 'Finish the course';
+
+  @override
+  String courseLessonOf(int current, int total) {
+    return 'Lesson $current of $total';
+  }
+
+  @override
+  String get courseQuizBadge => 'Quiz';
+
+  @override
+  String get quizTitle => 'Check yourself';
+
+  @override
+  String quizQuestionOf(int current, int total) {
+    return 'Question $current of $total';
+  }
+
+  @override
+  String get quizCheck => 'Check';
+
+  @override
+  String get quizNext => 'Next';
+
+  @override
+  String get quizCorrect => 'Correct';
+
+  @override
+  String get quizWrong => 'Not quite';
+
+  @override
+  String get quizResultTitle => 'Your result';
+
+  @override
+  String quizScore(int correct, int total) {
+    return '$correct of $total';
+  }
+
+  @override
+  String get quizPassed => 'You passed';
+
+  @override
+  String get quizFailed => 'Try again';
+
+  @override
+  String get quizRetry => 'Retake';
+
+  @override
+  String get quizFinish => 'Done';
+
+  @override
+  String get certificateTitle => 'Certificate of completion';
+
+  @override
+  String get certificateAwardedTo => 'Awarded to';
+
+  @override
+  String get certificateForCompleting => 'For completing the course';
+
+  @override
+  String certificateLessons(int lessons, int minutes) {
+    return '$lessons lessons · $minutes min';
+  }
+
+  @override
+  String get certificateNote =>
+      'Her Circle · Educational material, not a medical qualification';
+
+  @override
+  String get certificateSave => 'Save certificate';
+
+  @override
+  String get certificateReady => 'Your certificate is ready';
+
+  @override
+  String get certificateName => 'Your name for the certificate';
+
+  @override
+  String get certificateNameHint => 'What\'s your name?';
+
+  @override
+  String get certificateFailed => 'Couldn\'t create the certificate';
+
+  @override
+  String get qaTitle => 'Ask the experts';
+
+  @override
+  String get qaAsk => 'Ask a question';
+
+  @override
+  String get qaAskTitle => 'Your question';
+
+  @override
+  String get qaAskHint =>
+      'Describe what\'s worrying you. No names or personal details.';
+
+  @override
+  String get qaAskCategory => 'Category';
+
+  @override
+  String get qaAskAnonymously => 'Ask anonymously';
+
+  @override
+  String get qaAskAnonymouslyNote =>
+      'Neither the doctors nor other users will see your name.';
+
+  @override
+  String get qaSend => 'Send';
+
+  @override
+  String get qaSent => 'Question sent. A doctor will answer within 48 hours.';
+
+  @override
+  String get qaSentPriority =>
+      'Sent with Premium priority — an answer within 12 hours.';
+
+  @override
+  String get qaValidationTooShort =>
+      'Add a little more detail — at least 15 characters.';
+
+  @override
+  String get qaPriorityBadge => 'Priority';
+
+  @override
+  String get qaPriorityHint =>
+      'With Premium your questions go to the front of the queue.';
+
+  @override
+  String get qaMyQuestions => 'My questions';
+
+  @override
+  String get qaSortTop => 'Top';
+
+  @override
+  String get qaSortNew => 'New';
+
+  @override
+  String get qaSortUnanswered => 'Unanswered';
+
+  @override
+  String get qaEmpty => 'No questions in this category yet.';
+
+  @override
+  String get qaUpvote => 'Helpful';
+
+  @override
+  String qaAskedOn(String date) {
+    return 'Asked $date';
+  }
+
+  @override
+  String qaAnsweredOn(String date) {
+    return 'Answered $date';
+  }
+
+  @override
+  String qaExpertOf(String specialty, String city) {
+    return '$specialty, $city';
+  }
+
+  @override
+  String qaYearsOfPractice(int years) {
+    return '$years years in practice';
+  }
+
+  @override
+  String get qaDisclaimer =>
+      'Answers from doctors are general information and do not replace a consultation.';
 }

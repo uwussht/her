@@ -6,6 +6,42 @@ part of 'course.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
+_QuizQuestion _$QuizQuestionFromJson(Map<String, dynamic> json) =>
+    _QuizQuestion(
+      question: const LocalizedTextConverter().fromJson(
+        json['question'] as Map<String, dynamic>,
+      ),
+      options: const LocalizedTextListConverter().fromJson(
+        json['options'] as List,
+      ),
+      correctIndex: (json['correctIndex'] as num).toInt(),
+      explanation: _$JsonConverterFromJson<Map<String, dynamic>, LocalizedText>(
+        json['explanation'],
+        const LocalizedTextConverter().fromJson,
+      ),
+    );
+
+Map<String, dynamic> _$QuizQuestionToJson(_QuizQuestion instance) =>
+    <String, dynamic>{
+      'question': const LocalizedTextConverter().toJson(instance.question),
+      'options': const LocalizedTextListConverter().toJson(instance.options),
+      'correctIndex': instance.correctIndex,
+      'explanation': _$JsonConverterToJson<Map<String, dynamic>, LocalizedText>(
+        instance.explanation,
+        const LocalizedTextConverter().toJson,
+      ),
+    };
+
+Value? _$JsonConverterFromJson<Json, Value>(
+  Object? json,
+  Value? Function(Json json) fromJson,
+) => json == null ? null : fromJson(json as Json);
+
+Json? _$JsonConverterToJson<Json, Value>(
+  Value? value,
+  Json? Function(Value value) toJson,
+) => value == null ? null : toJson(value);
+
 _Lesson _$LessonFromJson(Map<String, dynamic> json) => _Lesson(
   id: json['id'] as String,
   title: const LocalizedTextConverter().fromJson(
@@ -14,6 +50,14 @@ _Lesson _$LessonFromJson(Map<String, dynamic> json) => _Lesson(
   durationMinutes: (json['durationMinutes'] as num).toInt(),
   isQuiz: json['isQuiz'] as bool? ?? false,
   videoUrl: json['videoUrl'] as String?,
+  body: json['body'] == null
+      ? const <LocalizedText>[]
+      : const LocalizedTextListConverter().fromJson(json['body'] as List),
+  questions:
+      (json['questions'] as List<dynamic>?)
+          ?.map((e) => QuizQuestion.fromJson(e as Map<String, dynamic>))
+          .toList() ??
+      const <QuizQuestion>[],
 );
 
 Map<String, dynamic> _$LessonToJson(_Lesson instance) => <String, dynamic>{
@@ -22,6 +66,8 @@ Map<String, dynamic> _$LessonToJson(_Lesson instance) => <String, dynamic>{
   'durationMinutes': instance.durationMinutes,
   'isQuiz': instance.isQuiz,
   'videoUrl': instance.videoUrl,
+  'body': const LocalizedTextListConverter().toJson(instance.body),
+  'questions': instance.questions.map((e) => e.toJson()).toList(),
 };
 
 _CourseModule _$CourseModuleFromJson(Map<String, dynamic> json) =>

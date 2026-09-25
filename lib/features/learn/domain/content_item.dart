@@ -35,6 +35,11 @@ abstract class ContentItem with _$ContentItem {
     required ContentCategory category,
     @LocalizedTextConverter() required LocalizedText title,
     @LocalizedTextConverter() required LocalizedText summary,
+
+    /// Article body, one entry per paragraph. Empty for videos and courses.
+    @Default(<LocalizedText>[])
+    @LocalizedTextListConverter()
+    List<LocalizedText> body,
     @Default(AccessTier.free) AccessTier tier,
 
     /// Reading or watching time, in minutes.
@@ -66,4 +71,11 @@ abstract class ContentItem with _$ContentItem {
   bool get isPremium => tier == AccessTier.premium;
 
   bool get isAdultOnly => category.isAdultOnly;
+
+  bool get hasBody => body.isNotEmpty;
+
+  /// Whether it can be opened in the video player.
+  bool get isPlayable =>
+      (type == ContentType.video || type == ContentType.podcast) &&
+      videoUrl != null;
 }

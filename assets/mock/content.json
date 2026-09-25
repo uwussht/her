@@ -24,7 +24,24 @@
     ],
     "expertId": "exp_aigul",
     "viewCount": 15420,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "Первые месячные обычно начинаются между 10 и 15 годами. За несколько месяцев до них появляются светлые выделения — это нормальная подготовка организма.",
+        "kk": "Алғашқы етеккір әдетте 10-15 жас аралығында басталады. Оған дейін бірнеше ай бұрын ашық түсті бөліністер пайда болады — бұл организмнің қалыпты дайындығы.",
+        "en": "A first period usually arrives between the ages of 10 and 15. For a few months beforehand you may notice light discharge — that is your body getting ready."
+      },
+      {
+        "ru": "Первые месячные часто идут 3–5 дней, а цикл в первый год бывает нерегулярным: между месячными может пройти и три недели, и два месяца. Это не ошибка и не болезнь.",
+        "kk": "Алғашқы етеккір 3-5 күнге созылады, ал бірінші жылы цикл тұрақсыз болуы мүмкін: етеккір аралығы үш апта да, екі ай да болады. Бұл қате де, ауру да емес.",
+        "en": "A first period often lasts three to five days, and in the first year the cycle is irregular: three weeks between periods, or two months. Neither is a mistake or an illness."
+      },
+      {
+        "ru": "В рюкзак стоит положить прокладку и запасное белье. Если болит живот, помогает тепло и спокойная прогулка. К врачу идут, если кровотечение очень обильное или боль не даёт заниматься обычными делами.",
+        "kk": "Рюкзакқа прокладка мен қосымша іш киім салыңыз. Іш ауырса, жылу мен тыныш серуен көмектеседі. Қан кету өте көп болса немесе ауырсыну күнделікті істерге кедергі болса — дәрігерге барыңыз.",
+        "en": "Keep a pad and spare underwear in your bag. If your belly aches, warmth and a calm walk help. See a doctor if the bleeding is very heavy or the pain stops you doing ordinary things."
+      }
+    ]
   },
   {
     "id": "c_body_changes",
@@ -50,7 +67,8 @@
     ],
     "expertId": "exp_aigul",
     "viewCount": 9870,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
   },
   {
     "id": "c_cycle_phases",
@@ -78,7 +96,8 @@
     ],
     "expertId": "exp_aigul",
     "viewCount": 23100,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
   },
   {
     "id": "c_pms",
@@ -106,7 +125,24 @@
     ],
     "expertId": "exp_dana",
     "viewCount": 18040,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "ПМС — это набор симптомов за 3–10 дней до месячных: раздражительность, отёки, болезненность груди, тяга к еде. Они связаны с падением прогестерона, а не со «слабым характером».",
+        "kk": "ПМС — етеккірге 3-10 күн қалғандағы белгілер жиынтығы: ашушаңдық, ісіну, кеуде ауыруы, тәбет тартуы. Бұл прогестеронның төмендеуімен байланысты, «мінездің нашарлығымен» емес.",
+        "en": "PMS is the cluster of symptoms in the three to ten days before a period: irritability, swelling, tender breasts, cravings. It follows the drop in progesterone, not a weak character."
+      },
+      {
+        "ru": "Работают простые вещи: сон по расписанию, 20–30 минут движения в день, меньше кофе и алкоголя, больше белка и магния. Эффект появляется через один-два цикла, а не за вечер.",
+        "kk": "Қарапайым нәрселер жұмыс істейді: уақыт бойынша ұйқы, күніне 20-30 минут қозғалыс, кофе мен алкогольді азайту, ақуыз мен магнийді көбейту. Әсері бір-екі циклдан кейін көрінеді.",
+        "en": "Simple things work: a regular bedtime, 20 to 30 minutes of movement a day, less coffee and alcohol, more protein and magnesium. The effect shows after a cycle or two, not overnight."
+      },
+      {
+        "ru": "Не работают: жёсткие диеты и отказ от еды, «чистки» и травяные сборы без состава. Если за неделю до месячных настроение падает так, что рушатся работа и отношения, это может быть ПМДР — с этим идут к врачу.",
+        "kk": "Жұмыс істемейді: қатаң диеталар, тамақтан бас тарту, құрамы белгісіз шөп жиынтықтары. Егер етеккірге дейінгі аптада көңіл-күй жұмыс пен қарым-қатынасты бұзатындай түссе, бұл ПМДБ болуы мүмкін — дәрігерге барыңыз.",
+        "en": "What doesn't: crash diets, skipping meals, and herbal blends with no ingredient list. If your mood in that week wrecks your work and relationships, it may be PMDD — that is a reason to see a doctor."
+      }
+    ]
   },
   {
     "id": "c_irregular",
@@ -133,7 +169,24 @@
     ],
     "expertId": "exp_aigul",
     "viewCount": 7320,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "Нормальный цикл длится 21–35 дней, а разница между соседними циклами обычно не превышает 7–9 дней. Один сбой после стресса, болезни или перелёта — это ещё не нарушение.",
+        "kk": "Қалыпты цикл 21-35 күн, ал қатар циклдар арасындағы айырма әдетте 7-9 күннен аспайды. Стресс, ауру немесе ұшақтан кейінгі бір ауытқу — бұзылыс емес.",
+        "en": "A normal cycle runs 21 to 35 days, and neighbouring cycles usually differ by no more than seven to nine days. One irregular cycle after stress, illness or a long flight is not a disorder."
+      },
+      {
+        "ru": "К врачу стоит записаться, если цикл короче 21 или длиннее 35 дней несколько раз подряд, если между месячными есть кровотечения, если месячные идут дольше 7 дней или прокладку приходится менять чаще, чем раз в два часа.",
+        "kk": "Цикл бірнеше рет қатарынан 21 күннен қысқа немесе 35 күннен ұзақ болса, етеккір аралығында қан кетсе, етеккір 7 күннен ұзаққа созылса немесе прокладканы екі сағатта бір реттен жиі ауыстыру керек болса — дәрігерге жазылыңыз.",
+        "en": "Book an appointment if your cycle is shorter than 21 or longer than 35 days several times in a row, if you bleed between periods, if a period lasts more than seven days, or if you change a pad more often than every two hours."
+      },
+      {
+        "ru": "Частые причины — гормоны щитовидной железы, СПКЯ, дефицит железа, резкая потеря веса. Возьмите с собой данные трекера: врачу важно видеть длину циклов за несколько месяцев.",
+        "kk": "Жиі себептері — қалқанша без гормондары, ПКЖС, темір жетіспеушілігі, салмақтың күрт азаюы. Трекер деректерін алып барыңыз: дәрігерге бірнеше айдағы цикл ұзақтығын көру маңызды.",
+        "en": "Common causes are thyroid hormones, PCOS, iron deficiency and sudden weight loss. Bring your tracker data: your doctor needs to see cycle lengths across several months."
+      }
+    ]
   },
   {
     "id": "c_iron",
@@ -160,7 +213,24 @@
     ],
     "expertId": "exp_dana",
     "viewCount": 11200,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "За обильные месячные теряется 60–80 мл крови, и вместе с ней уходит железо. Отсюда слабость, головокружение и желание спать днём в первые дни цикла.",
+        "kk": "Қанды етеккірде 60-80 мл қан жоғалады, онымен бірге темір кетеді. Сондықтан циклдің алғашқы күндері әлсіздік, бас айналу және күндіз ұйқы қалау болады.",
+        "en": "A heavy period loses 60 to 80 ml of blood, and iron goes with it. That is where the weakness, dizziness and daytime sleepiness of the first days come from."
+      },
+      {
+        "ru": "Лучше всего усваивается железо из мяса, печени и рыбы. Растительное железо из гречки, бобов и шпината усваивается хуже, но витамин C помогает: добавьте болгарский перец, гранат или лимон.",
+        "kk": "Ең жақсы сіңетін темір — ет, бауыр және балықта. Қарақұмық, бұршақ, шпинаттағы өсімдік темірі нашар сіңеді, бірақ C дәрумені көмектеседі: бұрыш, анар немесе лимон қосыңыз.",
+        "en": "Iron from meat, liver and fish absorbs best. Plant iron from buckwheat, beans and spinach absorbs less well, but vitamin C helps: add bell pepper, pomegranate or lemon."
+      },
+      {
+        "ru": "Чай и кофе во время еды мешают усвоению — сдвиньте их на час. Добавки принимают только после анализа на ферритин: лишнее железо тоже вредно.",
+        "kk": "Тамақ кезіндегі шай мен кофе сіңуге кедергі — оларды бір сағатқа жылжытыңыз. Қоспаларды ферритин талдауынан кейін ғана қабылдайды: артық темір де зиянды.",
+        "en": "Tea and coffee with a meal block absorption — move them an hour away. Take supplements only after a ferritin test: too much iron is harmful too."
+      }
+    ]
   },
   {
     "id": "c_fertile_window",
@@ -186,7 +256,8 @@
     ],
     "expertId": "exp_aigul",
     "viewCount": 14300,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
   },
   {
     "id": "c_preg_w12",
@@ -213,7 +284,24 @@
     ],
     "expertId": "exp_aigul",
     "viewCount": 8600,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "На 12 неделе малыш размером с лайм, у него уже сформированы все органы. Это конец первого триместра — тошнота у многих начинает отступать.",
+        "kk": "12-аптада сәби лайм өлшемінде, барлық ағзалары қалыптасқан. Бұл бірінші триместрдің соңы — көпшілікте жүрек айну азая бастайды.",
+        "en": "At week 12 the baby is the size of a lime and every organ has formed. This is the end of the first trimester, and for many the nausea starts to ease."
+      },
+      {
+        "ru": "Первый скрининг — это УЗИ плюс анализ крови. На УЗИ смотрят толщину шейной складки, носовую кость, сердцебиение и соответствие срока. Анализ считают вместе с УЗИ, отдельно он мало о чём говорит.",
+        "kk": "Бірінші скрининг — УДЗ және қан талдауы. УДЗ-де желке қатпарының қалыңдығы, мұрын сүйегі, жүрек соғысы және мерзімге сәйкестігі қаралады. Талдау УДЗ-мен бірге есептеледі.",
+        "en": "The first screening is a scan plus a blood test. The scan checks nuchal fold thickness, the nasal bone, the heartbeat and whether dates match. The blood result is read together with the scan, not alone."
+      },
+      {
+        "ru": "Подготовка простая: приходите не голодной, возьмите воду и предыдущие анализы. Результат скрининга — это вероятность, а не диагноз, и обсуждать его нужно с врачом.",
+        "kk": "Дайындық қарапайым: ашқарынға келмеңіз, су мен алдыңғы талдауларды алыңыз. Скрининг нәтижесі — ықтималдық, диагноз емес, оны дәрігермен талқылау керек.",
+        "en": "Preparation is simple: don't come hungry, bring water and your earlier results. A screening result is a probability, not a diagnosis, and it belongs in a conversation with your doctor."
+      }
+    ]
   },
   {
     "id": "c_preg_w18",
@@ -240,7 +328,24 @@
     ],
     "expertId": "exp_aigul",
     "viewCount": 10250,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "Между 18 и 22 неделями большинство женщин впервые чувствуют шевеления. Сначала это похоже на пузырьки или лёгкое подёргивание, а не на толчки.",
+        "kk": "18-22 апта аралығында әйелдердің көбі алғаш рет қимылды сезінеді. Алғашында бұл көбіршіктерге немесе жеңіл дірілге ұқсайды.",
+        "en": "Between weeks 18 and 22, most women feel movement for the first time. At first it feels like bubbles or a light flutter rather than kicks."
+      },
+      {
+        "ru": "При первой беременности шевеления замечают позже — ближе к 20–22 неделям. Плотность живота, расположение плаценты и вес тоже влияют на то, когда вы их почувствуете.",
+        "kk": "Алғашқы жүктілікте қимыл кешірек — 20-22 аптаға жақын сезіледі. Іштің тығыздығы, плацентаның орналасуы және салмақ та әсер етеді.",
+        "en": "In a first pregnancy, movement is noticed later, closer to weeks 20 to 22. Belly firmness, where the placenta sits and your weight all affect when you feel it."
+      },
+      {
+        "ru": "Считать шевеления начинают позже, обычно после 28 недели. Если к 24 неделе вы не чувствуете ничего — скажите врачу, это повод для осмотра, а не для паники.",
+        "kk": "Қимылды санау кейінірек, әдетте 28-аптадан кейін басталады. 24-аптаға дейін ештеңе сезінбесеңіз — дәрігерге айтыңыз, бұл тексеруге себеп, үрейленуге емес.",
+        "en": "Counting movements starts later, usually after week 28. If you feel nothing by week 24, tell your doctor: that is a reason for a check, not for panic."
+      }
+    ]
   },
   {
     "id": "c_hospital_bag",
@@ -268,7 +373,24 @@
     ],
     "expertId": "exp_madina",
     "viewCount": 19870,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "Сумку собирают к 34–36 неделе и держат у двери. Удобно разделить её на три части: документы, вещи для родов и вещи для послеродового отделения.",
+        "kk": "Сөмкені 34-36 аптада жинап, есік жанында ұстайды. Оны үш бөлікке бөлу қолайлы: құжаттар, босануға арналған заттар және босанғаннан кейінгі бөлімге арналған заттар.",
+        "en": "Pack the bag by weeks 34 to 36 and keep it by the door. It helps to split it in three: documents, things for labour, and things for the postnatal ward."
+      },
+      {
+        "ru": "Документы: удостоверение, полис, обменная карта, результаты анализов. Для родов: сорочка, тапочки, вода без газа, резинка для волос, зарядка с длинным кабелем. Для палаты: послеродовые прокладки, бюстгальтер для кормления, крем для сосков, одноразовое белье.",
+        "kk": "Құжаттар: жеке куәлік, полис, айырбас картасы, талдау нәтижелері. Босануға: көйлек, тәпішке, газсыз су, шаш резинкасы, ұзын сымды зарядтағыш. Палатаға: босанғаннан кейінгі прокладкалар, емізуге арналған көкірекше, емшек ұшына крем, бір жолғы іш киім.",
+        "en": "Documents: your ID, insurance, maternity record and test results. For labour: a nightdress, slippers, still water, a hair tie and a charger with a long cable. For the ward: postnatal pads, a nursing bra, nipple cream and disposable underwear."
+      },
+      {
+        "ru": "Малышу нужно немного: подгузники на первые дни, пелёнки, шапочка, распашонки и одеяло на выписку. Остальное почти всегда остаётся нераспакованным — докупить можно потом.",
+        "kk": "Сәбиге көп нәрсе қажет емес: алғашқы күндерге жаялық, жөргек, тақия, көйлекше және шығуға арналған көрпе. Қалғаны ашылмай қалады — кейін сатып алуға болады.",
+        "en": "The baby needs little: nappies for the first days, swaddles, a hat, vests and a blanket for going home. The rest almost always stays unpacked — you can buy more later."
+      }
+    ]
   },
   {
     "id": "c_postpartum_body",
@@ -294,7 +416,24 @@
     ],
     "expertId": "exp_aigul",
     "viewCount": 13400,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "Первые 6 недель организм возвращается к небеременному состоянию. Выделения (лохии) идут 4–6 недель и постепенно светлеют, живот уходит не сразу, а матка сокращается около 6 недель.",
+        "kk": "Алғашқы 6 аптада организм жүкті емес күйге қайтады. Бөліністер (лохия) 4-6 аптаға созылып, біртіндеп ашықтанады, іш бірден кетпейді, жатыр 6 аптада жиырылады.",
+        "en": "In the first six weeks the body returns to its pre-pregnancy state. Discharge (lochia) lasts four to six weeks and gradually lightens, the belly does not go at once, and the uterus contracts over about six weeks."
+      },
+      {
+        "ru": "Нормально: потливость по ночам, выпадение волос через 2–3 месяца, чувствительность шва, сильные эмоции в первые 10 дней. Помогают отдых, вода, белок и помощь по дому — не героизм.",
+        "kk": "Қалыпты: түнде тершеңдік, 2-3 айдан кейін шаш түсуі, тігіс сезімталдығы, алғашқы 10 күндегі күшті эмоциялар. Демалыс, су, ақуыз және үй жұмысындағы көмек көмектеседі — батырлық емес.",
+        "en": "Normal: night sweats, hair loss after two or three months, a tender scar, strong emotions in the first ten days. Rest, water, protein and help at home are what work — not heroics."
+      },
+      {
+        "ru": "Звоните врачу при температуре выше 38, обильном кровотечении (прокладка за час), сильной боли в животе или в одной ноге, головной боли со зрительными вспышками. Это не «терпеть до приёма».",
+        "kk": "38-ден жоғары температура, көп қан кету (сағатта бір прокладка), іштің немесе бір аяқтың қатты ауыруы, көз алдында жарқыл болатын бас ауруы кезінде дәрігерге хабарласыңыз. Бұл «қабылдауға дейін шыдау» емес.",
+        "en": "Call your doctor for a temperature above 38, heavy bleeding (a pad an hour), severe pain in your belly or one leg, or a headache with visual flashes. These are not things to wait out."
+      }
+    ]
   },
   {
     "id": "c_ppd",
@@ -321,7 +460,8 @@
     ],
     "expertId": "exp_madina",
     "viewCount": 9100,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
   },
   {
     "id": "c_perimenopause",
@@ -348,7 +488,24 @@
     ],
     "expertId": "exp_dana",
     "viewCount": 8750,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "Перименопауза начинается за 4–8 лет до последней менструации, чаще всего после 40. Первый сигнал — цикл меняет длину: то 24 дня, то 35, а объём месячных становится непредсказуемым.",
+        "kk": "Перименопауза соңғы етеккірге 4-8 жыл қалғанда, көбіне 40-тан кейін басталады. Алғашқы белгі — цикл ұзақтығы өзгереді: бірде 24 күн, бірде 35, етеккір көлемі болжауға келмейді.",
+        "en": "Perimenopause begins four to eight years before your last period, most often after 40. The first signal is a cycle that changes length: 24 days, then 35, with unpredictable flow."
+      },
+      {
+        "ru": "Дальше добавляются приливы, ночная потливость, тревожность, сухость и плохой сон. Гормоны в эти годы «качает», поэтому один анализ ФСГ ничего не доказывает — важна картина за несколько месяцев.",
+        "kk": "Одан кейін қызу толқыны, түнгі тершеңдік, мазасыздық, құрғақтық және нашар ұйқы қосылады. Бұл жылдары гормондар «шайқалады», сондықтан бір ФСГ талдауы ештеңе дәлелдемейді.",
+        "en": "Then come hot flashes, night sweats, anxiety, dryness and poor sleep. Hormones swing in these years, so a single FSH test proves nothing — the pattern across months is what matters."
+      },
+      {
+        "ru": "Что помогает: силовые тренировки 2 раза в неделю, достаточно белка и кальция, прохладная спальня, отказ от курения. Менопаузальная гормональная терапия обсуждается с врачом — у неё есть и показания, и противопоказания.",
+        "kk": "Не көмектеседі: аптасына 2 рет күш жаттығулары, жеткілікті ақуыз мен кальций, салқын жатын бөлме, шылымнан бас тарту. Менопаузалық гормон терапиясы дәрігермен талқыланады.",
+        "en": "What helps: strength training twice a week, enough protein and calcium, a cool bedroom, and stopping smoking. Menopausal hormone therapy is a conversation with your doctor — it has both indications and contraindications."
+      }
+    ]
   },
   {
     "id": "c_hot_flashes",
@@ -376,7 +533,8 @@
     ],
     "expertId": "exp_dana",
     "viewCount": 6420,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
   },
   {
     "id": "c_anxiety",
@@ -401,7 +559,24 @@
     ],
     "expertId": "exp_madina",
     "viewCount": 16800,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "За 5–10 дней до месячных падает прогестерон, а вместе с ним — уровень серотонина. Отсюда тревога, слёзы без причины и ощущение, что всё валится из рук.",
+        "kk": "Етеккірге 5-10 күн қалғанда прогестерон, онымен бірге серотонин деңгейі төмендейді. Сондықтан мазасыздық, себепсіз көз жасы және «бәрі қолдан түсіп жатыр» деген сезім пайда болады.",
+        "en": "In the five to ten days before a period, progesterone falls and serotonin falls with it. Hence the anxiety, the tears for no reason, and the sense that everything is slipping."
+      },
+      {
+        "ru": "Первое: назовите это. Отметьте настроение в трекере — когда вы видите, что тревога приходит на 24 день цикла, она перестаёт быть личным провалом.",
+        "kk": "Бірінші: оны атаңыз. Көңіл-күйді трекерде белгілеңіз — мазасыздық циклдің 24-күні келетінін көрсеңіз, ол жеке сәтсіздік болудан қалады.",
+        "en": "First: name it. Log your mood — once you can see that the anxiety arrives on day 24, it stops being a personal failure."
+      },
+      {
+        "ru": "Второе: 20 минут ходьбы и сон до полуночи работают лучше, чем любой «успокаивающий» чай. Третье: отложите тяжёлые разговоры и решения на первую неделю после месячных, если можете.",
+        "kk": "Екінші: 20 минут жаяу жүру және түн ортасына дейінгі ұйқы кез келген «тыныштандыратын» шайдан жақсы жұмыс істейді. Үшінші: ауыр әңгімелер мен шешімдерді етеккірден кейінгі бірінші аптаға қалдырыңыз.",
+        "en": "Second: twenty minutes of walking and being asleep before midnight beat any calming tea. Third: if you can, move hard conversations and decisions to the first week after your period."
+      }
+    ]
   },
   {
     "id": "c_intimacy_talk",
@@ -425,7 +600,24 @@
     ],
     "expertId": "exp_madina",
     "viewCount": 5300,
-    "publishedAt": "2026-08-01T09:00:00.000Z"
+    "publishedAt": "2026-08-01T09:00:00.000Z",
+    "body": [
+      {
+        "ru": "Разговор о близости проще начать вне спальни и вне ссоры — на прогулке, за чаем, в машине. Так меньше ощущения «разбора полётов».",
+        "kk": "Жақындық туралы әңгімені жатын бөлмеден және ұрыстан тыс бастау жеңіл — серуенде, шай үстінде, көлікте. Сонда «тексеру» сезімі азаяды.",
+        "en": "It is easier to start a conversation about intimacy outside the bedroom and outside an argument — on a walk, over tea, in the car. It feels less like an inquest."
+      },
+      {
+        "ru": "Говорите о себе, а не о партнёре: «мне не хватает» вместо «ты никогда». Одна тема за раз. И называйте желаемое, а не только проблему.",
+        "kk": "Серіктес туралы емес, өзіңіз туралы айтыңыз: «сен ешқашан» емес, «маған жетпейді». Бір уақытта бір тақырып. Мәселені ғана емес, қалағаныңызды атаңыз.",
+        "en": "Talk about yourself, not your partner: “I miss” rather than “you never”. One topic at a time. And name what you want, not only what is wrong."
+      },
+      {
+        "ru": "Если есть боль, сухость или страх — это медицинский вопрос, а не вопрос желания. Об этом говорят с гинекологом, и в большинстве случаев решение находится.",
+        "kk": "Ауырсыну, құрғақтық немесе қорқыныш болса — бұл медициналық сұрақ, қалау сұрағы емес. Бұл туралы гинекологпен сөйлесіңіз, көп жағдайда шешім табылады.",
+        "en": "If there is pain, dryness or fear, that is a medical question, not a question of desire. Raise it with a gynaecologist; in most cases there is a solution."
+      }
+    ]
   },
   {
     "id": "c_course_cycle",

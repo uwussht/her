@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+import '../../../features/premium/domain/premium_status.dart';
+
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -37,6 +40,7 @@ class PreferencesService {
   static const _kFamilyLinkRequested = 'onboarding.familyLinkRequested';
   static const _kHideNotificationContent = 'privacy.hideNotificationContent';
   static const _kNotificationsRequested = 'notifications.requested';
+  static const _kPremiumStatus = 'premium.status';
 
   String? get localeCode => _prefs.getString(_kLocale);
 
@@ -95,4 +99,15 @@ class PreferencesService {
 
   Future<void> setNotificationsRequested() =>
       _prefs.setBool(_kNotificationsRequested, true);
+
+  PremiumStatus get premiumStatus {
+    final stored = _prefs.getString(_kPremiumStatus);
+    return PremiumStatus.values.firstWhere(
+      (status) => status.name == stored,
+      orElse: () => PremiumStatus.free,
+    );
+  }
+
+  Future<void> setPremiumStatus(PremiumStatus status) =>
+      _prefs.setString(_kPremiumStatus, status.name);
 }
