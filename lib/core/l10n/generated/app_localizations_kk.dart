@@ -1598,4 +1598,336 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get qaDisclaimer =>
       'Дәрігерлердің жауаптары — жалпы ақпарат, қабылдауды алмастырмайды.';
+
+  @override
+  String get shopSearchHint => 'Тауарларды іздеу';
+
+  @override
+  String shopResultsCount(int count) {
+    return '$count тауар';
+  }
+
+  @override
+  String get shopNothingFound =>
+      'Ештеңе табылмады. Сүзгілерді өзгертіп көріңіз.';
+
+  @override
+  String get shopLocalBrands => 'Жергілікті брендтер';
+
+  @override
+  String get shopDiscounted => 'Жеңілдікпен';
+
+  @override
+  String shopMaxPrice(String price) {
+    return '$price дейін';
+  }
+
+  @override
+  String get shopAnyPrice => 'Кез келген баға';
+
+  @override
+  String get shopSortRecommended => 'Ұсынамыз';
+
+  @override
+  String get shopSortPriceAsc => 'Арзаннан';
+
+  @override
+  String get shopSortPriceDesc => 'Қымбаттан';
+
+  @override
+  String get shopSortRating => 'Рейтинг бойынша';
+
+  @override
+  String get shopSortNewest => 'Танымал';
+
+  @override
+  String get shopForYou => 'Сізге таңдалды';
+
+  @override
+  String get shopOutOfStock => 'Қоймада жоқ';
+
+  @override
+  String get productDescription => 'Сипаттама';
+
+  @override
+  String get productReviewsTitle => 'Пікірлер';
+
+  @override
+  String get productNoReviews => 'Әзірге пікір жоқ.';
+
+  @override
+  String get productSeller => 'Сатушы';
+
+  @override
+  String get productBundleContents => 'Жинаққа не кіреді';
+
+  @override
+  String get productVerifiedPurchase => 'Тексерілген сатып алу';
+
+  @override
+  String get productAddedToCart => 'Себетке қосылды';
+
+  @override
+  String productInCart(int count) {
+    return 'Себетте: $count';
+  }
+
+  @override
+  String get productRelatedContent => 'Тақырып бойынша оқу';
+
+  @override
+  String productSaveAmount(String amount) {
+    return '$amount тиімділік';
+  }
+
+  @override
+  String get boxSubscribe => 'Жазылымды рәсімдеу';
+
+  @override
+  String get boxSubscribed => 'Жазылым белсенді';
+
+  @override
+  String get boxCancel => 'Жазылымды тоқтату';
+
+  @override
+  String get boxCancelled => 'Жазылым тоқтатылды';
+
+  @override
+  String get boxSchedule => 'Жеткізу кестесі';
+
+  @override
+  String boxNextDelivery(String date) {
+    return 'Келесі жеткізу: $date';
+  }
+
+  @override
+  String get boxCadenceMonthly => 'Әр цикл, етеккірге 3 күн қалғанда';
+
+  @override
+  String get boxCadenceTrimester => 'Триместрде бір рет, 3 жеткізу';
+
+  @override
+  String boxDeliveryNumber(int number) {
+    return '$number-жеткізу';
+  }
+
+  @override
+  String get cartTitle => 'Себет';
+
+  @override
+  String get cartEmpty => 'Себет бос';
+
+  @override
+  String get cartEmptyBody =>
+      'Дүкенге кіріп көріңіз — сізге бірдеңе таңдап қойдық.';
+
+  @override
+  String get cartGoShopping => 'Дүкенге';
+
+  @override
+  String get cartSubtotal => 'Тауарлар';
+
+  @override
+  String get cartDelivery => 'Жеткізу';
+
+  @override
+  String get cartDeliveryFree => 'Тегін';
+
+  @override
+  String get cartTotal => 'Жалпы';
+
+  @override
+  String cartSavings(String amount) {
+    return 'Сіз $amount тиімдедіңіз';
+  }
+
+  @override
+  String cartFreeDeliveryFrom(String amount) {
+    return '$amount тауар қосыңыз — жеткізу тегін болады';
+  }
+
+  @override
+  String get cartCheckout => 'Тапсырыс беру';
+
+  @override
+  String get cartRemove => 'Алып тастау';
+
+  @override
+  String get cartRemoved => 'Тауар себеттен алынды';
+
+  @override
+  String get cartQuantity => 'Саны';
+
+  @override
+  String get checkoutTitle => 'Тапсырысты рәсімдеу';
+
+  @override
+  String get checkoutStepAddress => 'Жеткізу';
+
+  @override
+  String get checkoutStepPayment => 'Төлем';
+
+  @override
+  String get addressFullName => 'Аты-жөні';
+
+  @override
+  String get addressPhone => 'Телефон';
+
+  @override
+  String get addressCity => 'Қала';
+
+  @override
+  String get addressStreet => 'Көше және үй';
+
+  @override
+  String get addressApartment => 'Пәтер';
+
+  @override
+  String get addressPostalCode => 'Индекс';
+
+  @override
+  String get addressComment => 'Курьерге түсініктеме';
+
+  @override
+  String get addressContinue => 'Төлемге';
+
+  @override
+  String get addressRequired => 'Бұл өрісті толтырыңыз';
+
+  @override
+  String get paymentKaspi => 'Kaspi Pay';
+
+  @override
+  String get paymentKaspiNote => 'Растау үшін Kaspi қосымшасы ашылады.';
+
+  @override
+  String get paymentCard => 'Банк картасы';
+
+  @override
+  String get paymentCardNote => 'Карта деректері қосымшада сақталмайды.';
+
+  @override
+  String get paymentCash => 'Алу кезінде қолма-қол';
+
+  @override
+  String get paymentCashNote => 'Жеткізу кезінде курьерге төлейсіз.';
+
+  @override
+  String get cardNumber => 'Карта нөмірі';
+
+  @override
+  String get cardExpiry => 'Мерзімі (АА/ЖЖ)';
+
+  @override
+  String get cardCvc => 'CVC';
+
+  @override
+  String get cardHolder => 'Картадағы аты';
+
+  @override
+  String get cardInvalidNumber => 'Карта нөмірін тексеріңіз';
+
+  @override
+  String get cardInvalidExpiry => 'Мерзімін тексеріңіз';
+
+  @override
+  String get cardInvalidCvc => 'CVC-ні тексеріңіз';
+
+  @override
+  String get cardTestHint =>
+      'Демо төлем: кез келген дұрыс карта өтеді, 4000 0000 0000 0002 картасы қабылданбайды.';
+
+  @override
+  String paymentPay(String amount) {
+    return '$amount төлеу';
+  }
+
+  @override
+  String get paymentErrorDeclined =>
+      'Төлем қабылданмады. Басқа картаны байқап көріңіз.';
+
+  @override
+  String get paymentErrorFunds => 'Қаражат жеткіліксіз.';
+
+  @override
+  String get paymentErrorInvalidCard => 'Карта деректері қате.';
+
+  @override
+  String get paymentErrorNetwork => 'Төлем жүйесімен байланыс жоқ.';
+
+  @override
+  String get paymentErrorCancelled => 'Төлем тоқтатылды.';
+
+  @override
+  String get paymentErrorNotImplemented =>
+      'Бұл төлем әдісі әзірге қолжетімсіз. Басқасын таңдаңыз.';
+
+  @override
+  String get orderPlacedTitle => 'Тапсырыс рәсімделді';
+
+  @override
+  String get orderPlacedBody => 'Деталдарды хабарламаға жібердік. Рақмет!';
+
+  @override
+  String orderNumber(String reference) {
+    return 'Тапсырыс $reference';
+  }
+
+  @override
+  String get orderTrack => 'Тапсырысты бақылау';
+
+  @override
+  String get orderContinueShopping => 'Сатып алуды жалғастыру';
+
+  @override
+  String get ordersTitle => 'Менің тапсырыстарым';
+
+  @override
+  String get ordersEmpty => 'Әзірге тапсырыс жоқ.';
+
+  @override
+  String orderItemsCount(int count) {
+    return '$count тауар';
+  }
+
+  @override
+  String orderPlacedOn(String date) {
+    return '$date';
+  }
+
+  @override
+  String get orderStatusPlaced => 'Қабылданды';
+
+  @override
+  String get orderStatusPacking => 'Жиналуда';
+
+  @override
+  String get orderStatusShipped => 'Жолда';
+
+  @override
+  String get orderStatusDelivered => 'Жеткізілді';
+
+  @override
+  String get orderStatusCancelled => 'Тоқтатылды';
+
+  @override
+  String orderEstimated(String date) {
+    return '$date күтіледі';
+  }
+
+  @override
+  String orderPaymentReference(String reference) {
+    return 'Төлем $reference';
+  }
+
+  @override
+  String get orderDeliveryTo => 'Жеткізу мекенжайы';
+
+  @override
+  String get orderSummary => 'Тапсырыс құрамы';
+
+  @override
+  String orderQuantityShort(int count) {
+    return '× $count';
+  }
 }

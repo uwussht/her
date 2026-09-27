@@ -2205,5 +2205,476 @@
   "qaDisclaimer": "Ответы врачей — общая информация и не заменяют приём.",
   "@qaDisclaimer": {
     "description": "qaDisclaimer"
+  },
+  "shopSearchHint": "Поиск товаров",
+  "@shopSearchHint": {
+    "description": "shopSearchHint"
+  },
+  "shopResultsCount": "{count} товаров",
+  "@shopResultsCount": {
+    "description": "shopResultsCount",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shopNothingFound": "Ничего не нашлось. Попробуйте изменить фильтры.",
+  "@shopNothingFound": {
+    "description": "shopNothingFound"
+  },
+  "shopLocalBrands": "Местные бренды",
+  "@shopLocalBrands": {
+    "description": "shopLocalBrands"
+  },
+  "shopDiscounted": "Со скидкой",
+  "@shopDiscounted": {
+    "description": "shopDiscounted"
+  },
+  "shopMaxPrice": "До {price}",
+  "@shopMaxPrice": {
+    "description": "shopMaxPrice",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "shopAnyPrice": "Любая цена",
+  "@shopAnyPrice": {
+    "description": "shopAnyPrice"
+  },
+  "shopSortRecommended": "Рекомендуем",
+  "@shopSortRecommended": {
+    "description": "shopSortRecommended"
+  },
+  "shopSortPriceAsc": "Сначала дешевле",
+  "@shopSortPriceAsc": {
+    "description": "shopSortPriceAsc"
+  },
+  "shopSortPriceDesc": "Сначала дороже",
+  "@shopSortPriceDesc": {
+    "description": "shopSortPriceDesc"
+  },
+  "shopSortRating": "По рейтингу",
+  "@shopSortRating": {
+    "description": "shopSortRating"
+  },
+  "shopSortNewest": "Популярные",
+  "@shopSortNewest": {
+    "description": "shopSortNewest"
+  },
+  "shopForYou": "Подобрано для вас",
+  "@shopForYou": {
+    "description": "shopForYou"
+  },
+  "shopOutOfStock": "Нет в наличии",
+  "@shopOutOfStock": {
+    "description": "shopOutOfStock"
+  },
+  "productDescription": "Описание",
+  "@productDescription": {
+    "description": "productDescription"
+  },
+  "productReviewsTitle": "Отзывы",
+  "@productReviewsTitle": {
+    "description": "productReviewsTitle"
+  },
+  "productNoReviews": "Отзывов пока нет.",
+  "@productNoReviews": {
+    "description": "productNoReviews"
+  },
+  "productSeller": "Продавец",
+  "@productSeller": {
+    "description": "productSeller"
+  },
+  "productBundleContents": "Что входит в набор",
+  "@productBundleContents": {
+    "description": "productBundleContents"
+  },
+  "productVerifiedPurchase": "Проверенная покупка",
+  "@productVerifiedPurchase": {
+    "description": "productVerifiedPurchase"
+  },
+  "productAddedToCart": "Добавлено в корзину",
+  "@productAddedToCart": {
+    "description": "productAddedToCart"
+  },
+  "productInCart": "В корзине: {count}",
+  "@productInCart": {
+    "description": "productInCart",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "productRelatedContent": "Почитать по теме",
+  "@productRelatedContent": {
+    "description": "productRelatedContent"
+  },
+  "productSaveAmount": "Экономия {amount}",
+  "@productSaveAmount": {
+    "description": "productSaveAmount",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "boxSubscribe": "Оформить подписку",
+  "@boxSubscribe": {
+    "description": "boxSubscribe"
+  },
+  "boxSubscribed": "Подписка активна",
+  "@boxSubscribed": {
+    "description": "boxSubscribed"
+  },
+  "boxCancel": "Отменить подписку",
+  "@boxCancel": {
+    "description": "boxCancel"
+  },
+  "boxCancelled": "Подписка отменена",
+  "@boxCancelled": {
+    "description": "boxCancelled"
+  },
+  "boxSchedule": "График доставок",
+  "@boxSchedule": {
+    "description": "boxSchedule"
+  },
+  "boxNextDelivery": "Следующая доставка: {date}",
+  "@boxNextDelivery": {
+    "description": "boxNextDelivery",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "boxCadenceMonthly": "Каждый цикл, за 3 дня до месячных",
+  "@boxCadenceMonthly": {
+    "description": "boxCadenceMonthly"
+  },
+  "boxCadenceTrimester": "Раз в триместр, 3 доставки",
+  "@boxCadenceTrimester": {
+    "description": "boxCadenceTrimester"
+  },
+  "boxDeliveryNumber": "Доставка {number}",
+  "@boxDeliveryNumber": {
+    "description": "boxDeliveryNumber",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "cartTitle": "Корзина",
+  "@cartTitle": {
+    "description": "cartTitle"
+  },
+  "cartEmpty": "Корзина пуста",
+  "@cartEmpty": {
+    "description": "cartEmpty"
+  },
+  "cartEmptyBody": "Загляните в магазин — мы подобрали кое-что для вас.",
+  "@cartEmptyBody": {
+    "description": "cartEmptyBody"
+  },
+  "cartGoShopping": "В магазин",
+  "@cartGoShopping": {
+    "description": "cartGoShopping"
+  },
+  "cartSubtotal": "Товары",
+  "@cartSubtotal": {
+    "description": "cartSubtotal"
+  },
+  "cartDelivery": "Доставка",
+  "@cartDelivery": {
+    "description": "cartDelivery"
+  },
+  "cartDeliveryFree": "Бесплатно",
+  "@cartDeliveryFree": {
+    "description": "cartDeliveryFree"
+  },
+  "cartTotal": "Итого",
+  "@cartTotal": {
+    "description": "cartTotal"
+  },
+  "cartSavings": "Вы экономите {amount}",
+  "@cartSavings": {
+    "description": "cartSavings",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "cartFreeDeliveryFrom": "Добавьте товаров на {amount} — доставка станет бесплатной",
+  "@cartFreeDeliveryFrom": {
+    "description": "cartFreeDeliveryFrom",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "cartCheckout": "Оформить заказ",
+  "@cartCheckout": {
+    "description": "cartCheckout"
+  },
+  "cartRemove": "Убрать",
+  "@cartRemove": {
+    "description": "cartRemove"
+  },
+  "cartRemoved": "Товар убран из корзины",
+  "@cartRemoved": {
+    "description": "cartRemoved"
+  },
+  "cartQuantity": "Количество",
+  "@cartQuantity": {
+    "description": "cartQuantity"
+  },
+  "checkoutTitle": "Оформление заказа",
+  "@checkoutTitle": {
+    "description": "checkoutTitle"
+  },
+  "checkoutStepAddress": "Доставка",
+  "@checkoutStepAddress": {
+    "description": "checkoutStepAddress"
+  },
+  "checkoutStepPayment": "Оплата",
+  "@checkoutStepPayment": {
+    "description": "checkoutStepPayment"
+  },
+  "addressFullName": "Имя и фамилия",
+  "@addressFullName": {
+    "description": "addressFullName"
+  },
+  "addressPhone": "Телефон",
+  "@addressPhone": {
+    "description": "addressPhone"
+  },
+  "addressCity": "Город",
+  "@addressCity": {
+    "description": "addressCity"
+  },
+  "addressStreet": "Улица и дом",
+  "@addressStreet": {
+    "description": "addressStreet"
+  },
+  "addressApartment": "Квартира",
+  "@addressApartment": {
+    "description": "addressApartment"
+  },
+  "addressPostalCode": "Индекс",
+  "@addressPostalCode": {
+    "description": "addressPostalCode"
+  },
+  "addressComment": "Комментарий курьеру",
+  "@addressComment": {
+    "description": "addressComment"
+  },
+  "addressContinue": "К оплате",
+  "@addressContinue": {
+    "description": "addressContinue"
+  },
+  "addressRequired": "Заполните это поле",
+  "@addressRequired": {
+    "description": "addressRequired"
+  },
+  "paymentKaspi": "Kaspi Pay",
+  "@paymentKaspi": {
+    "description": "paymentKaspi"
+  },
+  "paymentKaspiNote": "Откроется приложение Kaspi для подтверждения.",
+  "@paymentKaspiNote": {
+    "description": "paymentKaspiNote"
+  },
+  "paymentCard": "Банковская карта",
+  "@paymentCard": {
+    "description": "paymentCard"
+  },
+  "paymentCardNote": "Данные карты не сохраняются в приложении.",
+  "@paymentCardNote": {
+    "description": "paymentCardNote"
+  },
+  "paymentCash": "Наличными при получении",
+  "@paymentCash": {
+    "description": "paymentCash"
+  },
+  "paymentCashNote": "Оплатите курьеру при доставке.",
+  "@paymentCashNote": {
+    "description": "paymentCashNote"
+  },
+  "cardNumber": "Номер карты",
+  "@cardNumber": {
+    "description": "cardNumber"
+  },
+  "cardExpiry": "Срок (ММ/ГГ)",
+  "@cardExpiry": {
+    "description": "cardExpiry"
+  },
+  "cardCvc": "CVC",
+  "@cardCvc": {
+    "description": "cardCvc"
+  },
+  "cardHolder": "Имя на карте",
+  "@cardHolder": {
+    "description": "cardHolder"
+  },
+  "cardInvalidNumber": "Проверьте номер карты",
+  "@cardInvalidNumber": {
+    "description": "cardInvalidNumber"
+  },
+  "cardInvalidExpiry": "Проверьте срок действия",
+  "@cardInvalidExpiry": {
+    "description": "cardInvalidExpiry"
+  },
+  "cardInvalidCvc": "Проверьте CVC",
+  "@cardInvalidCvc": {
+    "description": "cardInvalidCvc"
+  },
+  "cardTestHint": "Демо-оплата: любая корректная карта пройдёт, карта 4000 0000 0000 0002 будет отклонена.",
+  "@cardTestHint": {
+    "description": "cardTestHint"
+  },
+  "paymentPay": "Оплатить {amount}",
+  "@paymentPay": {
+    "description": "paymentPay",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "paymentErrorDeclined": "Платёж отклонён. Попробуйте другую карту.",
+  "@paymentErrorDeclined": {
+    "description": "paymentErrorDeclined"
+  },
+  "paymentErrorFunds": "Недостаточно средств.",
+  "@paymentErrorFunds": {
+    "description": "paymentErrorFunds"
+  },
+  "paymentErrorInvalidCard": "Данные карты неверны.",
+  "@paymentErrorInvalidCard": {
+    "description": "paymentErrorInvalidCard"
+  },
+  "paymentErrorNetwork": "Нет связи с платёжной системой.",
+  "@paymentErrorNetwork": {
+    "description": "paymentErrorNetwork"
+  },
+  "paymentErrorCancelled": "Оплата отменена.",
+  "@paymentErrorCancelled": {
+    "description": "paymentErrorCancelled"
+  },
+  "paymentErrorNotImplemented": "Этот способ оплаты пока недоступен. Выберите другой.",
+  "@paymentErrorNotImplemented": {
+    "description": "paymentErrorNotImplemented"
+  },
+  "orderPlacedTitle": "Заказ оформлен",
+  "@orderPlacedTitle": {
+    "description": "orderPlacedTitle"
+  },
+  "orderPlacedBody": "Мы отправили детали в уведомления. Спасибо!",
+  "@orderPlacedBody": {
+    "description": "orderPlacedBody"
+  },
+  "orderNumber": "Заказ {reference}",
+  "@orderNumber": {
+    "description": "orderNumber",
+    "placeholders": {
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "orderTrack": "Отследить заказ",
+  "@orderTrack": {
+    "description": "orderTrack"
+  },
+  "orderContinueShopping": "Продолжить покупки",
+  "@orderContinueShopping": {
+    "description": "orderContinueShopping"
+  },
+  "ordersTitle": "Мои заказы",
+  "@ordersTitle": {
+    "description": "ordersTitle"
+  },
+  "ordersEmpty": "Заказов пока нет.",
+  "@ordersEmpty": {
+    "description": "ordersEmpty"
+  },
+  "orderItemsCount": "{count} товаров",
+  "@orderItemsCount": {
+    "description": "orderItemsCount",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "orderPlacedOn": "от {date}",
+  "@orderPlacedOn": {
+    "description": "orderPlacedOn",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "orderStatusPlaced": "Принят",
+  "@orderStatusPlaced": {
+    "description": "orderStatusPlaced"
+  },
+  "orderStatusPacking": "Собирается",
+  "@orderStatusPacking": {
+    "description": "orderStatusPacking"
+  },
+  "orderStatusShipped": "В пути",
+  "@orderStatusShipped": {
+    "description": "orderStatusShipped"
+  },
+  "orderStatusDelivered": "Доставлен",
+  "@orderStatusDelivered": {
+    "description": "orderStatusDelivered"
+  },
+  "orderStatusCancelled": "Отменён",
+  "@orderStatusCancelled": {
+    "description": "orderStatusCancelled"
+  },
+  "orderEstimated": "Ожидается {date}",
+  "@orderEstimated": {
+    "description": "orderEstimated",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "orderPaymentReference": "Платёж {reference}",
+  "@orderPaymentReference": {
+    "description": "orderPaymentReference",
+    "placeholders": {
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "orderDeliveryTo": "Доставка на адрес",
+  "@orderDeliveryTo": {
+    "description": "orderDeliveryTo"
+  },
+  "orderSummary": "Состав заказа",
+  "@orderSummary": {
+    "description": "orderSummary"
+  },
+  "orderQuantityShort": "× {count}",
+  "@orderQuantityShort": {
+    "description": "orderQuantityShort",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

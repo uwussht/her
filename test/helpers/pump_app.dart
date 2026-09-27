@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/material.dart' show Size;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -16,6 +17,8 @@ import 'package:her_circle/features/learn/domain/course_progress.dart';
 import 'package:her_circle/features/onboarding/presentation/splash_screen.dart';
 import 'package:her_circle/features/profile/domain/personalization.dart';
 import 'package:her_circle/features/profile/domain/user_profile.dart';
+import 'package:her_circle/features/shop/domain/payment_service.dart';
+import 'package:her_circle/features/shop/presentation/shop_providers.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 const testUser = AppUser(
@@ -46,6 +49,15 @@ Future<ProviderContainer> pumpHerCircle(
   Map<String, List<String>> progress = const {},
 }) async {
   GoogleFonts.config.allowRuntimeFetching = false;
+  // The default 800x600 test window is neither phone-shaped nor tall enough
+  // for these screens, which makes layout-sensitive taps land on the wrong
+  // widget. Use a common Android size instead.
+  tester.view
+    ..devicePixelRatio = phoneDevicePixelRatio
+    ..physicalSize = phoneSize * phoneDevicePixelRatio;
+  addTearDown(tester.view.resetPhysicalSize);
+  addTearDown(tester.view.resetDevicePixelRatio);
+
   final assets = await loadMockAssets(tester);
   SharedPreferences.setMockInitialValues({
     if (onboarded) ...{
@@ -91,6 +103,10 @@ Future<ProviderContainer> pumpHerCircle(
       mockAssetLoaderProvider.overrideWithValue(
         MockAssetLoader.preloaded(assets),
       ),
+      // Instant payments: pumpAndSettle does not advance a pending timer.
+      paymentServiceProvider.overrideWithValue(
+        const MockPaymentService(latency: Duration.zero),
+      ),
       authRepositoryProvider.overrideWith(
         (ref) => MockAuthRepository(
           ref.watch(preferencesServiceProvider),
@@ -131,6 +147,10 @@ Future<Map<String, List<Map<String, dynamic>>>> loadMockAssets(
   return data;
 }
 
+/// Logical size of the test window: a mid-range Android phone.
+const Size phoneSize = Size(412, 915);
+const double phoneDevicePixelRatio = 2.625;
+
 const mockAssetNames = [
   'content',
   'courses',
@@ -140,4 +160,5 @@ const mockAssetNames = [
   'experts',
   'products',
   'sellers',
+  'reviews',
 ];

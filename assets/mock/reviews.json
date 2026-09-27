@@ -1,0 +1,242 @@
+[
+  {
+    "id": "rev_p_pads_night_1",
+    "productId": "p_pads_night",
+    "author": "Айгерим",
+    "rating": 5,
+    "text": "Ночью не протекают, мягкие. Беру уже третий раз.",
+    "createdAt": "2026-09-17T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_pads_night_2",
+    "productId": "p_pads_night",
+    "author": "Динара",
+    "rating": 4,
+    "text": "Хорошие, но упаковка могла бы быть компактнее.",
+    "createdAt": "2026-09-11T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_pads_night_3",
+    "productId": "p_pads_night",
+    "author": "Zhanna",
+    "rating": 5,
+    "text": "Best pads I've tried, very soft.",
+    "createdAt": "2026-09-06T10:00:00.000Z",
+    "language": "en",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_cup_1",
+    "productId": "p_cup",
+    "author": "Мадина",
+    "rating": 5,
+    "text": "Переход с прокладок дался не сразу, но теперь только чаша.",
+    "createdAt": "2026-09-15T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_cup_2",
+    "productId": "p_cup",
+    "author": "Сауле",
+    "rating": 3,
+    "text": "Нужен размер поменьше, первый раз было неудобно.",
+    "createdAt": "2026-09-09T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_heatpad_1",
+    "productId": "p_heatpad",
+    "author": "Асем",
+    "rating": 5,
+    "text": "Спасает в первый день. Держит тепло около двух часов.",
+    "createdAt": "2026-09-18T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_heatpad_2",
+    "productId": "p_heatpad",
+    "author": "Гүлнәр",
+    "rating": 5,
+    "text": "Өте жақсы, ауырсынуды басады.",
+    "createdAt": "2026-09-12T10:00:00.000Z",
+    "language": "kk",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_iron_1",
+    "productId": "p_iron",
+    "author": "Алия",
+    "rating": 4,
+    "text": "Без тошноты, в отличие от предыдущих. Пью после еды.",
+    "createdAt": "2026-09-14T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_ovutest_1",
+    "productId": "p_ovutest",
+    "author": "Камила",
+    "rating": 4,
+    "text": "Показали пик на 13 день, совпало с трекером.",
+    "createdAt": "2026-09-16T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_folic_1",
+    "productId": "p_folic",
+    "author": "Аружан",
+    "rating": 5,
+    "text": "Назначил врач, принимаю с планирования.",
+    "createdAt": "2026-09-08T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_belly_oil_1",
+    "productId": "p_belly_oil",
+    "author": "Назым",
+    "rating": 5,
+    "text": "Без запаха, впитывается быстро. Кожа не тянет.",
+    "createdAt": "2026-09-13T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_preg_pillow_1",
+    "productId": "p_preg_pillow",
+    "author": "Жанар",
+    "rating": 5,
+    "text": "Спать стало реально легче с 25 недели.",
+    "createdAt": "2026-09-19T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_preg_pillow_2",
+    "productId": "p_preg_pillow",
+    "author": "Ольга",
+    "rating": 4,
+    "text": "Большая, занимает полкровати — но того стоит.",
+    "createdAt": "2026-09-05T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_baby_kit_1",
+    "productId": "p_baby_kit",
+    "author": "Айнур",
+    "rating": 4,
+    "text": "Набор пригодился в роддоме, пелёнки тонкие но качественные.",
+    "createdAt": "2026-09-10T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_face_serum_1",
+    "productId": "p_face_serum",
+    "author": "Дана",
+    "rating": 4,
+    "text": "Высыпания перед месячными стали меньше.",
+    "createdAt": "2026-09-07T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_tea_1",
+    "productId": "p_tea",
+    "author": "Сабина",
+    "rating": 5,
+    "text": "Вечерний ритуал. Засыпаю быстрее.",
+    "createdAt": "2026-09-15T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_bundle_hospital_1",
+    "productId": "p_bundle_hospital",
+    "author": "Мерей",
+    "rating": 5,
+    "text": "Собрала сумку за один заказ, очень удобно.",
+    "createdAt": "2026-09-14T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_bundle_period_1",
+    "productId": "p_bundle_period",
+    "author": "Ляззат",
+    "rating": 5,
+    "text": "Хороший подарок себе на первый день цикла.",
+    "createdAt": "2026-09-11T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_box_period_1",
+    "productId": "p_box_period",
+    "author": "Индира",
+    "rating": 5,
+    "text": "Приходит как раз перед началом, ни разу не опоздал.",
+    "createdAt": "2026-09-16T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_box_period_2",
+    "productId": "p_box_period",
+    "author": "Аида",
+    "rating": 4,
+    "text": "Состав меняется каждый месяц, интересно.",
+    "createdAt": "2026-09-04T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_box_trimester_1",
+    "productId": "p_box_trimester",
+    "author": "Гаухар",
+    "rating": 5,
+    "text": "Во втором триместре был самый полезный набор.",
+    "createdAt": "2026-09-12T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_lube_1",
+    "productId": "p_lube",
+    "author": "А.",
+    "rating": 5,
+    "text": "Помогло, спасибо за деликатную упаковку.",
+    "createdAt": "2026-09-13T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_cooling_spray_1",
+    "productId": "p_cooling_spray",
+    "author": "Райхан",
+    "rating": 4,
+    "text": "Освежает, ношу в сумке.",
+    "createdAt": "2026-09-17T10:00:00.000Z",
+    "language": "ru",
+    "verifiedPurchase": true
+  },
+  {
+    "id": "rev_p_nursing_bra_1",
+    "productId": "p_nursing_bra",
+    "author": "Толқын",
+    "rating": 5,
+    "text": "Қолайлы, бір қолмен ашылады.",
+    "createdAt": "2026-09-15T10:00:00.000Z",
+    "language": "kk",
+    "verifiedPurchase": true
+  }
+]

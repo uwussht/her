@@ -7,6 +7,7 @@ import '../../profile/domain/personalization.dart';
 import '../../profile/domain/user_profile.dart';
 import '../../qa/domain/question.dart';
 import '../../shop/domain/product.dart';
+import '../../shop/domain/product_recommender.dart';
 import '../../tracker/domain/cycle_timeline.dart';
 import '../../tracker/domain/pregnancy_status.dart';
 import '../../tracker/domain/tracker_enums.dart';
@@ -28,14 +29,14 @@ typedef FeedSources = ({
 /// Pure and side-effect free, so the ranking rules can be unit-tested and
 /// later swapped for a server-side recommender.
 class FeedService {
-  const FeedService();
+  const FeedService({this.recommender = const ProductRecommender()});
+
+  /// Shared with the shop, so offer timing lives in one place.
+  final ProductRecommender recommender;
 
   static const int forYouCount = 6;
   static const int offerCount = 4;
   static const int questionCount = 3;
-
-  /// Period essentials appear this many days before the predicted period.
-  static const int periodOfferLeadDays = 3;
 
   /// Pregnancy School items within this many weeks of her current week.
   static const int pregnancyWeekWindow = 2;
@@ -205,57 +206,15 @@ class FeedService {
     CyclePhase phase,
     DateTime date,
   ) {
-    final reason = _offerReason(profile, timeline, phase, date);
-    final stage = profile?.lifeStage;
-    final interests = profile?.interests ?? const <Interest>[];
-    final underage = profile?.ageGroup.isUnder16 ?? false;
-
-    final scored = <(Product, int)>[];
-    for (final product in products) {
-      if (underage && product.category.isAdultOnly) continue;
-      var score = 0;
-      switch (reason) {
-        case OfferReason.periodSoon:
-        case OfferReason.periodNow:
-          if (product.category == ProductCategory.periodCare) score += 8;
-          if (product.phases.contains(CyclePhase.period) ||
-              product.phases.contains(CyclePhase.predictedPeriod)) {
-            score += 6;
-          }
-        case OfferReason.fertileWindow:
-          if (product.phases.contains(CyclePhase.fertile) ||
-              product.phases.contains(CyclePhase.ovulation)) {
-            score += 8;
-          }
-        case OfferReason.pregnancy:
-          if (product.category == ProductCategory.pregnancy ||
-              product.category == ProductCategory.baby) {
-            score += 8;
-          }
-        case OfferReason.postpartum:
-          if (product.category == ProductCategory.baby) score += 6;
-        case OfferReason.menopause:
-          if (product.stages.contains(LifeStage.menopause) ||
-              product.stages.contains(LifeStage.perimenopause)) {
-            score += 8;
-          }
-        case OfferReason.teen:
-          if (product.category == ProductCategory.periodCare) score += 6;
-        case OfferReason.general:
-          break;
-      }
-      if (stage != null && product.stages.contains(stage)) score += 4;
-      score += 2 * product.interests.where(interests.contains).length;
-      if (product.phases.contains(phase)) score += 2;
-      if (product.isDiscounted) score += 1;
-      if (score > 0) scored.add((product, score));
-    }
-
-    scored.sort((a, b) {
-      final byScore = b.$2.compareTo(a.$2);
-      return byScore != 0 ? byScore : b.$1.rating.compareTo(a.$1.rating);
-    });
-    return [for (final entry in scored.take(offerCount)) entry.$1];
+    return recommender.recommend(
+      products: products,
+      reason: _offerReason(profile, timeline, phase, date),
+      ageGroup: profile?.ageGroup,
+      lifeStage: profile?.lifeStage,
+      interests: profile?.interests ?? const [],
+      phase: phase,
+      limit: offerCount,
+    );
   }
 
   OfferReason _offerReason(
@@ -264,28 +223,12 @@ class FeedService {
     CyclePhase phase,
     DateTime date,
   ) {
-    switch (profile?.lifeStage) {
-      case LifeStage.pregnant:
-        return OfferReason.pregnancy;
-      case LifeStage.postpartum:
-        return OfferReason.postpartum;
-      case LifeStage.menopause:
-      case LifeStage.perimenopause:
-        return OfferReason.menopause;
-      case _:
-        break;
-    }
-    if (phase == CyclePhase.period) return OfferReason.periodNow;
-    final until = timeline.prediction?.daysUntilNextPeriod(date);
-    if (until != null && until >= 0 && until <= periodOfferLeadDays) {
-      return OfferReason.periodSoon;
-    }
-    if (profile?.lifeStage == LifeStage.tryingToConceive &&
-        (phase == CyclePhase.fertile || phase == CyclePhase.ovulation)) {
-      return OfferReason.fertileWindow;
-    }
-    if (profile?.ageGroup.isUnder16 ?? false) return OfferReason.teen;
-    return OfferReason.general;
+    return recommender.reasonFor(
+      ageGroup: profile?.ageGroup,
+      lifeStage: profile?.lifeStage,
+      timeline: timeline,
+      on: date,
+    );
   }
 
   List<Question> _trending(List<Question> questions, UserProfile? profile) {

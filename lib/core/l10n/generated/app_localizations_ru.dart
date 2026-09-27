@@ -1652,4 +1652,337 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get qaDisclaimer =>
       'Ответы врачей — общая информация и не заменяют приём.';
+
+  @override
+  String get shopSearchHint => 'Поиск товаров';
+
+  @override
+  String shopResultsCount(int count) {
+    return '$count товаров';
+  }
+
+  @override
+  String get shopNothingFound =>
+      'Ничего не нашлось. Попробуйте изменить фильтры.';
+
+  @override
+  String get shopLocalBrands => 'Местные бренды';
+
+  @override
+  String get shopDiscounted => 'Со скидкой';
+
+  @override
+  String shopMaxPrice(String price) {
+    return 'До $price';
+  }
+
+  @override
+  String get shopAnyPrice => 'Любая цена';
+
+  @override
+  String get shopSortRecommended => 'Рекомендуем';
+
+  @override
+  String get shopSortPriceAsc => 'Сначала дешевле';
+
+  @override
+  String get shopSortPriceDesc => 'Сначала дороже';
+
+  @override
+  String get shopSortRating => 'По рейтингу';
+
+  @override
+  String get shopSortNewest => 'Популярные';
+
+  @override
+  String get shopForYou => 'Подобрано для вас';
+
+  @override
+  String get shopOutOfStock => 'Нет в наличии';
+
+  @override
+  String get productDescription => 'Описание';
+
+  @override
+  String get productReviewsTitle => 'Отзывы';
+
+  @override
+  String get productNoReviews => 'Отзывов пока нет.';
+
+  @override
+  String get productSeller => 'Продавец';
+
+  @override
+  String get productBundleContents => 'Что входит в набор';
+
+  @override
+  String get productVerifiedPurchase => 'Проверенная покупка';
+
+  @override
+  String get productAddedToCart => 'Добавлено в корзину';
+
+  @override
+  String productInCart(int count) {
+    return 'В корзине: $count';
+  }
+
+  @override
+  String get productRelatedContent => 'Почитать по теме';
+
+  @override
+  String productSaveAmount(String amount) {
+    return 'Экономия $amount';
+  }
+
+  @override
+  String get boxSubscribe => 'Оформить подписку';
+
+  @override
+  String get boxSubscribed => 'Подписка активна';
+
+  @override
+  String get boxCancel => 'Отменить подписку';
+
+  @override
+  String get boxCancelled => 'Подписка отменена';
+
+  @override
+  String get boxSchedule => 'График доставок';
+
+  @override
+  String boxNextDelivery(String date) {
+    return 'Следующая доставка: $date';
+  }
+
+  @override
+  String get boxCadenceMonthly => 'Каждый цикл, за 3 дня до месячных';
+
+  @override
+  String get boxCadenceTrimester => 'Раз в триместр, 3 доставки';
+
+  @override
+  String boxDeliveryNumber(int number) {
+    return 'Доставка $number';
+  }
+
+  @override
+  String get cartTitle => 'Корзина';
+
+  @override
+  String get cartEmpty => 'Корзина пуста';
+
+  @override
+  String get cartEmptyBody =>
+      'Загляните в магазин — мы подобрали кое-что для вас.';
+
+  @override
+  String get cartGoShopping => 'В магазин';
+
+  @override
+  String get cartSubtotal => 'Товары';
+
+  @override
+  String get cartDelivery => 'Доставка';
+
+  @override
+  String get cartDeliveryFree => 'Бесплатно';
+
+  @override
+  String get cartTotal => 'Итого';
+
+  @override
+  String cartSavings(String amount) {
+    return 'Вы экономите $amount';
+  }
+
+  @override
+  String cartFreeDeliveryFrom(String amount) {
+    return 'Добавьте товаров на $amount — доставка станет бесплатной';
+  }
+
+  @override
+  String get cartCheckout => 'Оформить заказ';
+
+  @override
+  String get cartRemove => 'Убрать';
+
+  @override
+  String get cartRemoved => 'Товар убран из корзины';
+
+  @override
+  String get cartQuantity => 'Количество';
+
+  @override
+  String get checkoutTitle => 'Оформление заказа';
+
+  @override
+  String get checkoutStepAddress => 'Доставка';
+
+  @override
+  String get checkoutStepPayment => 'Оплата';
+
+  @override
+  String get addressFullName => 'Имя и фамилия';
+
+  @override
+  String get addressPhone => 'Телефон';
+
+  @override
+  String get addressCity => 'Город';
+
+  @override
+  String get addressStreet => 'Улица и дом';
+
+  @override
+  String get addressApartment => 'Квартира';
+
+  @override
+  String get addressPostalCode => 'Индекс';
+
+  @override
+  String get addressComment => 'Комментарий курьеру';
+
+  @override
+  String get addressContinue => 'К оплате';
+
+  @override
+  String get addressRequired => 'Заполните это поле';
+
+  @override
+  String get paymentKaspi => 'Kaspi Pay';
+
+  @override
+  String get paymentKaspiNote =>
+      'Откроется приложение Kaspi для подтверждения.';
+
+  @override
+  String get paymentCard => 'Банковская карта';
+
+  @override
+  String get paymentCardNote => 'Данные карты не сохраняются в приложении.';
+
+  @override
+  String get paymentCash => 'Наличными при получении';
+
+  @override
+  String get paymentCashNote => 'Оплатите курьеру при доставке.';
+
+  @override
+  String get cardNumber => 'Номер карты';
+
+  @override
+  String get cardExpiry => 'Срок (ММ/ГГ)';
+
+  @override
+  String get cardCvc => 'CVC';
+
+  @override
+  String get cardHolder => 'Имя на карте';
+
+  @override
+  String get cardInvalidNumber => 'Проверьте номер карты';
+
+  @override
+  String get cardInvalidExpiry => 'Проверьте срок действия';
+
+  @override
+  String get cardInvalidCvc => 'Проверьте CVC';
+
+  @override
+  String get cardTestHint =>
+      'Демо-оплата: любая корректная карта пройдёт, карта 4000 0000 0000 0002 будет отклонена.';
+
+  @override
+  String paymentPay(String amount) {
+    return 'Оплатить $amount';
+  }
+
+  @override
+  String get paymentErrorDeclined =>
+      'Платёж отклонён. Попробуйте другую карту.';
+
+  @override
+  String get paymentErrorFunds => 'Недостаточно средств.';
+
+  @override
+  String get paymentErrorInvalidCard => 'Данные карты неверны.';
+
+  @override
+  String get paymentErrorNetwork => 'Нет связи с платёжной системой.';
+
+  @override
+  String get paymentErrorCancelled => 'Оплата отменена.';
+
+  @override
+  String get paymentErrorNotImplemented =>
+      'Этот способ оплаты пока недоступен. Выберите другой.';
+
+  @override
+  String get orderPlacedTitle => 'Заказ оформлен';
+
+  @override
+  String get orderPlacedBody => 'Мы отправили детали в уведомления. Спасибо!';
+
+  @override
+  String orderNumber(String reference) {
+    return 'Заказ $reference';
+  }
+
+  @override
+  String get orderTrack => 'Отследить заказ';
+
+  @override
+  String get orderContinueShopping => 'Продолжить покупки';
+
+  @override
+  String get ordersTitle => 'Мои заказы';
+
+  @override
+  String get ordersEmpty => 'Заказов пока нет.';
+
+  @override
+  String orderItemsCount(int count) {
+    return '$count товаров';
+  }
+
+  @override
+  String orderPlacedOn(String date) {
+    return 'от $date';
+  }
+
+  @override
+  String get orderStatusPlaced => 'Принят';
+
+  @override
+  String get orderStatusPacking => 'Собирается';
+
+  @override
+  String get orderStatusShipped => 'В пути';
+
+  @override
+  String get orderStatusDelivered => 'Доставлен';
+
+  @override
+  String get orderStatusCancelled => 'Отменён';
+
+  @override
+  String orderEstimated(String date) {
+    return 'Ожидается $date';
+  }
+
+  @override
+  String orderPaymentReference(String reference) {
+    return 'Платёж $reference';
+  }
+
+  @override
+  String get orderDeliveryTo => 'Доставка на адрес';
+
+  @override
+  String get orderSummary => 'Состав заказа';
+
+  @override
+  String orderQuantityShort(int count) {
+    return '× $count';
+  }
 }
