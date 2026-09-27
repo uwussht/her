@@ -4,6 +4,7 @@ import 'package:her_circle/core/l10n/l10n.dart';
 import 'package:her_circle/core/theme/theme_mode_controller.dart';
 import 'package:her_circle/features/ai_assistant/presentation/ai_assistant_screen.dart';
 import 'package:her_circle/features/profile/presentation/settings_screen.dart';
+import 'package:her_circle/features/shop/presentation/shop_screen.dart';
 
 import '../helpers/pump_app.dart';
 
@@ -25,10 +26,7 @@ void main() {
 
     await tester.tap(find.byIcon(Icons.shopping_bag_outlined));
     await tester.pumpAndSettle();
-    expect(
-      find.text('Товары для здоровья, боксы по подписке и готовые наборы.'),
-      findsOneWidget,
-    );
+    expect(find.byType(ShopScreen), findsOneWidget);
     expect(find.byType(FloatingActionButton), findsOneWidget);
   });
 

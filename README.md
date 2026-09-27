@@ -11,7 +11,7 @@ A women's health, learning and shopping app for Kazakhstan, for users from their
 | 3 | Tracker (cycle), PredictionService, reminders | ✅ |
 | 4 | Home feed with mock content | ✅ |
 | 5 | Learn: lessons, courses, video, Q&A | ✅ |
-| 6 | Shop: catalog, cart, checkout (mock payment) | ⏳ |
+| 6 | Shop: catalog, cart, checkout (mock payment) | ✅ |
 | 7 | Circle AI chat (mock, then FastAPI `POST /ai/chat`) | ⏳ |
 | 8 | Partner and family linking | ⏳ |
 | 9 | Premium, paywall, referrals | ⏳ |
@@ -85,7 +85,10 @@ lib/
     qa/                          # Question, Answer, Expert, QaCatalogue (pure),
                                  #   list, thread, ask anonymously
     premium/                     # PremiumStatus + gate sheet (real paywall in step 9)
-    shop/                        # Product, Seller, product card
+    shop/                        # Product, Seller, Review, Cart, Order, Subscription,
+                                 #   ShopCatalogue + ProductRecommender (both pure),
+                                 #   PaymentService (mock + Kaspi stub),
+                                 #   catalogue, product page, cart, checkout, orders
     ai_assistant/
     (qa/ partner/ family/ premium/ are added in their steps)
 assets/
@@ -146,6 +149,18 @@ Mock content ships without cover images, so cards render a tinted panel with the
 - **Courses**: modules and lessons with progress, a lesson player, multiple-choice quizzes with explanations and a 70% pass mark, and a PDF certificate on completion.
 - **Premium gating** is real: premium items show a lock and open a sheet. Until step 9 builds payment, that sheet carries a clearly labelled demo switch.
 - **Expert Q&A**: browse by category, sort by top/new/unanswered, open a thread with the doctor's credentials, upvote, and ask a question — anonymous by default. Premium questions are marked priority.
+
+## The shop (step 6)
+
+- **Catalogue** with search across all three languages, category chips, a price cap, local-brand and sale filters, and five sort orders. `ShopCatalogue` is pure and unit-tested.
+- **Timed recommendations**: `ProductRecommender` is shared with the home feed, so "period essentials three days before her period" is implemented once. The shop's own row uses the same rules.
+- **Product page**: photo gallery, price with savings, description, bundle contents, seller with the local-brand badge, the linked Learn article, and reviews (real ones, in the language they were written in).
+- **Cart** priced against the live catalogue, with quantity limits, free delivery from 15 000 ₸, and a line telling her how much more is needed for it.
+- **Checkout** in two steps: address (prefilled from her last order) then payment. Kaspi Pay, card or cash on delivery.
+- **Payments** go through `PaymentService`. `MockPaymentService` runs today and declines the standard test card `4000 0000 0000 0002` so the failure path is reachable. `KaspiPaymentService` is a documented stub that reports itself unimplemented rather than pretending to succeed — Kaspi needs a merchant backend and a webhook, which cannot live in the app.
+- **Card entry** validates with the Luhn checksum, expiry and CVC as she types. Nothing is stored: the details live in the checkout screen and are dropped when it closes.
+- **Orders**: confirmation with a short reference, history, and a tracking timeline. Prices are snapshotted at checkout, so a receipt never changes when the catalogue does.
+- **Subscription boxes**: the monthly box is scheduled to arrive three days before her predicted period, the trimester box ships in three deliveries.
 
 ## Quality checks
 

@@ -15,6 +15,7 @@ import '../../shop/presentation/widgets/product_card.dart';
 import '../../tracker/presentation/tracker_providers.dart';
 import '../../tracker/presentation/widgets/cycle_status_card.dart';
 import '../../tracker/presentation/widgets/daily_log_sheet.dart';
+import '../../shop/domain/product_recommender.dart';
 import '../domain/home_feed.dart';
 import 'home_providers.dart';
 import 'widgets/continue_course_card.dart';

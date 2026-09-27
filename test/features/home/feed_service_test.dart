@@ -11,6 +11,7 @@ import 'package:her_circle/features/profile/domain/personalization.dart';
 import 'package:her_circle/features/profile/domain/user_profile.dart';
 import 'package:her_circle/features/qa/domain/question.dart';
 import 'package:her_circle/features/shop/domain/product.dart';
+import 'package:her_circle/features/shop/domain/product_recommender.dart';
 import 'package:her_circle/features/tracker/domain/cycle.dart';
 import 'package:her_circle/features/tracker/domain/cycle_timeline.dart';
 import 'package:her_circle/features/tracker/domain/prediction_service.dart';

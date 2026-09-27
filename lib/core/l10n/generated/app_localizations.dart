@@ -2967,6 +2967,600 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Ответы врачей — общая информация и не заменяют приём.'**
   String get qaDisclaimer;
+
+  /// shopSearchHint
+  ///
+  /// In ru, this message translates to:
+  /// **'Поиск товаров'**
+  String get shopSearchHint;
+
+  /// shopResultsCount
+  ///
+  /// In ru, this message translates to:
+  /// **'{count} товаров'**
+  String shopResultsCount(int count);
+
+  /// shopNothingFound
+  ///
+  /// In ru, this message translates to:
+  /// **'Ничего не нашлось. Попробуйте изменить фильтры.'**
+  String get shopNothingFound;
+
+  /// shopLocalBrands
+  ///
+  /// In ru, this message translates to:
+  /// **'Местные бренды'**
+  String get shopLocalBrands;
+
+  /// shopDiscounted
+  ///
+  /// In ru, this message translates to:
+  /// **'Со скидкой'**
+  String get shopDiscounted;
+
+  /// shopMaxPrice
+  ///
+  /// In ru, this message translates to:
+  /// **'До {price}'**
+  String shopMaxPrice(String price);
+
+  /// shopAnyPrice
+  ///
+  /// In ru, this message translates to:
+  /// **'Любая цена'**
+  String get shopAnyPrice;
+
+  /// shopSortRecommended
+  ///
+  /// In ru, this message translates to:
+  /// **'Рекомендуем'**
+  String get shopSortRecommended;
+
+  /// shopSortPriceAsc
+  ///
+  /// In ru, this message translates to:
+  /// **'Сначала дешевле'**
+  String get shopSortPriceAsc;
+
+  /// shopSortPriceDesc
+  ///
+  /// In ru, this message translates to:
+  /// **'Сначала дороже'**
+  String get shopSortPriceDesc;
+
+  /// shopSortRating
+  ///
+  /// In ru, this message translates to:
+  /// **'По рейтингу'**
+  String get shopSortRating;
+
+  /// shopSortNewest
+  ///
+  /// In ru, this message translates to:
+  /// **'Популярные'**
+  String get shopSortNewest;
+
+  /// shopForYou
+  ///
+  /// In ru, this message translates to:
+  /// **'Подобрано для вас'**
+  String get shopForYou;
+
+  /// shopOutOfStock
+  ///
+  /// In ru, this message translates to:
+  /// **'Нет в наличии'**
+  String get shopOutOfStock;
+
+  /// productDescription
+  ///
+  /// In ru, this message translates to:
+  /// **'Описание'**
+  String get productDescription;
+
+  /// productReviewsTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Отзывы'**
+  String get productReviewsTitle;
+
+  /// productNoReviews
+  ///
+  /// In ru, this message translates to:
+  /// **'Отзывов пока нет.'**
+  String get productNoReviews;
+
+  /// productSeller
+  ///
+  /// In ru, this message translates to:
+  /// **'Продавец'**
+  String get productSeller;
+
+  /// productBundleContents
+  ///
+  /// In ru, this message translates to:
+  /// **'Что входит в набор'**
+  String get productBundleContents;
+
+  /// productVerifiedPurchase
+  ///
+  /// In ru, this message translates to:
+  /// **'Проверенная покупка'**
+  String get productVerifiedPurchase;
+
+  /// productAddedToCart
+  ///
+  /// In ru, this message translates to:
+  /// **'Добавлено в корзину'**
+  String get productAddedToCart;
+
+  /// productInCart
+  ///
+  /// In ru, this message translates to:
+  /// **'В корзине: {count}'**
+  String productInCart(int count);
+
+  /// productRelatedContent
+  ///
+  /// In ru, this message translates to:
+  /// **'Почитать по теме'**
+  String get productRelatedContent;
+
+  /// productSaveAmount
+  ///
+  /// In ru, this message translates to:
+  /// **'Экономия {amount}'**
+  String productSaveAmount(String amount);
+
+  /// boxSubscribe
+  ///
+  /// In ru, this message translates to:
+  /// **'Оформить подписку'**
+  String get boxSubscribe;
+
+  /// boxSubscribed
+  ///
+  /// In ru, this message translates to:
+  /// **'Подписка активна'**
+  String get boxSubscribed;
+
+  /// boxCancel
+  ///
+  /// In ru, this message translates to:
+  /// **'Отменить подписку'**
+  String get boxCancel;
+
+  /// boxCancelled
+  ///
+  /// In ru, this message translates to:
+  /// **'Подписка отменена'**
+  String get boxCancelled;
+
+  /// boxSchedule
+  ///
+  /// In ru, this message translates to:
+  /// **'График доставок'**
+  String get boxSchedule;
+
+  /// boxNextDelivery
+  ///
+  /// In ru, this message translates to:
+  /// **'Следующая доставка: {date}'**
+  String boxNextDelivery(String date);
+
+  /// boxCadenceMonthly
+  ///
+  /// In ru, this message translates to:
+  /// **'Каждый цикл, за 3 дня до месячных'**
+  String get boxCadenceMonthly;
+
+  /// boxCadenceTrimester
+  ///
+  /// In ru, this message translates to:
+  /// **'Раз в триместр, 3 доставки'**
+  String get boxCadenceTrimester;
+
+  /// boxDeliveryNumber
+  ///
+  /// In ru, this message translates to:
+  /// **'Доставка {number}'**
+  String boxDeliveryNumber(int number);
+
+  /// cartTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Корзина'**
+  String get cartTitle;
+
+  /// cartEmpty
+  ///
+  /// In ru, this message translates to:
+  /// **'Корзина пуста'**
+  String get cartEmpty;
+
+  /// cartEmptyBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Загляните в магазин — мы подобрали кое-что для вас.'**
+  String get cartEmptyBody;
+
+  /// cartGoShopping
+  ///
+  /// In ru, this message translates to:
+  /// **'В магазин'**
+  String get cartGoShopping;
+
+  /// cartSubtotal
+  ///
+  /// In ru, this message translates to:
+  /// **'Товары'**
+  String get cartSubtotal;
+
+  /// cartDelivery
+  ///
+  /// In ru, this message translates to:
+  /// **'Доставка'**
+  String get cartDelivery;
+
+  /// cartDeliveryFree
+  ///
+  /// In ru, this message translates to:
+  /// **'Бесплатно'**
+  String get cartDeliveryFree;
+
+  /// cartTotal
+  ///
+  /// In ru, this message translates to:
+  /// **'Итого'**
+  String get cartTotal;
+
+  /// cartSavings
+  ///
+  /// In ru, this message translates to:
+  /// **'Вы экономите {amount}'**
+  String cartSavings(String amount);
+
+  /// cartFreeDeliveryFrom
+  ///
+  /// In ru, this message translates to:
+  /// **'Добавьте товаров на {amount} — доставка станет бесплатной'**
+  String cartFreeDeliveryFrom(String amount);
+
+  /// cartCheckout
+  ///
+  /// In ru, this message translates to:
+  /// **'Оформить заказ'**
+  String get cartCheckout;
+
+  /// cartRemove
+  ///
+  /// In ru, this message translates to:
+  /// **'Убрать'**
+  String get cartRemove;
+
+  /// cartRemoved
+  ///
+  /// In ru, this message translates to:
+  /// **'Товар убран из корзины'**
+  String get cartRemoved;
+
+  /// cartQuantity
+  ///
+  /// In ru, this message translates to:
+  /// **'Количество'**
+  String get cartQuantity;
+
+  /// checkoutTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Оформление заказа'**
+  String get checkoutTitle;
+
+  /// checkoutStepAddress
+  ///
+  /// In ru, this message translates to:
+  /// **'Доставка'**
+  String get checkoutStepAddress;
+
+  /// checkoutStepPayment
+  ///
+  /// In ru, this message translates to:
+  /// **'Оплата'**
+  String get checkoutStepPayment;
+
+  /// addressFullName
+  ///
+  /// In ru, this message translates to:
+  /// **'Имя и фамилия'**
+  String get addressFullName;
+
+  /// addressPhone
+  ///
+  /// In ru, this message translates to:
+  /// **'Телефон'**
+  String get addressPhone;
+
+  /// addressCity
+  ///
+  /// In ru, this message translates to:
+  /// **'Город'**
+  String get addressCity;
+
+  /// addressStreet
+  ///
+  /// In ru, this message translates to:
+  /// **'Улица и дом'**
+  String get addressStreet;
+
+  /// addressApartment
+  ///
+  /// In ru, this message translates to:
+  /// **'Квартира'**
+  String get addressApartment;
+
+  /// addressPostalCode
+  ///
+  /// In ru, this message translates to:
+  /// **'Индекс'**
+  String get addressPostalCode;
+
+  /// addressComment
+  ///
+  /// In ru, this message translates to:
+  /// **'Комментарий курьеру'**
+  String get addressComment;
+
+  /// addressContinue
+  ///
+  /// In ru, this message translates to:
+  /// **'К оплате'**
+  String get addressContinue;
+
+  /// addressRequired
+  ///
+  /// In ru, this message translates to:
+  /// **'Заполните это поле'**
+  String get addressRequired;
+
+  /// paymentKaspi
+  ///
+  /// In ru, this message translates to:
+  /// **'Kaspi Pay'**
+  String get paymentKaspi;
+
+  /// paymentKaspiNote
+  ///
+  /// In ru, this message translates to:
+  /// **'Откроется приложение Kaspi для подтверждения.'**
+  String get paymentKaspiNote;
+
+  /// paymentCard
+  ///
+  /// In ru, this message translates to:
+  /// **'Банковская карта'**
+  String get paymentCard;
+
+  /// paymentCardNote
+  ///
+  /// In ru, this message translates to:
+  /// **'Данные карты не сохраняются в приложении.'**
+  String get paymentCardNote;
+
+  /// paymentCash
+  ///
+  /// In ru, this message translates to:
+  /// **'Наличными при получении'**
+  String get paymentCash;
+
+  /// paymentCashNote
+  ///
+  /// In ru, this message translates to:
+  /// **'Оплатите курьеру при доставке.'**
+  String get paymentCashNote;
+
+  /// cardNumber
+  ///
+  /// In ru, this message translates to:
+  /// **'Номер карты'**
+  String get cardNumber;
+
+  /// cardExpiry
+  ///
+  /// In ru, this message translates to:
+  /// **'Срок (ММ/ГГ)'**
+  String get cardExpiry;
+
+  /// cardCvc
+  ///
+  /// In ru, this message translates to:
+  /// **'CVC'**
+  String get cardCvc;
+
+  /// cardHolder
+  ///
+  /// In ru, this message translates to:
+  /// **'Имя на карте'**
+  String get cardHolder;
+
+  /// cardInvalidNumber
+  ///
+  /// In ru, this message translates to:
+  /// **'Проверьте номер карты'**
+  String get cardInvalidNumber;
+
+  /// cardInvalidExpiry
+  ///
+  /// In ru, this message translates to:
+  /// **'Проверьте срок действия'**
+  String get cardInvalidExpiry;
+
+  /// cardInvalidCvc
+  ///
+  /// In ru, this message translates to:
+  /// **'Проверьте CVC'**
+  String get cardInvalidCvc;
+
+  /// cardTestHint
+  ///
+  /// In ru, this message translates to:
+  /// **'Демо-оплата: любая корректная карта пройдёт, карта 4000 0000 0000 0002 будет отклонена.'**
+  String get cardTestHint;
+
+  /// paymentPay
+  ///
+  /// In ru, this message translates to:
+  /// **'Оплатить {amount}'**
+  String paymentPay(String amount);
+
+  /// paymentErrorDeclined
+  ///
+  /// In ru, this message translates to:
+  /// **'Платёж отклонён. Попробуйте другую карту.'**
+  String get paymentErrorDeclined;
+
+  /// paymentErrorFunds
+  ///
+  /// In ru, this message translates to:
+  /// **'Недостаточно средств.'**
+  String get paymentErrorFunds;
+
+  /// paymentErrorInvalidCard
+  ///
+  /// In ru, this message translates to:
+  /// **'Данные карты неверны.'**
+  String get paymentErrorInvalidCard;
+
+  /// paymentErrorNetwork
+  ///
+  /// In ru, this message translates to:
+  /// **'Нет связи с платёжной системой.'**
+  String get paymentErrorNetwork;
+
+  /// paymentErrorCancelled
+  ///
+  /// In ru, this message translates to:
+  /// **'Оплата отменена.'**
+  String get paymentErrorCancelled;
+
+  /// paymentErrorNotImplemented
+  ///
+  /// In ru, this message translates to:
+  /// **'Этот способ оплаты пока недоступен. Выберите другой.'**
+  String get paymentErrorNotImplemented;
+
+  /// orderPlacedTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Заказ оформлен'**
+  String get orderPlacedTitle;
+
+  /// orderPlacedBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Мы отправили детали в уведомления. Спасибо!'**
+  String get orderPlacedBody;
+
+  /// orderNumber
+  ///
+  /// In ru, this message translates to:
+  /// **'Заказ {reference}'**
+  String orderNumber(String reference);
+
+  /// orderTrack
+  ///
+  /// In ru, this message translates to:
+  /// **'Отследить заказ'**
+  String get orderTrack;
+
+  /// orderContinueShopping
+  ///
+  /// In ru, this message translates to:
+  /// **'Продолжить покупки'**
+  String get orderContinueShopping;
+
+  /// ordersTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Мои заказы'**
+  String get ordersTitle;
+
+  /// ordersEmpty
+  ///
+  /// In ru, this message translates to:
+  /// **'Заказов пока нет.'**
+  String get ordersEmpty;
+
+  /// orderItemsCount
+  ///
+  /// In ru, this message translates to:
+  /// **'{count} товаров'**
+  String orderItemsCount(int count);
+
+  /// orderPlacedOn
+  ///
+  /// In ru, this message translates to:
+  /// **'от {date}'**
+  String orderPlacedOn(String date);
+
+  /// orderStatusPlaced
+  ///
+  /// In ru, this message translates to:
+  /// **'Принят'**
+  String get orderStatusPlaced;
+
+  /// orderStatusPacking
+  ///
+  /// In ru, this message translates to:
+  /// **'Собирается'**
+  String get orderStatusPacking;
+
+  /// orderStatusShipped
+  ///
+  /// In ru, this message translates to:
+  /// **'В пути'**
+  String get orderStatusShipped;
+
+  /// orderStatusDelivered
+  ///
+  /// In ru, this message translates to:
+  /// **'Доставлен'**
+  String get orderStatusDelivered;
+
+  /// orderStatusCancelled
+  ///
+  /// In ru, this message translates to:
+  /// **'Отменён'**
+  String get orderStatusCancelled;
+
+  /// orderEstimated
+  ///
+  /// In ru, this message translates to:
+  /// **'Ожидается {date}'**
+  String orderEstimated(String date);
+
+  /// orderPaymentReference
+  ///
+  /// In ru, this message translates to:
+  /// **'Платёж {reference}'**
+  String orderPaymentReference(String reference);
+
+  /// orderDeliveryTo
+  ///
+  /// In ru, this message translates to:
+  /// **'Доставка на адрес'**
+  String get orderDeliveryTo;
+
+  /// orderSummary
+  ///
+  /// In ru, this message translates to:
+  /// **'Состав заказа'**
+  String get orderSummary;
+
+  /// orderQuantityShort
+  ///
+  /// In ru, this message translates to:
+  /// **'× {count}'**
+  String orderQuantityShort(int count);
 }
 
 class _AppLocalizationsDelegate

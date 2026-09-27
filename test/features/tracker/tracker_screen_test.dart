@@ -176,7 +176,12 @@ void main() {
       of: find.byType(TableCalendar<void>),
       matching: find.text('${target.day}'),
     );
-    await reveal(tester, cell);
+    // Scroll the page, not the cell: ensureVisible would also drive the
+    // calendar's own PageView and flip it to the next month. A small nudge
+    // keeps the row clear of the bottom navigation bar.
+    await scrollToTop(tester);
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, -220));
+    await tester.pumpAndSettle();
     await tester.tap(cell.first);
     await tester.pumpAndSettle();
 

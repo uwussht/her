@@ -1633,4 +1633,335 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get qaDisclaimer =>
       'Answers from doctors are general information and do not replace a consultation.';
+
+  @override
+  String get shopSearchHint => 'Search products';
+
+  @override
+  String shopResultsCount(int count) {
+    return '$count products';
+  }
+
+  @override
+  String get shopNothingFound => 'Nothing found. Try changing the filters.';
+
+  @override
+  String get shopLocalBrands => 'Local brands';
+
+  @override
+  String get shopDiscounted => 'On sale';
+
+  @override
+  String shopMaxPrice(String price) {
+    return 'Up to $price';
+  }
+
+  @override
+  String get shopAnyPrice => 'Any price';
+
+  @override
+  String get shopSortRecommended => 'Recommended';
+
+  @override
+  String get shopSortPriceAsc => 'Price: low to high';
+
+  @override
+  String get shopSortPriceDesc => 'Price: high to low';
+
+  @override
+  String get shopSortRating => 'Top rated';
+
+  @override
+  String get shopSortNewest => 'Most reviewed';
+
+  @override
+  String get shopForYou => 'Picked for you';
+
+  @override
+  String get shopOutOfStock => 'Out of stock';
+
+  @override
+  String get productDescription => 'Description';
+
+  @override
+  String get productReviewsTitle => 'Reviews';
+
+  @override
+  String get productNoReviews => 'No reviews yet.';
+
+  @override
+  String get productSeller => 'Seller';
+
+  @override
+  String get productBundleContents => 'What\'s in the bundle';
+
+  @override
+  String get productVerifiedPurchase => 'Verified purchase';
+
+  @override
+  String get productAddedToCart => 'Added to cart';
+
+  @override
+  String productInCart(int count) {
+    return 'In cart: $count';
+  }
+
+  @override
+  String get productRelatedContent => 'Read about this';
+
+  @override
+  String productSaveAmount(String amount) {
+    return 'Save $amount';
+  }
+
+  @override
+  String get boxSubscribe => 'Subscribe';
+
+  @override
+  String get boxSubscribed => 'Subscription active';
+
+  @override
+  String get boxCancel => 'Cancel subscription';
+
+  @override
+  String get boxCancelled => 'Subscription cancelled';
+
+  @override
+  String get boxSchedule => 'Delivery schedule';
+
+  @override
+  String boxNextDelivery(String date) {
+    return 'Next delivery: $date';
+  }
+
+  @override
+  String get boxCadenceMonthly => 'Every cycle, 3 days before your period';
+
+  @override
+  String get boxCadenceTrimester => 'Once a trimester, 3 deliveries';
+
+  @override
+  String boxDeliveryNumber(int number) {
+    return 'Delivery $number';
+  }
+
+  @override
+  String get cartTitle => 'Cart';
+
+  @override
+  String get cartEmpty => 'Your cart is empty';
+
+  @override
+  String get cartEmptyBody =>
+      'Have a look in the shop — we\'ve picked a few things for you.';
+
+  @override
+  String get cartGoShopping => 'Go to the shop';
+
+  @override
+  String get cartSubtotal => 'Items';
+
+  @override
+  String get cartDelivery => 'Delivery';
+
+  @override
+  String get cartDeliveryFree => 'Free';
+
+  @override
+  String get cartTotal => 'Total';
+
+  @override
+  String cartSavings(String amount) {
+    return 'You save $amount';
+  }
+
+  @override
+  String cartFreeDeliveryFrom(String amount) {
+    return 'Add $amount more for free delivery';
+  }
+
+  @override
+  String get cartCheckout => 'Checkout';
+
+  @override
+  String get cartRemove => 'Remove';
+
+  @override
+  String get cartRemoved => 'Removed from your cart';
+
+  @override
+  String get cartQuantity => 'Quantity';
+
+  @override
+  String get checkoutTitle => 'Checkout';
+
+  @override
+  String get checkoutStepAddress => 'Delivery';
+
+  @override
+  String get checkoutStepPayment => 'Payment';
+
+  @override
+  String get addressFullName => 'Full name';
+
+  @override
+  String get addressPhone => 'Phone';
+
+  @override
+  String get addressCity => 'City';
+
+  @override
+  String get addressStreet => 'Street and house';
+
+  @override
+  String get addressApartment => 'Apartment';
+
+  @override
+  String get addressPostalCode => 'Postal code';
+
+  @override
+  String get addressComment => 'Note for the courier';
+
+  @override
+  String get addressContinue => 'Continue to payment';
+
+  @override
+  String get addressRequired => 'Please fill this in';
+
+  @override
+  String get paymentKaspi => 'Kaspi Pay';
+
+  @override
+  String get paymentKaspiNote => 'The Kaspi app opens to confirm.';
+
+  @override
+  String get paymentCard => 'Bank card';
+
+  @override
+  String get paymentCardNote => 'Card details are never stored in the app.';
+
+  @override
+  String get paymentCash => 'Cash on delivery';
+
+  @override
+  String get paymentCashNote => 'Pay the courier on delivery.';
+
+  @override
+  String get cardNumber => 'Card number';
+
+  @override
+  String get cardExpiry => 'Expiry (MM/YY)';
+
+  @override
+  String get cardCvc => 'CVC';
+
+  @override
+  String get cardHolder => 'Name on card';
+
+  @override
+  String get cardInvalidNumber => 'Check the card number';
+
+  @override
+  String get cardInvalidExpiry => 'Check the expiry date';
+
+  @override
+  String get cardInvalidCvc => 'Check the CVC';
+
+  @override
+  String get cardTestHint =>
+      'Demo payment: any valid card passes; 4000 0000 0000 0002 is declined.';
+
+  @override
+  String paymentPay(String amount) {
+    return 'Pay $amount';
+  }
+
+  @override
+  String get paymentErrorDeclined => 'Payment declined. Try another card.';
+
+  @override
+  String get paymentErrorFunds => 'Insufficient funds.';
+
+  @override
+  String get paymentErrorInvalidCard => 'Those card details aren\'t valid.';
+
+  @override
+  String get paymentErrorNetwork => 'No connection to the payment service.';
+
+  @override
+  String get paymentErrorCancelled => 'Payment cancelled.';
+
+  @override
+  String get paymentErrorNotImplemented =>
+      'This payment method isn\'t available yet. Please pick another.';
+
+  @override
+  String get orderPlacedTitle => 'Order placed';
+
+  @override
+  String get orderPlacedBody =>
+      'We\'ve sent the details to your notifications. Thank you!';
+
+  @override
+  String orderNumber(String reference) {
+    return 'Order $reference';
+  }
+
+  @override
+  String get orderTrack => 'Track order';
+
+  @override
+  String get orderContinueShopping => 'Keep shopping';
+
+  @override
+  String get ordersTitle => 'My orders';
+
+  @override
+  String get ordersEmpty => 'No orders yet.';
+
+  @override
+  String orderItemsCount(int count) {
+    return '$count items';
+  }
+
+  @override
+  String orderPlacedOn(String date) {
+    return 'placed $date';
+  }
+
+  @override
+  String get orderStatusPlaced => 'Placed';
+
+  @override
+  String get orderStatusPacking => 'Packing';
+
+  @override
+  String get orderStatusShipped => 'On the way';
+
+  @override
+  String get orderStatusDelivered => 'Delivered';
+
+  @override
+  String get orderStatusCancelled => 'Cancelled';
+
+  @override
+  String orderEstimated(String date) {
+    return 'Expected $date';
+  }
+
+  @override
+  String orderPaymentReference(String reference) {
+    return 'Payment $reference';
+  }
+
+  @override
+  String get orderDeliveryTo => 'Delivering to';
+
+  @override
+  String get orderSummary => 'Order summary';
+
+  @override
+  String orderQuantityShort(int count) {
+    return '× $count';
+  }
 }

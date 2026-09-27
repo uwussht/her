@@ -35,6 +35,21 @@ abstract final class AppRoutes {
   static String certificate(String courseId) =>
       '$learn/course/$courseId/certificate';
 
+  /// A product page.
+  static String product(String id) => '$shop/$id';
+
+  /// The cart and checkout.
+  static const String cart = '$shop/cart';
+  static const String checkout = '$shop/checkout';
+
+  /// Order history and one order.
+  static const String orders = '$shop/orders';
+
+  static String order(String id) => '$orders/$id';
+
+  /// Confirmation shown right after payment.
+  static String orderPlaced(String id) => '$orders/$id/placed';
+
   // Expert Q&A.
   static const String qa = '/qa';
   static const String qaAsk = '$qa/ask';

@@ -26,6 +26,12 @@ import '../../features/qa/presentation/ask_question_screen.dart';
 import '../../features/qa/presentation/qa_screen.dart';
 import '../../features/qa/presentation/question_detail_screen.dart';
 import '../../features/profile/presentation/settings_screen.dart';
+import '../../features/shop/presentation/cart_screen.dart';
+import '../../features/shop/presentation/checkout_screen.dart';
+import '../../features/shop/presentation/order_detail_screen.dart';
+import '../../features/shop/presentation/order_placed_screen.dart';
+import '../../features/shop/presentation/orders_screen.dart';
+import '../../features/shop/presentation/product_detail_screen.dart';
 import '../../features/shop/presentation/shop_screen.dart';
 import '../../features/tracker/presentation/reminders_screen.dart';
 import '../../features/tracker/presentation/tracker_screen.dart';
@@ -153,7 +159,59 @@ GoRouter appRouter(Ref ref) {
             ],
           ),
           _tab(AppRoutes.tracker, const TrackerScreen()),
-          _tab(AppRoutes.shop, const ShopScreen()),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.shop,
+                pageBuilder: (context, state) => NoTransitionPage<void>(
+                  key: state.pageKey,
+                  child: const ShopScreen(),
+                ),
+                routes: [
+                  GoRoute(
+                    path: 'cart',
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => const CartScreen(),
+                  ),
+                  GoRoute(
+                    path: 'checkout',
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => const CheckoutScreen(),
+                  ),
+                  GoRoute(
+                    path: 'orders',
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => const OrdersScreen(),
+                    routes: [
+                      GoRoute(
+                        path: ':orderId',
+                        parentNavigatorKey: _rootNavigatorKey,
+                        builder: (context, state) => OrderDetailScreen(
+                          orderId: state.pathParameters['orderId']!,
+                        ),
+                        routes: [
+                          GoRoute(
+                            path: 'placed',
+                            parentNavigatorKey: _rootNavigatorKey,
+                            builder: (context, state) => OrderPlacedScreen(
+                              orderId: state.pathParameters['orderId']!,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: ':productId',
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => ProductDetailScreen(
+                      productId: state.pathParameters['productId']!,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
           _tab(AppRoutes.profile, const ProfileScreen()),
         ],
       ),

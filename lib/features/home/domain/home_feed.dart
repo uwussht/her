@@ -6,19 +6,8 @@ import '../../learn/domain/course_progress.dart';
 import '../../learn/domain/daily_tip.dart';
 import '../../qa/domain/question.dart';
 import '../../shop/domain/product.dart';
+import '../../shop/domain/product_recommender.dart';
 import '../../tracker/domain/pregnancy_status.dart';
-
-/// Why the shop row is showing what it is showing. Drives its heading.
-enum OfferReason {
-  periodSoon,
-  periodNow,
-  fertileWindow,
-  pregnancy,
-  postpartum,
-  menopause,
-  teen,
-  general,
-}
 
 /// A course she can pick up, with the lesson to open next.
 @immutable
