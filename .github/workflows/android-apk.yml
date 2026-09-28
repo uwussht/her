@@ -55,12 +55,17 @@ jobs:
       - name: Analyze
         run: flutter analyze
 
+      # One APK per ABI instead of a universal one: a phone downloads ~25 MB
+      # rather than 75 MB of native code it cannot run. Install the
+      # arm64-v8a build on any current phone.
+      #
       # Mocks stay on until Firebase and the AI proxy are connected, so the
       # APK is usable on its own. Point AI_BASE_URL at the proxy and set
       # USE_MOCKS=false once they exist.
       - name: Build APK
         run: |
           flutter build apk --${{ inputs.flavour || 'release' }} \
+            --split-per-abi \
             --dart-define=USE_MOCKS=true \
             --dart-define=FIREBASE_ENABLED=false
 
@@ -70,9 +75,11 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: her-circle-apk
-          path: build/app/outputs/flutter-apk/app-*.apk
+          path: build/app/outputs/flutter-apk/*.apk
           if-no-files-found: error
-          retention-days: 30
+          # A week, not a month: each run's artifact counts against the
+          # account's Actions storage.
+          retention-days: 7
 
   test:
     runs-on: ubuntu-latest
