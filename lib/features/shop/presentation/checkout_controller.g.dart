@@ -45,7 +45,7 @@ final class CheckoutControllerProvider
 }
 
 String _$checkoutControllerHash() =>
-    r'3a06de46a066cebf88a651223ae329080e896383';
+    r'ed18ba9580004bb138d259b81e940e0b1a24514d';
 
 /// Drives checkout: address, payment method, then placing the order.
 

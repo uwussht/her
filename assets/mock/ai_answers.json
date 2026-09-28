@@ -1,0 +1,652 @@
+[
+  {
+    "id": "cycle_length",
+    "keywords": {
+      "ru": [
+        "длина цикла",
+        "скольк дней цикл",
+        "нормальный цикл",
+        "цикл 28",
+        "какой цикл"
+      ],
+      "kk": [
+        "цикл ұзақтығ",
+        "цикл қанша күн",
+        "қалыпт цикл"
+      ],
+      "en": [
+        "cycle length",
+        "how long is a cycle",
+        "normal cycle",
+        "28 day cycle"
+      ]
+    },
+    "answer": {
+      "ru": "Цикл считают от первого дня менструации до дня перед началом следующей. У большинства женщин это 24-38 дней, и длина может меняться от месяца к месяцу на несколько дней — это нормально.\n\nЧем дольше вы ведёте дневник в трекере, тем точнее приложение подскажет ваш личный ритм. Если цикл регулярно короче 21 дня или длиннее 40, об этом стоит поговорить с гинекологом.",
+      "kk": "Цикл етеккірдің бірінші күнінен келесі етеккір басталардың алдындағы күнге дейін саналады. Көп әйелде бұл 24-38 күн, ұзақтығы айдан айға бірнеше күнге өзгеруі мүмкін — бұл қалыпты жағдай.\n\nТрекерде күнделік ұзақ жүргізген сайын қолданба сіздің жеке ырғағыңызды дәлірек көрсетеді. Цикл үнемі 21 күннен қысқа немесе 40 күннен ұзақ болса, гинекологпен сөйлесу керек.",
+      "en": "A cycle is counted from the first day of your period to the day before the next one starts. For most women that is 24-38 days, and it can shift by a few days from month to month — that is normal.\n\nThe longer you keep logging in the tracker, the better the app learns your own rhythm. If your cycle is regularly shorter than 21 days or longer than 40, it is worth talking to a gynaecologist."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_cycle_phases"
+      },
+      {
+        "kind": "lesson",
+        "id": "c_irregular"
+      }
+    ]
+  },
+  {
+    "id": "period_pain",
+    "keywords": {
+      "ru": [
+        "болит живот",
+        "боль при месячн",
+        "болезненн месячн",
+        "спазм",
+        "тянет низ живот",
+        "болит во время месячн"
+      ],
+      "kk": [
+        "іші ауырад",
+        "етеккір кезінд ауырсын",
+        "құрыс",
+        "іш ауруы"
+      ],
+      "en": [
+        "period pain",
+        "cramps",
+        "painful period",
+        "stomach hurts during period"
+      ]
+    },
+    "answer": {
+      "ru": "Умеренная боль в первые один-два дня бывает у многих: матка сокращается, и это чувствуется. Обычно помогают тепло на низ живота, спокойное движение — прогулка или растяжка, тёплое питьё и достаточный сон.\n\nЕсли боль мешает учиться или работать, повторяется каждый цикл и не снимается обычными средствами, это повод для визита к врачу, а не терпения.",
+      "kk": "Алғашқы бір-екі күндегі орташа ауырсыну көп әйелде болады: жатыр жиырылады, сол сезіледі. Әдетте іштің астына жылу, тыныш қимыл — серуен немесе созылу жаттығулары, жылы сусын және жеткілікті ұйқы көмектеседі.\n\nАуырсыну оқуға немесе жұмысқа кедергі болса, әр циклде қайталанып, қарапайым шаралармен өтпесе — шыдамай, дәрігерге барған дұрыс.",
+      "en": "Mild cramping in the first day or two is common: the uterus is contracting and you feel it. Warmth on your lower belly, gentle movement such as a walk or stretching, warm drinks and enough sleep usually help.\n\nIf the pain keeps you from studying or working, returns every cycle and does not ease with the usual measures, that is a reason to see a doctor rather than to endure it."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_pms"
+      },
+      {
+        "kind": "product",
+        "id": "p_heatpad"
+      },
+      {
+        "kind": "product",
+        "id": "p_bundle_period"
+      }
+    ]
+  },
+  {
+    "id": "mood",
+    "keywords": {
+      "ru": [
+        "настроен",
+        "раздражительност",
+        "плаксивост",
+        "тревог перед месячным",
+        "пмс настроен",
+        "нервы"
+      ],
+      "kk": [
+        "көңіл күй",
+        "ашуланшақтық",
+        "етеккір алдындағ алаңд"
+      ],
+      "en": [
+        "mood swings",
+        "irritable",
+        "anxious before period",
+        "pms mood"
+      ]
+    },
+    "answer": {
+      "ru": "Перед менструацией уровень прогестерона падает, и настроение часто становится более хрупким: больше раздражения, слёз и тревоги. Это физиология, а не слабость характера.\n\nПомогает предсказуемость: отметьте эти дни в трекере, планируйте меньше нагрузки, добавьте сон и движение. Если настроение падает так сильно, что вы не узнаёте себя, поговорите с врачом — у этого есть название и лечение.",
+      "kk": "Етеккір алдында прогестерон деңгейі төмендейді, көңіл күй жиі нәзіктенеді: ашулану, көз жасы және алаңдау көбейеді. Бұл — физиология, мінез әлсіздігі емес.\n\nАлдын ала білу көмектеседі: сол күндерді трекерде белгілеп, жүктемені азайтып, ұйқы мен қимылды көбейтіңіз. Көңіл күй өзіңізді танымайтындай қатты төмендесе, дәрігерге айтыңыз — бұның аты да, емі де бар.",
+      "en": "Before your period progesterone drops and moods often turn fragile: more irritation, more tears, more worry. That is physiology, not a weakness of character.\n\nPredictability helps: mark those days in the tracker, plan a lighter load, add sleep and movement. If your mood drops so far that you do not recognise yourself, talk to a doctor — this has a name and a treatment."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_anxiety"
+      },
+      {
+        "kind": "lesson",
+        "id": "c_pms"
+      }
+    ]
+  },
+  {
+    "id": "first_period",
+    "keywords": {
+      "ru": [
+        "первы месячн",
+        "перва менструац",
+        "когда начнутс месячн",
+        "менарх"
+      ],
+      "kk": [
+        "алғашқ етеккір",
+        "бірінш етеккір",
+        "етеккір қашан басталад"
+      ],
+      "en": [
+        "first period",
+        "when will my period start",
+        "menarche"
+      ]
+    },
+    "answer": {
+      "ru": "Чаще всего первая менструация приходит между 10 и 15 годами, обычно через год-два после того, как начала расти грудь. Первые выделения могут быть совсем скудными и коричневатыми — это тоже месячные.\n\nПервый год цикл почти всегда нерегулярный, и это нормально: организм настраивается. Держите в сумке прокладку на всякий случай и отмечайте дни в трекере — так вы быстрее поймёте свой ритм.",
+      "kk": "Алғашқы етеккір көбіне 10 бен 15 жас аралығында, әдетте кеуде өсе бастағаннан бір-екі жыл кейін келеді. Бірінші бөліністер тым аз және қоңырқай болуы мүмкін — бұл да етеккір.\n\nАлғашқы жылы цикл әрдайым дерлік тұрақсыз, бұл қалыпты: организм ретке келіп жатыр. Сөмкеде бір гигиеналық орамал алып жүріңіз және күндерді трекерде белгілеңіз — ырғағыңызды тезірек түсінесіз.",
+      "en": "A first period most often arrives between the ages of 10 and 15, usually a year or two after your breasts start to grow. The first bleed can be very light and brownish — that still counts as a period.\n\nIn the first year the cycle is almost always irregular, and that is normal: your body is settling in. Keep a pad in your bag just in case and log the days in the tracker, so you learn your rhythm sooner."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_first_period"
+      },
+      {
+        "kind": "product",
+        "id": "p_pads_night"
+      }
+    ]
+  },
+  {
+    "id": "pads_or_tampons",
+    "keywords": {
+      "ru": [
+        "прокладк или тампон",
+        "тампон",
+        "чаша",
+        "что выбрат прокладк",
+        "менструальн чаша"
+      ],
+      "kk": [
+        "гигиеналық орамал немес тампон",
+        "тампон",
+        "етеккір тостаған"
+      ],
+      "en": [
+        "pads or tampons",
+        "tampon",
+        "menstrual cup",
+        "which product to use"
+      ]
+    },
+    "answer": {
+      "ru": "Всё три варианта безопасны, выбор — про удобство. Прокладки проще всего для начала, тампоны удобны в бассейне и на тренировке, менструальная чаша дольше держится и экономичнее, но к ней нужно привыкнуть.\n\nГлавное правило — вовремя менять: прокладку каждые 3-4 часа, тампон не дольше 8 часов, чашу мыть при каждом опорожнении. На ночь удобнее прокладка или чаша.",
+      "kk": "Үш нұсқаның бәрі қауіпсіз, таңдау — қолайлылық туралы. Гигиеналық орамал бастауға ең қарапайым, тампон бассейн мен жаттығуға қолайлы, етеккір тостағаны ұзақ шыдайды және тиімдірек, бірақ оған үйрену керек.\n\nБасты ереже — уақытында ауыстыру: орамалды 3-4 сағатта, тампонды 8 сағаттан ұзақ қалдырмау, тостағанды әр босатқанда жуу. Түнге орамал немесе тостаған қолайлы.",
+      "en": "All three are safe; the choice is about comfort. Pads are the easiest to start with, tampons suit swimming and training, and a cup lasts longer and costs less over time, though it takes practice.\n\nThe main rule is changing in time: a pad every 3-4 hours, a tampon for no more than 8 hours, a cup washed each time you empty it. For the night a pad or a cup is more comfortable."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_first_period"
+      },
+      {
+        "kind": "product",
+        "id": "p_cup"
+      }
+    ]
+  },
+  {
+    "id": "fertile_window",
+    "keywords": {
+      "ru": [
+        "фертильн дни",
+        "овуляц",
+        "когда овуляц",
+        "благоприятн дни",
+        "фертильн окно"
+      ],
+      "kk": [
+        "құнарл күндер",
+        "овуляц",
+        "овуляц қашан"
+      ],
+      "en": [
+        "fertile days",
+        "ovulation",
+        "fertile window",
+        "when do i ovulate"
+      ]
+    },
+    "answer": {
+      "ru": "Овуляция обычно происходит примерно за 14 дней до начала следующей менструации, а фертильное окно — это пять дней до неё и один после, потому что сперматозоиды живут несколько дней.\n\nВ трекере это окно отмечено зелёным по вашим последним циклам. Дополнительные подсказки: более скользкие прозрачные выделения, лёгкая тянущая боль с одной стороны, тесты на овуляцию.",
+      "kk": "Овуляция әдетте келесі етеккір басталардан шамамен 14 күн бұрын болады, құнарлы кезең — оның алдындағы бес күн және кейінгі бір күн, себебі шәует жасушалары бірнеше күн тірі болады.\n\nТрекерде бұл кезең соңғы циклдеріңіз бойынша жасыл түспен белгіленген. Қосымша белгілер: мөлдір, сырғанақ бөліністер, бір жағындағы жеңіл тартқан ауырсыну, овуляция тесттері.",
+      "en": "Ovulation usually happens about 14 days before your next period starts, and the fertile window is the five days before it plus one after, because sperm survive for several days.\n\nThe tracker marks that window in green from your recent cycles. Extra clues: clearer, more slippery discharge, a light pulling ache on one side, and ovulation tests."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_fertile_window"
+      },
+      {
+        "kind": "product",
+        "id": "p_ovutest"
+      }
+    ]
+  },
+  {
+    "id": "conceive",
+    "keywords": {
+      "ru": [
+        "забеременет",
+        "хочу ребенк",
+        "как быстр забеременет",
+        "планир беременност",
+        "не получаетс забеременет"
+      ],
+      "kk": [
+        "жүкті болу",
+        "бала болмай жүр",
+        "жүктілікт жоспарл"
+      ],
+      "en": [
+        "get pregnant",
+        "trying to conceive",
+        "conceive faster",
+        "planning pregnancy"
+      ]
+    },
+    "answer": {
+      "ru": "Шансы выше всего, когда близость приходится на фертильное окно — каждые один-два дня в эти пять-шесть дней. За три месяца до планирования обычно советуют фолиевую кислоту, проверку уровня железа и витамина D, отказ от курения и алкоголя обоим партнёрам.\n\nУ здоровой пары до года попыток — обычный срок. Если вам до 35 и не получается год, или после 35 — полгода, стоит вместе прийти к врачу.",
+      "kk": "Мүмкіндік құнарлы кезеңде жақындық болғанда ең жоғары — сол бес-алты күнде бір-екі күнде бір. Жоспарлаудан үш ай бұрын әдетте фолий қышқылын қабылдау, темір мен D дәруменін тексеру, екі серіктестің де темекі мен алкогольден бас тартуы ұсынылады.\n\nДені сау жұп үшін бір жылға дейінгі әрекет — қалыпты мерзім. 35-ке толмаған болсаңыз бір жыл, 35-тен асқан болсаңыз алты ай нәтиже болмаса, дәрігерге бірге барыңыз.",
+      "en": "Chances are highest when sex falls inside the fertile window — every one to two days across those five or six days. Three months before trying, folic acid, a check of your iron and vitamin D, and giving up smoking and alcohol for both partners are the usual advice.\n\nFor a healthy couple, up to a year of trying is ordinary. If you are under 35 and it has been a year, or over 35 and it has been six months, go to a doctor together."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_fertile_window"
+      },
+      {
+        "kind": "product",
+        "id": "p_folic"
+      }
+    ]
+  },
+  {
+    "id": "pregnancy_food",
+    "keywords": {
+      "ru": [
+        "что нельз есть беременн",
+        "питан при беременн",
+        "можно ли кофе беременн",
+        "еда во время беременн"
+      ],
+      "kk": [
+        "жүкті кезде не жеуге болмайд",
+        "жүктілік кезіндег тамақтан",
+        "жүкті кезде кофе"
+      ],
+      "en": [
+        "pregnancy safe food",
+        "what not to eat pregnant",
+        "coffee while pregnant",
+        "pregnancy nutrition"
+      ]
+    },
+    "answer": {
+      "ru": "Стоит избегать сырого и полусырого мяса и рыбы, непастеризованного молока и сыров из него, сырых яиц, немытых овощей и фруктов, а также алкоголя — полностью. Кофе обычно разрешают до 200 мг кофеина в день, это примерно одна чашка.\n\nОсновой остаётся простое: белок, овощи, крупы, железо и достаточно воды. Список витаминов и дозировки лучше согласовать с вашим врачом, а не с интернетом.",
+      "kk": "Шикі және шала піскен ет пен балықтан, пастерленбеген сүт және одан жасалған ірімшіктен, шикі жұмыртқадан, жуылмаған көкөніс-жемістен, алкогольден — толық — бас тарту керек. Кофеге әдетте күніне 200 мг кофеинге дейін рұқсат етіледі, бұл шамамен бір кесе.\n\nНегізі қарапайым: ақуыз, көкөніс, дәнді дақыл, темір және жеткілікті су. Дәрумендер тізімі мен дозасын интернетпен емес, дәрігеріңізбен келісіңіз.",
+      "en": "Avoid raw and undercooked meat and fish, unpasteurised milk and the cheeses made from it, raw eggs, unwashed fruit and vegetables, and alcohol entirely. Coffee is usually allowed up to 200 mg of caffeine a day, roughly one cup.\n\nThe base stays simple: protein, vegetables, grains, iron and enough water. Agree the list of supplements and their doses with your own doctor rather than with the internet."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_preg_w12"
+      },
+      {
+        "kind": "product",
+        "id": "p_iron"
+      }
+    ]
+  },
+  {
+    "id": "baby_movements",
+    "keywords": {
+      "ru": [
+        "шевелен",
+        "когда почувств ребенк",
+        "малыш шевелитс",
+        "первы шевелен"
+      ],
+      "kk": [
+        "бала қимыл",
+        "балан қашан сезінемін",
+        "алғашқ қимыл"
+      ],
+      "en": [
+        "baby movements",
+        "when will i feel the baby",
+        "first kicks"
+      ]
+    },
+    "answer": {
+      "ru": "Первые шевеления обычно чувствуются на 18-22 неделе, при второй беременности часто раньше. Сначала это похоже на пузырьки или лёгкое трепетание, а к третьему триместру появляется узнаваемый ритм: свои часы активности и сна.\n\nС 28 недели врачи советуют замечать привычный для вашего малыша характер движений. Если шевеления заметно изменились или вы их не чувствуете несколько часов, свяжитесь со своим врачом или роддомом в тот же день.",
+      "kk": "Алғашқы қимылдар әдетте 18-22 аптада сезіледі, екінші жүктілікте жиі ертерек. Басында ол көбіктерге немесе жеңіл дірілге ұқсайды, үшінші триместрге қарай таныс ырғақ пайда болады: белсенділік пен ұйқының өз уақыты.\n\n28 аптадан бастап дәрігерлер балаңыздың әдеттегі қимыл сипатын байқап отыруды ұсынады. Қимыл айтарлықтай өзгерсе немесе бірнеше сағат сезілмесе, сол күні дәрігеріңізге не перзентханаға хабарласыңыз.",
+      "en": "First movements are usually felt at 18-22 weeks, often earlier in a second pregnancy. At first it feels like bubbles or a light flutter; by the third trimester a recognisable rhythm appears, with its own hours of activity and sleep.\n\nFrom 28 weeks doctors advise getting to know your baby's usual pattern. If the movements change noticeably, or you have not felt them for several hours, contact your doctor or maternity hospital the same day."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_preg_w18"
+      }
+    ]
+  },
+  {
+    "id": "postpartum",
+    "keywords": {
+      "ru": [
+        "после род",
+        "восстановлен после род",
+        "лохии",
+        "живот после род",
+        "когда можно спорт после род"
+      ],
+      "kk": [
+        "босанғаннан кейін",
+        "босанғаннан кейін қалпын келу",
+        "босанғаннан кейінг спорт"
+      ],
+      "en": [
+        "after birth",
+        "postpartum recovery",
+        "lochia",
+        "exercise after birth"
+      ]
+    },
+    "answer": {
+      "ru": "Первые шесть недель тело заживает: выделения постепенно светлеют, матка сокращается, силы возвращаются волнами. В это время лучше всего работают отдых по чуть-чуть, вода, простая еда, помощь по дому и мягкая дыхательная гимнастика для мышц живота и таза.\n\nК спорту обычно возвращаются после осмотра на шестой неделе. Ярко-красные выделения, которые снова усилились, температура, боль в шве или в груди с покраснением — причина позвонить врачу, не дожидаясь приёма.",
+      "kk": "Алғашқы алты аптада дене жазылады: бөліністер біртіндеп ашықтанады, жатыр жиырылады, күш толқын-толқын болып қайтады. Бұл кезде аз-аздан демалу, су, қарапайым тамақ, үй шаруасына көмек және іш пен жамбас бұлшық еттеріне жұмсақ тыныс жаттығулары жақсы көмектеседі.\n\nСпортқа әдетте алтыншы аптадағы тексеруден кейін қайтады. Қайта күшейген қою қызыл бөліністер, қызба, тігіс немесе кеудедегі қызару мен ауырсыну — қабылдауды күтпей дәрігерге қоңырау шалуға себеп.",
+      "en": "The first six weeks are healing: the bleeding gradually lightens, the uterus contracts, and energy returns in waves. Small amounts of rest, water, simple food, help at home and gentle breathing work for your belly and pelvic floor do the most in this period.\n\nExercise usually resumes after the six-week check. Bright red bleeding that has picked up again, a fever, pain in a stitch, or a red, painful area in your breast are reasons to call your doctor without waiting for the appointment."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_postpartum_body"
+      },
+      {
+        "kind": "product",
+        "id": "p_nursing_bra"
+      }
+    ]
+  },
+  {
+    "id": "breastfeeding",
+    "keywords": {
+      "ru": [
+        "грудн вскармливан",
+        "болит грудь при кормлен",
+        "трещин",
+        "мало молок",
+        "лактац"
+      ],
+      "kk": [
+        "емізу",
+        "емізгенд кеуде ауырад",
+        "сүт аз",
+        "лактац"
+      ],
+      "en": [
+        "breastfeeding",
+        "nipple pain",
+        "low milk supply",
+        "latch"
+      ]
+    },
+    "answer": {
+      "ru": "Боль при кормлении чаще всего говорит о захвате: малыш должен брать не только сосок, но и часть ареолы, губы вывернуты, щёки не втягиваются. Помогают смена позы, сцеживание капли молока на трещину, воздух и мягкий бюстгальтер без косточек.\n\nМолока обычно хватает, если малыш прибавляет в весе и мочит 6-8 подгузников в сутки. Покраснение груди с температурой, шишка, которая не уходит, или трещины с кровью — к консультанту по лактации или врачу.",
+      "kk": "Емізу кезіндегі ауырсыну көбіне ұстауға байланысты: бала емізікті ғана емес, ареоланың бір бөлігін де алуы керек, еріндері сыртқа қайырылған, ұрты ішке тартылмайды. Қалыпты өзгерту, жарыққа бір тамшы сүт тамызу, ауа және сымсыз жұмсақ бюстгальтер көмектеседі.\n\nБала салмақ қосып, тәулігіне 6-8 жаялық суласа, сүт әдетте жетеді. Кеуденің қызарып, қызба қосылуы, кетпейтін түйін немесе қан аралас жарықтар — лактация кеңесшісіне немесе дәрігерге.",
+      "en": "Pain while feeding usually points to the latch: the baby should take part of the areola, not just the nipple, with lips flanged out and cheeks not drawn in. Changing position, a drop of expressed milk on a crack, air, and a soft wireless bra all help.\n\nSupply is usually fine if the baby gains weight and wets 6-8 nappies a day. A red, hot breast with a fever, a lump that does not go away, or cracks that bleed need a lactation consultant or a doctor."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_postpartum_body"
+      },
+      {
+        "kind": "product",
+        "id": "p_nursing_bra"
+      }
+    ]
+  },
+  {
+    "id": "hot_flashes",
+    "keywords": {
+      "ru": [
+        "прилив",
+        "жар",
+        "потливост ночью",
+        "бросает в жар"
+      ],
+      "kk": [
+        "қызу толқын",
+        "денен қызу басад",
+        "түнде терле"
+      ],
+      "en": [
+        "hot flashes",
+        "hot flushes",
+        "night sweats"
+      ]
+    },
+    "answer": {
+      "ru": "Приливы — это реакция терморегуляции на колебания эстрогена: волна жара по лицу и груди, часто с потливостью и учащённым сердцебиением, обычно 2-4 минуты. Помогают многослойная одежда, прохладная спальня, меньше кофе, острого и алкоголя, дыхание на счёт и регулярная активность.\n\nЕсли приливы будят вас ночами и мешают работать, спросите врача о вариантах терапии — их несколько, и терпеть годами не обязательно.",
+      "kk": "Қызу толқыны — эстроген ауытқуына термореттеудің жауабы: бет пен кеудені қызу басады, жиі терлеу және жүрек жиі соғуымен, әдетте 2-4 минут. Көп қабатты киім, салқын бөлме, кофе, ащы тамақ пен алкогольді азайту, санап тыныс алу және тұрақты қимыл көмектеседі.\n\nҚызу толқыны түнде ұйқыңызды бұзып, жұмысқа кедергі болса, дәрігерден терапия нұсқаларын сұраңыз — олар бірнеше, жылдар бойы шыдау міндет емес.",
+      "en": "A hot flash is your temperature control reacting to swings in oestrogen: a wave of heat over the face and chest, often with sweating and a faster heartbeat, usually lasting 2-4 minutes. Layered clothing, a cool bedroom, less coffee, spice and alcohol, counted breathing and regular activity all help.\n\nIf flashes wake you at night and get in the way of work, ask your doctor about treatment options — there are several, and years of enduring them is not required."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_hot_flashes"
+      },
+      {
+        "kind": "product",
+        "id": "p_cooling_spray"
+      }
+    ]
+  },
+  {
+    "id": "menopause_sleep",
+    "keywords": {
+      "ru": [
+        "не могу уснут",
+        "бессонниц",
+        "сон при менопауз",
+        "просыпаюс ночью"
+      ],
+      "kk": [
+        "ұйықтай алмаймын",
+        "ұйқысыздық",
+        "менопауз кезіндег ұйқы"
+      ],
+      "en": [
+        "can't sleep",
+        "insomnia",
+        "menopause sleep",
+        "waking up at night"
+      ]
+    },
+    "answer": {
+      "ru": "В перименопаузе сон рвётся чаще: ночные приливы, тревога и падение прогестерона. Работает скучное, но надёжное — один и тот же час отхода ко сну, прохлада и темнота в спальне, экран за час до сна убрать, кофеин до обеда, вечером тёплое питьё без сахара.\n\nЕсли вы месяцами спите меньше шести часов, обсудите это с врачом: недосып влияет на давление, вес и настроение, и с этим можно работать.",
+      "kk": "Перименопаузада ұйқы жиі үзіледі: түнгі қызу толқыны, алаңдау және прогестеронның төмендеуі. Қарапайым, бірақ сенімді әдістер жұмыс істейді — ұйқыға бір уақытта жату, бөлменің салқын және қараңғы болуы, ұйқыдан бір сағат бұрын экранды қою, кофеинді түскі дейін ішу, кешке қантсыз жылы сусын.\n\nАйлар бойы алты сағаттан аз ұйықтасаңыз, дәрігермен сөйлесіңіз: ұйқы тапшылығы қан қысымына, салмаққа және көңіл күйге әсер етеді, оны түзетуге болады.",
+      "en": "In perimenopause sleep breaks up more often: night flashes, anxiety and falling progesterone. The dull but reliable things work — the same bedtime, a cool dark room, screens away an hour before, caffeine before lunch only, and a warm unsweetened drink in the evening.\n\nIf you have been sleeping under six hours for months, raise it with your doctor: lost sleep affects blood pressure, weight and mood, and it can be treated."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_perimenopause"
+      },
+      {
+        "kind": "product",
+        "id": "p_tea"
+      }
+    ]
+  },
+  {
+    "id": "iron",
+    "keywords": {
+      "ru": [
+        "желез",
+        "анеми",
+        "гемоглобин",
+        "слабост и усталост",
+        "продукт с железом"
+      ],
+      "kk": [
+        "темір",
+        "анеми",
+        "гемоглобин",
+        "темірг бай тамақ"
+      ],
+      "en": [
+        "iron",
+        "anemia",
+        "anaemia",
+        "haemoglobin",
+        "iron rich foods",
+        "tired all the time"
+      ]
+    },
+    "answer": {
+      "ru": "При обильных менструациях железо теряется быстрее, чем восстанавливается, отсюда усталость, бледность, выпадение волос и одышка на лестнице. Из еды лучше всего усваивается железо из мяса, печени и рыбы; растительное — из бобовых, гречки, тёмной зелени — вместе с витамином C, а чай и кофе лучше отложить на час после еды.\n\nПеред приёмом добавок сдайте ферритин и общий анализ крови: дозу подбирает врач, лишнее железо тоже вредно.",
+      "kk": "Етеккір көп болғанда темір қалпына келгеннен жылдам жоғалады, содан шаршау, бозару, шаш түсуі және баспалдақта ентігу пайда болады. Тамақтан ет, бауыр және балықтағы темір жақсы сіңеді; өсімдік темірі — бұршақ, қарақұмық, қою жасыл көкөністен — C дәруменімен бірге, шай мен кофені тамақтан кейін бір сағатқа қалдырған дұрыс.\n\nҚоспа қабылдар алдында ферритин мен қанның жалпы талдауын тапсырыңыз: дозаны дәрігер таңдайды, артық темір де зиян.",
+      "en": "With heavy periods iron is lost faster than it is replaced, which shows up as fatigue, pale skin, hair fall and breathlessness on stairs. Iron from meat, liver and fish absorbs best; plant iron from beans, buckwheat and dark greens absorbs better with vitamin C, while tea and coffee are better left for an hour after eating.\n\nBefore taking supplements, test your ferritin and a full blood count: a doctor sets the dose, and too much iron is also harmful."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_iron"
+      },
+      {
+        "kind": "product",
+        "id": "p_iron"
+      }
+    ]
+  },
+  {
+    "id": "irregular",
+    "keywords": {
+      "ru": [
+        "задержк",
+        "нерегулярный цикл",
+        "сбилс цикл",
+        "нет месячн",
+        "пропал месячн"
+      ],
+      "kk": [
+        "етеккір кешіг",
+        "тұрақсыз цикл",
+        "етеккір жоқ"
+      ],
+      "en": [
+        "late period",
+        "irregular cycle",
+        "missed period",
+        "period stopped"
+      ]
+    },
+    "answer": {
+      "ru": "Цикл сбивается от стресса, резкой смены веса, тяжёлых тренировок, перелётов, болезни и смены контрацепции — задержка до недели бывает и у здоровых женщин. Если есть вероятность беременности, тест точнее всего через неделю после ожидаемого дня.\n\nК врачу стоит пойти, если месячных нет шесть недель и больше, цикл сбивается несколько месяцев подряд или между менструациями появляются кровянистые выделения.",
+      "kk": "Цикл күйзелістен, салмақтың күрт өзгеруінен, ауыр жаттығудан, ұшудан, ауру мен контрацепция ауысуынан бұзылады — бір аптаға дейінгі кешігу дені сау әйелде де болады. Жүктілік ықтималдығы болса, тест күтілген күннен бір апта кейін дәлірек.\n\nЕтеккір алты апта және одан ұзақ болмаса, цикл бірнеше ай қатарынан бұзылса немесе етеккір арасында қан аралас бөлініс шықса — дәрігерге барған дұрыс.",
+      "en": "Cycles shift with stress, sharp weight change, hard training, flights, illness and a change of contraception — a delay of up to a week happens to healthy women too. If pregnancy is possible, a test is most accurate a week after the day you expected your period.\n\nSee a doctor if your period is six weeks late or more, if the cycle keeps shifting for several months, or if you bleed between periods."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_irregular"
+      }
+    ]
+  },
+  {
+    "id": "intimacy",
+    "keywords": {
+      "ru": [
+        "сухост",
+        "больн при близост",
+        "либид",
+        "интимн жизнь",
+        "нет желан"
+      ],
+      "kk": [
+        "құрғақтық",
+        "жақындық кезінд ауырсын",
+        "либид"
+      ],
+      "en": [
+        "dryness",
+        "painful sex",
+        "libido",
+        "low desire"
+      ]
+    },
+    "answer": {
+      "ru": "Сухость и снижение желания чаще всего связаны с гормонами — после родов, при кормлении, в перименопаузе — а также с усталостью, стрессом и некоторыми лекарствами. Увлажняющее средство на водной основе, больше времени без спешки и разговор с партнёром снимают большую часть напряжения.\n\nЕсли близость болезненна регулярно, есть жжение, зуд или кровь, это не про терпение — обратитесь к гинекологу.",
+      "kk": "Құрғақтық пен құлшыныстың төмендеуі көбіне гормондарға байланысты — босанғаннан кейін, емізу кезінде, перименопаузада — сондай-ақ шаршау, күйзеліс және кейбір дәрілерге. Су негізіндегі ылғалдандырғыш, асықпайтын уақыт және серіктеспен сөйлесу шиеленістің көбін сейілтеді.\n\nЖақындық үнемі ауыр болса, күйдіру, қышу немесе қан болса, бұл шыдау туралы емес — гинекологқа барыңыз.",
+      "en": "Dryness and lower desire are most often hormonal — after birth, while breastfeeding, in perimenopause — and also come from tiredness, stress and some medications. A water-based moisturiser, unhurried time and a conversation with your partner take away most of the tension.\n\nIf sex is regularly painful, or there is burning, itching or blood, that is not something to endure — see a gynaecologist."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_intimacy_talk"
+      },
+      {
+        "kind": "product",
+        "id": "p_lube"
+      }
+    ]
+  },
+  {
+    "id": "postpartum_mood",
+    "keywords": {
+      "ru": [
+        "послеродов депресс",
+        "плачу после род",
+        "не чувств радост",
+        "тяжел с ребенком"
+      ],
+      "kk": [
+        "босанғаннан кейінг депресс",
+        "жылап жүрмін",
+        "қуаныш сезінбеймін"
+      ],
+      "en": [
+        "postpartum depression",
+        "crying after birth",
+        "baby blues",
+        "not bonding"
+      ]
+    },
+    "answer": {
+      "ru": "Первые две недели после родов слёзы и качели настроения бывают почти у всех — это baby blues, и они проходят сами. Если же подавленность, чувство вины или отсутствие радости держатся дольше двух недель, мешают спать даже когда малыш спит, или появляются мысли о вреде себе или ребёнку — это послеродовая депрессия, и она лечится.\n\nЭто не про то, что вы плохая мама. Скажите об этом близкому человеку и врачу как можно раньше: чем раньше начата помощь, тем быстрее становится легче.",
+      "kk": "Босанғаннан кейінгі алғашқы екі аптада көз жасы мен көңіл күй тербелісі барлығында дерлік болады — бұл baby blues, өзі өтеді. Ал көңілсіздік, кінә сезімі немесе қуаныштың жоқтығы екі аптадан ұзаққа созылса, бала ұйықтап жатқанда да ұйықтауға кедергі болса, немесе өзіңізге не балаға зиян келтіру туралы ойлар пайда болса — бұл босанғаннан кейінгі депрессия, ол емделеді.\n\nБұл сіздің жаман ана болғаныңыз емес. Жақын адамыңызға және дәрігерге мүмкіндігінше ертерек айтыңыз: көмек ерте басталса, жеңілдеу де тез келеді.",
+      "en": "In the first two weeks after birth, tears and mood swings happen to almost everyone — that is the baby blues, and it passes on its own. If low mood, guilt or an absence of joy last longer than two weeks, keep you from sleeping even when the baby sleeps, or bring thoughts of harming yourself or the baby, that is postpartum depression, and it is treatable.\n\nIt does not mean you are a bad mother. Tell someone close to you and a doctor as early as you can: the sooner help starts, the sooner it gets lighter."
+    },
+    "references": [
+      {
+        "kind": "lesson",
+        "id": "c_ppd"
+      }
+    ]
+  },
+  {
+    "id": "fallback",
+    "keywords": {
+      "ru": [],
+      "kk": [],
+      "en": []
+    },
+    "answer": {
+      "ru": "Пока я отвечаю только по материалам Her Circle, и по этому вопросу у меня нет надёжного ответа. Попробуйте спросить иначе — про цикл, ПМС, беременность, восстановление после родов, менопаузу, железо или уход в критические дни.\n\nМожно также задать вопрос врачу в разделе «Вопрос-ответ»: специалисты отвечают в течение дня.",
+      "kk": "Әзірге мен Her Circle материалдары бойынша ғана жауап беремін, бұл сұрақ бойынша сенімді жауабым жоқ. Басқаша сұрап көріңіз — цикл, ПМС, жүктілік, босанғаннан кейінгі қалпына келу, менопауза, темір немесе етеккір күндеріндегі күтім туралы.\n\nСондай-ақ «Сұрақ-жауап» бөлімінде дәрігерге сұрақ қоюға болады: мамандар күн ішінде жауап береді.",
+      "en": "For now I only answer from Her Circle's own material, and I do not have a reliable answer to this one. Try asking it differently — about your cycle, PMS, pregnancy, recovery after birth, menopause, iron, or period care.\n\nYou can also ask a doctor in the Q&A section: the experts reply within a day."
+    },
+    "references": []
+  }
+]

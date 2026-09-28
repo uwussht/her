@@ -3561,6 +3561,240 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'× {count}'**
   String orderQuantityShort(int count);
+
+  /// Empty-state title on the AI chat
+  ///
+  /// In ru, this message translates to:
+  /// **'Спросите о чём угодно'**
+  String get aiIntroTitle;
+
+  /// Empty-state body on the AI chat
+  ///
+  /// In ru, this message translates to:
+  /// **'Circle AI отвечает по материалам приложения: цикл, беременность, восстановление после родов, менопауза, уход в критические дни.'**
+  String get aiIntroBody;
+
+  /// Heading above the suggested question chips
+  ///
+  /// In ru, this message translates to:
+  /// **'С чего начать'**
+  String get aiSuggestionsTitle;
+
+  /// Hint of the chat input field
+  ///
+  /// In ru, this message translates to:
+  /// **'Ваш вопрос…'**
+  String get aiInputHint;
+
+  /// Send button in the chat composer
+  ///
+  /// In ru, this message translates to:
+  /// **'Отправить'**
+  String get aiSend;
+
+  /// Typing indicator while the answer is loading
+  ///
+  /// In ru, this message translates to:
+  /// **'Circle AI печатает…'**
+  String get aiThinking;
+
+  /// Medical disclaimer shown under every AI answer
+  ///
+  /// In ru, this message translates to:
+  /// **'Это не диагноз. За диагнозом — к врачу.'**
+  String get aiAnswerDisclaimer;
+
+  /// Heading above lesson and product links in an answer
+  ///
+  /// In ru, this message translates to:
+  /// **'Об этом в приложении'**
+  String get aiReferencesTitle;
+
+  /// Error bubble body when the request failed
+  ///
+  /// In ru, this message translates to:
+  /// **'Не удалось получить ответ. Проверьте соединение и попробуйте снова.'**
+  String get aiErrorBody;
+
+  /// Retry button on a failed answer
+  ///
+  /// In ru, this message translates to:
+  /// **'Повторить'**
+  String get aiRetry;
+
+  /// Free-tier counter in the chat header
+  ///
+  /// In ru, this message translates to:
+  /// **'{count, plural, one{Осталось {count} вопрос на сегодня} few{Осталось {count} вопроса на сегодня} many{Осталось {count} вопросов на сегодня} other{Осталось {count} вопроса на сегодня}}'**
+  String aiMessagesLeft(int count);
+
+  /// Shown instead of the counter with premium
+  ///
+  /// In ru, this message translates to:
+  /// **'Премиум: без ограничений'**
+  String get aiUnlimited;
+
+  /// aiLimitTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Вопросы на сегодня закончились'**
+  String get aiLimitTitle;
+
+  /// aiLimitBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Бесплатно — 5 вопросов в день. С премиумом их столько, сколько нужно, а счётчик обнуляется каждый день в полночь.'**
+  String get aiLimitBody;
+
+  /// aiLimitCta
+  ///
+  /// In ru, this message translates to:
+  /// **'Что даёт премиум'**
+  String get aiLimitCta;
+
+  /// aiClear
+  ///
+  /// In ru, this message translates to:
+  /// **'Очистить переписку'**
+  String get aiClear;
+
+  /// aiClearConfirmTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Очистить переписку?'**
+  String get aiClearConfirmTitle;
+
+  /// aiClearConfirmBody
+  ///
+  /// In ru, this message translates to:
+  /// **'История хранится только на этом устройстве и будет удалена без возможности восстановить.'**
+  String get aiClearConfirmBody;
+
+  /// aiClearConfirmAction
+  ///
+  /// In ru, this message translates to:
+  /// **'Очистить'**
+  String get aiClearConfirmAction;
+
+  /// aiCleared
+  ///
+  /// In ru, this message translates to:
+  /// **'Переписка удалена'**
+  String get aiCleared;
+
+  /// Privacy note at the top of the AI chat
+  ///
+  /// In ru, this message translates to:
+  /// **'Переписка хранится только на вашем устройстве.'**
+  String get aiHistoryLocal;
+
+  /// aiEmergencyTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Похоже, нужна срочная помощь'**
+  String get aiEmergencyTitle;
+
+  /// aiEmergencyBody
+  ///
+  /// In ru, this message translates to:
+  /// **'В такой ситуации Circle AI помочь не может. Позвоните в скорую по номеру 103 или обратитесь в ближайшую больницу. Если рядом есть кто-то из близких — попросите помощи сейчас.'**
+  String get aiEmergencyBody;
+
+  /// aiEmergencyCall
+  ///
+  /// In ru, this message translates to:
+  /// **'Позвонить 103'**
+  String get aiEmergencyCall;
+
+  /// aiEmergencyCallFailed
+  ///
+  /// In ru, this message translates to:
+  /// **'Не удалось открыть набор номера. Наберите 103 вручную.'**
+  String get aiEmergencyCallFailed;
+
+  /// aiQuestionCycleLength
+  ///
+  /// In ru, this message translates to:
+  /// **'Какая длина цикла считается нормальной?'**
+  String get aiQuestionCycleLength;
+
+  /// aiQuestionPeriodPain
+  ///
+  /// In ru, this message translates to:
+  /// **'Что помогает при боли во время месячных?'**
+  String get aiQuestionPeriodPain;
+
+  /// aiQuestionMoodSwings
+  ///
+  /// In ru, this message translates to:
+  /// **'Почему перед месячными меняется настроение?'**
+  String get aiQuestionMoodSwings;
+
+  /// aiQuestionFirstPeriod
+  ///
+  /// In ru, this message translates to:
+  /// **'Когда приходят первые месячные?'**
+  String get aiQuestionFirstPeriod;
+
+  /// aiQuestionPadsOrTampons
+  ///
+  /// In ru, this message translates to:
+  /// **'Прокладки, тампоны или чаша — что выбрать?'**
+  String get aiQuestionPadsOrTampons;
+
+  /// aiQuestionFertileDays
+  ///
+  /// In ru, this message translates to:
+  /// **'Как определить фертильные дни?'**
+  String get aiQuestionFertileDays;
+
+  /// aiQuestionConceiveFaster
+  ///
+  /// In ru, this message translates to:
+  /// **'Что помогает быстрее забеременеть?'**
+  String get aiQuestionConceiveFaster;
+
+  /// aiQuestionPregnancySafeFood
+  ///
+  /// In ru, this message translates to:
+  /// **'Что нельзя есть при беременности?'**
+  String get aiQuestionPregnancySafeFood;
+
+  /// aiQuestionBabyMovements
+  ///
+  /// In ru, this message translates to:
+  /// **'Когда я почувствую шевеления?'**
+  String get aiQuestionBabyMovements;
+
+  /// aiQuestionPostpartumRecovery
+  ///
+  /// In ru, this message translates to:
+  /// **'Как проходит восстановление после родов?'**
+  String get aiQuestionPostpartumRecovery;
+
+  /// aiQuestionBreastfeedingPain
+  ///
+  /// In ru, this message translates to:
+  /// **'Почему болит грудь при кормлении?'**
+  String get aiQuestionBreastfeedingPain;
+
+  /// aiQuestionHotFlashes
+  ///
+  /// In ru, this message translates to:
+  /// **'Что делать при приливах?'**
+  String get aiQuestionHotFlashes;
+
+  /// aiQuestionMenopauseSleep
+  ///
+  /// In ru, this message translates to:
+  /// **'Почему я плохо сплю при менопаузе?'**
+  String get aiQuestionMenopauseSleep;
+
+  /// aiQuestionIronFoods
+  ///
+  /// In ru, this message translates to:
+  /// **'В каких продуктах больше железа?'**
+  String get aiQuestionIronFoods;
 }
 
 class _AppLocalizationsDelegate
