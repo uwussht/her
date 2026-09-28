@@ -166,6 +166,12 @@ void main() {
     expect(find.text('+7 701 123 45 67'), findsOneWidget);
     expect(find.text('Слежу за циклом'), findsOneWidget);
 
+    await tester.scrollUntilVisible(
+      find.text('Выйти'),
+      240,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.pumpAndSettle();
     await tapText(tester, 'Выйти');
     await tester.tap(find.widgetWithText(FilledButton, 'Выйти'));
     await tester.pumpAndSettle();

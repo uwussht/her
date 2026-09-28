@@ -16,6 +16,24 @@ extension CalendarDate on DateTime {
 
   DateTime addDays(int days) => DateTime(year, month, day + days);
 
+  /// This day [months] later, keeping the day of the month where the target
+  /// month has one: 31 January plus a month is 28 February, not 3 March.
+  ///
+  /// [months] is expected to be positive; the callers all move forward.
+  DateTime addMonths(int months) {
+    final target = month + months;
+    final targetYear = year + (target - 1) ~/ 12;
+    final targetMonth = (target - 1) % 12 + 1;
+    final lastDay = DateTime(targetYear, targetMonth + 1, 0).day;
+    return DateTime(
+      targetYear,
+      targetMonth,
+      day < lastDay ? day : lastDay,
+      hour,
+      minute,
+    );
+  }
+
   bool isSameDay(DateTime other) =>
       year == other.year && month == other.month && day == other.day;
 

@@ -6,7 +6,6 @@ import 'package:her_circle/features/ai_assistant/presentation/ai_assistant_scree
 import 'package:her_circle/features/ai_assistant/presentation/ai_providers.dart';
 import 'package:her_circle/features/ai_assistant/presentation/chat_controller.dart';
 import 'package:her_circle/features/ai_assistant/presentation/widgets/emergency_card.dart';
-import 'package:her_circle/features/premium/domain/premium_status.dart';
 import 'package:her_circle/features/premium/presentation/premium_controller.dart';
 import 'package:her_circle/features/profile/domain/personalization.dart';
 
@@ -136,9 +135,7 @@ void main() {
     );
 
     // Premium lifts the limit.
-    await container
-        .read(premiumControllerProvider.notifier)
-        .setStatus(PremiumStatus.active);
+    await container.read(premiumControllerProvider.notifier).toggleDemo();
     await tester.pumpAndSettle();
     expect(find.text('Premium: unlimited'), findsOneWidget);
   });

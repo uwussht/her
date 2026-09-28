@@ -3138,5 +3138,265 @@
   "familyLinkWaiting": "Вы просили подключить маму — код ждёт здесь",
   "@familyLinkWaiting": {
     "description": "Reminder on the profile entry when she accepted the offer but has no link yet"
+  },
+  "premiumTitle": "Her Circle Premium",
+  "@premiumTitle": {
+    "description": "Premium screen title. Brand name, not translated."
+  },
+  "premiumPitch": "Полный доступ к курсам, Circle AI без ограничений и ответы врачей в приоритете.",
+  "@premiumPitch": {
+    "description": "premiumPitch"
+  },
+  "premiumBenefitFullCourses": "Все курсы целиком",
+  "@premiumBenefitFullCourses": {
+    "description": "premiumBenefitFullCourses"
+  },
+  "premiumBenefitFullCoursesDesc": "Все уроки, тесты и сертификаты без ограничений.",
+  "@premiumBenefitFullCoursesDesc": {
+    "description": "premiumBenefitFullCoursesDesc"
+  },
+  "premiumBenefitUnlimitedAi": "Circle AI без ограничений",
+  "@premiumBenefitUnlimitedAi": {
+    "description": "premiumBenefitUnlimitedAi"
+  },
+  "premiumBenefitUnlimitedAiDesc": "Спрашивайте сколько нужно — лимит 5 вопросов в день снимается.",
+  "@premiumBenefitUnlimitedAiDesc": {
+    "description": "premiumBenefitUnlimitedAiDesc"
+  },
+  "premiumBenefitPriorityQa": "Приоритет в «Вопрос-ответ»",
+  "@premiumBenefitPriorityQa": {
+    "description": "premiumBenefitPriorityQa"
+  },
+  "premiumBenefitPriorityQaDesc": "Ваши вопросы врачи видят первыми.",
+  "@premiumBenefitPriorityQaDesc": {
+    "description": "premiumBenefitPriorityQaDesc"
+  },
+  "premiumBenefitAdvancedInsights": "Расширенная аналитика",
+  "@premiumBenefitAdvancedInsights": {
+    "description": "premiumBenefitAdvancedInsights"
+  },
+  "premiumBenefitAdvancedInsightsDesc": "Графики настроения и цикла за год и точность прогнозов.",
+  "@premiumBenefitAdvancedInsightsDesc": {
+    "description": "premiumBenefitAdvancedInsightsDesc"
+  },
+  "premiumBenefitNoAds": "Без рекламы",
+  "@premiumBenefitNoAds": {
+    "description": "premiumBenefitNoAds"
+  },
+  "premiumBenefitNoAdsDesc": "Никаких баннеров и рекомендаций, за которые заплатили.",
+  "@premiumBenefitNoAdsDesc": {
+    "description": "premiumBenefitNoAdsDesc"
+  },
+  "premiumPlanMonthly": "Месяц",
+  "@premiumPlanMonthly": {
+    "description": "premiumPlanMonthly"
+  },
+  "premiumPlanYearly": "Год",
+  "@premiumPlanYearly": {
+    "description": "premiumPlanYearly"
+  },
+  "premiumPerMonth": "≈ {price} в месяц",
+  "@premiumPerMonth": {
+    "description": "Equivalent monthly price under the yearly plan",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumSave": "Выгода {percent}%",
+  "@premiumSave": {
+    "description": "Savings badge on the yearly plan",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "premiumTrialCta": "7 дней бесплатно",
+  "@premiumTrialCta": {
+    "description": "premiumTrialCta"
+  },
+  "premiumTrialNote": "7 дней бесплатно, затем {price}. Отменить можно в любой момент.",
+  "@premiumTrialNote": {
+    "description": "Trial note under the CTA",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumSubscribe": "Оформить за {price}",
+  "@premiumSubscribe": {
+    "description": "Subscribe button",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTrialLeft": "{days, plural, one{В пробном периоде остался {days} день} few{В пробном периоде осталось {days} дня} many{В пробном периоде осталось {days} дней} other{В пробном периоде осталось {days} дня}}",
+  "@premiumTrialLeft": {
+    "description": "Trial countdown",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "premiumActiveUntil": "Премиум активен до {date}",
+  "@premiumActiveUntil": {
+    "description": "Membership card subtitle",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTrialUsed": "Пробный период уже использован.",
+  "@premiumTrialUsed": {
+    "description": "premiumTrialUsed"
+  },
+  "premiumCancelPlan": "Отменить продление",
+  "@premiumCancelPlan": {
+    "description": "premiumCancelPlan"
+  },
+  "premiumCancelTitle": "Отменить продление?",
+  "@premiumCancelTitle": {
+    "description": "premiumCancelTitle"
+  },
+  "premiumCancelBody": "Доступ сохранится до конца оплаченного периода.",
+  "@premiumCancelBody": {
+    "description": "premiumCancelBody"
+  },
+  "premiumCancelled": "Продление отменено",
+  "@premiumCancelled": {
+    "description": "premiumCancelled"
+  },
+  "premiumPayTitle": "Оплата премиума",
+  "@premiumPayTitle": {
+    "description": "premiumPayTitle"
+  },
+  "premiumThanks": "Премиум активен. Спасибо!",
+  "@premiumThanks": {
+    "description": "premiumThanks"
+  },
+  "premiumBonusMonths": "{months, plural, one{{months} бонусный месяц ждёт первой подписки} few{{months} бонусных месяца ждут первой подписки} many{{months} бонусных месяцев ждут первой подписки} other{{months} бонусных месяца ждут первой подписки}}",
+  "@premiumBonusMonths": {
+    "description": "Referral months held until she subscribes",
+    "placeholders": {
+      "months": {
+        "type": "int"
+      }
+    }
+  },
+  "premiumOpen": "Подробнее о премиуме",
+  "@premiumOpen": {
+    "description": "premiumOpen"
+  },
+  "referralTitle": "Пригласить подругу",
+  "@referralTitle": {
+    "description": "referralTitle"
+  },
+  "referralBody": "Поделитесь кодом. Когда она зарегистрируется, вы обе получите месяц премиума.",
+  "@referralBody": {
+    "description": "referralBody"
+  },
+  "referralCodeLabel": "Ваш код",
+  "@referralCodeLabel": {
+    "description": "referralCodeLabel"
+  },
+  "referralShareText": "Присоединяйся ко мне в Her Circle: цикл, курсы и Circle AI. Мой код {code} — и нам обеим дадут месяц премиума.",
+  "@referralShareText": {
+    "description": "Text shared with a friend",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "referralShare": "Поделиться кодом",
+  "@referralShare": {
+    "description": "referralShare"
+  },
+  "referralInvited": "{count, plural, =0{Пока никто не присоединился} one{{count} подруга присоединилась} few{{count} подруги присоединились} many{{count} подруг присоединились} other{{count} подруги присоединились}}",
+  "@referralInvited": {
+    "description": "How many friends used her code",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "referralEarned": "{months, plural, =0{Месяцы премиума пока не начислены} one{Начислен {months} месяц премиума} few{Начислено {months} месяца премиума} many{Начислено {months} месяцев премиума} other{Начислено {months} месяца премиума}}",
+  "@referralEarned": {
+    "description": "Months credited from referrals",
+    "placeholders": {
+      "months": {
+        "type": "int"
+      }
+    }
+  },
+  "referralDemoInvite": "Демо: подруга зарегистрировалась",
+  "@referralDemoInvite": {
+    "description": "referralDemoInvite"
+  },
+  "referralDemoNote": "Настоящее начисление придёт с сервером: код проверяется при регистрации подруги.",
+  "@referralDemoNote": {
+    "description": "referralDemoNote"
+  },
+  "referralRewarded": "{months, plural, one{Начислен {months} месяц премиума} few{Начислено {months} месяца премиума} many{Начислено {months} месяцев премиума} other{Начислено {months} месяца премиума}}",
+  "@referralRewarded": {
+    "description": "Snackbar after a referral is credited",
+    "placeholders": {
+      "months": {
+        "type": "int"
+      }
+    }
+  },
+  "referralCapReached": "Бонусных месяцев начислено максимум.",
+  "@referralCapReached": {
+    "description": "referralCapReached"
+  },
+  "profileMyLearning": "Обучение",
+  "@profileMyLearning": {
+    "description": "profileMyLearning"
+  },
+  "profileSaved": "Сохранённое",
+  "@profileSaved": {
+    "description": "profileSaved"
+  },
+  "profileCertificates": "Сертификаты",
+  "@profileCertificates": {
+    "description": "profileCertificates"
+  },
+  "profileChangeStage": "Сменить этап жизни",
+  "@profileChangeStage": {
+    "description": "profileChangeStage"
+  },
+  "profileStageSaved": "Этап обновлён",
+  "@profileStageSaved": {
+    "description": "profileStageSaved"
+  },
+  "savedEmpty": "Пока ничего не сохранено. Нажмите «Сохранить» на любом материале.",
+  "@savedEmpty": {
+    "description": "savedEmpty"
+  },
+  "certificatesEmpty": "Завершите курс, чтобы получить сертификат.",
+  "@certificatesEmpty": {
+    "description": "certificatesEmpty"
+  },
+  "certificatesCount": "{count, plural, one{{count} сертификат} few{{count} сертификата} many{{count} сертификатов} other{{count} сертификата}}",
+  "@certificatesCount": {
+    "description": "Certificates count on the profile entry",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "referralCopied": "Приглашение скопировано",
+  "@referralCopied": {
+    "description": "Snackbar after the invite text is copied"
   }
 }

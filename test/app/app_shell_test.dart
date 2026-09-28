@@ -50,6 +50,13 @@ void main() {
 
     await tester.tap(find.byIcon(Icons.person_outline_rounded));
     await tester.pumpAndSettle();
+    // Profile is long enough to scroll now.
+    await tester.scrollUntilVisible(
+      find.text('Настройки'),
+      240,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.pumpAndSettle();
     await tester.tap(find.text('Настройки'));
     await tester.pumpAndSettle();
     expect(find.byType(SettingsScreen), findsOneWidget);

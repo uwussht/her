@@ -118,7 +118,8 @@ void main() {
   testWidgets('premium users ask with priority', (tester) async {
     final container = await pumpHerCircle(
       tester,
-      prefs: {'settings.locale': 'en', 'premium.status': 'trial'},
+      prefs: {'settings.locale': 'en'},
+      premium: true,
     );
     await openQa(tester);
     // The Premium nudge is gone for subscribers.

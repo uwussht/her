@@ -4239,6 +4239,306 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Вы просили подключить маму — код ждёт здесь'**
   String get familyLinkWaiting;
+
+  /// Premium screen title. Brand name, not translated.
+  ///
+  /// In ru, this message translates to:
+  /// **'Her Circle Premium'**
+  String get premiumTitle;
+
+  /// premiumPitch
+  ///
+  /// In ru, this message translates to:
+  /// **'Полный доступ к курсам, Circle AI без ограничений и ответы врачей в приоритете.'**
+  String get premiumPitch;
+
+  /// premiumBenefitFullCourses
+  ///
+  /// In ru, this message translates to:
+  /// **'Все курсы целиком'**
+  String get premiumBenefitFullCourses;
+
+  /// premiumBenefitFullCoursesDesc
+  ///
+  /// In ru, this message translates to:
+  /// **'Все уроки, тесты и сертификаты без ограничений.'**
+  String get premiumBenefitFullCoursesDesc;
+
+  /// premiumBenefitUnlimitedAi
+  ///
+  /// In ru, this message translates to:
+  /// **'Circle AI без ограничений'**
+  String get premiumBenefitUnlimitedAi;
+
+  /// premiumBenefitUnlimitedAiDesc
+  ///
+  /// In ru, this message translates to:
+  /// **'Спрашивайте сколько нужно — лимит 5 вопросов в день снимается.'**
+  String get premiumBenefitUnlimitedAiDesc;
+
+  /// premiumBenefitPriorityQa
+  ///
+  /// In ru, this message translates to:
+  /// **'Приоритет в «Вопрос-ответ»'**
+  String get premiumBenefitPriorityQa;
+
+  /// premiumBenefitPriorityQaDesc
+  ///
+  /// In ru, this message translates to:
+  /// **'Ваши вопросы врачи видят первыми.'**
+  String get premiumBenefitPriorityQaDesc;
+
+  /// premiumBenefitAdvancedInsights
+  ///
+  /// In ru, this message translates to:
+  /// **'Расширенная аналитика'**
+  String get premiumBenefitAdvancedInsights;
+
+  /// premiumBenefitAdvancedInsightsDesc
+  ///
+  /// In ru, this message translates to:
+  /// **'Графики настроения и цикла за год и точность прогнозов.'**
+  String get premiumBenefitAdvancedInsightsDesc;
+
+  /// premiumBenefitNoAds
+  ///
+  /// In ru, this message translates to:
+  /// **'Без рекламы'**
+  String get premiumBenefitNoAds;
+
+  /// premiumBenefitNoAdsDesc
+  ///
+  /// In ru, this message translates to:
+  /// **'Никаких баннеров и рекомендаций, за которые заплатили.'**
+  String get premiumBenefitNoAdsDesc;
+
+  /// premiumPlanMonthly
+  ///
+  /// In ru, this message translates to:
+  /// **'Месяц'**
+  String get premiumPlanMonthly;
+
+  /// premiumPlanYearly
+  ///
+  /// In ru, this message translates to:
+  /// **'Год'**
+  String get premiumPlanYearly;
+
+  /// Equivalent monthly price under the yearly plan
+  ///
+  /// In ru, this message translates to:
+  /// **'≈ {price} в месяц'**
+  String premiumPerMonth(String price);
+
+  /// Savings badge on the yearly plan
+  ///
+  /// In ru, this message translates to:
+  /// **'Выгода {percent}%'**
+  String premiumSave(int percent);
+
+  /// premiumTrialCta
+  ///
+  /// In ru, this message translates to:
+  /// **'7 дней бесплатно'**
+  String get premiumTrialCta;
+
+  /// Trial note under the CTA
+  ///
+  /// In ru, this message translates to:
+  /// **'7 дней бесплатно, затем {price}. Отменить можно в любой момент.'**
+  String premiumTrialNote(String price);
+
+  /// Subscribe button
+  ///
+  /// In ru, this message translates to:
+  /// **'Оформить за {price}'**
+  String premiumSubscribe(String price);
+
+  /// Trial countdown
+  ///
+  /// In ru, this message translates to:
+  /// **'{days, plural, one{В пробном периоде остался {days} день} few{В пробном периоде осталось {days} дня} many{В пробном периоде осталось {days} дней} other{В пробном периоде осталось {days} дня}}'**
+  String premiumTrialLeft(int days);
+
+  /// Membership card subtitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Премиум активен до {date}'**
+  String premiumActiveUntil(String date);
+
+  /// premiumTrialUsed
+  ///
+  /// In ru, this message translates to:
+  /// **'Пробный период уже использован.'**
+  String get premiumTrialUsed;
+
+  /// premiumCancelPlan
+  ///
+  /// In ru, this message translates to:
+  /// **'Отменить продление'**
+  String get premiumCancelPlan;
+
+  /// premiumCancelTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Отменить продление?'**
+  String get premiumCancelTitle;
+
+  /// premiumCancelBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Доступ сохранится до конца оплаченного периода.'**
+  String get premiumCancelBody;
+
+  /// premiumCancelled
+  ///
+  /// In ru, this message translates to:
+  /// **'Продление отменено'**
+  String get premiumCancelled;
+
+  /// premiumPayTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Оплата премиума'**
+  String get premiumPayTitle;
+
+  /// premiumThanks
+  ///
+  /// In ru, this message translates to:
+  /// **'Премиум активен. Спасибо!'**
+  String get premiumThanks;
+
+  /// Referral months held until she subscribes
+  ///
+  /// In ru, this message translates to:
+  /// **'{months, plural, one{{months} бонусный месяц ждёт первой подписки} few{{months} бонусных месяца ждут первой подписки} many{{months} бонусных месяцев ждут первой подписки} other{{months} бонусных месяца ждут первой подписки}}'**
+  String premiumBonusMonths(int months);
+
+  /// premiumOpen
+  ///
+  /// In ru, this message translates to:
+  /// **'Подробнее о премиуме'**
+  String get premiumOpen;
+
+  /// referralTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Пригласить подругу'**
+  String get referralTitle;
+
+  /// referralBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Поделитесь кодом. Когда она зарегистрируется, вы обе получите месяц премиума.'**
+  String get referralBody;
+
+  /// referralCodeLabel
+  ///
+  /// In ru, this message translates to:
+  /// **'Ваш код'**
+  String get referralCodeLabel;
+
+  /// Text shared with a friend
+  ///
+  /// In ru, this message translates to:
+  /// **'Присоединяйся ко мне в Her Circle: цикл, курсы и Circle AI. Мой код {code} — и нам обеим дадут месяц премиума.'**
+  String referralShareText(String code);
+
+  /// referralShare
+  ///
+  /// In ru, this message translates to:
+  /// **'Поделиться кодом'**
+  String get referralShare;
+
+  /// How many friends used her code
+  ///
+  /// In ru, this message translates to:
+  /// **'{count, plural, =0{Пока никто не присоединился} one{{count} подруга присоединилась} few{{count} подруги присоединились} many{{count} подруг присоединились} other{{count} подруги присоединились}}'**
+  String referralInvited(int count);
+
+  /// Months credited from referrals
+  ///
+  /// In ru, this message translates to:
+  /// **'{months, plural, =0{Месяцы премиума пока не начислены} one{Начислен {months} месяц премиума} few{Начислено {months} месяца премиума} many{Начислено {months} месяцев премиума} other{Начислено {months} месяца премиума}}'**
+  String referralEarned(int months);
+
+  /// referralDemoInvite
+  ///
+  /// In ru, this message translates to:
+  /// **'Демо: подруга зарегистрировалась'**
+  String get referralDemoInvite;
+
+  /// referralDemoNote
+  ///
+  /// In ru, this message translates to:
+  /// **'Настоящее начисление придёт с сервером: код проверяется при регистрации подруги.'**
+  String get referralDemoNote;
+
+  /// Snackbar after a referral is credited
+  ///
+  /// In ru, this message translates to:
+  /// **'{months, plural, one{Начислен {months} месяц премиума} few{Начислено {months} месяца премиума} many{Начислено {months} месяцев премиума} other{Начислено {months} месяца премиума}}'**
+  String referralRewarded(int months);
+
+  /// referralCapReached
+  ///
+  /// In ru, this message translates to:
+  /// **'Бонусных месяцев начислено максимум.'**
+  String get referralCapReached;
+
+  /// profileMyLearning
+  ///
+  /// In ru, this message translates to:
+  /// **'Обучение'**
+  String get profileMyLearning;
+
+  /// profileSaved
+  ///
+  /// In ru, this message translates to:
+  /// **'Сохранённое'**
+  String get profileSaved;
+
+  /// profileCertificates
+  ///
+  /// In ru, this message translates to:
+  /// **'Сертификаты'**
+  String get profileCertificates;
+
+  /// profileChangeStage
+  ///
+  /// In ru, this message translates to:
+  /// **'Сменить этап жизни'**
+  String get profileChangeStage;
+
+  /// profileStageSaved
+  ///
+  /// In ru, this message translates to:
+  /// **'Этап обновлён'**
+  String get profileStageSaved;
+
+  /// savedEmpty
+  ///
+  /// In ru, this message translates to:
+  /// **'Пока ничего не сохранено. Нажмите «Сохранить» на любом материале.'**
+  String get savedEmpty;
+
+  /// certificatesEmpty
+  ///
+  /// In ru, this message translates to:
+  /// **'Завершите курс, чтобы получить сертификат.'**
+  String get certificatesEmpty;
+
+  /// Certificates count on the profile entry
+  ///
+  /// In ru, this message translates to:
+  /// **'{count, plural, one{{count} сертификат} few{{count} сертификата} many{{count} сертификатов} other{{count} сертификата}}'**
+  String certificatesCount(int count);
+
+  /// Snackbar after the invite text is copied
+  ///
+  /// In ru, this message translates to:
+  /// **'Приглашение скопировано'**
+  String get referralCopied;
 }
 
 class _AppLocalizationsDelegate
