@@ -2100,4 +2100,253 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiQuestionIronFoods => 'Which foods have the most iron?';
+
+  @override
+  String get circleTitle => 'My circle';
+
+  @override
+  String get circleSubtitle => 'Partner and Moms & Daughters';
+
+  @override
+  String get partnerTitle => 'Partner';
+
+  @override
+  String get partnerIntroBody =>
+      'Link your partner so he sees exactly what you choose to share, and knows how to support you today.';
+
+  @override
+  String get familyTitle => 'Moms & Daughters';
+
+  @override
+  String get familyIntroBody =>
+      'A mother and daughter link up and get age-appropriate lessons together. The daughter\'s tracker stays private unless she shares it.';
+
+  @override
+  String get circleCreateInvite => 'Create an invite code';
+
+  @override
+  String get circleInviteTitle => 'Show this code';
+
+  @override
+  String get circleInviteBody =>
+      'Read the code out or let them scan the QR. They enter it in Her Circle on their own phone.';
+
+  @override
+  String get circleCopyCode => 'Copy the code';
+
+  @override
+  String get circleCodeCopied => 'Code copied';
+
+  @override
+  String get circleQrHint => 'The QR can be scanned with a phone camera.';
+
+  @override
+  String get circleWaitingTitle => 'Waiting for them to join';
+
+  @override
+  String get circleWaitingBody => 'The code works until you unlink.';
+
+  @override
+  String get circleDemoAccept => 'Demo: mark as connected';
+
+  @override
+  String get circleDemoNote =>
+      'Real pairing arrives with the backend. Until then this is a demo switch.';
+
+  @override
+  String get circleJoinCta => 'I have a code';
+
+  @override
+  String get circleJoinTitle => 'Enter a code';
+
+  @override
+  String get circleJoinBody => 'Enter the six-character code you were given.';
+
+  @override
+  String get circleJoinHint => 'For example ABC-D2F';
+
+  @override
+  String get circleJoinAction => 'Connect';
+
+  @override
+  String get circleJoinInvalid => 'A code is six characters long';
+
+  @override
+  String get circleJoinUnknown => 'No such code, or it has already been used';
+
+  @override
+  String get circleJoinOwnCode => 'That is your own code';
+
+  @override
+  String get circleJoinAlready => 'You already have a link like this';
+
+  @override
+  String get circleJoinNetwork => 'No connection. Please try again.';
+
+  @override
+  String get circleJoined => 'You are connected';
+
+  @override
+  String get circleSharingTitlePartner => 'What your partner sees';
+
+  @override
+  String get circleSharingTitleFamily => 'What you share';
+
+  @override
+  String get circleSharingBody =>
+      'Nothing is shared until you turn a switch on, and you can turn any of them off at any time.';
+
+  @override
+  String get circleSharingOff => 'You are not sharing anything right now';
+
+  @override
+  String get circleStopSharing => 'Turn everything off';
+
+  @override
+  String get scopeLifeStage => 'Life stage';
+
+  @override
+  String get scopeCyclePhase => 'Cycle day and phase';
+
+  @override
+  String get scopeMood => 'Today\'s mood';
+
+  @override
+  String get scopePregnancy => 'Pregnancy week and due date';
+
+  @override
+  String get scopeSymptoms => 'Today\'s symptoms';
+
+  @override
+  String get circlePreviewCta => 'See what your partner sees';
+
+  @override
+  String get circlePreviewTitle => 'Through your partner\'s eyes';
+
+  @override
+  String get circlePreviewEmpty =>
+      'For now they only see the tip of the day — nothing about you.';
+
+  @override
+  String get circleSupportTitle => 'How to support her today';
+
+  @override
+  String get circlePeerTitle => 'Her day';
+
+  @override
+  String get circlePeerDemoNote =>
+      'This is sample data. The real thing arrives with the backend.';
+
+  @override
+  String get circlePeerNothing =>
+      'She is not sharing anything yet. That is her decision.';
+
+  @override
+  String get circleUnlink => 'Unlink';
+
+  @override
+  String get circleUnlinkTitle => 'Unlink?';
+
+  @override
+  String get circleUnlinkBodySharer =>
+      'They will stop seeing your data and the code will stop working.';
+
+  @override
+  String get circleUnlinkBodyViewer => 'You will no longer see her data.';
+
+  @override
+  String get circleUnlinked => 'Unlinked';
+
+  @override
+  String get circlePeerNameLabel => 'Their name';
+
+  @override
+  String get circlePeerNameHint => 'Optional';
+
+  @override
+  String circleLinkedOn(String date) {
+    return 'Connected on $date';
+  }
+
+  @override
+  String get familyRoleQuestion => 'Which are you?';
+
+  @override
+  String get familyRoleMother => 'I am the mother';
+
+  @override
+  String get familyRoleDaughter => 'I am the daughter';
+
+  @override
+  String get familyInviteMother => 'Invite your daughter';
+
+  @override
+  String get familyInviteDaughter => 'Invite your mother';
+
+  @override
+  String get familyPrivacyNote =>
+      'The daughter\'s tracker stays private. Her mother sees only what the daughter turns on.';
+
+  @override
+  String get familyLessonsTitle => 'Lessons together';
+
+  @override
+  String get familyLessonsBody =>
+      'Material that suits you both. The 18+ section never appears here.';
+
+  @override
+  String get supportTipPeriodComfort =>
+      'Small things help today: a heat pad, a warm drink, and taking some of the chores off her.';
+
+  @override
+  String get supportTipPeriodPatience =>
+      'Keep plans flexible and don\'t push for a busy day.';
+
+  @override
+  String get supportTipFollicularPlans =>
+      'A good time for plans together: energy is usually higher.';
+
+  @override
+  String get supportTipFertileHonesty =>
+      'Talk openly about intimacy and contraception — no hints needed.';
+
+  @override
+  String get supportTipLutealCalm =>
+      'Fewer arguments over small things, more quiet evenings.';
+
+  @override
+  String get supportTipPregnancyChores =>
+      'Take on the heavy things: bags, cleaning, night duty with an older child.';
+
+  @override
+  String get supportTipPregnancyAppointments =>
+      'Ask when the next appointment is and offer to come along.';
+
+  @override
+  String get supportTipPostpartumNight =>
+      'Let her sleep: take one night feed or one morning yourself.';
+
+  @override
+  String get supportTipPostpartumAsk =>
+      'Ask \"what can I do?\" rather than \"how are you?\" — it is easier to answer.';
+
+  @override
+  String get supportTipMenopauseCool =>
+      'Keep the room cooler, and don\'t joke about the heat.';
+
+  @override
+  String get supportTipLowMoodListen =>
+      'Today, listen rather than advise. Ask what would help.';
+
+  @override
+  String get supportTipGreatMoodCelebrate =>
+      'She is having a good day — say so out loud.';
+
+  @override
+  String get supportTipGeneral =>
+      'Ask how her day went, and actually listen to the answer.';
+
+  @override
+  String get familyLinkWaiting =>
+      'You asked to invite your mom — the code is here';
 }

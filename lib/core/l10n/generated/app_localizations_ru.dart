@@ -2121,4 +2121,251 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get aiQuestionIronFoods => 'В каких продуктах больше железа?';
+
+  @override
+  String get circleTitle => 'Мой круг';
+
+  @override
+  String get circleSubtitle => 'Партнёр и режим «Мамы и дочки»';
+
+  @override
+  String get partnerTitle => 'Партнёр';
+
+  @override
+  String get partnerIntroBody =>
+      'Подключите партнёра, чтобы он видел ровно то, чем вы решили поделиться, и знал, как поддержать вас сегодня.';
+
+  @override
+  String get familyTitle => 'Мамы и дочки';
+
+  @override
+  String get familyIntroBody =>
+      'Мама и дочь подключаются друг к другу и вместе получают уроки, подходящие по возрасту. Трекер дочери остаётся приватным, пока она сама не поделится.';
+
+  @override
+  String get circleCreateInvite => 'Создать код приглашения';
+
+  @override
+  String get circleInviteTitle => 'Покажите этот код';
+
+  @override
+  String get circleInviteBody =>
+      'Продиктуйте код или дайте отсканировать QR. Он вводит его в Her Circle на своём телефоне.';
+
+  @override
+  String get circleCopyCode => 'Скопировать код';
+
+  @override
+  String get circleCodeCopied => 'Код скопирован';
+
+  @override
+  String get circleQrHint => 'QR можно отсканировать камерой телефона.';
+
+  @override
+  String get circleWaitingTitle => 'Ждём подключения';
+
+  @override
+  String get circleWaitingBody => 'Код работает, пока вы не отключите связь.';
+
+  @override
+  String get circleDemoAccept => 'Демо: отметить как подключённого';
+
+  @override
+  String get circleDemoNote =>
+      'Настоящее подключение появится вместе с сервером. Пока это демо-переключатель.';
+
+  @override
+  String get circleJoinCta => 'У меня есть код';
+
+  @override
+  String get circleJoinTitle => 'Ввести код';
+
+  @override
+  String get circleJoinBody => 'Введите код из 6 символов, который вам дали.';
+
+  @override
+  String get circleJoinHint => 'Например ABC-D2F';
+
+  @override
+  String get circleJoinAction => 'Подключиться';
+
+  @override
+  String get circleJoinInvalid => 'Код состоит из 6 символов';
+
+  @override
+  String get circleJoinUnknown => 'Такого кода нет или он уже использован';
+
+  @override
+  String get circleJoinOwnCode => 'Это ваш собственный код';
+
+  @override
+  String get circleJoinAlready => 'Такая связь у вас уже есть';
+
+  @override
+  String get circleJoinNetwork => 'Нет соединения. Попробуйте ещё раз.';
+
+  @override
+  String get circleJoined => 'Связь установлена';
+
+  @override
+  String get circleSharingTitlePartner => 'Что видит партнёр';
+
+  @override
+  String get circleSharingTitleFamily => 'Чем вы делитесь';
+
+  @override
+  String get circleSharingBody =>
+      'Ничего не передаётся, пока вы не включите переключатель. Выключить можно в любой момент.';
+
+  @override
+  String get circleSharingOff => 'Сейчас вы не делитесь ничем';
+
+  @override
+  String get circleStopSharing => 'Выключить всё';
+
+  @override
+  String get scopeLifeStage => 'Этап жизни';
+
+  @override
+  String get scopeCyclePhase => 'День и фаза цикла';
+
+  @override
+  String get scopeMood => 'Настроение за сегодня';
+
+  @override
+  String get scopePregnancy => 'Неделя беременности и срок';
+
+  @override
+  String get scopeSymptoms => 'Симптомы за сегодня';
+
+  @override
+  String get circlePreviewCta => 'Посмотреть, что видит партнёр';
+
+  @override
+  String get circlePreviewTitle => 'Глазами партнёра';
+
+  @override
+  String get circlePreviewEmpty =>
+      'Пока он видит только совет на день — ничего о вас.';
+
+  @override
+  String get circleSupportTitle => 'Как поддержать её сегодня';
+
+  @override
+  String get circlePeerTitle => 'Её день';
+
+  @override
+  String get circlePeerDemoNote =>
+      'Это демонстрационные данные. Реальные придут с сервером.';
+
+  @override
+  String get circlePeerNothing => 'Она пока ничем не делится. Это её решение.';
+
+  @override
+  String get circleUnlink => 'Отключить';
+
+  @override
+  String get circleUnlinkTitle => 'Отключить связь?';
+
+  @override
+  String get circleUnlinkBodySharer =>
+      'Партнёр перестанет видеть ваши данные, а код больше не будет работать.';
+
+  @override
+  String get circleUnlinkBodyViewer => 'Вы больше не будете видеть её данные.';
+
+  @override
+  String get circleUnlinked => 'Связь отключена';
+
+  @override
+  String get circlePeerNameLabel => 'Как его зовут';
+
+  @override
+  String get circlePeerNameHint => 'Необязательно';
+
+  @override
+  String circleLinkedOn(String date) {
+    return 'Подключены $date';
+  }
+
+  @override
+  String get familyRoleQuestion => 'Кто вы?';
+
+  @override
+  String get familyRoleMother => 'Я мама';
+
+  @override
+  String get familyRoleDaughter => 'Я дочь';
+
+  @override
+  String get familyInviteMother => 'Пригласить дочь';
+
+  @override
+  String get familyInviteDaughter => 'Пригласить маму';
+
+  @override
+  String get familyPrivacyNote =>
+      'Трекер дочери остаётся приватным. Мама видит только то, что дочь сама включит.';
+
+  @override
+  String get familyLessonsTitle => 'Уроки вместе';
+
+  @override
+  String get familyLessonsBody =>
+      'Материалы, подходящие по возрасту вам обеим. Раздел 18+ сюда не попадает.';
+
+  @override
+  String get supportTipPeriodComfort =>
+      'Сегодня выручат мелочи: грелка, тёплое питьё и взятая на себя часть домашних дел.';
+
+  @override
+  String get supportTipPeriodPatience =>
+      'Планы лучше держать гибкими и не настаивать на активном дне.';
+
+  @override
+  String get supportTipFollicularPlans =>
+      'Хорошее время для планов вдвоём: сил обычно больше.';
+
+  @override
+  String get supportTipFertileHonesty =>
+      'Поговорите открыто о близости и контрацепции — без намёков.';
+
+  @override
+  String get supportTipLutealCalm =>
+      'Меньше споров о мелочах, больше спокойных вечеров.';
+
+  @override
+  String get supportTipPregnancyChores =>
+      'Возьмите на себя тяжёлое: сумки, уборку, ночные подъёмы к ребёнку постарше.';
+
+  @override
+  String get supportTipPregnancyAppointments =>
+      'Спросите, когда следующий приём, и предложите пойти вместе.';
+
+  @override
+  String get supportTipPostpartumNight =>
+      'Дайте ей выспаться: возьмите одно ночное кормление или утро на себя.';
+
+  @override
+  String get supportTipPostpartumAsk =>
+      'Спрашивайте «что сделать?», а не «как дела?» — так проще ответить.';
+
+  @override
+  String get supportTipMenopauseCool =>
+      'Держите дома прохладнее и не шутите про жару.';
+
+  @override
+  String get supportTipLowMoodListen =>
+      'Сегодня лучше слушать, чем советовать. Спросите, чем помочь.';
+
+  @override
+  String get supportTipGreatMoodCelebrate =>
+      'У неё хороший день — скажите об этом вслух.';
+
+  @override
+  String get supportTipGeneral =>
+      'Спросите, как прошёл день, и правда выслушайте ответ.';
+
+  @override
+  String get familyLinkWaiting => 'Вы просили подключить маму — код ждёт здесь';
 }

@@ -2837,5 +2837,306 @@
   "aiQuestionIronFoods": "В каких продуктах больше железа?",
   "@aiQuestionIronFoods": {
     "description": "aiQuestionIronFoods"
+  },
+  "circleTitle": "Мой круг",
+  "@circleTitle": {
+    "description": "Section on the profile screen for partner and family links"
+  },
+  "circleSubtitle": "Партнёр и режим «Мамы и дочки»",
+  "@circleSubtitle": {
+    "description": "circleSubtitle"
+  },
+  "partnerTitle": "Партнёр",
+  "@partnerTitle": {
+    "description": "partnerTitle"
+  },
+  "partnerIntroBody": "Подключите партнёра, чтобы он видел ровно то, чем вы решили поделиться, и знал, как поддержать вас сегодня.",
+  "@partnerIntroBody": {
+    "description": "partnerIntroBody"
+  },
+  "familyTitle": "Мамы и дочки",
+  "@familyTitle": {
+    "description": "familyTitle"
+  },
+  "familyIntroBody": "Мама и дочь подключаются друг к другу и вместе получают уроки, подходящие по возрасту. Трекер дочери остаётся приватным, пока она сама не поделится.",
+  "@familyIntroBody": {
+    "description": "familyIntroBody"
+  },
+  "circleCreateInvite": "Создать код приглашения",
+  "@circleCreateInvite": {
+    "description": "circleCreateInvite"
+  },
+  "circleInviteTitle": "Покажите этот код",
+  "@circleInviteTitle": {
+    "description": "circleInviteTitle"
+  },
+  "circleInviteBody": "Продиктуйте код или дайте отсканировать QR. Он вводит его в Her Circle на своём телефоне.",
+  "@circleInviteBody": {
+    "description": "circleInviteBody"
+  },
+  "circleCopyCode": "Скопировать код",
+  "@circleCopyCode": {
+    "description": "circleCopyCode"
+  },
+  "circleCodeCopied": "Код скопирован",
+  "@circleCodeCopied": {
+    "description": "circleCodeCopied"
+  },
+  "circleQrHint": "QR можно отсканировать камерой телефона.",
+  "@circleQrHint": {
+    "description": "circleQrHint"
+  },
+  "circleWaitingTitle": "Ждём подключения",
+  "@circleWaitingTitle": {
+    "description": "circleWaitingTitle"
+  },
+  "circleWaitingBody": "Код работает, пока вы не отключите связь.",
+  "@circleWaitingBody": {
+    "description": "circleWaitingBody"
+  },
+  "circleDemoAccept": "Демо: отметить как подключённого",
+  "@circleDemoAccept": {
+    "description": "circleDemoAccept"
+  },
+  "circleDemoNote": "Настоящее подключение появится вместе с сервером. Пока это демо-переключатель.",
+  "@circleDemoNote": {
+    "description": "circleDemoNote"
+  },
+  "circleJoinCta": "У меня есть код",
+  "@circleJoinCta": {
+    "description": "circleJoinCta"
+  },
+  "circleJoinTitle": "Ввести код",
+  "@circleJoinTitle": {
+    "description": "circleJoinTitle"
+  },
+  "circleJoinBody": "Введите код из 6 символов, который вам дали.",
+  "@circleJoinBody": {
+    "description": "circleJoinBody"
+  },
+  "circleJoinHint": "Например ABC-D2F",
+  "@circleJoinHint": {
+    "description": "circleJoinHint"
+  },
+  "circleJoinAction": "Подключиться",
+  "@circleJoinAction": {
+    "description": "circleJoinAction"
+  },
+  "circleJoinInvalid": "Код состоит из 6 символов",
+  "@circleJoinInvalid": {
+    "description": "circleJoinInvalid"
+  },
+  "circleJoinUnknown": "Такого кода нет или он уже использован",
+  "@circleJoinUnknown": {
+    "description": "circleJoinUnknown"
+  },
+  "circleJoinOwnCode": "Это ваш собственный код",
+  "@circleJoinOwnCode": {
+    "description": "circleJoinOwnCode"
+  },
+  "circleJoinAlready": "Такая связь у вас уже есть",
+  "@circleJoinAlready": {
+    "description": "circleJoinAlready"
+  },
+  "circleJoinNetwork": "Нет соединения. Попробуйте ещё раз.",
+  "@circleJoinNetwork": {
+    "description": "circleJoinNetwork"
+  },
+  "circleJoined": "Связь установлена",
+  "@circleJoined": {
+    "description": "circleJoined"
+  },
+  "circleSharingTitlePartner": "Что видит партнёр",
+  "@circleSharingTitlePartner": {
+    "description": "circleSharingTitlePartner"
+  },
+  "circleSharingTitleFamily": "Чем вы делитесь",
+  "@circleSharingTitleFamily": {
+    "description": "circleSharingTitleFamily"
+  },
+  "circleSharingBody": "Ничего не передаётся, пока вы не включите переключатель. Выключить можно в любой момент.",
+  "@circleSharingBody": {
+    "description": "circleSharingBody"
+  },
+  "circleSharingOff": "Сейчас вы не делитесь ничем",
+  "@circleSharingOff": {
+    "description": "circleSharingOff"
+  },
+  "circleStopSharing": "Выключить всё",
+  "@circleStopSharing": {
+    "description": "circleStopSharing"
+  },
+  "scopeLifeStage": "Этап жизни",
+  "@scopeLifeStage": {
+    "description": "scopeLifeStage"
+  },
+  "scopeCyclePhase": "День и фаза цикла",
+  "@scopeCyclePhase": {
+    "description": "scopeCyclePhase"
+  },
+  "scopeMood": "Настроение за сегодня",
+  "@scopeMood": {
+    "description": "scopeMood"
+  },
+  "scopePregnancy": "Неделя беременности и срок",
+  "@scopePregnancy": {
+    "description": "scopePregnancy"
+  },
+  "scopeSymptoms": "Симптомы за сегодня",
+  "@scopeSymptoms": {
+    "description": "scopeSymptoms"
+  },
+  "circlePreviewCta": "Посмотреть, что видит партнёр",
+  "@circlePreviewCta": {
+    "description": "circlePreviewCta"
+  },
+  "circlePreviewTitle": "Глазами партнёра",
+  "@circlePreviewTitle": {
+    "description": "circlePreviewTitle"
+  },
+  "circlePreviewEmpty": "Пока он видит только совет на день — ничего о вас.",
+  "@circlePreviewEmpty": {
+    "description": "circlePreviewEmpty"
+  },
+  "circleSupportTitle": "Как поддержать её сегодня",
+  "@circleSupportTitle": {
+    "description": "circleSupportTitle"
+  },
+  "circlePeerTitle": "Её день",
+  "@circlePeerTitle": {
+    "description": "circlePeerTitle"
+  },
+  "circlePeerDemoNote": "Это демонстрационные данные. Реальные придут с сервером.",
+  "@circlePeerDemoNote": {
+    "description": "circlePeerDemoNote"
+  },
+  "circlePeerNothing": "Она пока ничем не делится. Это её решение.",
+  "@circlePeerNothing": {
+    "description": "circlePeerNothing"
+  },
+  "circleUnlink": "Отключить",
+  "@circleUnlink": {
+    "description": "circleUnlink"
+  },
+  "circleUnlinkTitle": "Отключить связь?",
+  "@circleUnlinkTitle": {
+    "description": "circleUnlinkTitle"
+  },
+  "circleUnlinkBodySharer": "Партнёр перестанет видеть ваши данные, а код больше не будет работать.",
+  "@circleUnlinkBodySharer": {
+    "description": "circleUnlinkBodySharer"
+  },
+  "circleUnlinkBodyViewer": "Вы больше не будете видеть её данные.",
+  "@circleUnlinkBodyViewer": {
+    "description": "circleUnlinkBodyViewer"
+  },
+  "circleUnlinked": "Связь отключена",
+  "@circleUnlinked": {
+    "description": "circleUnlinked"
+  },
+  "circlePeerNameLabel": "Как его зовут",
+  "@circlePeerNameLabel": {
+    "description": "circlePeerNameLabel"
+  },
+  "circlePeerNameHint": "Необязательно",
+  "@circlePeerNameHint": {
+    "description": "circlePeerNameHint"
+  },
+  "circleLinkedOn": "Подключены {date}",
+  "@circleLinkedOn": {
+    "description": "Date the link became active",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "familyRoleQuestion": "Кто вы?",
+  "@familyRoleQuestion": {
+    "description": "familyRoleQuestion"
+  },
+  "familyRoleMother": "Я мама",
+  "@familyRoleMother": {
+    "description": "familyRoleMother"
+  },
+  "familyRoleDaughter": "Я дочь",
+  "@familyRoleDaughter": {
+    "description": "familyRoleDaughter"
+  },
+  "familyInviteMother": "Пригласить дочь",
+  "@familyInviteMother": {
+    "description": "familyInviteMother"
+  },
+  "familyInviteDaughter": "Пригласить маму",
+  "@familyInviteDaughter": {
+    "description": "familyInviteDaughter"
+  },
+  "familyPrivacyNote": "Трекер дочери остаётся приватным. Мама видит только то, что дочь сама включит.",
+  "@familyPrivacyNote": {
+    "description": "familyPrivacyNote"
+  },
+  "familyLessonsTitle": "Уроки вместе",
+  "@familyLessonsTitle": {
+    "description": "familyLessonsTitle"
+  },
+  "familyLessonsBody": "Материалы, подходящие по возрасту вам обеим. Раздел 18+ сюда не попадает.",
+  "@familyLessonsBody": {
+    "description": "familyLessonsBody"
+  },
+  "supportTipPeriodComfort": "Сегодня выручат мелочи: грелка, тёплое питьё и взятая на себя часть домашних дел.",
+  "@supportTipPeriodComfort": {
+    "description": "supportTipPeriodComfort"
+  },
+  "supportTipPeriodPatience": "Планы лучше держать гибкими и не настаивать на активном дне.",
+  "@supportTipPeriodPatience": {
+    "description": "supportTipPeriodPatience"
+  },
+  "supportTipFollicularPlans": "Хорошее время для планов вдвоём: сил обычно больше.",
+  "@supportTipFollicularPlans": {
+    "description": "supportTipFollicularPlans"
+  },
+  "supportTipFertileHonesty": "Поговорите открыто о близости и контрацепции — без намёков.",
+  "@supportTipFertileHonesty": {
+    "description": "supportTipFertileHonesty"
+  },
+  "supportTipLutealCalm": "Меньше споров о мелочах, больше спокойных вечеров.",
+  "@supportTipLutealCalm": {
+    "description": "supportTipLutealCalm"
+  },
+  "supportTipPregnancyChores": "Возьмите на себя тяжёлое: сумки, уборку, ночные подъёмы к ребёнку постарше.",
+  "@supportTipPregnancyChores": {
+    "description": "supportTipPregnancyChores"
+  },
+  "supportTipPregnancyAppointments": "Спросите, когда следующий приём, и предложите пойти вместе.",
+  "@supportTipPregnancyAppointments": {
+    "description": "supportTipPregnancyAppointments"
+  },
+  "supportTipPostpartumNight": "Дайте ей выспаться: возьмите одно ночное кормление или утро на себя.",
+  "@supportTipPostpartumNight": {
+    "description": "supportTipPostpartumNight"
+  },
+  "supportTipPostpartumAsk": "Спрашивайте «что сделать?», а не «как дела?» — так проще ответить.",
+  "@supportTipPostpartumAsk": {
+    "description": "supportTipPostpartumAsk"
+  },
+  "supportTipMenopauseCool": "Держите дома прохладнее и не шутите про жару.",
+  "@supportTipMenopauseCool": {
+    "description": "supportTipMenopauseCool"
+  },
+  "supportTipLowMoodListen": "Сегодня лучше слушать, чем советовать. Спросите, чем помочь.",
+  "@supportTipLowMoodListen": {
+    "description": "supportTipLowMoodListen"
+  },
+  "supportTipGreatMoodCelebrate": "У неё хороший день — скажите об этом вслух.",
+  "@supportTipGreatMoodCelebrate": {
+    "description": "supportTipGreatMoodCelebrate"
+  },
+  "supportTipGeneral": "Спросите, как прошёл день, и правда выслушайте ответ.",
+  "@supportTipGeneral": {
+    "description": "supportTipGeneral"
+  },
+  "familyLinkWaiting": "Вы просили подключить маму — код ждёт здесь",
+  "@familyLinkWaiting": {
+    "description": "Reminder on the profile entry when she accepted the offer but has no link yet"
   }
 }

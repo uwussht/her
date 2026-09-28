@@ -8,7 +8,10 @@ import '../../../core/utils/context_extensions.dart';
 import '../../../core/widgets/widgets.dart';
 import '../../auth/domain/app_user.dart';
 import '../../auth/domain/kz_phone.dart';
+import '../../../core/services/storage/preferences_service.dart';
 import '../../auth/presentation/auth_providers.dart';
+import '../../circle/domain/circle_link.dart';
+import '../../circle/presentation/circle_providers.dart';
 import 'personalization_labels.dart';
 import 'user_profile_controller.dart';
 
@@ -51,6 +54,10 @@ class ProfileScreen extends ConsumerWidget {
     final user = ref.watch(currentUserProvider);
     final profile = ref.watch(userProfileControllerProvider);
     final identity = _identity(user);
+    // She asked for Moms & Daughters during onboarding but has not linked yet.
+    final familyPending =
+        ref.watch(preferencesServiceProvider).familyLinkRequested &&
+        ref.watch(linkOfKindProvider(LinkKind.family)) == null;
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.navProfile)),
@@ -103,6 +110,33 @@ class ProfileScreen extends ConsumerWidget {
                       ],
                     ],
                   ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: AppSpacing.md),
+          SectionHeader(
+            title: l10n.circleTitle,
+            padding: const EdgeInsets.only(bottom: AppSpacing.xs),
+          ),
+          AppCard(
+            padding: EdgeInsets.zero,
+            child: Column(
+              children: [
+                ListTile(
+                  leading: const Icon(Icons.favorite_outline_rounded),
+                  title: Text(l10n.partnerTitle),
+                  subtitle: Text(l10n.circleSubtitle),
+                  trailing: const Icon(Icons.chevron_right_rounded),
+                  onTap: () => context.push(AppRoutes.circlePartner),
+                ),
+                const Divider(indent: AppSpacing.md, endIndent: AppSpacing.md),
+                ListTile(
+                  leading: const Icon(Icons.family_restroom_outlined),
+                  title: Text(l10n.familyTitle),
+                  subtitle: familyPending ? Text(l10n.familyLinkWaiting) : null,
+                  trailing: const Icon(Icons.chevron_right_rounded),
+                  onTap: () => context.push(AppRoutes.circleFamily),
                 ),
               ],
             ),
