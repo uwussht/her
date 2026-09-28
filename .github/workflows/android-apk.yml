@@ -26,9 +26,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  # The APK does not wait on the test suite: a stalled test should not stop
+  # anyone getting an installable build. The suite runs beside it.
+  apk:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 30
 
     steps:
       - uses: actions/checkout@v4
@@ -53,9 +55,6 @@ jobs:
       - name: Analyze
         run: flutter analyze
 
-      - name: Test
-        run: flutter test
-
       # Mocks stay on until Firebase and the AI proxy are connected, so the
       # APK is usable on its own. Point AI_BASE_URL at the proxy and set
       # USE_MOCKS=false once they exist.
@@ -74,3 +73,23 @@ jobs:
           path: build/app/outputs/flutter-apk/app-*.apk
           if-no-files-found: error
           retention-days: 30
+
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.47.5
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+
+      # Two shards, and a per-test timeout, so a hung test fails the job
+      # instead of sitting there until the runner gives up.
+      - name: Test
+        run: flutter test --concurrency=2 --timeout 90s --reporter expanded

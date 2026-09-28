@@ -27,6 +27,18 @@ flutter run                                   # mocks on, Firebase off
 
 Generated `*.g.dart` files and `lib/core/l10n/generated/` are committed, so a fresh clone compiles before codegen runs. Re-run `build_runner` after you change any annotated provider or model.
 
+### Building the APK
+
+```bash
+flutter build apk --release        # build/app/outputs/flutter-apk/app-release.apk
+flutter build apk --debug          # faster, no minification
+flutter build appbundle --release  # for Play
+```
+
+The release build is signed with the debug key for now (see the TODO in `android/app/build.gradle.kts`); replace it with the Play upload key before publishing.
+
+The build needs the Android SDK, which is served from `dl.google.com`. Where that host is blocked — the cloud container this project was written in, for one — the build cannot run locally, so the **Android APK** workflow (`.github/workflows/android-apk.yml`) builds it on GitHub's runners instead and uploads the APK as a run artifact. Run it from the Actions tab, or let a push to `main` or a `claude/**` branch trigger it.
+
 ### Mock sign-in (default, `USE_MOCKS=true`)
 
 | Method | How to sign in |
