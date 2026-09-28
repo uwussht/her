@@ -3398,5 +3398,339 @@
   "referralCopied": "Приглашение скопировано",
   "@referralCopied": {
     "description": "Snackbar after the invite text is copied"
+  },
+  "pregnancyDaysLeft": "{days, plural, one{{days} день до срока} few{{days} дня до срока} many{{days} дней до срока} other{{days} дня до срока}}",
+  "@pregnancyDaysLeft": {
+    "description": "Countdown to the due date",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "pregnancyOverdueDays": "{days, plural, one{{days} день после срока} few{{days} дня после срока} many{{days} дней после срока} other{{days} дня после срока}}",
+  "@pregnancyOverdueDays": {
+    "description": "Shown once the due date has passed",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "pregnancyNoDateTitle": "Укажите дату последней менструации",
+  "@pregnancyNoDateTitle": {
+    "description": "pregnancyNoDateTitle"
+  },
+  "pregnancyNoDateBody": "По ней рассчитываются неделя беременности и предполагаемая дата родов.",
+  "@pregnancyNoDateBody": {
+    "description": "pregnancyNoDateBody"
+  },
+  "pregnancySetDate": "Указать дату",
+  "@pregnancySetDate": {
+    "description": "pregnancySetDate"
+  },
+  "pregnancyToolsTitle": "Инструменты",
+  "@pregnancyToolsTitle": {
+    "description": "pregnancyToolsTitle"
+  },
+  "kickTitle": "Счётчик шевелений",
+  "@kickTitle": {
+    "description": "kickTitle"
+  },
+  "kickBody": "Обычно считают 10 шевелений. Нажимайте кнопку при каждом — счёт остановится сам.",
+  "@kickBody": {
+    "description": "kickBody"
+  },
+  "kickTap": "Шевеление",
+  "@kickTap": {
+    "description": "kickTap"
+  },
+  "kickProgress": "{count} из {target}",
+  "@kickProgress": {
+    "description": "Kick counter progress",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "kickElapsed": "Идёт {time}",
+  "@kickElapsed": {
+    "description": "Time since the session started",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "kickDone": "10 шевелений посчитаны. Всё хорошо.",
+  "@kickDone": {
+    "description": "kickDone"
+  },
+  "kickSlow": "Прошло два часа, а шевелений меньше десяти. Позвоните своему врачу или в роддом.",
+  "@kickSlow": {
+    "description": "kickSlow"
+  },
+  "kickStop": "Остановить счёт",
+  "@kickStop": {
+    "description": "kickStop"
+  },
+  "kickHistoryTitle": "Прошлые сессии",
+  "@kickHistoryTitle": {
+    "description": "kickHistoryTitle"
+  },
+  "kickEmpty": "Пока сессий нет.",
+  "@kickEmpty": {
+    "description": "kickEmpty"
+  },
+  "kickSessionSummary": "{count} шевелений за {time}",
+  "@kickSessionSummary": {
+    "description": "One row in the kick history",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "contractionTitle": "Таймер схваток",
+  "@contractionTitle": {
+    "description": "contractionTitle"
+  },
+  "contractionBody": "Нажмите, когда схватка начинается, и ещё раз, когда заканчивается.",
+  "@contractionBody": {
+    "description": "contractionBody"
+  },
+  "contractionStart": "Схватка началась",
+  "@contractionStart": {
+    "description": "contractionStart"
+  },
+  "contractionStop": "Схватка закончилась",
+  "@contractionStop": {
+    "description": "contractionStop"
+  },
+  "contractionRunning": "Идёт {time}",
+  "@contractionRunning": {
+    "description": "Live duration of the current contraction",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "contractionAverageDuration": "Длительность в среднем {time}",
+  "@contractionAverageDuration": {
+    "description": "Average contraction length",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "contractionAverageInterval": "Интервал в среднем {time}",
+  "@contractionAverageInterval": {
+    "description": "Average interval between contractions",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "contractionCountHour": "{count, plural, one{{count} схватка за час} few{{count} схватки за час} many{{count} схваток за час} other{{count} схватки за час}}",
+  "@contractionCountHour": {
+    "description": "Contractions in the last hour",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "contractionCallNow": "Схватки каждые пять минут по минуте и так уже час. Пора позвонить врачу или ехать в роддом.",
+  "@contractionCallNow": {
+    "description": "contractionCallNow"
+  },
+  "contractionEmpty": "Пока ничего не записано.",
+  "@contractionEmpty": {
+    "description": "contractionEmpty"
+  },
+  "contractionHistoryTitle": "Записанные схватки",
+  "@contractionHistoryTitle": {
+    "description": "contractionHistoryTitle"
+  },
+  "contractionClear": "Очистить список",
+  "@contractionClear": {
+    "description": "contractionClear"
+  },
+  "contractionCleared": "Список очищен",
+  "@contractionCleared": {
+    "description": "contractionCleared"
+  },
+  "weightTitle": "Вес",
+  "@weightTitle": {
+    "description": "weightTitle"
+  },
+  "weightAdd": "Записать вес",
+  "@weightAdd": {
+    "description": "weightAdd"
+  },
+  "weightLabel": "Вес, кг",
+  "@weightLabel": {
+    "description": "weightLabel"
+  },
+  "weightSaved": "Вес записан",
+  "@weightSaved": {
+    "description": "weightSaved"
+  },
+  "weightInvalid": "Введите вес от 30 до 250 кг",
+  "@weightInvalid": {
+    "description": "weightInvalid"
+  },
+  "weightCurrent": "Сейчас {kg} кг",
+  "@weightCurrent": {
+    "description": "Latest weight",
+    "placeholders": {
+      "kg": {
+        "type": "String"
+      }
+    }
+  },
+  "weightGain": "Прибавка {kg} кг",
+  "@weightGain": {
+    "description": "Total gain since the first weighing",
+    "placeholders": {
+      "kg": {
+        "type": "String"
+      }
+    }
+  },
+  "weightChange": "С прошлого раза {kg} кг",
+  "@weightChange": {
+    "description": "Change since the previous weighing",
+    "placeholders": {
+      "kg": {
+        "type": "String"
+      }
+    }
+  },
+  "weightEmpty": "Взвешивайтесь раз в неделю — так виден тренд, а не случайные скачки.",
+  "@weightEmpty": {
+    "description": "weightEmpty"
+  },
+  "weightChartTitle": "Вес по неделям беременности",
+  "@weightChartTitle": {
+    "description": "weightChartTitle"
+  },
+  "weightDisclaimer": "Норма прибавки зависит от исходного веса. Обсудите её со своим врачом.",
+  "@weightDisclaimer": {
+    "description": "weightDisclaimer"
+  },
+  "menopauseIntro": "Отмечайте приливы, сон и настроение — так видно, что меняется и о чём говорить с врачом.",
+  "@menopauseIntro": {
+    "description": "menopauseIntro"
+  },
+  "postpartumIntro": "Отмечайте самочувствие, сон и настроение. Цикл может вернуться не сразу — это нормально.",
+  "@postpartumIntro": {
+    "description": "postpartumIntro"
+  },
+  "postpartumWeeks": "{weeks, plural, one{{weeks} неделя после родов} few{{weeks} недели после родов} many{{weeks} недель после родов} other{{weeks} недели после родов}}",
+  "@postpartumWeeks": {
+    "description": "Weeks since the birth",
+    "placeholders": {
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "symptomsWindowTitle": "Последние {days} дней",
+  "@symptomsWindowTitle": {
+    "description": "Heading of the symptom summary card",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "symptomsEmpty": "Пока нет записей. Отметьте самочувствие за сегодня.",
+  "@symptomsEmpty": {
+    "description": "symptomsEmpty"
+  },
+  "symptomsDaysCount": "{days, plural, one{{days} день} few{{days} дня} many{{days} дней} other{{days} дня}}",
+  "@symptomsDaysCount": {
+    "description": "How many days a symptom was logged",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "symptomsAverageSleep": "Сон в среднем {hours} ч",
+  "@symptomsAverageSleep": {
+    "description": "Average sleep in the window",
+    "placeholders": {
+      "hours": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomsAverageMood": "Настроение в среднем {score} из 5",
+  "@symptomsAverageMood": {
+    "description": "Average mood in the window",
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "symptomsLoggedDays": "{days, plural, one{Записан {days} день} few{Записано {days} дня} many{Записано {days} дней} other{Записано {days} дня}}",
+  "@symptomsLoggedDays": {
+    "description": "Days with any log in the window",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "trackerModeCycle": "Цикл",
+  "@trackerModeCycle": {
+    "description": "trackerModeCycle"
+  },
+  "trackerModePregnancy": "Беременность",
+  "@trackerModePregnancy": {
+    "description": "trackerModePregnancy"
+  },
+  "trackerModePostpartum": "После родов",
+  "@trackerModePostpartum": {
+    "description": "trackerModePostpartum"
+  },
+  "trackerModeMenopause": "Менопауза",
+  "@trackerModeMenopause": {
+    "description": "trackerModeMenopause"
+  },
+  "trackerBackToMode": "Вернуться к режиму «{mode}»",
+  "@trackerBackToMode": {
+    "description": "Leaves the manually opened cycle calendar",
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "trackerCycleCalendar": "Календарь цикла",
+  "@trackerCycleCalendar": {
+    "description": "trackerCycleCalendar"
+  },
+  "weightKgValue": "{kg} кг",
+  "@weightKgValue": {
+    "description": "A weight with its unit",
+    "placeholders": {
+      "kg": {
+        "type": "String"
+      }
+    }
   }
 }

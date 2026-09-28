@@ -227,24 +227,29 @@ void main() {
     expect(find.text('Done'), findsWidgets);
   });
 
-  testWidgets('pregnancy stage offers cycle mode until step 10', (
-    tester,
-  ) async {
-    await pumpHerCircle(
-      tester,
-      profile: testProfile.copyWith(
-        lifeStage: LifeStage.pregnant,
-        lastPeriodStart: today().addDays(-60),
-      ),
-      prefs: {'settings.locale': 'en'},
-    );
-    await openTracker(tester);
+  testWidgets(
+    'pregnancy stage opens pregnancy mode, with the calendar a tap away',
+    (tester) async {
+      await pumpHerCircle(
+        tester,
+        profile: testProfile.copyWith(
+          lifeStage: LifeStage.pregnant,
+          lastPeriodStart: today().addDays(-60),
+        ),
+        prefs: {'settings.locale': 'en'},
+      );
+      await openTracker(tester);
 
-    expect(
-      find.textContaining('Pregnancy mode is coming soon'),
-      findsOneWidget,
-    );
-    await tapText(tester, 'Open the cycle calendar');
-    expect(find.text('Day 61'), findsOneWidget);
-  });
+      // Week 9 of a pregnancy dated from a period 60 days ago.
+      expect(find.text('Week 9'), findsOneWidget);
+      expect(find.text('Kick counter'), findsOneWidget);
+
+      await tapText(tester, 'Cycle calendar');
+      expect(find.text('Day 61'), findsOneWidget);
+      // And back to the mode her stage implies — the link sits at the top.
+      await scrollToTop(tester);
+      await tapText(tester, 'Back to Pregnancy');
+      expect(find.text('Week 9'), findsOneWidget);
+    },
+  );
 }

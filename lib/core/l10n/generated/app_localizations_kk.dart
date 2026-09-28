@@ -2534,4 +2534,255 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get referralCopied => 'Шақыру көшірілді';
+
+  @override
+  String pregnancyDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Мерзімге $days күн',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pregnancyOverdueDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Мерзімнен $days күн өтті',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get pregnancyNoDateTitle => 'Соңғы етеккір күнін көрсетіңіз';
+
+  @override
+  String get pregnancyNoDateBody =>
+      'Осы арқылы жүктілік аптасы мен болжамды босану күні есептеледі.';
+
+  @override
+  String get pregnancySetDate => 'Күнді көрсету';
+
+  @override
+  String get pregnancyToolsTitle => 'Құралдар';
+
+  @override
+  String get kickTitle => 'Қимыл санағышы';
+
+  @override
+  String get kickBody =>
+      'Әдетте 10 қимыл саналады. Әр қимылда түймені басыңыз — санақ өзі тоқтайды.';
+
+  @override
+  String get kickTap => 'Қимыл';
+
+  @override
+  String kickProgress(int count, int target) {
+    return '$target ішінен $count';
+  }
+
+  @override
+  String kickElapsed(String time) {
+    return '$time өтті';
+  }
+
+  @override
+  String get kickDone => '10 қимыл саналды. Барлығы жақсы.';
+
+  @override
+  String get kickSlow =>
+      'Екі сағат өтті, қимыл ондан аз. Дәрігеріңізге немесе перзентханаға қоңырау шалыңыз.';
+
+  @override
+  String get kickStop => 'Санақты тоқтату';
+
+  @override
+  String get kickHistoryTitle => 'Өткен сессиялар';
+
+  @override
+  String get kickEmpty => 'Әзірге сессия жоқ.';
+
+  @override
+  String kickSessionSummary(int count, String time) {
+    return '$time ішінде $count қимыл';
+  }
+
+  @override
+  String get contractionTitle => 'Жиырылу таймері';
+
+  @override
+  String get contractionBody =>
+      'Жиырылу басталғанда түймені басыңыз, бітерде қайта басыңыз.';
+
+  @override
+  String get contractionStart => 'Жиырылу басталды';
+
+  @override
+  String get contractionStop => 'Жиырылу бітті';
+
+  @override
+  String contractionRunning(String time) {
+    return '$time өтті';
+  }
+
+  @override
+  String contractionAverageDuration(String time) {
+    return 'Ұзақтығы орташа $time';
+  }
+
+  @override
+  String contractionAverageInterval(String time) {
+    return 'Аралығы орташа $time';
+  }
+
+  @override
+  String contractionCountHour(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Бір сағатта $count жиырылу',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get contractionCallNow =>
+      'Жиырылу бес минут сайын, бір минуттан, бір сағат бойы. Дәрігерге қоңырау шалып, перзентханаға баратын уақыт.';
+
+  @override
+  String get contractionEmpty => 'Әзірге ештеңе жазылмаған.';
+
+  @override
+  String get contractionHistoryTitle => 'Жазылған жиырылулар';
+
+  @override
+  String get contractionClear => 'Тізімді тазалау';
+
+  @override
+  String get contractionCleared => 'Тізім тазаланды';
+
+  @override
+  String get weightTitle => 'Салмақ';
+
+  @override
+  String get weightAdd => 'Салмақты жазу';
+
+  @override
+  String get weightLabel => 'Салмақ, кг';
+
+  @override
+  String get weightSaved => 'Салмақ жазылды';
+
+  @override
+  String get weightInvalid => '30-дан 250 кг-ға дейін енгізіңіз';
+
+  @override
+  String weightCurrent(String kg) {
+    return 'Қазір $kg кг';
+  }
+
+  @override
+  String weightGain(String kg) {
+    return 'Қосылғаны $kg кг';
+  }
+
+  @override
+  String weightChange(String kg) {
+    return 'Өткеннен $kg кг';
+  }
+
+  @override
+  String get weightEmpty =>
+      'Аптасына бір рет өлшеніңіз — сонда кездейсоқ ауытқу емес, үрдіс көрінеді.';
+
+  @override
+  String get weightChartTitle => 'Жүктілік апталары бойынша салмақ';
+
+  @override
+  String get weightDisclaimer =>
+      'Қосылатын салмақ нормасы бастапқы салмаққа байланысты. Дәрігеріңізбен талқылаңыз.';
+
+  @override
+  String get menopauseIntro =>
+      'Қызу толқыны, ұйқы және көңіл күйді белгілеңіз — сонда не өзгеретіні және дәрігермен не туралы сөйлесу керегі көрінеді.';
+
+  @override
+  String get postpartumIntro =>
+      'Жағдайыңызды, ұйқы мен көңіл күйді белгілеңіз. Цикл бірден қайтпауы мүмкін — бұл қалыпты.';
+
+  @override
+  String postpartumWeeks(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: 'Босанғаннан кейін $weeks апта',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String symptomsWindowTitle(int days) {
+    return 'Соңғы $days күн';
+  }
+
+  @override
+  String get symptomsEmpty =>
+      'Әзірге жазба жоқ. Бүгінгі жағдайыңызды белгілеңіз.';
+
+  @override
+  String symptomsDaysCount(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days күн',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String symptomsAverageSleep(String hours) {
+    return 'Ұйқы орташа $hours сағ';
+  }
+
+  @override
+  String symptomsAverageMood(String score) {
+    return 'Көңіл күй орташа 5-тен $score';
+  }
+
+  @override
+  String symptomsLoggedDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days күн жазылды',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trackerModeCycle => 'Цикл';
+
+  @override
+  String get trackerModePregnancy => 'Жүктілік';
+
+  @override
+  String get trackerModePostpartum => 'Босанғаннан кейін';
+
+  @override
+  String get trackerModeMenopause => 'Менопауза';
+
+  @override
+  String trackerBackToMode(String mode) {
+    return '«$mode» режиміне қайту';
+  }
+
+  @override
+  String get trackerCycleCalendar => 'Цикл күнтізбесі';
+
+  @override
+  String weightKgValue(String kg) {
+    return '$kg кг';
+  }
 }
