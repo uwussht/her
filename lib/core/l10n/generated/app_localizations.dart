@@ -4539,6 +4539,348 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Приглашение скопировано'**
   String get referralCopied;
+
+  /// Countdown to the due date
+  ///
+  /// In ru, this message translates to:
+  /// **'{days, plural, one{{days} день до срока} few{{days} дня до срока} many{{days} дней до срока} other{{days} дня до срока}}'**
+  String pregnancyDaysLeft(int days);
+
+  /// Shown once the due date has passed
+  ///
+  /// In ru, this message translates to:
+  /// **'{days, plural, one{{days} день после срока} few{{days} дня после срока} many{{days} дней после срока} other{{days} дня после срока}}'**
+  String pregnancyOverdueDays(int days);
+
+  /// pregnancyNoDateTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Укажите дату последней менструации'**
+  String get pregnancyNoDateTitle;
+
+  /// pregnancyNoDateBody
+  ///
+  /// In ru, this message translates to:
+  /// **'По ней рассчитываются неделя беременности и предполагаемая дата родов.'**
+  String get pregnancyNoDateBody;
+
+  /// pregnancySetDate
+  ///
+  /// In ru, this message translates to:
+  /// **'Указать дату'**
+  String get pregnancySetDate;
+
+  /// pregnancyToolsTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Инструменты'**
+  String get pregnancyToolsTitle;
+
+  /// kickTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Счётчик шевелений'**
+  String get kickTitle;
+
+  /// kickBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Обычно считают 10 шевелений. Нажимайте кнопку при каждом — счёт остановится сам.'**
+  String get kickBody;
+
+  /// kickTap
+  ///
+  /// In ru, this message translates to:
+  /// **'Шевеление'**
+  String get kickTap;
+
+  /// Kick counter progress
+  ///
+  /// In ru, this message translates to:
+  /// **'{count} из {target}'**
+  String kickProgress(int count, int target);
+
+  /// Time since the session started
+  ///
+  /// In ru, this message translates to:
+  /// **'Идёт {time}'**
+  String kickElapsed(String time);
+
+  /// kickDone
+  ///
+  /// In ru, this message translates to:
+  /// **'10 шевелений посчитаны. Всё хорошо.'**
+  String get kickDone;
+
+  /// kickSlow
+  ///
+  /// In ru, this message translates to:
+  /// **'Прошло два часа, а шевелений меньше десяти. Позвоните своему врачу или в роддом.'**
+  String get kickSlow;
+
+  /// kickStop
+  ///
+  /// In ru, this message translates to:
+  /// **'Остановить счёт'**
+  String get kickStop;
+
+  /// kickHistoryTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Прошлые сессии'**
+  String get kickHistoryTitle;
+
+  /// kickEmpty
+  ///
+  /// In ru, this message translates to:
+  /// **'Пока сессий нет.'**
+  String get kickEmpty;
+
+  /// One row in the kick history
+  ///
+  /// In ru, this message translates to:
+  /// **'{count} шевелений за {time}'**
+  String kickSessionSummary(int count, String time);
+
+  /// contractionTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Таймер схваток'**
+  String get contractionTitle;
+
+  /// contractionBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Нажмите, когда схватка начинается, и ещё раз, когда заканчивается.'**
+  String get contractionBody;
+
+  /// contractionStart
+  ///
+  /// In ru, this message translates to:
+  /// **'Схватка началась'**
+  String get contractionStart;
+
+  /// contractionStop
+  ///
+  /// In ru, this message translates to:
+  /// **'Схватка закончилась'**
+  String get contractionStop;
+
+  /// Live duration of the current contraction
+  ///
+  /// In ru, this message translates to:
+  /// **'Идёт {time}'**
+  String contractionRunning(String time);
+
+  /// Average contraction length
+  ///
+  /// In ru, this message translates to:
+  /// **'Длительность в среднем {time}'**
+  String contractionAverageDuration(String time);
+
+  /// Average interval between contractions
+  ///
+  /// In ru, this message translates to:
+  /// **'Интервал в среднем {time}'**
+  String contractionAverageInterval(String time);
+
+  /// Contractions in the last hour
+  ///
+  /// In ru, this message translates to:
+  /// **'{count, plural, one{{count} схватка за час} few{{count} схватки за час} many{{count} схваток за час} other{{count} схватки за час}}'**
+  String contractionCountHour(int count);
+
+  /// contractionCallNow
+  ///
+  /// In ru, this message translates to:
+  /// **'Схватки каждые пять минут по минуте и так уже час. Пора позвонить врачу или ехать в роддом.'**
+  String get contractionCallNow;
+
+  /// contractionEmpty
+  ///
+  /// In ru, this message translates to:
+  /// **'Пока ничего не записано.'**
+  String get contractionEmpty;
+
+  /// contractionHistoryTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Записанные схватки'**
+  String get contractionHistoryTitle;
+
+  /// contractionClear
+  ///
+  /// In ru, this message translates to:
+  /// **'Очистить список'**
+  String get contractionClear;
+
+  /// contractionCleared
+  ///
+  /// In ru, this message translates to:
+  /// **'Список очищен'**
+  String get contractionCleared;
+
+  /// weightTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Вес'**
+  String get weightTitle;
+
+  /// weightAdd
+  ///
+  /// In ru, this message translates to:
+  /// **'Записать вес'**
+  String get weightAdd;
+
+  /// weightLabel
+  ///
+  /// In ru, this message translates to:
+  /// **'Вес, кг'**
+  String get weightLabel;
+
+  /// weightSaved
+  ///
+  /// In ru, this message translates to:
+  /// **'Вес записан'**
+  String get weightSaved;
+
+  /// weightInvalid
+  ///
+  /// In ru, this message translates to:
+  /// **'Введите вес от 30 до 250 кг'**
+  String get weightInvalid;
+
+  /// Latest weight
+  ///
+  /// In ru, this message translates to:
+  /// **'Сейчас {kg} кг'**
+  String weightCurrent(String kg);
+
+  /// Total gain since the first weighing
+  ///
+  /// In ru, this message translates to:
+  /// **'Прибавка {kg} кг'**
+  String weightGain(String kg);
+
+  /// Change since the previous weighing
+  ///
+  /// In ru, this message translates to:
+  /// **'С прошлого раза {kg} кг'**
+  String weightChange(String kg);
+
+  /// weightEmpty
+  ///
+  /// In ru, this message translates to:
+  /// **'Взвешивайтесь раз в неделю — так виден тренд, а не случайные скачки.'**
+  String get weightEmpty;
+
+  /// weightChartTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Вес по неделям беременности'**
+  String get weightChartTitle;
+
+  /// weightDisclaimer
+  ///
+  /// In ru, this message translates to:
+  /// **'Норма прибавки зависит от исходного веса. Обсудите её со своим врачом.'**
+  String get weightDisclaimer;
+
+  /// menopauseIntro
+  ///
+  /// In ru, this message translates to:
+  /// **'Отмечайте приливы, сон и настроение — так видно, что меняется и о чём говорить с врачом.'**
+  String get menopauseIntro;
+
+  /// postpartumIntro
+  ///
+  /// In ru, this message translates to:
+  /// **'Отмечайте самочувствие, сон и настроение. Цикл может вернуться не сразу — это нормально.'**
+  String get postpartumIntro;
+
+  /// Weeks since the birth
+  ///
+  /// In ru, this message translates to:
+  /// **'{weeks, plural, one{{weeks} неделя после родов} few{{weeks} недели после родов} many{{weeks} недель после родов} other{{weeks} недели после родов}}'**
+  String postpartumWeeks(int weeks);
+
+  /// Heading of the symptom summary card
+  ///
+  /// In ru, this message translates to:
+  /// **'Последние {days} дней'**
+  String symptomsWindowTitle(int days);
+
+  /// symptomsEmpty
+  ///
+  /// In ru, this message translates to:
+  /// **'Пока нет записей. Отметьте самочувствие за сегодня.'**
+  String get symptomsEmpty;
+
+  /// How many days a symptom was logged
+  ///
+  /// In ru, this message translates to:
+  /// **'{days, plural, one{{days} день} few{{days} дня} many{{days} дней} other{{days} дня}}'**
+  String symptomsDaysCount(int days);
+
+  /// Average sleep in the window
+  ///
+  /// In ru, this message translates to:
+  /// **'Сон в среднем {hours} ч'**
+  String symptomsAverageSleep(String hours);
+
+  /// Average mood in the window
+  ///
+  /// In ru, this message translates to:
+  /// **'Настроение в среднем {score} из 5'**
+  String symptomsAverageMood(String score);
+
+  /// Days with any log in the window
+  ///
+  /// In ru, this message translates to:
+  /// **'{days, plural, one{Записан {days} день} few{Записано {days} дня} many{Записано {days} дней} other{Записано {days} дня}}'**
+  String symptomsLoggedDays(int days);
+
+  /// trackerModeCycle
+  ///
+  /// In ru, this message translates to:
+  /// **'Цикл'**
+  String get trackerModeCycle;
+
+  /// trackerModePregnancy
+  ///
+  /// In ru, this message translates to:
+  /// **'Беременность'**
+  String get trackerModePregnancy;
+
+  /// trackerModePostpartum
+  ///
+  /// In ru, this message translates to:
+  /// **'После родов'**
+  String get trackerModePostpartum;
+
+  /// trackerModeMenopause
+  ///
+  /// In ru, this message translates to:
+  /// **'Менопауза'**
+  String get trackerModeMenopause;
+
+  /// Leaves the manually opened cycle calendar
+  ///
+  /// In ru, this message translates to:
+  /// **'Вернуться к режиму «{mode}»'**
+  String trackerBackToMode(String mode);
+
+  /// trackerCycleCalendar
+  ///
+  /// In ru, this message translates to:
+  /// **'Календарь цикла'**
+  String get trackerCycleCalendar;
+
+  /// A weight with its unit
+  ///
+  /// In ru, this message translates to:
+  /// **'{kg} кг'**
+  String weightKgValue(String kg);
 }
 
 class _AppLocalizationsDelegate

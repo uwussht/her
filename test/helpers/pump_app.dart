@@ -28,6 +28,7 @@ import 'package:her_circle/features/profile/domain/personalization.dart';
 import 'package:her_circle/features/profile/domain/user_profile.dart';
 import 'package:her_circle/features/shop/domain/payment_service.dart';
 import 'package:her_circle/features/shop/presentation/shop_providers.dart';
+import 'package:her_circle/features/tracker/presentation/pregnancy_providers.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 const testUser = AppUser(
@@ -125,6 +126,10 @@ Future<ProviderContainer> pumpHerCircle(
       sharedPreferencesProvider.overrideWithValue(sharedPrefs),
       localStoreProvider.overrideWithValue(store),
       mockAssetLoaderProvider.overrideWithValue(loader),
+      // No ticking clock under test: a periodic timer would stop
+      // pumpAndSettle from ever settling. The counters are driven through
+      // their controllers instead.
+      tickerProvider.overrideWith((ref) => const Stream<DateTime>.empty()),
       // Instant links and snapshots, for the same reason as payments below.
       linkServiceProvider.overrideWithValue(
         const MockLinkService(latency: Duration.zero),

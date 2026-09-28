@@ -42,9 +42,12 @@ import '../../features/shop/presentation/order_placed_screen.dart';
 import '../../features/shop/presentation/orders_screen.dart';
 import '../../features/shop/presentation/product_detail_screen.dart';
 import '../../features/shop/presentation/shop_screen.dart';
+import '../../features/tracker/presentation/contraction_timer_screen.dart';
+import '../../features/tracker/presentation/kick_counter_screen.dart';
 import '../../features/tracker/presentation/reminders_screen.dart';
 import '../../features/tracker/presentation/tracker_screen.dart';
 import '../../features/tracker/presentation/vaccinations_screen.dart';
+import '../../features/tracker/presentation/weight_log_screen.dart';
 import 'app_routes.dart';
 import 'app_shell.dart';
 import 'not_found_screen.dart';
@@ -279,6 +282,21 @@ GoRouter appRouter(Ref ref) {
               ? LinkKind.family
               : LinkKind.partner,
         ),
+      ),
+      GoRoute(
+        path: AppRoutes.kickCounter,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const KickCounterScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.contractionTimer,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const ContractionTimerScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.weightLog,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const WeightLogScreen(),
       ),
       GoRoute(
         path: AppRoutes.premium,

@@ -7,6 +7,7 @@ import '../../../core/theme/app_dimens.dart';
 import '../../../core/utils/context_extensions.dart';
 import '../../../core/utils/date_utils.dart';
 import '../../../core/widgets/widgets.dart';
+import 'tracker_mode_views.dart';
 import 'tracker_providers.dart';
 import 'widgets/cycle_calendar.dart';
 import 'widgets/cycle_status_card.dart';
@@ -16,8 +17,11 @@ import 'widgets/doctor_report_card.dart';
 import 'widgets/mood_chart_card.dart';
 import 'widgets/reminders_summary_card.dart';
 
-/// The tracker tab. Cycle mode is built here; pregnancy, postpartum and
-/// menopause modes arrive in step 10 and currently offer cycle mode.
+/// The tracker tab.
+///
+/// The mode follows her life stage (spec 5.4): cycle, pregnancy, postpartum or
+/// menopause. She can always open the cycle calendar anyway — a pregnancy can
+/// end, and a stage in a profile is not always the stage she is in today.
 class TrackerScreen extends ConsumerStatefulWidget {
   const TrackerScreen({super.key});
 
@@ -28,6 +32,8 @@ class TrackerScreen extends ConsumerStatefulWidget {
 class _TrackerScreenState extends ConsumerState<TrackerScreen> {
   DateTime _selectedDay = today();
   DateTime _focusedDay = today();
+
+  /// Set when she opens the cycle calendar from another mode.
   bool _forceCycleMode = false;
 
   void _select(DateTime day) => setState(() => _selectedDay = day);
@@ -49,7 +55,7 @@ class _TrackerScreenState extends ConsumerState<TrackerScreen> {
       appBar: AppBar(
         title: Text(l10n.navTracker),
         actions: [
-          if (showCycle)
+          if (showCycle && mode == TrackerMode.cycle)
             IconButton(
               tooltip: l10n.actionToday,
               onPressed: _jumpToToday,
@@ -70,11 +76,24 @@ class _TrackerScreenState extends ConsumerState<TrackerScreen> {
           AppSizes.fabClearance,
         ),
         children: [
+          if (mode != TrackerMode.cycle && showCycle) ...[
+            Align(
+              alignment: AlignmentDirectional.centerStart,
+              child: TextButton.icon(
+                onPressed: () => setState(() => _forceCycleMode = false),
+                icon: const Icon(Icons.arrow_back_rounded),
+                label: Text(l10n.trackerBackToMode(mode.label(l10n))),
+              ),
+            ),
+            const SizedBox(height: AppSpacing.xs),
+          ],
           if (!showCycle)
-            _OtherModeCard(
-              mode: mode,
-              onUseCycleMode: () => setState(() => _forceCycleMode = true),
-            )
+            switch (mode) {
+              TrackerMode.pregnancy => const PregnancyModeView(),
+              TrackerMode.postpartum => const PostpartumModeView(),
+              TrackerMode.menopause => const MenopauseModeView(),
+              TrackerMode.cycle => const SizedBox.shrink(),
+            }
           else if (!timeline.hasData)
             FeaturePlaceholderAction(
               icon: Icons.water_drop_rounded,
@@ -118,38 +137,21 @@ class _TrackerScreenState extends ConsumerState<TrackerScreen> {
             const SizedBox(height: AppSpacing.md),
             DisclaimerCard(text: l10n.predictionDisclaimer),
           ],
+          if (!showCycle) ...[
+            const SizedBox(height: AppSpacing.md),
+            Align(
+              alignment: AlignmentDirectional.centerStart,
+              child: TextButton.icon(
+                onPressed: () => setState(() => _forceCycleMode = true),
+                icon: const Icon(Icons.calendar_month_outlined),
+                label: Text(l10n.trackerCycleCalendar),
+              ),
+            ),
+            const SizedBox(height: AppSpacing.md),
+            DisclaimerCard(text: l10n.predictionDisclaimer),
+          ],
         ],
       ),
-    );
-  }
-}
-
-/// Placeholder for the tracker modes that step 10 builds, with a way into
-/// cycle mode in the meantime.
-class _OtherModeCard extends StatelessWidget {
-  const _OtherModeCard({required this.mode, required this.onUseCycleMode});
-
-  final TrackerMode mode;
-  final VoidCallback onUseCycleMode;
-
-  @override
-  Widget build(BuildContext context) {
-    final l10n = context.l10n;
-    return FeaturePlaceholderAction(
-      icon: switch (mode) {
-        TrackerMode.pregnancy ||
-        TrackerMode.postpartum => Icons.pregnant_woman_rounded,
-        _ => Icons.wb_twilight_rounded,
-      },
-      title: l10n.navTracker,
-      description: switch (mode) {
-        TrackerMode.pregnancy ||
-        TrackerMode.postpartum => l10n.trackerPregnancySoon,
-        _ => l10n.trackerMenopauseSoon,
-      },
-      tone: AppTone.green,
-      actionLabel: l10n.trackerSwitchToCycle,
-      onAction: onUseCycleMode,
     );
   }
 }

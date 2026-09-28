@@ -15,7 +15,7 @@ A women's health, learning and shopping app for Kazakhstan, for users from their
 | 7 | Circle AI chat (mock, then FastAPI `POST /ai/chat`) | ✅ |
 | 8 | Partner and family linking | ✅ |
 | 9 | Premium, paywall, referrals | ✅ |
-| 10 | Pregnancy and menopause tracker modes | ⏳ |
+| 10 | Pregnancy and menopause tracker modes | ✅ |
 
 ## Getting started
 
@@ -195,6 +195,18 @@ Mock content ships without cover images, so cards render a tinted panel with the
 - **Referrals**: her code is derived from her account id, so it survives a reinstall, and it avoids look-alike characters like the invite codes. One month per friend, capped at twelve, and `ReferralState` tracks what is owed separately from what has been paid out, so a month is never credited twice. A month earned before she subscribes is held and folded into her first payment.
 - **Profile** now carries what spec 5.9 asks for: her stage and age, a premium entry that shows the trial countdown, her circle (partner, family, referrals), her learning (saved items, certificates, orders), reminders, settings and sign-out. The life-stage switch offers only the stages that fit her age group, as the quiz does.
 - **Billing is still local.** There is no store subscription: `LocalPremiumRepository` keeps the membership in the encrypted box and the demo switch stays for manual testing. Google Play or Kaspi becomes the source of truth when the backend exists, and the shape above does not change.
+
+## Pregnancy, postpartum and menopause modes (step 10)
+
+The tracker mode follows her life stage (spec 5.4), and the cycle calendar is always one tap away — a pregnancy ends, and the stage in a profile is not always the stage she is in today.
+
+- **Pregnancy mode**: the week, the trimester, the baby's size for that week and the countdown to the due date, then the three tools. With no last-period date it asks for one instead of guessing a week.
+- **Kick counter**: the count-to-ten session. `KickSession` is pure — it ignores a double tap inside a second, closes itself at ten, and flags a count that has taken more than two hours so the screen can say "call your doctor". It never says what a slow count means.
+- **Contraction timer**: one button for start and stop. `ContractionAnalyser` averages the lengths and the gaps over the last hour and recognises the **5-1-1** pattern (five minutes apart, a minute long, for an hour) before prompting her to call. It is tested against the ways it should *not* fire: contractions that are too short, an irregular hour, and a pattern that has not lasted long enough.
+- **Weight log**: one entry per day (the latest weighing wins), the gain since the first weighing, the change since the last, and a chart by pregnancy week. Bounds are 30–250 kg, and the card says what is healthy depends on her starting weight and belongs with her doctor.
+- **Menopause mode**: the symptom log the spec asks for — the menopause section first (hot flashes, night sweats), then everything else, with average sleep and mood, and the mood chart. `SymptomSummary` counts days over a 30-day window and can narrow to one section of the log sheet. Counts only, no interpretation.
+- **Postpartum mode**: weeks since the birth (dated from her last period plus a full term), the daily log, the symptom summary, the mood chart, the weight log and her reminders.
+- **The running timers rebuild on a `ticker` provider** rather than a widget timer, so tests override it with an empty stream and drive the counters through their controllers instead of waiting on a clock.
 
 ## Quality checks
 

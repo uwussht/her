@@ -66,6 +66,11 @@ abstract final class AppRoutes {
   /// Accepting someone else's invite. [kind] is `partner` or `family`.
   static String circleJoin(String kind) => '/circle/join/$kind';
 
+  /// Pregnancy tools (tracker, pregnancy mode).
+  static const String kickCounter = '/tracker/kicks';
+  static const String contractionTimer = '/tracker/contractions';
+  static const String weightLog = '/tracker/weight';
+
   // Premium, referrals and her own library.
   static const String premium = '/premium';
   static const String referrals = '/premium/referrals';

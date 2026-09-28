@@ -2602,4 +2602,273 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get referralCopied => 'Приглашение скопировано';
+
+  @override
+  String pregnancyDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days дня до срока',
+      many: '$days дней до срока',
+      few: '$days дня до срока',
+      one: '$days день до срока',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pregnancyOverdueDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days дня после срока',
+      many: '$days дней после срока',
+      few: '$days дня после срока',
+      one: '$days день после срока',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get pregnancyNoDateTitle => 'Укажите дату последней менструации';
+
+  @override
+  String get pregnancyNoDateBody =>
+      'По ней рассчитываются неделя беременности и предполагаемая дата родов.';
+
+  @override
+  String get pregnancySetDate => 'Указать дату';
+
+  @override
+  String get pregnancyToolsTitle => 'Инструменты';
+
+  @override
+  String get kickTitle => 'Счётчик шевелений';
+
+  @override
+  String get kickBody =>
+      'Обычно считают 10 шевелений. Нажимайте кнопку при каждом — счёт остановится сам.';
+
+  @override
+  String get kickTap => 'Шевеление';
+
+  @override
+  String kickProgress(int count, int target) {
+    return '$count из $target';
+  }
+
+  @override
+  String kickElapsed(String time) {
+    return 'Идёт $time';
+  }
+
+  @override
+  String get kickDone => '10 шевелений посчитаны. Всё хорошо.';
+
+  @override
+  String get kickSlow =>
+      'Прошло два часа, а шевелений меньше десяти. Позвоните своему врачу или в роддом.';
+
+  @override
+  String get kickStop => 'Остановить счёт';
+
+  @override
+  String get kickHistoryTitle => 'Прошлые сессии';
+
+  @override
+  String get kickEmpty => 'Пока сессий нет.';
+
+  @override
+  String kickSessionSummary(int count, String time) {
+    return '$count шевелений за $time';
+  }
+
+  @override
+  String get contractionTitle => 'Таймер схваток';
+
+  @override
+  String get contractionBody =>
+      'Нажмите, когда схватка начинается, и ещё раз, когда заканчивается.';
+
+  @override
+  String get contractionStart => 'Схватка началась';
+
+  @override
+  String get contractionStop => 'Схватка закончилась';
+
+  @override
+  String contractionRunning(String time) {
+    return 'Идёт $time';
+  }
+
+  @override
+  String contractionAverageDuration(String time) {
+    return 'Длительность в среднем $time';
+  }
+
+  @override
+  String contractionAverageInterval(String time) {
+    return 'Интервал в среднем $time';
+  }
+
+  @override
+  String contractionCountHour(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count схватки за час',
+      many: '$count схваток за час',
+      few: '$count схватки за час',
+      one: '$count схватка за час',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get contractionCallNow =>
+      'Схватки каждые пять минут по минуте и так уже час. Пора позвонить врачу или ехать в роддом.';
+
+  @override
+  String get contractionEmpty => 'Пока ничего не записано.';
+
+  @override
+  String get contractionHistoryTitle => 'Записанные схватки';
+
+  @override
+  String get contractionClear => 'Очистить список';
+
+  @override
+  String get contractionCleared => 'Список очищен';
+
+  @override
+  String get weightTitle => 'Вес';
+
+  @override
+  String get weightAdd => 'Записать вес';
+
+  @override
+  String get weightLabel => 'Вес, кг';
+
+  @override
+  String get weightSaved => 'Вес записан';
+
+  @override
+  String get weightInvalid => 'Введите вес от 30 до 250 кг';
+
+  @override
+  String weightCurrent(String kg) {
+    return 'Сейчас $kg кг';
+  }
+
+  @override
+  String weightGain(String kg) {
+    return 'Прибавка $kg кг';
+  }
+
+  @override
+  String weightChange(String kg) {
+    return 'С прошлого раза $kg кг';
+  }
+
+  @override
+  String get weightEmpty =>
+      'Взвешивайтесь раз в неделю — так виден тренд, а не случайные скачки.';
+
+  @override
+  String get weightChartTitle => 'Вес по неделям беременности';
+
+  @override
+  String get weightDisclaimer =>
+      'Норма прибавки зависит от исходного веса. Обсудите её со своим врачом.';
+
+  @override
+  String get menopauseIntro =>
+      'Отмечайте приливы, сон и настроение — так видно, что меняется и о чём говорить с врачом.';
+
+  @override
+  String get postpartumIntro =>
+      'Отмечайте самочувствие, сон и настроение. Цикл может вернуться не сразу — это нормально.';
+
+  @override
+  String postpartumWeeks(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: '$weeks недели после родов',
+      many: '$weeks недель после родов',
+      few: '$weeks недели после родов',
+      one: '$weeks неделя после родов',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String symptomsWindowTitle(int days) {
+    return 'Последние $days дней';
+  }
+
+  @override
+  String get symptomsEmpty =>
+      'Пока нет записей. Отметьте самочувствие за сегодня.';
+
+  @override
+  String symptomsDaysCount(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days дня',
+      many: '$days дней',
+      few: '$days дня',
+      one: '$days день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String symptomsAverageSleep(String hours) {
+    return 'Сон в среднем $hours ч';
+  }
+
+  @override
+  String symptomsAverageMood(String score) {
+    return 'Настроение в среднем $score из 5';
+  }
+
+  @override
+  String symptomsLoggedDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Записано $days дня',
+      many: 'Записано $days дней',
+      few: 'Записано $days дня',
+      one: 'Записан $days день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trackerModeCycle => 'Цикл';
+
+  @override
+  String get trackerModePregnancy => 'Беременность';
+
+  @override
+  String get trackerModePostpartum => 'После родов';
+
+  @override
+  String get trackerModeMenopause => 'Менопауза';
+
+  @override
+  String trackerBackToMode(String mode) {
+    return 'Вернуться к режиму «$mode»';
+  }
+
+  @override
+  String get trackerCycleCalendar => 'Календарь цикла';
+
+  @override
+  String weightKgValue(String kg) {
+    return '$kg кг';
+  }
 }

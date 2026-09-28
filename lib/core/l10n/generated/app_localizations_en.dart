@@ -2571,4 +2571,261 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get referralCopied => 'Invite copied';
+
+  @override
+  String pregnancyDaysLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days to go',
+      one: '$days day to go',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pregnancyOverdueDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days past the due date',
+      one: '$days day past the due date',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get pregnancyNoDateTitle => 'Tell us your last period date';
+
+  @override
+  String get pregnancyNoDateBody =>
+      'We use it to work out your week and your due date.';
+
+  @override
+  String get pregnancySetDate => 'Set the date';
+
+  @override
+  String get pregnancyToolsTitle => 'Tools';
+
+  @override
+  String get kickTitle => 'Kick counter';
+
+  @override
+  String get kickBody =>
+      'The usual count is ten movements. Tap for each one — the count stops itself.';
+
+  @override
+  String get kickTap => 'Movement';
+
+  @override
+  String kickProgress(int count, int target) {
+    return '$count of $target';
+  }
+
+  @override
+  String kickElapsed(String time) {
+    return '$time elapsed';
+  }
+
+  @override
+  String get kickDone => 'Ten movements counted. All good.';
+
+  @override
+  String get kickSlow =>
+      'Two hours have passed with fewer than ten movements. Call your doctor or your maternity hospital.';
+
+  @override
+  String get kickStop => 'Stop counting';
+
+  @override
+  String get kickHistoryTitle => 'Earlier sessions';
+
+  @override
+  String get kickEmpty => 'No sessions yet.';
+
+  @override
+  String kickSessionSummary(int count, String time) {
+    return '$count movements in $time';
+  }
+
+  @override
+  String get contractionTitle => 'Contraction timer';
+
+  @override
+  String get contractionBody =>
+      'Tap when a contraction starts, and again when it ends.';
+
+  @override
+  String get contractionStart => 'Contraction started';
+
+  @override
+  String get contractionStop => 'Contraction ended';
+
+  @override
+  String contractionRunning(String time) {
+    return 'Running $time';
+  }
+
+  @override
+  String contractionAverageDuration(String time) {
+    return 'Average length $time';
+  }
+
+  @override
+  String contractionAverageInterval(String time) {
+    return 'Average gap $time';
+  }
+
+  @override
+  String contractionCountHour(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count contractions in the last hour',
+      one: '$count contraction in the last hour',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get contractionCallNow =>
+      'Contractions five minutes apart, a minute long, for an hour. Time to call your doctor or go to the hospital.';
+
+  @override
+  String get contractionEmpty => 'Nothing recorded yet.';
+
+  @override
+  String get contractionHistoryTitle => 'Recorded contractions';
+
+  @override
+  String get contractionClear => 'Clear the list';
+
+  @override
+  String get contractionCleared => 'List cleared';
+
+  @override
+  String get weightTitle => 'Weight';
+
+  @override
+  String get weightAdd => 'Record your weight';
+
+  @override
+  String get weightLabel => 'Weight in kg';
+
+  @override
+  String get weightSaved => 'Weight recorded';
+
+  @override
+  String get weightInvalid => 'Enter a weight between 30 and 250 kg';
+
+  @override
+  String weightCurrent(String kg) {
+    return 'Now $kg kg';
+  }
+
+  @override
+  String weightGain(String kg) {
+    return '$kg kg gained';
+  }
+
+  @override
+  String weightChange(String kg) {
+    return '$kg kg since last time';
+  }
+
+  @override
+  String get weightEmpty =>
+      'Weigh yourself once a week: that shows the trend rather than the daily noise.';
+
+  @override
+  String get weightChartTitle => 'Weight by pregnancy week';
+
+  @override
+  String get weightDisclaimer =>
+      'How much gain is healthy depends on your starting weight. Discuss it with your doctor.';
+
+  @override
+  String get menopauseIntro =>
+      'Log hot flashes, sleep and mood: that shows what is changing, and what to raise with your doctor.';
+
+  @override
+  String get postpartumIntro =>
+      'Log how you feel, your sleep and your mood. Your cycle may take a while to return, and that is normal.';
+
+  @override
+  String postpartumWeeks(int weeks) {
+    String _temp0 = intl.Intl.pluralLogic(
+      weeks,
+      locale: localeName,
+      other: '$weeks weeks since birth',
+      one: '$weeks week since birth',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String symptomsWindowTitle(int days) {
+    return 'The last $days days';
+  }
+
+  @override
+  String get symptomsEmpty =>
+      'Nothing logged yet. Start with how you feel today.';
+
+  @override
+  String symptomsDaysCount(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days',
+      one: '$days day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String symptomsAverageSleep(String hours) {
+    return 'Sleep averages $hours h';
+  }
+
+  @override
+  String symptomsAverageMood(String score) {
+    return 'Mood averages $score out of 5';
+  }
+
+  @override
+  String symptomsLoggedDays(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days logged',
+      one: '$days day logged',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get trackerModeCycle => 'Cycle';
+
+  @override
+  String get trackerModePregnancy => 'Pregnancy';
+
+  @override
+  String get trackerModePostpartum => 'Postpartum';
+
+  @override
+  String get trackerModeMenopause => 'Menopause';
+
+  @override
+  String trackerBackToMode(String mode) {
+    return 'Back to $mode';
+  }
+
+  @override
+  String get trackerCycleCalendar => 'Cycle calendar';
+
+  @override
+  String weightKgValue(String kg) {
+    return '$kg kg';
+  }
 }
