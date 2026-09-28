@@ -26,7 +26,11 @@ import '../../features/onboarding/presentation/language_screen.dart';
 import '../../features/onboarding/presentation/onboarding_controller.dart';
 import '../../features/onboarding/presentation/quiz/quiz_screen.dart';
 import '../../features/onboarding/presentation/splash_screen.dart';
+import '../../features/premium/presentation/premium_screen.dart';
+import '../../features/premium/presentation/referral_screen.dart';
+import '../../features/profile/presentation/certificates_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
+import '../../features/profile/presentation/saved_screen.dart';
 import '../../features/qa/presentation/ask_question_screen.dart';
 import '../../features/qa/presentation/qa_screen.dart';
 import '../../features/qa/presentation/question_detail_screen.dart';
@@ -275,6 +279,28 @@ GoRouter appRouter(Ref ref) {
               ? LinkKind.family
               : LinkKind.partner,
         ),
+      ),
+      GoRoute(
+        path: AppRoutes.premium,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const PremiumScreen(),
+        routes: [
+          GoRoute(
+            path: 'referrals',
+            parentNavigatorKey: _rootNavigatorKey,
+            builder: (context, state) => const ReferralScreen(),
+          ),
+        ],
+      ),
+      GoRoute(
+        path: AppRoutes.saved,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const SavedScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.certificates,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const CertificatesScreen(),
       ),
       GoRoute(
         path: AppRoutes.settings,

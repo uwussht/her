@@ -195,13 +195,19 @@ void main() {
 
       await container.read(premiumControllerProvider.notifier).toggleDemo();
       expect(container.read(hasPremiumProvider), isTrue);
-      expect(container.read(premiumControllerProvider), PremiumStatus.trial);
+      expect(
+        container.read(premiumControllerProvider).status,
+        PremiumStatus.active,
+      );
 
       container.invalidate(premiumControllerProvider);
       expect(container.read(hasPremiumProvider), isTrue);
 
       await container.read(premiumControllerProvider.notifier).toggleDemo();
-      expect(container.read(premiumControllerProvider), PremiumStatus.free);
+      expect(
+        container.read(premiumControllerProvider).status,
+        PremiumStatus.free,
+      );
     });
   });
 }

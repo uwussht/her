@@ -14,7 +14,7 @@ A women's health, learning and shopping app for Kazakhstan, for users from their
 | 6 | Shop: catalog, cart, checkout (mock payment) | ✅ |
 | 7 | Circle AI chat (mock, then FastAPI `POST /ai/chat`) | ✅ |
 | 8 | Partner and family linking | ✅ |
-| 9 | Premium, paywall, referrals | ⏳ |
+| 9 | Premium, paywall, referrals | ✅ |
 | 10 | Pregnancy and menopause tracker modes | ⏳ |
 
 ## Getting started
@@ -185,6 +185,16 @@ Mock content ships without cover images, so cards render a tinted panel with the
 - **Unlinking** is one tap and a confirmation that says what changes, and it works offline: revoking is best-effort, removal is local.
 - **Moms & Daughters** adds the shared lesson list (`FamilyLessons`), which walks a fixed set of age-appropriate categories and drops anything the catalogue marks 18+, so the intimacy section can never appear there. The privacy promise is on the screen, and Profile keeps the invite waiting for a teen who asked for it during onboarding.
 - **Pairing needs a backend**, so `MockLinkService` stands in: it validates the code exactly as the server will, refuses her own code and a second link of the same kind, and pairs her with a placeholder peer. The viewer's side is served by `MockPeerSnapshotService` and labelled as sample data in the UI. The linked state is reachable through a clearly marked demo switch until Firestore can flip it for real.
+
+## Premium, the paywall and referrals (step 9)
+
+- **`PremiumMembership` owns all the date arithmetic** and is pure: the seven-day trial (offered once, ever), a plan's length, renewal that extends the period she already paid for rather than restarting it, and a cancellation that keeps the access she bought until it runs out. `hasAccessOn(now)` is the single answer to "does she have premium".
+- **Plans**: 2 490 ₸ a month or 19 900 ₸ a year, with the saving computed from the two prices — the badge can never disagree with the maths.
+- **Payment reuses the shop**: the same `PaymentService`, the same Luhn-checked card form, the same failure messages, so premium will move to Kaspi when the shop does and the standard decline card exercises the failure path here too. Cash on delivery is not offered for a subscription.
+- **The paywall sheet** stays short — the pitch, the trial, and a way to the full premium screen, which carries the five benefits from spec 5.9, both plans and the cancel action.
+- **Referrals**: her code is derived from her account id, so it survives a reinstall, and it avoids look-alike characters like the invite codes. One month per friend, capped at twelve, and `ReferralState` tracks what is owed separately from what has been paid out, so a month is never credited twice. A month earned before she subscribes is held and folded into her first payment.
+- **Profile** now carries what spec 5.9 asks for: her stage and age, a premium entry that shows the trial countdown, her circle (partner, family, referrals), her learning (saved items, certificates, orders), reminders, settings and sign-out. The life-stage switch offers only the stages that fit her age group, as the quiz does.
+- **Billing is still local.** There is no store subscription: `LocalPremiumRepository` keeps the membership in the encrypted box and the demo switch stays for manual testing. Google Play or Kaspi becomes the source of truth when the backend exists, and the shape above does not change.
 
 ## Quality checks
 

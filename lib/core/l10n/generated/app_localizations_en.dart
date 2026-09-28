@@ -2349,4 +2349,226 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get familyLinkWaiting =>
       'You asked to invite your mom — the code is here';
+
+  @override
+  String get premiumTitle => 'Her Circle Premium';
+
+  @override
+  String get premiumPitch =>
+      'Every course in full, unlimited Circle AI, and priority answers from doctors.';
+
+  @override
+  String get premiumBenefitFullCourses => 'Every course in full';
+
+  @override
+  String get premiumBenefitFullCoursesDesc =>
+      'All lessons, quizzes and certificates, with nothing held back.';
+
+  @override
+  String get premiumBenefitUnlimitedAi => 'Unlimited Circle AI';
+
+  @override
+  String get premiumBenefitUnlimitedAiDesc =>
+      'Ask as much as you need — the five-a-day limit is lifted.';
+
+  @override
+  String get premiumBenefitPriorityQa => 'Priority in Q&A';
+
+  @override
+  String get premiumBenefitPriorityQaDesc =>
+      'Doctors see your questions first.';
+
+  @override
+  String get premiumBenefitAdvancedInsights => 'Deeper insights';
+
+  @override
+  String get premiumBenefitAdvancedInsightsDesc =>
+      'A year of mood and cycle charts, and how accurate your forecasts are.';
+
+  @override
+  String get premiumBenefitNoAds => 'No ads';
+
+  @override
+  String get premiumBenefitNoAdsDesc =>
+      'No banners and no paid-for recommendations.';
+
+  @override
+  String get premiumPlanMonthly => 'Monthly';
+
+  @override
+  String get premiumPlanYearly => 'Yearly';
+
+  @override
+  String premiumPerMonth(String price) {
+    return '≈ $price a month';
+  }
+
+  @override
+  String premiumSave(int percent) {
+    return 'Save $percent%';
+  }
+
+  @override
+  String get premiumTrialCta => '7 days free';
+
+  @override
+  String premiumTrialNote(String price) {
+    return 'Free for 7 days, then $price. Cancel any time.';
+  }
+
+  @override
+  String premiumSubscribe(String price) {
+    return 'Subscribe for $price';
+  }
+
+  @override
+  String premiumTrialLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days left in your trial',
+      one: '$days day left in your trial',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String premiumActiveUntil(String date) {
+    return 'Premium is active until $date';
+  }
+
+  @override
+  String get premiumTrialUsed => 'You have already used the free trial.';
+
+  @override
+  String get premiumCancelPlan => 'Cancel renewal';
+
+  @override
+  String get premiumCancelTitle => 'Cancel renewal?';
+
+  @override
+  String get premiumCancelBody =>
+      'Your access lasts until the end of the period you have paid for.';
+
+  @override
+  String get premiumCancelled => 'Renewal cancelled';
+
+  @override
+  String get premiumPayTitle => 'Pay for premium';
+
+  @override
+  String get premiumThanks => 'Premium is on. Thank you!';
+
+  @override
+  String premiumBonusMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months bonus months are waiting for your first subscription',
+      one: '$months bonus month is waiting for your first subscription',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get premiumOpen => 'More about premium';
+
+  @override
+  String get referralTitle => 'Invite a friend';
+
+  @override
+  String get referralBody =>
+      'Share your code. When she signs up, you both get a month of premium.';
+
+  @override
+  String get referralCodeLabel => 'Your code';
+
+  @override
+  String referralShareText(String code) {
+    return 'Join me on Her Circle: your cycle, courses and Circle AI. My code is $code — we both get a month of premium.';
+  }
+
+  @override
+  String get referralShare => 'Share the code';
+
+  @override
+  String referralInvited(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count friends have joined',
+      one: '$count friend has joined',
+      zero: 'No one has joined yet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String referralEarned(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months months of premium earned',
+      one: '$months month of premium earned',
+      zero: 'No premium months earned yet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralDemoInvite => 'Demo: a friend signed up';
+
+  @override
+  String get referralDemoNote =>
+      'The real credit arrives with the backend, which checks the code when your friend signs up.';
+
+  @override
+  String referralRewarded(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months months of premium added',
+      one: '$months month of premium added',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralCapReached =>
+      'You have earned the maximum number of bonus months.';
+
+  @override
+  String get profileMyLearning => 'Learning';
+
+  @override
+  String get profileSaved => 'Saved';
+
+  @override
+  String get profileCertificates => 'Certificates';
+
+  @override
+  String get profileChangeStage => 'Change life stage';
+
+  @override
+  String get profileStageSaved => 'Life stage updated';
+
+  @override
+  String get savedEmpty => 'Nothing saved yet. Tap Save on anything in Learn.';
+
+  @override
+  String get certificatesEmpty => 'Finish a course to earn a certificate.';
+
+  @override
+  String certificatesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count certificates',
+      one: '$count certificate',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralCopied => 'Invite copied';
 }

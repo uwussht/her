@@ -2318,4 +2318,220 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get familyLinkWaiting => 'Анаңызды қосуды сұрағансыз — код осында';
+
+  @override
+  String get premiumTitle => 'Her Circle Premium';
+
+  @override
+  String get premiumPitch =>
+      'Курстарға толық қолжетімділік, шектеусіз Circle AI және дәрігер жауаптарында басымдық.';
+
+  @override
+  String get premiumBenefitFullCourses => 'Барлық курстар толық';
+
+  @override
+  String get premiumBenefitFullCoursesDesc =>
+      'Барлық сабақтар, тесттер және сертификаттар шектеусіз.';
+
+  @override
+  String get premiumBenefitUnlimitedAi => 'Шектеусіз Circle AI';
+
+  @override
+  String get premiumBenefitUnlimitedAiDesc =>
+      'Қанша керек болса, сұраңыз — күніне 5 сұрақ шегі алынады.';
+
+  @override
+  String get premiumBenefitPriorityQa => '«Сұрақ-жауапта» басымдық';
+
+  @override
+  String get premiumBenefitPriorityQaDesc =>
+      'Сіздің сұрақтарыңызды дәрігерлер бірінші көреді.';
+
+  @override
+  String get premiumBenefitAdvancedInsights => 'Кеңейтілген аналитика';
+
+  @override
+  String get premiumBenefitAdvancedInsightsDesc =>
+      'Жыл бойынша көңіл күй мен цикл графиктері және болжам дәлдігі.';
+
+  @override
+  String get premiumBenefitNoAds => 'Жарнамасыз';
+
+  @override
+  String get premiumBenefitNoAdsDesc =>
+      'Ешқандай баннер және ақы төленген ұсыныс жоқ.';
+
+  @override
+  String get premiumPlanMonthly => 'Ай';
+
+  @override
+  String get premiumPlanYearly => 'Жыл';
+
+  @override
+  String premiumPerMonth(String price) {
+    return '≈ айына $price';
+  }
+
+  @override
+  String premiumSave(int percent) {
+    return '$percent% тиімді';
+  }
+
+  @override
+  String get premiumTrialCta => '7 күн тегін';
+
+  @override
+  String premiumTrialNote(String price) {
+    return '7 күн тегін, содан кейін $price. Кез келген уақытта тоқтатуға болады.';
+  }
+
+  @override
+  String premiumSubscribe(String price) {
+    return '$price үшін рәсімдеу';
+  }
+
+  @override
+  String premiumTrialLeft(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Сынақ кезеңінде $days күн қалды',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String premiumActiveUntil(String date) {
+    return 'Премиум $date дейін белсенді';
+  }
+
+  @override
+  String get premiumTrialUsed => 'Сынақ кезеңі қолданылған.';
+
+  @override
+  String get premiumCancelPlan => 'Жаңартуды тоқтату';
+
+  @override
+  String get premiumCancelTitle => 'Жаңартуды тоқтату керек пе?';
+
+  @override
+  String get premiumCancelBody =>
+      'Қолжетімділік төленген кезең соңына дейін сақталады.';
+
+  @override
+  String get premiumCancelled => 'Жаңарту тоқтатылды';
+
+  @override
+  String get premiumPayTitle => 'Премиум төлемі';
+
+  @override
+  String get premiumThanks => 'Премиум белсенді. Рақмет!';
+
+  @override
+  String premiumBonusMonths(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months бонустық ай бірінші жазылымды күтіп тұр',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get premiumOpen => 'Премиум туралы толығырақ';
+
+  @override
+  String get referralTitle => 'Құрбыңызды шақыру';
+
+  @override
+  String get referralBody =>
+      'Кодпен бөлісіңіз. Ол тіркелгенде, екеуіңіз де бір ай премиум аласыздар.';
+
+  @override
+  String get referralCodeLabel => 'Сіздің кодыңыз';
+
+  @override
+  String referralShareText(String code) {
+    return 'Her Circle-ға менімен қосыл: цикл, курстар және Circle AI. Менің кодым $code — екеуімізге де бір ай премиум береді.';
+  }
+
+  @override
+  String get referralShare => 'Кодпен бөлісу';
+
+  @override
+  String referralInvited(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count құрбыңыз қосылды',
+      zero: 'Әзірге ешкім қосылмады',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String referralEarned(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ай премиум есептелді',
+      zero: 'Премиум айлары әзірге есептелмеді',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralDemoInvite => 'Демо: құрбыңыз тіркелді';
+
+  @override
+  String get referralDemoNote =>
+      'Нақты есептеу сервермен келеді: код құрбыңыз тіркелгенде тексеріледі.';
+
+  @override
+  String referralRewarded(int months) {
+    String _temp0 = intl.Intl.pluralLogic(
+      months,
+      locale: localeName,
+      other: '$months ай премиум есептелді',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralCapReached => 'Бонустық айлардың ең көп саны есептелді.';
+
+  @override
+  String get profileMyLearning => 'Оқу';
+
+  @override
+  String get profileSaved => 'Сақталғандар';
+
+  @override
+  String get profileCertificates => 'Сертификаттар';
+
+  @override
+  String get profileChangeStage => 'Өмір кезеңін ауыстыру';
+
+  @override
+  String get profileStageSaved => 'Кезең жаңартылды';
+
+  @override
+  String get savedEmpty =>
+      'Әзірге ештеңе сақталмаған. Кез келген материалда «Сақтау» түймесін басыңыз.';
+
+  @override
+  String get certificatesEmpty => 'Сертификат алу үшін курсты бітіріңіз.';
+
+  @override
+  String certificatesCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сертификат',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralCopied => 'Шақыру көшірілді';
 }

@@ -66,6 +66,12 @@ abstract final class AppRoutes {
   /// Accepting someone else's invite. [kind] is `partner` or `family`.
   static String circleJoin(String kind) => '/circle/join/$kind';
 
+  // Premium, referrals and her own library.
+  static const String premium = '/premium';
+  static const String referrals = '/premium/referrals';
+  static const String saved = '/saved';
+  static const String certificates = '/certificates';
+
   // Full-screen routes above the shell.
   static const String reminders = '/reminders';
   static const String vaccinations = '/reminders/vaccinations';

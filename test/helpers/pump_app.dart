@@ -22,6 +22,8 @@ import 'package:her_circle/features/circle/presentation/circle_providers.dart';
 import 'package:her_circle/features/home/presentation/home_providers.dart';
 import 'package:her_circle/features/learn/domain/course_progress.dart';
 import 'package:her_circle/features/onboarding/presentation/splash_screen.dart';
+import 'package:her_circle/features/premium/domain/premium_membership.dart';
+import 'package:her_circle/features/premium/domain/premium_plan.dart';
 import 'package:her_circle/features/profile/domain/personalization.dart';
 import 'package:her_circle/features/profile/domain/user_profile.dart';
 import 'package:her_circle/features/shop/domain/payment_service.dart';
@@ -58,6 +60,7 @@ Future<ProviderContainer> pumpHerCircle(
   Map<String, List<String>> progress = const {},
   List<Override> overrides = const [],
   AiService? aiService,
+  bool premium = false,
 }) async {
   GoogleFonts.config.allowRuntimeFetching = false;
   // The default 800x600 test window is neither phone-shaped nor tall enough
@@ -85,6 +88,15 @@ Future<ProviderContainer> pumpHerCircle(
   if (onboarded) {
     final p = profile ?? testProfile;
     await store.writeJson('profile.${p.uid}', p.toJson());
+  }
+
+  if (premium) {
+    // Membership lives in the encrypted store, not in preferences.
+    await store.writeJson('premium.membership.${testUser.uid}', {
+      ...PremiumMembership.free
+          .subscribe(PremiumPlan.yearly, DateTime(2026, 9, 1))
+          .toJson(),
+    });
   }
 
   if (bookmarks.isNotEmpty) {

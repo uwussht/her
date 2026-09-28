@@ -9,6 +9,7 @@ import 'package:her_circle/features/learn/presentation/learn_providers.dart';
 import 'package:her_circle/features/learn/presentation/lesson_screen.dart';
 import 'package:her_circle/features/learn/presentation/pregnancy_school_screen.dart';
 import 'package:her_circle/features/learn/presentation/quiz_screen.dart';
+import 'package:her_circle/features/premium/domain/premium_status.dart';
 import 'package:her_circle/features/premium/presentation/premium_controller.dart';
 import 'package:her_circle/features/profile/domain/personalization.dart';
 
@@ -131,9 +132,14 @@ void main() {
       findsNothing,
     );
 
+    // The gate sheet offers the free trial, which is how she unlocks it.
     await tapText(tester, 'More about Premium');
-    await tapText(tester, 'Turn on Premium (demo)');
+    await tapText(tester, '7 days free');
     expect(container.read(hasPremiumProvider), isTrue);
+    expect(
+      container.read(premiumControllerProvider).status,
+      PremiumStatus.trial,
+    );
     expect(
       find.textContaining('A normal cycle runs 21 to 35 days'),
       findsOneWidget,
@@ -157,7 +163,8 @@ void main() {
   testWidgets('walks a course: lesson, quiz, certificate', (tester) async {
     final container = await pumpHerCircle(
       tester,
-      prefs: {'settings.locale': 'en', 'premium.status': 'trial'},
+      prefs: {'settings.locale': 'en'},
+      premium: true,
     );
     await openLearn(tester);
 
@@ -217,7 +224,8 @@ void main() {
   testWidgets('finishing a course offers the certificate', (tester) async {
     await pumpHerCircle(
       tester,
-      prefs: {'settings.locale': 'en', 'premium.status': 'trial'},
+      prefs: {'settings.locale': 'en'},
+      premium: true,
       progress: {
         'course_cycle': ['l1', 'l2', 'l3', 'l4', 'l5', 'l6'],
       },
