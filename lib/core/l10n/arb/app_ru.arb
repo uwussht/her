@@ -2676,5 +2676,166 @@
         "type": "int"
       }
     }
+  },
+  "aiIntroTitle": "Спросите о чём угодно",
+  "@aiIntroTitle": {
+    "description": "Empty-state title on the AI chat"
+  },
+  "aiIntroBody": "Circle AI отвечает по материалам приложения: цикл, беременность, восстановление после родов, менопауза, уход в критические дни.",
+  "@aiIntroBody": {
+    "description": "Empty-state body on the AI chat"
+  },
+  "aiSuggestionsTitle": "С чего начать",
+  "@aiSuggestionsTitle": {
+    "description": "Heading above the suggested question chips"
+  },
+  "aiInputHint": "Ваш вопрос…",
+  "@aiInputHint": {
+    "description": "Hint of the chat input field"
+  },
+  "aiSend": "Отправить",
+  "@aiSend": {
+    "description": "Send button in the chat composer"
+  },
+  "aiThinking": "Circle AI печатает…",
+  "@aiThinking": {
+    "description": "Typing indicator while the answer is loading"
+  },
+  "aiAnswerDisclaimer": "Это не диагноз. За диагнозом — к врачу.",
+  "@aiAnswerDisclaimer": {
+    "description": "Medical disclaimer shown under every AI answer"
+  },
+  "aiReferencesTitle": "Об этом в приложении",
+  "@aiReferencesTitle": {
+    "description": "Heading above lesson and product links in an answer"
+  },
+  "aiErrorBody": "Не удалось получить ответ. Проверьте соединение и попробуйте снова.",
+  "@aiErrorBody": {
+    "description": "Error bubble body when the request failed"
+  },
+  "aiRetry": "Повторить",
+  "@aiRetry": {
+    "description": "Retry button on a failed answer"
+  },
+  "aiMessagesLeft": "{count, plural, one{Осталось {count} вопрос на сегодня} few{Осталось {count} вопроса на сегодня} many{Осталось {count} вопросов на сегодня} other{Осталось {count} вопроса на сегодня}}",
+  "@aiMessagesLeft": {
+    "description": "Free-tier counter in the chat header",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "aiUnlimited": "Премиум: без ограничений",
+  "@aiUnlimited": {
+    "description": "Shown instead of the counter with premium"
+  },
+  "aiLimitTitle": "Вопросы на сегодня закончились",
+  "@aiLimitTitle": {
+    "description": "aiLimitTitle"
+  },
+  "aiLimitBody": "Бесплатно — 5 вопросов в день. С премиумом их столько, сколько нужно, а счётчик обнуляется каждый день в полночь.",
+  "@aiLimitBody": {
+    "description": "aiLimitBody"
+  },
+  "aiLimitCta": "Что даёт премиум",
+  "@aiLimitCta": {
+    "description": "aiLimitCta"
+  },
+  "aiClear": "Очистить переписку",
+  "@aiClear": {
+    "description": "aiClear"
+  },
+  "aiClearConfirmTitle": "Очистить переписку?",
+  "@aiClearConfirmTitle": {
+    "description": "aiClearConfirmTitle"
+  },
+  "aiClearConfirmBody": "История хранится только на этом устройстве и будет удалена без возможности восстановить.",
+  "@aiClearConfirmBody": {
+    "description": "aiClearConfirmBody"
+  },
+  "aiClearConfirmAction": "Очистить",
+  "@aiClearConfirmAction": {
+    "description": "aiClearConfirmAction"
+  },
+  "aiCleared": "Переписка удалена",
+  "@aiCleared": {
+    "description": "aiCleared"
+  },
+  "aiHistoryLocal": "Переписка хранится только на вашем устройстве.",
+  "@aiHistoryLocal": {
+    "description": "Privacy note at the top of the AI chat"
+  },
+  "aiEmergencyTitle": "Похоже, нужна срочная помощь",
+  "@aiEmergencyTitle": {
+    "description": "aiEmergencyTitle"
+  },
+  "aiEmergencyBody": "В такой ситуации Circle AI помочь не может. Позвоните в скорую по номеру 103 или обратитесь в ближайшую больницу. Если рядом есть кто-то из близких — попросите помощи сейчас.",
+  "@aiEmergencyBody": {
+    "description": "aiEmergencyBody"
+  },
+  "aiEmergencyCall": "Позвонить 103",
+  "@aiEmergencyCall": {
+    "description": "aiEmergencyCall"
+  },
+  "aiEmergencyCallFailed": "Не удалось открыть набор номера. Наберите 103 вручную.",
+  "@aiEmergencyCallFailed": {
+    "description": "aiEmergencyCallFailed"
+  },
+  "aiQuestionCycleLength": "Какая длина цикла считается нормальной?",
+  "@aiQuestionCycleLength": {
+    "description": "aiQuestionCycleLength"
+  },
+  "aiQuestionPeriodPain": "Что помогает при боли во время месячных?",
+  "@aiQuestionPeriodPain": {
+    "description": "aiQuestionPeriodPain"
+  },
+  "aiQuestionMoodSwings": "Почему перед месячными меняется настроение?",
+  "@aiQuestionMoodSwings": {
+    "description": "aiQuestionMoodSwings"
+  },
+  "aiQuestionFirstPeriod": "Когда приходят первые месячные?",
+  "@aiQuestionFirstPeriod": {
+    "description": "aiQuestionFirstPeriod"
+  },
+  "aiQuestionPadsOrTampons": "Прокладки, тампоны или чаша — что выбрать?",
+  "@aiQuestionPadsOrTampons": {
+    "description": "aiQuestionPadsOrTampons"
+  },
+  "aiQuestionFertileDays": "Как определить фертильные дни?",
+  "@aiQuestionFertileDays": {
+    "description": "aiQuestionFertileDays"
+  },
+  "aiQuestionConceiveFaster": "Что помогает быстрее забеременеть?",
+  "@aiQuestionConceiveFaster": {
+    "description": "aiQuestionConceiveFaster"
+  },
+  "aiQuestionPregnancySafeFood": "Что нельзя есть при беременности?",
+  "@aiQuestionPregnancySafeFood": {
+    "description": "aiQuestionPregnancySafeFood"
+  },
+  "aiQuestionBabyMovements": "Когда я почувствую шевеления?",
+  "@aiQuestionBabyMovements": {
+    "description": "aiQuestionBabyMovements"
+  },
+  "aiQuestionPostpartumRecovery": "Как проходит восстановление после родов?",
+  "@aiQuestionPostpartumRecovery": {
+    "description": "aiQuestionPostpartumRecovery"
+  },
+  "aiQuestionBreastfeedingPain": "Почему болит грудь при кормлении?",
+  "@aiQuestionBreastfeedingPain": {
+    "description": "aiQuestionBreastfeedingPain"
+  },
+  "aiQuestionHotFlashes": "Что делать при приливах?",
+  "@aiQuestionHotFlashes": {
+    "description": "aiQuestionHotFlashes"
+  },
+  "aiQuestionMenopauseSleep": "Почему я плохо сплю при менопаузе?",
+  "@aiQuestionMenopauseSleep": {
+    "description": "aiQuestionMenopauseSleep"
+  },
+  "aiQuestionIronFoods": "В каких продуктах больше железа?",
+  "@aiQuestionIronFoods": {
+    "description": "aiQuestionIronFoods"
   }
 }

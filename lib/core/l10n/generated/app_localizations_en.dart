@@ -1964,4 +1964,140 @@ class AppLocalizationsEn extends AppLocalizations {
   String orderQuantityShort(int count) {
     return '× $count';
   }
+
+  @override
+  String get aiIntroTitle => 'Ask anything';
+
+  @override
+  String get aiIntroBody =>
+      'Circle AI answers from the app\'s own material: your cycle, pregnancy, recovery after birth, menopause and period care.';
+
+  @override
+  String get aiSuggestionsTitle => 'Where to start';
+
+  @override
+  String get aiInputHint => 'Your question…';
+
+  @override
+  String get aiSend => 'Send';
+
+  @override
+  String get aiThinking => 'Circle AI is typing…';
+
+  @override
+  String get aiAnswerDisclaimer =>
+      'This is not a diagnosis. For a diagnosis, see a doctor.';
+
+  @override
+  String get aiReferencesTitle => 'More on this in the app';
+
+  @override
+  String get aiErrorBody =>
+      'Could not get an answer. Check your connection and try again.';
+
+  @override
+  String get aiRetry => 'Try again';
+
+  @override
+  String aiMessagesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count questions left today',
+      one: '$count question left today',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiUnlimited => 'Premium: unlimited';
+
+  @override
+  String get aiLimitTitle => 'You have used today’s questions';
+
+  @override
+  String get aiLimitBody =>
+      'The free plan gives 5 questions a day. Premium makes them unlimited, and the counter resets at midnight.';
+
+  @override
+  String get aiLimitCta => 'See what premium gives';
+
+  @override
+  String get aiClear => 'Clear the chat';
+
+  @override
+  String get aiClearConfirmTitle => 'Clear the chat?';
+
+  @override
+  String get aiClearConfirmBody =>
+      'The history is kept on this device only and will be deleted for good.';
+
+  @override
+  String get aiClearConfirmAction => 'Clear';
+
+  @override
+  String get aiCleared => 'Chat cleared';
+
+  @override
+  String get aiHistoryLocal => 'This chat is stored on your device only.';
+
+  @override
+  String get aiEmergencyTitle => 'This sounds like it needs urgent care';
+
+  @override
+  String get aiEmergencyBody =>
+      'Circle AI cannot help with this. Call the ambulance on 103 or go to the nearest hospital. If someone is with you, ask them for help now.';
+
+  @override
+  String get aiEmergencyCall => 'Call 103';
+
+  @override
+  String get aiEmergencyCallFailed =>
+      'Could not open the dialler. Please dial 103 yourself.';
+
+  @override
+  String get aiQuestionCycleLength => 'What cycle length is normal?';
+
+  @override
+  String get aiQuestionPeriodPain => 'What helps with period pain?';
+
+  @override
+  String get aiQuestionMoodSwings =>
+      'Why does my mood change before my period?';
+
+  @override
+  String get aiQuestionFirstPeriod => 'When does a first period come?';
+
+  @override
+  String get aiQuestionPadsOrTampons =>
+      'Pads, tampons or a cup — which should I use?';
+
+  @override
+  String get aiQuestionFertileDays => 'How do I find my fertile days?';
+
+  @override
+  String get aiQuestionConceiveFaster => 'What helps to conceive sooner?';
+
+  @override
+  String get aiQuestionPregnancySafeFood =>
+      'What should I not eat while pregnant?';
+
+  @override
+  String get aiQuestionBabyMovements => 'When will I feel the baby move?';
+
+  @override
+  String get aiQuestionPostpartumRecovery =>
+      'What does recovery after birth look like?';
+
+  @override
+  String get aiQuestionBreastfeedingPain => 'Why does breastfeeding hurt?';
+
+  @override
+  String get aiQuestionHotFlashes => 'What can I do about hot flashes?';
+
+  @override
+  String get aiQuestionMenopauseSleep => 'Why do I sleep badly in menopause?';
+
+  @override
+  String get aiQuestionIronFoods => 'Which foods have the most iron?';
 }

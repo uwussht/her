@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart' show Size;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:her_circle/app.dart';
@@ -11,6 +12,9 @@ import 'package:her_circle/core/services/storage/local_store.dart';
 import 'package:her_circle/core/services/storage/preferences_service.dart';
 import 'package:her_circle/features/auth/data/mock_auth_repository.dart';
 import 'package:her_circle/features/auth/domain/app_user.dart';
+import 'package:her_circle/features/ai_assistant/data/mock_ai_service.dart';
+import 'package:her_circle/features/ai_assistant/domain/ai_service.dart';
+import 'package:her_circle/features/ai_assistant/presentation/ai_providers.dart';
 import 'package:her_circle/features/auth/presentation/auth_providers.dart';
 import 'package:her_circle/features/home/presentation/home_providers.dart';
 import 'package:her_circle/features/learn/domain/course_progress.dart';
@@ -39,7 +43,9 @@ final testProfile = UserProfile(
 /// Pumps the whole app with in-memory storage and instant mock auth.
 ///
 /// With [onboarded] the user is signed in with a finished quiz, so the app
-/// opens on Home. Otherwise it starts from the intro.
+/// opens on Home. Otherwise it starts from the intro. [overrides] are applied
+/// last, so a test can swap in its own providers, and [aiService] replaces
+/// the mock assistant, e.g. with one that fails.
 Future<ProviderContainer> pumpHerCircle(
   WidgetTester tester, {
   bool onboarded = true,
@@ -47,6 +53,8 @@ Future<ProviderContainer> pumpHerCircle(
   Map<String, Object> prefs = const {},
   Set<String> bookmarks = const {},
   Map<String, List<String>> progress = const {},
+  List<Override> overrides = const [],
+  AiService? aiService,
 }) async {
   GoogleFonts.config.allowRuntimeFetching = false;
   // The default 800x600 test window is neither phone-shaped nor tall enough
@@ -96,12 +104,15 @@ Future<ProviderContainer> pumpHerCircle(
     });
   }
 
+  final loader = MockAssetLoader.preloaded(assets);
   final container = ProviderContainer(
     overrides: [
       sharedPreferencesProvider.overrideWithValue(sharedPrefs),
       localStoreProvider.overrideWithValue(store),
-      mockAssetLoaderProvider.overrideWithValue(
-        MockAssetLoader.preloaded(assets),
+      mockAssetLoaderProvider.overrideWithValue(loader),
+      // Instant answers, for the same reason as payments below.
+      aiServiceProvider.overrideWithValue(
+        aiService ?? MockAiService(loader, latency: Duration.zero),
       ),
       // Instant payments: pumpAndSettle does not advance a pending timer.
       paymentServiceProvider.overrideWithValue(
@@ -113,6 +124,8 @@ Future<ProviderContainer> pumpHerCircle(
           latency: Duration.zero,
         ),
       ),
+      // Per-test overrides come last, so they win.
+      ...overrides,
     ],
   );
   addTearDown(container.dispose);
@@ -161,4 +174,5 @@ const mockAssetNames = [
   'products',
   'sellers',
   'reviews',
+  'ai_answers',
 ];

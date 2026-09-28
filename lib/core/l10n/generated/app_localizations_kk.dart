@@ -1930,4 +1930,141 @@ class AppLocalizationsKk extends AppLocalizations {
   String orderQuantityShort(int count) {
     return '× $count';
   }
+
+  @override
+  String get aiIntroTitle => 'Кез келген сұрақ қойыңыз';
+
+  @override
+  String get aiIntroBody =>
+      'Circle AI қолданба материалдары бойынша жауап береді: цикл, жүктілік, босанғаннан кейінгі қалпына келу, менопауза, етеккір күндеріндегі күтім.';
+
+  @override
+  String get aiSuggestionsTitle => 'Неден бастауға болады';
+
+  @override
+  String get aiInputHint => 'Сұрағыңыз…';
+
+  @override
+  String get aiSend => 'Жіберу';
+
+  @override
+  String get aiThinking => 'Circle AI жазып жатыр…';
+
+  @override
+  String get aiAnswerDisclaimer =>
+      'Бұл диагноз емес. Диагноз үшін дәрігерге барыңыз.';
+
+  @override
+  String get aiReferencesTitle => 'Бұл туралы қолданбада';
+
+  @override
+  String get aiErrorBody =>
+      'Жауап алу мүмкін болмады. Байланысты тексеріп, қайта көріңіз.';
+
+  @override
+  String get aiRetry => 'Қайталау';
+
+  @override
+  String aiMessagesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Бүгінге $count сұрақ қалды',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiUnlimited => 'Премиум: шектеусіз';
+
+  @override
+  String get aiLimitTitle => 'Бүгінгі сұрақтар бітті';
+
+  @override
+  String get aiLimitBody =>
+      'Тегін — күніне 5 сұрақ. Премиуммен қанша керек болса, сонша, ал есептегіш күн сайын түн ортасында нөлденеді.';
+
+  @override
+  String get aiLimitCta => 'Премиум не береді';
+
+  @override
+  String get aiClear => 'Чатты тазалау';
+
+  @override
+  String get aiClearConfirmTitle => 'Чатты тазалау керек пе?';
+
+  @override
+  String get aiClearConfirmBody =>
+      'Тарих осы құрылғыда ғана сақталады және қалпына келтірместен жойылады.';
+
+  @override
+  String get aiClearConfirmAction => 'Тазалау';
+
+  @override
+  String get aiCleared => 'Чат жойылды';
+
+  @override
+  String get aiHistoryLocal => 'Чат тек сіздің құрылғыңызда сақталады.';
+
+  @override
+  String get aiEmergencyTitle => 'Шұғыл көмек керек сияқты';
+
+  @override
+  String get aiEmergencyBody =>
+      'Мұндай жағдайда Circle AI көмектесе алмайды. 103 нөміріне жедел жәрдемге қоңырау шалыңыз немесе жақын ауруханаға барыңыз. Қасыңызда жақын адам болса, дәл қазір көмек сұраңыз.';
+
+  @override
+  String get aiEmergencyCall => '103-ке қоңырау шалу';
+
+  @override
+  String get aiEmergencyCallFailed =>
+      'Нөмір терушіні ашу мүмкін болмады. 103 нөмірін қолмен теріңіз.';
+
+  @override
+  String get aiQuestionCycleLength =>
+      'Циклдің қандай ұзақтығы қалыпты саналады?';
+
+  @override
+  String get aiQuestionPeriodPain =>
+      'Етеккір кезіндегі ауырсынуға не көмектеседі?';
+
+  @override
+  String get aiQuestionMoodSwings => 'Етеккір алдында көңіл күй неге өзгереді?';
+
+  @override
+  String get aiQuestionFirstPeriod => 'Алғашқы етеккір қашан келеді?';
+
+  @override
+  String get aiQuestionPadsOrTampons =>
+      'Орамал, тампон немесе тостаған — қайсысын таңдау керек?';
+
+  @override
+  String get aiQuestionFertileDays =>
+      'Құнарлы күндерді қалай анықтауға болады?';
+
+  @override
+  String get aiQuestionConceiveFaster => 'Тезірек жүкті болуға не көмектеседі?';
+
+  @override
+  String get aiQuestionPregnancySafeFood => 'Жүкті кезде не жеуге болмайды?';
+
+  @override
+  String get aiQuestionBabyMovements => 'Бала қимылын қашан сезінемін?';
+
+  @override
+  String get aiQuestionPostpartumRecovery =>
+      'Босанғаннан кейінгі қалпына келу қалай өтеді?';
+
+  @override
+  String get aiQuestionBreastfeedingPain => 'Емізу кезінде кеуде неге ауырады?';
+
+  @override
+  String get aiQuestionHotFlashes => 'Қызу толқыны кезінде не істеу керек?';
+
+  @override
+  String get aiQuestionMenopauseSleep =>
+      'Менопауза кезінде неге жақсы ұйықтамаймын?';
+
+  @override
+  String get aiQuestionIronFoods => 'Қандай тамақта темір көп?';
 }

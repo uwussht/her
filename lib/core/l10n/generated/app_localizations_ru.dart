@@ -1985,4 +1985,140 @@ class AppLocalizationsRu extends AppLocalizations {
   String orderQuantityShort(int count) {
     return '× $count';
   }
+
+  @override
+  String get aiIntroTitle => 'Спросите о чём угодно';
+
+  @override
+  String get aiIntroBody =>
+      'Circle AI отвечает по материалам приложения: цикл, беременность, восстановление после родов, менопауза, уход в критические дни.';
+
+  @override
+  String get aiSuggestionsTitle => 'С чего начать';
+
+  @override
+  String get aiInputHint => 'Ваш вопрос…';
+
+  @override
+  String get aiSend => 'Отправить';
+
+  @override
+  String get aiThinking => 'Circle AI печатает…';
+
+  @override
+  String get aiAnswerDisclaimer => 'Это не диагноз. За диагнозом — к врачу.';
+
+  @override
+  String get aiReferencesTitle => 'Об этом в приложении';
+
+  @override
+  String get aiErrorBody =>
+      'Не удалось получить ответ. Проверьте соединение и попробуйте снова.';
+
+  @override
+  String get aiRetry => 'Повторить';
+
+  @override
+  String aiMessagesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Осталось $count вопроса на сегодня',
+      many: 'Осталось $count вопросов на сегодня',
+      few: 'Осталось $count вопроса на сегодня',
+      one: 'Осталось $count вопрос на сегодня',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get aiUnlimited => 'Премиум: без ограничений';
+
+  @override
+  String get aiLimitTitle => 'Вопросы на сегодня закончились';
+
+  @override
+  String get aiLimitBody =>
+      'Бесплатно — 5 вопросов в день. С премиумом их столько, сколько нужно, а счётчик обнуляется каждый день в полночь.';
+
+  @override
+  String get aiLimitCta => 'Что даёт премиум';
+
+  @override
+  String get aiClear => 'Очистить переписку';
+
+  @override
+  String get aiClearConfirmTitle => 'Очистить переписку?';
+
+  @override
+  String get aiClearConfirmBody =>
+      'История хранится только на этом устройстве и будет удалена без возможности восстановить.';
+
+  @override
+  String get aiClearConfirmAction => 'Очистить';
+
+  @override
+  String get aiCleared => 'Переписка удалена';
+
+  @override
+  String get aiHistoryLocal => 'Переписка хранится только на вашем устройстве.';
+
+  @override
+  String get aiEmergencyTitle => 'Похоже, нужна срочная помощь';
+
+  @override
+  String get aiEmergencyBody =>
+      'В такой ситуации Circle AI помочь не может. Позвоните в скорую по номеру 103 или обратитесь в ближайшую больницу. Если рядом есть кто-то из близких — попросите помощи сейчас.';
+
+  @override
+  String get aiEmergencyCall => 'Позвонить 103';
+
+  @override
+  String get aiEmergencyCallFailed =>
+      'Не удалось открыть набор номера. Наберите 103 вручную.';
+
+  @override
+  String get aiQuestionCycleLength => 'Какая длина цикла считается нормальной?';
+
+  @override
+  String get aiQuestionPeriodPain => 'Что помогает при боли во время месячных?';
+
+  @override
+  String get aiQuestionMoodSwings =>
+      'Почему перед месячными меняется настроение?';
+
+  @override
+  String get aiQuestionFirstPeriod => 'Когда приходят первые месячные?';
+
+  @override
+  String get aiQuestionPadsOrTampons =>
+      'Прокладки, тампоны или чаша — что выбрать?';
+
+  @override
+  String get aiQuestionFertileDays => 'Как определить фертильные дни?';
+
+  @override
+  String get aiQuestionConceiveFaster => 'Что помогает быстрее забеременеть?';
+
+  @override
+  String get aiQuestionPregnancySafeFood => 'Что нельзя есть при беременности?';
+
+  @override
+  String get aiQuestionBabyMovements => 'Когда я почувствую шевеления?';
+
+  @override
+  String get aiQuestionPostpartumRecovery =>
+      'Как проходит восстановление после родов?';
+
+  @override
+  String get aiQuestionBreastfeedingPain => 'Почему болит грудь при кормлении?';
+
+  @override
+  String get aiQuestionHotFlashes => 'Что делать при приливах?';
+
+  @override
+  String get aiQuestionMenopauseSleep => 'Почему я плохо сплю при менопаузе?';
+
+  @override
+  String get aiQuestionIronFoods => 'В каких продуктах больше железа?';
 }

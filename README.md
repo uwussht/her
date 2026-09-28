@@ -12,7 +12,7 @@ A women's health, learning and shopping app for Kazakhstan, for users from their
 | 4 | Home feed with mock content | ✅ |
 | 5 | Learn: lessons, courses, video, Q&A | ✅ |
 | 6 | Shop: catalog, cart, checkout (mock payment) | ✅ |
-| 7 | Circle AI chat (mock, then FastAPI `POST /ai/chat`) | ⏳ |
+| 7 | Circle AI chat (mock, then FastAPI `POST /ai/chat`) | ✅ |
 | 8 | Partner and family linking | ⏳ |
 | 9 | Premium, paywall, referrals | ⏳ |
 | 10 | Pregnancy and menopause tracker modes | ⏳ |
@@ -161,6 +161,18 @@ Mock content ships without cover images, so cards render a tinted panel with the
 - **Card entry** validates with the Luhn checksum, expiry and CVC as she types. Nothing is stored: the details live in the checkout screen and are dropped when it closes.
 - **Orders**: confirmation with a short reference, history, and a tracking timeline. Prices are snapshotted at checkout, so a receipt never changes when the catalogue does.
 - **Subscription boxes**: the monthly box is scheduled to arrive three days before her predicted period, the trimester box ships in three deliveries.
+
+## Circle AI (step 7)
+
+- **The chat** opens from the floating button on every main tab. Her questions are pink bubbles, answers green-tinted, and every answer carries the medical disclaimer and the line "this is not a diagnosis".
+- **Suggested questions** follow her life stage (`SuggestedQuestion.forProfile`), and the conception starters are never offered to a 10-15 year old.
+- **Answers link into the app**: a reply carries lesson and product references, rendered as chips that open Learn and Shop. A reference to something no longer in the catalogue simply disappears.
+- **Emergency screening runs on the device**, before anything is sent. `EmergencyDetector` matches red-flag phrases in all three languages (heavy bleeding, severe pain, fainting, pregnancy red flags, self-harm) and shows the urgent-care card with a one-tap call to **103** instead of an answer. Nothing is sent, nothing is charged against her daily quota, and it works with no connection. The backend checks again; either side saying yes is enough.
+- **Free tier: 5 questions a day, premium unlimited.** `AiQuota` is pure and unit-tested at the boundary; the counter resets at midnight, and only a delivered answer is charged, so a failed request costs nothing.
+- **History stays on the device**, in the encrypted Hive box, capped at 100 messages, and can be cleared from the chat. It is never synced.
+- **The backend contract** is `POST /ai/chat` with `{ message, userContext: { ageGroup, stage, cycleDay, pregWeek, language } }`, answering `{ reply, references, emergency }`. The context is deliberately thin: an age band such as `25-34`, a stage, a cycle day — never a birth date or her log.
+- **No API key ships in the app.** `HttpAiService` talks only to our FastAPI proxy, which holds the model provider's key and the system prompt, so the safety rules cannot be edited by unpacking the APK. Point a build at it with `--dart-define=AI_BASE_URL=https://…` and `--dart-define=USE_MOCKS=false`.
+- **Until that proxy exists**, `MockAiService` answers from `assets/mock/ai_answers.json`: 17 topics plus a fallback, in all three languages, with real lesson and product references. Keywords are stored as stems (`желез`, not `железо`) because they are matched as substrings and both Russian and Kazakh inflect almost every ending.
 
 ## Quality checks
 
