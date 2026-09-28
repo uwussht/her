@@ -56,6 +56,16 @@ abstract final class AppRoutes {
 
   static String qaQuestion(String id) => '$qa/$id';
 
+  // Her circle: partner and Moms & Daughters links.
+  static const String circlePartner = '/circle/partner';
+  static const String circleFamily = '/circle/family';
+
+  /// What her partner sees, as she sees it.
+  static const String circlePartnerPreview = '$circlePartner/preview';
+
+  /// Accepting someone else's invite. [kind] is `partner` or `family`.
+  static String circleJoin(String kind) => '/circle/join/$kind';
+
   // Full-screen routes above the shell.
   static const String reminders = '/reminders';
   static const String vaccinations = '/reminders/vaccinations';

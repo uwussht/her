@@ -16,6 +16,9 @@ import 'package:her_circle/features/ai_assistant/data/mock_ai_service.dart';
 import 'package:her_circle/features/ai_assistant/domain/ai_service.dart';
 import 'package:her_circle/features/ai_assistant/presentation/ai_providers.dart';
 import 'package:her_circle/features/auth/presentation/auth_providers.dart';
+import 'package:her_circle/features/circle/data/mock_link_service.dart';
+import 'package:her_circle/features/circle/data/mock_peer_snapshot_service.dart';
+import 'package:her_circle/features/circle/presentation/circle_providers.dart';
 import 'package:her_circle/features/home/presentation/home_providers.dart';
 import 'package:her_circle/features/learn/domain/course_progress.dart';
 import 'package:her_circle/features/onboarding/presentation/splash_screen.dart';
@@ -110,6 +113,13 @@ Future<ProviderContainer> pumpHerCircle(
       sharedPreferencesProvider.overrideWithValue(sharedPrefs),
       localStoreProvider.overrideWithValue(store),
       mockAssetLoaderProvider.overrideWithValue(loader),
+      // Instant links and snapshots, for the same reason as payments below.
+      linkServiceProvider.overrideWithValue(
+        const MockLinkService(latency: Duration.zero),
+      ),
+      peerSnapshotServiceProvider.overrideWithValue(
+        const MockPeerSnapshotService(latency: Duration.zero),
+      ),
       // Instant answers, for the same reason as payments below.
       aiServiceProvider.overrideWithValue(
         aiService ?? MockAiService(loader, latency: Duration.zero),

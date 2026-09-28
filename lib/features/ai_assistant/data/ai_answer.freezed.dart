@@ -17,6 +17,10 @@ T _$identity<T>(T value) => value;
 mixin _$AiAnswer {
 
  String get id;/// Phrases that select this answer, per language.
+///
+/// Stored as stems (lowercase, trailing vowels and soft signs trimmed:
+/// `желез`, not `железо`), because they are matched as substrings and
+/// Russian and Kazakh inflect the ending of almost every word.
  Map<String, List<String>> get keywords;@LocalizedTextConverter() LocalizedText get answer; List<ChatReference> get references;
 /// Create a copy of AiAnswer
 /// with the given fields replaced by the non-null parameter values.
@@ -224,8 +228,16 @@ class _AiAnswer extends AiAnswer {
 
 @override final  String id;
 /// Phrases that select this answer, per language.
+///
+/// Stored as stems (lowercase, trailing vowels and soft signs trimmed:
+/// `желез`, not `железо`), because they are matched as substrings and
+/// Russian and Kazakh inflect the ending of almost every word.
  final  Map<String, List<String>> _keywords;
 /// Phrases that select this answer, per language.
+///
+/// Stored as stems (lowercase, trailing vowels and soft signs trimmed:
+/// `желез`, not `железо`), because they are matched as substrings and
+/// Russian and Kazakh inflect the ending of almost every word.
 @override@JsonKey() Map<String, List<String>> get keywords {
   if (_keywords is EqualUnmodifiableMapView) return _keywords;
   // ignore: implicit_dynamic_type

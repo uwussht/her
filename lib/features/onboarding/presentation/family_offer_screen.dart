@@ -7,7 +7,8 @@ import '../../../core/widgets/widgets.dart';
 import 'onboarding_controller.dart';
 
 /// Shown once to users under 16 after the quiz: offers Moms & Daughters
-/// linking. The linking flow itself is built in step 8.
+/// linking. Accepting only records the request: Profile then shows the
+/// Moms & Daughters entry as waiting, and the linking itself happens there.
 class FamilyOfferScreen extends ConsumerWidget {
   const FamilyOfferScreen({super.key});
 
@@ -21,7 +22,9 @@ class FamilyOfferScreen extends ConsumerWidget {
     await ref
         .read(onboardingControllerProvider.notifier)
         .completeFamilyOffer(linkRequested: accepted);
-    // The router redirect moves on to Home.
+    // The router redirect moves on to Home. The request is remembered, and
+    // Profile carries it as a reminder until the link exists, so she is not
+    // dropped into a linking flow before she has seen the app.
     if (accepted) messenger.showSnackBar(SnackBar(content: Text(message)));
   }
 

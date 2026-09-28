@@ -121,6 +121,8 @@ void main() {
 
     expect(find.byType(FamilyOfferScreen), findsOneWidget);
     await tapText(tester, 'Invite my mom');
+    // Onboarding finishes on Home, with Moms & Daughters opened on top so the
+    // invite is one tap away.
     expect(find.byType(HomeScreen), findsOneWidget);
     expect(
       container.read(preferencesServiceProvider).familyLinkRequested,

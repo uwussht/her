@@ -4,6 +4,11 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../features/ai_assistant/presentation/ai_assistant_screen.dart';
 import '../../features/auth/presentation/auth_welcome_screen.dart';
+import '../../features/circle/domain/circle_link.dart';
+import '../../features/circle/presentation/family_screen.dart';
+import '../../features/circle/presentation/join_link_screen.dart';
+import '../../features/circle/presentation/partner_preview_screen.dart';
+import '../../features/circle/presentation/partner_screen.dart';
 import '../../features/auth/presentation/email_auth_screen.dart';
 import '../../features/auth/presentation/otp_screen.dart';
 import '../../features/auth/presentation/phone_auth_screen.dart';
@@ -244,6 +249,32 @@ GoRouter appRouter(Ref ref) {
             builder: (context, state) => const VaccinationsScreen(),
           ),
         ],
+      ),
+      GoRoute(
+        path: AppRoutes.circlePartner,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const PartnerScreen(),
+        routes: [
+          GoRoute(
+            path: 'preview',
+            parentNavigatorKey: _rootNavigatorKey,
+            builder: (context, state) => const PartnerPreviewScreen(),
+          ),
+        ],
+      ),
+      GoRoute(
+        path: AppRoutes.circleFamily,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const FamilyScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.circleJoin(':kind'),
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => JoinLinkScreen(
+          kind: state.pathParameters['kind'] == LinkKind.family.name
+              ? LinkKind.family
+              : LinkKind.partner,
+        ),
       ),
       GoRoute(
         path: AppRoutes.settings,

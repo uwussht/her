@@ -13,7 +13,7 @@ A women's health, learning and shopping app for Kazakhstan, for users from their
 | 5 | Learn: lessons, courses, video, Q&A | ✅ |
 | 6 | Shop: catalog, cart, checkout (mock payment) | ✅ |
 | 7 | Circle AI chat (mock, then FastAPI `POST /ai/chat`) | ✅ |
-| 8 | Partner and family linking | ⏳ |
+| 8 | Partner and family linking | ✅ |
 | 9 | Premium, paywall, referrals | ⏳ |
 | 10 | Pregnancy and menopause tracker modes | ⏳ |
 
@@ -173,6 +173,18 @@ Mock content ships without cover images, so cards render a tinted panel with the
 - **The backend contract** is `POST /ai/chat` with `{ message, userContext: { ageGroup, stage, cycleDay, pregWeek, language } }`, answering `{ reply, references, emergency }`. The context is deliberately thin: an age band such as `25-34`, a stage, a cycle day — never a birth date or her log.
 - **No API key ships in the app.** `HttpAiService` talks only to our FastAPI proxy, which holds the model provider's key and the system prompt, so the safety rules cannot be edited by unpacking the APK. Point a build at it with `--dart-define=AI_BASE_URL=https://…` and `--dart-define=USE_MOCKS=false`.
 - **Until that proxy exists**, `MockAiService` answers from `assets/mock/ai_answers.json`: 17 topics plus a fallback, in all three languages, with real lesson and product references. Keywords are stored as stems (`желез`, not `железо`) because they are matched as substrings and both Russian and Kazakh inflect almost every ending.
+
+## Her circle: partner and family (step 8)
+
+- **One model, both ends.** `CircleLink` holds the link whichever side this device is (`LinkSide.sharer` / `viewer`) and whichever kind it is (`partner` / `family`), so the invite, the switches and unlinking are written once. Links live in the encrypted box, keyed per user.
+- **Invite codes** are six characters from an alphabet with no look-alikes — no O/0, I/1 or S/5 — and `InviteCode.normalize` maps the ones people still confuse, so `o0i1s5` typed in lower case resolves to a valid code. The invite screen shows the code grouped as `ABC-D2F` for reading aloud, plus a QR carrying a `hercircle://join?code=…` deep link any camera app can open.
+- **Nothing is shared without a switch.** `ShareScope` is five separate toggles (life stage, cycle day and phase, mood, pregnancy, symptoms). A partner link starts on three of them; a family link starts on **none**, because spec 5.8 says the daughter's tracker is hers.
+- **`PartnerSummaryService` is the only place that decides what crosses a link**, and it is pure and unit-tested. A scope that is off leaves no trace: not a field, and not the support tip either — a withheld low mood cannot leak through "listen rather than advise". With everything off he still gets a tip, and it says nothing about her.
+- **"See what your partner sees"** renders that summary from her real data through her real switches, which is the only honest way to show her what she is sharing.
+- **Support tips** (`SupportTip.forDay`) pick from what she shares: a shared low mood outranks the cycle phase, the stage outranks the phase, and the fallback is always true.
+- **Unlinking** is one tap and a confirmation that says what changes, and it works offline: revoking is best-effort, removal is local.
+- **Moms & Daughters** adds the shared lesson list (`FamilyLessons`), which walks a fixed set of age-appropriate categories and drops anything the catalogue marks 18+, so the intimacy section can never appear there. The privacy promise is on the screen, and Profile keeps the invite waiting for a teen who asked for it during onboarding.
+- **Pairing needs a backend**, so `MockLinkService` stands in: it validates the code exactly as the server will, refuses her own code and a second link of the same kind, and pairs her with a placeholder peer. The viewer's side is served by `MockPeerSnapshotService` and labelled as sample data in the UI. The linked state is reachable through a clearly marked demo switch until Firestore can flip it for real.
 
 ## Quality checks
 

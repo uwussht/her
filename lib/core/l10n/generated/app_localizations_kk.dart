@@ -2067,4 +2067,255 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get aiQuestionIronFoods => 'Қандай тамақта темір көп?';
+
+  @override
+  String get circleTitle => 'Менің шеңберім';
+
+  @override
+  String get circleSubtitle => 'Серіктес және «Аналар мен қыздар» режимі';
+
+  @override
+  String get partnerTitle => 'Серіктес';
+
+  @override
+  String get partnerIntroBody =>
+      'Серіктесіңіз сіз бөліскен нәрсені ғана көріп, бүгін қалай қолдау көрсетуді білуі үшін оны қосыңыз.';
+
+  @override
+  String get familyTitle => 'Аналар мен қыздар';
+
+  @override
+  String get familyIntroBody =>
+      'Ана мен қыз бір-біріне қосылып, жасына сай сабақтарды бірге алады. Қыздың трекері ол өзі бөліспегенше құпия болып қалады.';
+
+  @override
+  String get circleCreateInvite => 'Шақыру кодын жасау';
+
+  @override
+  String get circleInviteTitle => 'Осы кодты көрсетіңіз';
+
+  @override
+  String get circleInviteBody =>
+      'Кодты айтып беріңіз немесе QR-ды сканерлетіңіз. Ол оны өз телефонындағы Her Circle-ға енгізеді.';
+
+  @override
+  String get circleCopyCode => 'Кодты көшіру';
+
+  @override
+  String get circleCodeCopied => 'Код көшірілді';
+
+  @override
+  String get circleQrHint => 'QR-ды телефон камерасымен сканерлеуге болады.';
+
+  @override
+  String get circleWaitingTitle => 'Қосылуды күтіп тұрмыз';
+
+  @override
+  String get circleWaitingBody =>
+      'Код сіз байланысты өшірмегенше жұмыс істейді.';
+
+  @override
+  String get circleDemoAccept => 'Демо: қосылған деп белгілеу';
+
+  @override
+  String get circleDemoNote =>
+      'Нақты қосылу сервермен бірге келеді. Әзірге бұл демо-ауыстырғыш.';
+
+  @override
+  String get circleJoinCta => 'Менде код бар';
+
+  @override
+  String get circleJoinTitle => 'Кодты енгізу';
+
+  @override
+  String get circleJoinBody =>
+      'Сізге берілген 6 таңбадан тұратын кодты енгізіңіз.';
+
+  @override
+  String get circleJoinHint => 'Мысалы ABC-D2F';
+
+  @override
+  String get circleJoinAction => 'Қосылу';
+
+  @override
+  String get circleJoinInvalid => 'Код 6 таңбадан тұрады';
+
+  @override
+  String get circleJoinUnknown => 'Мұндай код жоқ немесе қолданылған';
+
+  @override
+  String get circleJoinOwnCode => 'Бұл сіздің өз кодыңыз';
+
+  @override
+  String get circleJoinAlready => 'Мұндай байланыс сізде бар';
+
+  @override
+  String get circleJoinNetwork => 'Байланыс жоқ. Қайта көріңіз.';
+
+  @override
+  String get circleJoined => 'Байланыс орнатылды';
+
+  @override
+  String get circleSharingTitlePartner => 'Серіктес нені көреді';
+
+  @override
+  String get circleSharingTitleFamily => 'Сіз немен бөлісесіз';
+
+  @override
+  String get circleSharingBody =>
+      'Ауыстырғышты қоспағанша ештеңе жіберілмейді. Кез келген уақытта өшіруге болады.';
+
+  @override
+  String get circleSharingOff => 'Әзірге ештеңемен бөліспейсіз';
+
+  @override
+  String get circleStopSharing => 'Барлығын өшіру';
+
+  @override
+  String get scopeLifeStage => 'Өмір кезеңі';
+
+  @override
+  String get scopeCyclePhase => 'Циклдің күні және фазасы';
+
+  @override
+  String get scopeMood => 'Бүгінгі көңіл күй';
+
+  @override
+  String get scopePregnancy => 'Жүктілік аптасы және мерзімі';
+
+  @override
+  String get scopeSymptoms => 'Бүгінгі симптомдар';
+
+  @override
+  String get circlePreviewCta => 'Серіктес нені көретінін қарау';
+
+  @override
+  String get circlePreviewTitle => 'Серіктестің көзімен';
+
+  @override
+  String get circlePreviewEmpty =>
+      'Ол әзірге күнделікті кеңесті ғана көреді — сіз туралы ештеңе жоқ.';
+
+  @override
+  String get circleSupportTitle => 'Оны бүгін қалай қолдауға болады';
+
+  @override
+  String get circlePeerTitle => 'Оның күні';
+
+  @override
+  String get circlePeerDemoNote =>
+      'Бұл демонстрациялық деректер. Нақтысы сервермен келеді.';
+
+  @override
+  String get circlePeerNothing =>
+      'Ол әзірге ештеңемен бөліспейді. Бұл — оның шешімі.';
+
+  @override
+  String get circleUnlink => 'Өшіру';
+
+  @override
+  String get circleUnlinkTitle => 'Байланысты өшіру керек пе?';
+
+  @override
+  String get circleUnlinkBodySharer =>
+      'Серіктес деректеріңізді көруді тоқтатады, код енді жұмыс істемейді.';
+
+  @override
+  String get circleUnlinkBodyViewer =>
+      'Сіз оның деректерін бұдан былай көрмейсіз.';
+
+  @override
+  String get circleUnlinked => 'Байланыс өшірілді';
+
+  @override
+  String get circlePeerNameLabel => 'Оның аты кім';
+
+  @override
+  String get circlePeerNameHint => 'Міндетті емес';
+
+  @override
+  String circleLinkedOn(String date) {
+    return '$date қосылды';
+  }
+
+  @override
+  String get familyRoleQuestion => 'Сіз кімсіз?';
+
+  @override
+  String get familyRoleMother => 'Мен анасымын';
+
+  @override
+  String get familyRoleDaughter => 'Мен қызымын';
+
+  @override
+  String get familyInviteMother => 'Қызды шақыру';
+
+  @override
+  String get familyInviteDaughter => 'Анаңызды шақыру';
+
+  @override
+  String get familyPrivacyNote =>
+      'Қыздың трекері құпия болып қалады. Ана қыз өзі қосқан нәрсені ғана көреді.';
+
+  @override
+  String get familyLessonsTitle => 'Бірге оқитын сабақтар';
+
+  @override
+  String get familyLessonsBody =>
+      'Екеуіңізге де жасына сай материалдар. 18+ бөлімі бұған кірмейді.';
+
+  @override
+  String get supportTipPeriodComfort =>
+      'Бүгін ұсақ-түйек көмектеседі: жылыту жастықшасы, жылы сусын және өз мойныңа алған үй шаруасы.';
+
+  @override
+  String get supportTipPeriodPatience =>
+      'Жоспарды икемді ұстап, белсенді күнді талап етпеген жақсы.';
+
+  @override
+  String get supportTipFollicularPlans =>
+      'Екеуге арналған жоспарға жақсы уақыт: күш әдетте көбірек.';
+
+  @override
+  String get supportTipFertileHonesty =>
+      'Жақындық пен контрацепция туралы ашық сөйлесіңіз — тұспалдамай.';
+
+  @override
+  String get supportTipLutealCalm =>
+      'Ұсақ мәселе бойынша аз таласып, тыныш кештерді көбейтіңіз.';
+
+  @override
+  String get supportTipPregnancyChores =>
+      'Ауырын өзіңіз алыңыз: сөмкелер, тазалық, үлкен баланың түнгі тұруы.';
+
+  @override
+  String get supportTipPregnancyAppointments =>
+      'Келесі қабылдау қашан екенін сұрап, бірге барғызуды ұсыныңыз.';
+
+  @override
+  String get supportTipPostpartumNight =>
+      'Оған ұйықтауға мүмкіндік беріңіз: бір түнгі емізуді немесе таңды өзіңіз алыңыз.';
+
+  @override
+  String get supportTipPostpartumAsk =>
+      '«Не істеу керек?» деп сұраңыз, «қалың қалай?» дегеннен гөрі — жауап беру жеңіл.';
+
+  @override
+  String get supportTipMenopauseCool =>
+      'Үйде салқын ұстаңыз және қызу туралы қалжыңдамаңыз.';
+
+  @override
+  String get supportTipLowMoodListen =>
+      'Бүгін кеңес бергеннен тыңдаған дұрыс. Не көмектесе алатыныңызды сұраңыз.';
+
+  @override
+  String get supportTipGreatMoodCelebrate =>
+      'Оның күні жақсы — осыны дауыстап айтыңыз.';
+
+  @override
+  String get supportTipGeneral =>
+      'Күні қалай өткенін сұрап, жауабын шын тыңдаңыз.';
+
+  @override
+  String get familyLinkWaiting => 'Анаңызды қосуды сұрағансыз — код осында';
 }

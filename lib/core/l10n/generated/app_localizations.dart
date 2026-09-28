@@ -3795,6 +3795,450 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'В каких продуктах больше железа?'**
   String get aiQuestionIronFoods;
+
+  /// Section on the profile screen for partner and family links
+  ///
+  /// In ru, this message translates to:
+  /// **'Мой круг'**
+  String get circleTitle;
+
+  /// circleSubtitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Партнёр и режим «Мамы и дочки»'**
+  String get circleSubtitle;
+
+  /// partnerTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Партнёр'**
+  String get partnerTitle;
+
+  /// partnerIntroBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Подключите партнёра, чтобы он видел ровно то, чем вы решили поделиться, и знал, как поддержать вас сегодня.'**
+  String get partnerIntroBody;
+
+  /// familyTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Мамы и дочки'**
+  String get familyTitle;
+
+  /// familyIntroBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Мама и дочь подключаются друг к другу и вместе получают уроки, подходящие по возрасту. Трекер дочери остаётся приватным, пока она сама не поделится.'**
+  String get familyIntroBody;
+
+  /// circleCreateInvite
+  ///
+  /// In ru, this message translates to:
+  /// **'Создать код приглашения'**
+  String get circleCreateInvite;
+
+  /// circleInviteTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Покажите этот код'**
+  String get circleInviteTitle;
+
+  /// circleInviteBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Продиктуйте код или дайте отсканировать QR. Он вводит его в Her Circle на своём телефоне.'**
+  String get circleInviteBody;
+
+  /// circleCopyCode
+  ///
+  /// In ru, this message translates to:
+  /// **'Скопировать код'**
+  String get circleCopyCode;
+
+  /// circleCodeCopied
+  ///
+  /// In ru, this message translates to:
+  /// **'Код скопирован'**
+  String get circleCodeCopied;
+
+  /// circleQrHint
+  ///
+  /// In ru, this message translates to:
+  /// **'QR можно отсканировать камерой телефона.'**
+  String get circleQrHint;
+
+  /// circleWaitingTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Ждём подключения'**
+  String get circleWaitingTitle;
+
+  /// circleWaitingBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Код работает, пока вы не отключите связь.'**
+  String get circleWaitingBody;
+
+  /// circleDemoAccept
+  ///
+  /// In ru, this message translates to:
+  /// **'Демо: отметить как подключённого'**
+  String get circleDemoAccept;
+
+  /// circleDemoNote
+  ///
+  /// In ru, this message translates to:
+  /// **'Настоящее подключение появится вместе с сервером. Пока это демо-переключатель.'**
+  String get circleDemoNote;
+
+  /// circleJoinCta
+  ///
+  /// In ru, this message translates to:
+  /// **'У меня есть код'**
+  String get circleJoinCta;
+
+  /// circleJoinTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Ввести код'**
+  String get circleJoinTitle;
+
+  /// circleJoinBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Введите код из 6 символов, который вам дали.'**
+  String get circleJoinBody;
+
+  /// circleJoinHint
+  ///
+  /// In ru, this message translates to:
+  /// **'Например ABC-D2F'**
+  String get circleJoinHint;
+
+  /// circleJoinAction
+  ///
+  /// In ru, this message translates to:
+  /// **'Подключиться'**
+  String get circleJoinAction;
+
+  /// circleJoinInvalid
+  ///
+  /// In ru, this message translates to:
+  /// **'Код состоит из 6 символов'**
+  String get circleJoinInvalid;
+
+  /// circleJoinUnknown
+  ///
+  /// In ru, this message translates to:
+  /// **'Такого кода нет или он уже использован'**
+  String get circleJoinUnknown;
+
+  /// circleJoinOwnCode
+  ///
+  /// In ru, this message translates to:
+  /// **'Это ваш собственный код'**
+  String get circleJoinOwnCode;
+
+  /// circleJoinAlready
+  ///
+  /// In ru, this message translates to:
+  /// **'Такая связь у вас уже есть'**
+  String get circleJoinAlready;
+
+  /// circleJoinNetwork
+  ///
+  /// In ru, this message translates to:
+  /// **'Нет соединения. Попробуйте ещё раз.'**
+  String get circleJoinNetwork;
+
+  /// circleJoined
+  ///
+  /// In ru, this message translates to:
+  /// **'Связь установлена'**
+  String get circleJoined;
+
+  /// circleSharingTitlePartner
+  ///
+  /// In ru, this message translates to:
+  /// **'Что видит партнёр'**
+  String get circleSharingTitlePartner;
+
+  /// circleSharingTitleFamily
+  ///
+  /// In ru, this message translates to:
+  /// **'Чем вы делитесь'**
+  String get circleSharingTitleFamily;
+
+  /// circleSharingBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Ничего не передаётся, пока вы не включите переключатель. Выключить можно в любой момент.'**
+  String get circleSharingBody;
+
+  /// circleSharingOff
+  ///
+  /// In ru, this message translates to:
+  /// **'Сейчас вы не делитесь ничем'**
+  String get circleSharingOff;
+
+  /// circleStopSharing
+  ///
+  /// In ru, this message translates to:
+  /// **'Выключить всё'**
+  String get circleStopSharing;
+
+  /// scopeLifeStage
+  ///
+  /// In ru, this message translates to:
+  /// **'Этап жизни'**
+  String get scopeLifeStage;
+
+  /// scopeCyclePhase
+  ///
+  /// In ru, this message translates to:
+  /// **'День и фаза цикла'**
+  String get scopeCyclePhase;
+
+  /// scopeMood
+  ///
+  /// In ru, this message translates to:
+  /// **'Настроение за сегодня'**
+  String get scopeMood;
+
+  /// scopePregnancy
+  ///
+  /// In ru, this message translates to:
+  /// **'Неделя беременности и срок'**
+  String get scopePregnancy;
+
+  /// scopeSymptoms
+  ///
+  /// In ru, this message translates to:
+  /// **'Симптомы за сегодня'**
+  String get scopeSymptoms;
+
+  /// circlePreviewCta
+  ///
+  /// In ru, this message translates to:
+  /// **'Посмотреть, что видит партнёр'**
+  String get circlePreviewCta;
+
+  /// circlePreviewTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Глазами партнёра'**
+  String get circlePreviewTitle;
+
+  /// circlePreviewEmpty
+  ///
+  /// In ru, this message translates to:
+  /// **'Пока он видит только совет на день — ничего о вас.'**
+  String get circlePreviewEmpty;
+
+  /// circleSupportTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Как поддержать её сегодня'**
+  String get circleSupportTitle;
+
+  /// circlePeerTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Её день'**
+  String get circlePeerTitle;
+
+  /// circlePeerDemoNote
+  ///
+  /// In ru, this message translates to:
+  /// **'Это демонстрационные данные. Реальные придут с сервером.'**
+  String get circlePeerDemoNote;
+
+  /// circlePeerNothing
+  ///
+  /// In ru, this message translates to:
+  /// **'Она пока ничем не делится. Это её решение.'**
+  String get circlePeerNothing;
+
+  /// circleUnlink
+  ///
+  /// In ru, this message translates to:
+  /// **'Отключить'**
+  String get circleUnlink;
+
+  /// circleUnlinkTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Отключить связь?'**
+  String get circleUnlinkTitle;
+
+  /// circleUnlinkBodySharer
+  ///
+  /// In ru, this message translates to:
+  /// **'Партнёр перестанет видеть ваши данные, а код больше не будет работать.'**
+  String get circleUnlinkBodySharer;
+
+  /// circleUnlinkBodyViewer
+  ///
+  /// In ru, this message translates to:
+  /// **'Вы больше не будете видеть её данные.'**
+  String get circleUnlinkBodyViewer;
+
+  /// circleUnlinked
+  ///
+  /// In ru, this message translates to:
+  /// **'Связь отключена'**
+  String get circleUnlinked;
+
+  /// circlePeerNameLabel
+  ///
+  /// In ru, this message translates to:
+  /// **'Как его зовут'**
+  String get circlePeerNameLabel;
+
+  /// circlePeerNameHint
+  ///
+  /// In ru, this message translates to:
+  /// **'Необязательно'**
+  String get circlePeerNameHint;
+
+  /// Date the link became active
+  ///
+  /// In ru, this message translates to:
+  /// **'Подключены {date}'**
+  String circleLinkedOn(String date);
+
+  /// familyRoleQuestion
+  ///
+  /// In ru, this message translates to:
+  /// **'Кто вы?'**
+  String get familyRoleQuestion;
+
+  /// familyRoleMother
+  ///
+  /// In ru, this message translates to:
+  /// **'Я мама'**
+  String get familyRoleMother;
+
+  /// familyRoleDaughter
+  ///
+  /// In ru, this message translates to:
+  /// **'Я дочь'**
+  String get familyRoleDaughter;
+
+  /// familyInviteMother
+  ///
+  /// In ru, this message translates to:
+  /// **'Пригласить дочь'**
+  String get familyInviteMother;
+
+  /// familyInviteDaughter
+  ///
+  /// In ru, this message translates to:
+  /// **'Пригласить маму'**
+  String get familyInviteDaughter;
+
+  /// familyPrivacyNote
+  ///
+  /// In ru, this message translates to:
+  /// **'Трекер дочери остаётся приватным. Мама видит только то, что дочь сама включит.'**
+  String get familyPrivacyNote;
+
+  /// familyLessonsTitle
+  ///
+  /// In ru, this message translates to:
+  /// **'Уроки вместе'**
+  String get familyLessonsTitle;
+
+  /// familyLessonsBody
+  ///
+  /// In ru, this message translates to:
+  /// **'Материалы, подходящие по возрасту вам обеим. Раздел 18+ сюда не попадает.'**
+  String get familyLessonsBody;
+
+  /// supportTipPeriodComfort
+  ///
+  /// In ru, this message translates to:
+  /// **'Сегодня выручат мелочи: грелка, тёплое питьё и взятая на себя часть домашних дел.'**
+  String get supportTipPeriodComfort;
+
+  /// supportTipPeriodPatience
+  ///
+  /// In ru, this message translates to:
+  /// **'Планы лучше держать гибкими и не настаивать на активном дне.'**
+  String get supportTipPeriodPatience;
+
+  /// supportTipFollicularPlans
+  ///
+  /// In ru, this message translates to:
+  /// **'Хорошее время для планов вдвоём: сил обычно больше.'**
+  String get supportTipFollicularPlans;
+
+  /// supportTipFertileHonesty
+  ///
+  /// In ru, this message translates to:
+  /// **'Поговорите открыто о близости и контрацепции — без намёков.'**
+  String get supportTipFertileHonesty;
+
+  /// supportTipLutealCalm
+  ///
+  /// In ru, this message translates to:
+  /// **'Меньше споров о мелочах, больше спокойных вечеров.'**
+  String get supportTipLutealCalm;
+
+  /// supportTipPregnancyChores
+  ///
+  /// In ru, this message translates to:
+  /// **'Возьмите на себя тяжёлое: сумки, уборку, ночные подъёмы к ребёнку постарше.'**
+  String get supportTipPregnancyChores;
+
+  /// supportTipPregnancyAppointments
+  ///
+  /// In ru, this message translates to:
+  /// **'Спросите, когда следующий приём, и предложите пойти вместе.'**
+  String get supportTipPregnancyAppointments;
+
+  /// supportTipPostpartumNight
+  ///
+  /// In ru, this message translates to:
+  /// **'Дайте ей выспаться: возьмите одно ночное кормление или утро на себя.'**
+  String get supportTipPostpartumNight;
+
+  /// supportTipPostpartumAsk
+  ///
+  /// In ru, this message translates to:
+  /// **'Спрашивайте «что сделать?», а не «как дела?» — так проще ответить.'**
+  String get supportTipPostpartumAsk;
+
+  /// supportTipMenopauseCool
+  ///
+  /// In ru, this message translates to:
+  /// **'Держите дома прохладнее и не шутите про жару.'**
+  String get supportTipMenopauseCool;
+
+  /// supportTipLowMoodListen
+  ///
+  /// In ru, this message translates to:
+  /// **'Сегодня лучше слушать, чем советовать. Спросите, чем помочь.'**
+  String get supportTipLowMoodListen;
+
+  /// supportTipGreatMoodCelebrate
+  ///
+  /// In ru, this message translates to:
+  /// **'У неё хороший день — скажите об этом вслух.'**
+  String get supportTipGreatMoodCelebrate;
+
+  /// supportTipGeneral
+  ///
+  /// In ru, this message translates to:
+  /// **'Спросите, как прошёл день, и правда выслушайте ответ.'**
+  String get supportTipGeneral;
+
+  /// Reminder on the profile entry when she accepted the offer but has no link yet
+  ///
+  /// In ru, this message translates to:
+  /// **'Вы просили подключить маму — код ждёт здесь'**
+  String get familyLinkWaiting;
 }
 
 class _AppLocalizationsDelegate
