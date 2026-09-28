@@ -1,0 +1,76 @@
+# Builds the Android APK.
+#
+# The app cannot be compiled in every environment: the Android SDK comes from
+# dl.google.com, which some networks block. GitHub's Ubuntu runners already
+# have the SDK, so this workflow is the reliable way to get an installable
+# build. Download it from the run's "Artifacts" section.
+name: Android APK
+
+on:
+  push:
+    branches:
+      - main
+      - 'claude/**'
+  workflow_dispatch:
+    inputs:
+      flavour:
+        description: Which build to produce
+        type: choice
+        default: release
+        options:
+          - release
+          - debug
+
+concurrency:
+  group: apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          # AGP 9 and the Kotlin 2.x toolchain both run on 17.
+          java-version: '17'
+
+      - uses: subosito/flutter-action@v2
+        with:
+          # Pinned to the version the project is developed against, so a new
+          # stable release cannot change the output without a commit here.
+          flutter-version: 3.47.5
+          channel: stable
+          cache: true
+
+      - name: Dependencies
+        run: flutter pub get
+
+      - name: Analyze
+        run: flutter analyze
+
+      - name: Test
+        run: flutter test
+
+      # Mocks stay on until Firebase and the AI proxy are connected, so the
+      # APK is usable on its own. Point AI_BASE_URL at the proxy and set
+      # USE_MOCKS=false once they exist.
+      - name: Build APK
+        run: |
+          flutter build apk --${{ inputs.flavour || 'release' }} \
+            --dart-define=USE_MOCKS=true \
+            --dart-define=FIREBASE_ENABLED=false
+
+      - name: Report size
+        run: ls -lh build/app/outputs/flutter-apk/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: her-circle-apk
+          path: build/app/outputs/flutter-apk/app-*.apk
+          if-no-files-found: error
+          retention-days: 30
